@@ -1,11 +1,103 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="SpicyChat community guide"><title>Advanced Lorebook Guide For Authors · SpicyChat Guides</title><link rel="stylesheet" href="/assets/style.css"></head><body><header class="topbar"><div class="wrap nav"><a class="brand" href="/"><span class="mark">SG</span><span><strong>SpicyChat Guides</strong><small>community-maintained guides & reference</small></span></a><nav class="links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/llm/">LLM Guides</a><a href="/community/">Discord Guides</a><a href="/reference/">Reference</a><a href="/contributors/">Contributors</a></nav></div></header><main><section class="article-head"><div class="article-wrap"><span class="eyebrow">Lorebooks · Discord guide</span><h1>Advanced Lorebook Guide For Authors</h1><p class="summary">A condensed version of Sydd's thread about getting Lorebook entries to trigger more reliably without flooding context.</p><div class="article-meta"><span>condensed from Discord</span><span>thread started by Sydd</span><span>original post: Jan 2026</span></div></div></section><div class="article-wrap article-layout"><aside class="article-toc"><strong>on this page</strong><a href="#trigger-rule">The trigger rule</a><a href="#entry-size">Entry size</a><a href="#wildcards">Wildcards</a><a href="#umbrella">Umbrella entries</a><a href="#anchoring">Anchoring</a><a href="#layering">Layering</a><a href="#testing">Testing</a></aside><article class="article-body"><div class="guide-callout"><strong>The big thing to remember:</strong> Lorebook keywords trigger from words that actually appear in the conversation. Putting a keyword in the persona, scenario or another Lorebook entry does not directly trigger it.</div><h2 id="trigger-rule">The trigger rule</h2><p>The guide's most important point is the difference between <em>triggering</em> and <em>anchoring</em>. A keyword has to appear in chat — either in the user's message or the model's reply — before the matching Lorebook entry can activate.</p><p>You can still put a specific term in the character/persona to encourage the model to naturally use that term later. That is anchoring. It makes a trigger more likely to appear in chat, but it is not a trigger by itself.</p><h2 id="entry-size">Keep entries small</h2><p>The thread recommends splitting large blocks into smaller entries and generally aiming for entries under roughly 100 tokens where possible. The point is not the exact number; it is to avoid spending a large chunk of context every time one keyword fires.</p><ul><li>Small entries are easier to trigger precisely.</li><li>Several relevant entries can stack without dumping a huge block at once.</li><li>Detailed information stays conditional instead of sitting in context all the time.</li></ul><p>Think of the Lorebook as a reference library, not one giant encyclopedia page.</p><h2 id="wildcards">Use wildcards carefully</h2><p>A wildcard is an asterisk attached directly to the keyword. A suffix wildcard is usually the useful one:</p><div class="example-box"><pre>lunara*</pre></div><p>That can catch forms such as <code>lunara</code>, <code>lunara's</code> or <code>lunaras</code>. It does not cross spaces. Prefix wildcards such as <code>*book</code> are valid but much easier to trigger accidentally.</p><div class="guide-callout"><strong>Avoid <code>*word*</code>.</strong> The original guide warns that wildcards on both sides become far too greedy and can cause constant unwanted triggers.</div><h2 id="umbrella">Umbrella entries vs. specific entries</h2><p>Broad keywords are risky because they can fire constantly. A better pattern is a short umbrella entry that introduces the system, then separate detailed entries for the parts of that system.</p><div class="example-box"><pre>Umbrella:
-adventurer*
-adventurer guild*
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Advanced SpicyChat Lorebook guide covering triggers, entry length, wildcards, umbrella entries, anchoring and layering."><title>Advanced Lorebook Guide For Authors · SpicyChat Guides</title><link rel="stylesheet" href="/assets/style.css"></head><body><header class="topbar"><div class="wrap nav"><a class="brand" href="/"><span class="mark">SG</span><span><strong>SpicyChat Guides</strong><small>community-maintained guides & reference</small></span></a><nav class="links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/llm/">LLM Guides</a><a href="/community/">Discord Guides</a><a href="/reference/">Reference</a><a href="/contributors/">Contributors</a></nav></div></header><main>
+<section class="article-head"><div class="article-wrap"><span class="eyebrow">Lorebooks · Discord guide</span><h1>Advanced Lorebook Guide For Authors</h1><p class="summary">Sydd's advanced Lorebook guide, cleaned up and reorganised into one readable page while keeping the examples and reasoning that make the guide useful.</p><div class="article-meta"><span>cleaned from Discord</span><span>thread started by Sydd</span><span>original guide: Jan 2026</span></div></div></section>
+<div class="article-wrap article-layout"><aside class="article-toc"><strong>on this page</strong><a href="#before">Before you start</a><a href="#trigger-rule">The trigger rule</a><a href="#entry-size">Entry length & tokens</a><a href="#wildcards">Wildcards</a><a href="#umbrella">Umbrella entries</a><a href="#anchoring">Anchoring keywords</a><a href="#layering">Layering keywords</a><a href="#broad-specific">Broad vs specific</a><a href="#writing">Writing entries</a><a href="#testing">Testing & maintenance</a></aside>
+<article class="article-body">
+<h2 id="before">Before you start</h2><p>This is an advanced guide. It assumes you already know what Lorebooks are, roughly how they interact with context memory, and how to make an entry. The thread is aimed at the annoying part that comes after that: entries that do not trigger reliably, keywords that feel either too broad or too specific, and Lorebooks that start eating too much context.</p>
+<div class="guide-callout"><strong>The one rule the original guide keeps coming back to:</strong> keywords only trigger when the keyword actually appears in the conversation — typed by the user or produced by the LLM.</div>
+<h2 id="trigger-rule">The trigger rule: anchoring is not triggering</h2><p>A keyword sitting in the persona, scenario or another Lorebook entry does <strong>not</strong> directly activate the matching entry. The keyword has to appear in the actual chat.</p><p>That distinction matters because the guide later talks about putting special terms in a character's persona. That is <em>anchoring</em>: you are encouraging the model to naturally use a term in conversation, where it can then become a real trigger. The persona itself is not firing the Lorebook.</p>
+<div class="example-box"><pre>Persona says:
+Ilyra bears the Mark of the Deep on her hand.
 
-Only explains that the guild exists and has ranks.
+Lorebook keyword:
+mark of the deep*
 
-Specific:
-mithril-rank*
-mithril rank*
+Nothing triggers just because the persona contains the phrase.
+But if Ilyra later mentions the Mark of the Deep in chat, the phrase is now in conversation and the entry can trigger.</pre></div>
+<p>A lot of apparently "broken" Lorebook behavior comes from mixing those two ideas together.</p>
 
-Explains what Mithril rank actually means.</pre></div><p>The broader the keyword, the shorter and more factual the entry should be. Save mechanics, consequences and detailed behavior for the specific entries.</p><h2 id="anchoring">Anchor terms the model should naturally say</h2><p>If a concept matters to a character, give it a distinctive name and use that name in the character information. The thread uses <em>Mark of the Deep</em> as an example: instead of a generic keyword such as <code>curse</code>, the Lorebook can use <code>mark of the deep*</code>, while the character description makes the mark important enough that the model is likely to mention it.</p><p>Anchoring is iterative. If the model keeps saying <code>mithril-ranked</code> while your keyword is only <code>mithril rank</code>, add a keyword that matches the phrasing the model actually uses.</p><h2 id="layering">Layer information</h2><p>Umbrella entries, anchored terms and specific entries work best together. The umbrella gives the model the vocabulary and overall structure; the specific entry only appears when the conversation reaches that part.</p><p>This is especially useful for shared world Lorebooks used by multiple bots. Avoid generic triggers such as <code>{{user}}</code> or <code>{{char}}</code> for world information that is not relevant to everyone.</p><h2 id="testing">Test the bot, then adjust the keywords</h2><ul><li>Watch the exact words the model naturally uses.</li><li>Add useful variations instead of piling on generic keywords.</li><li>Try to avoid triggering a large number of entries in the same message.</li><li>Keep the text factual and compact instead of writing it like prose.</li><li>For character entries, keep the always-needed identity brief: traits, role, goals and a short description.</li><li>Use clear entry names for your own organization; the entry title itself is not a keyword.</li></ul><div class="source-box"><strong>Source</strong><p>This page condenses the useful guide material instead of reproducing the whole Discord thread. The original post also thanks KevinKarl and Duke for helping flesh the guide out.</p><div class="actions"><a class="button primary" href="https://discord.com/channels/1108377954389594236/1461684278311256090" target="_blank" rel="noopener">Open original Discord thread ↗</a></div></div></article></div></main><script src="/assets/catalog.js"></script><script src="/assets/site.js"></script></body></html>
+<h2 id="entry-size">Entry length & token usage</h2><p>The guide recommends splitting information across multiple small entries rather than building one huge entry. Its rough target is <strong>under about 100 tokens per entry</strong> when possible.</p><p>The reason is context pressure. The guide gives the example that a roughly 1,000-character entry can consume around 250 context-memory tokens when it activates. Whether the exact number varies by model/tokenizer, the practical point is the same: a large entry gets inserted all at once and leaves less room for conversation and other relevant lore.</p>
+<ul><li>Smaller entries can trigger more precisely.</li><li>Layered information can stack only when it is relevant.</li><li>One giant entry is less likely to shove useful conversation out of context.</li><li>If one entry keeps growing, that is usually a sign that it should become several narrower entries.</li></ul>
+<p>The original phrasing is a good mental model: <strong>Lorebooks are reference libraries, not encyclopedias.</strong></p>
+
+<h2 id="wildcards">Wildcards</h2><p>A wildcard is an asterisk attached directly to a word. It lets one keyword catch variations without listing every spelling separately.</p>
+<h3>Suffix wildcard</h3><div class="example-box"><pre>lunara*</pre></div><p>This can match <code>lunara</code>, <code>lunara's</code> and <code>lunaras</code>. The wildcard only covers characters attached to that same word; it does not cross a space.</p>
+<h3>Prefix wildcard</h3><div class="example-box"><pre>*book</pre></div><p>This can match <code>storybook</code>, <code>lorebook</code> and <code>notebook</code>, but not <code>story book</code>. Prefix wildcards are valid, but the guide treats them as much riskier because they can catch words you never meant to target.</p>
+<div class="guide-callout"><strong>Do not use <code>*word*</code>.</strong> The guide specifically warns against wildcards on both sides. They become extremely greedy and are likely to cause constant accidental triggers.</div>
+<p>In practice, suffix wildcards are the useful default. They work best when the root word is already distinctive.</p>
+
+<h2 id="umbrella">Umbrella entries</h2><p>Very broad keywords tend to fire too often. This gets especially messy when one world Lorebook is shared across several characters: using <code>{{user}}</code> or <code>{{char}}</code> as world-information triggers can inject information that is irrelevant to the current bot.</p><p>An umbrella entry solves this by using a term that is broad enough to introduce a system but still specific enough to avoid firing constantly.</p>
+<div class="example-box"><pre>Too broad:
+magic
+
+Better world-specific terms:
+aether
+ley-line
+
+Umbrella entry:
+Faction: Adventurer's Guild
+Keywords: adventurer*, adventurer's guild*
+
+Content:
+briefly establish that adventurers exist, belong to a guild,
+and use a ranked system.</pre></div>
+<p>The umbrella does not need to explain every rank. It only teaches the model the structure and vocabulary. Copper, Iron, Steel, Mithril, Adamantine and Aetherium can each have their own entry later.</p><p>The goal is to steer the model toward the more precise vocabulary without permanently dumping all of the detailed rules into context.</p>
+
+<h2 id="anchoring">Anchoring keywords</h2><p>Anchoring means deliberately giving an important concept a distinctive term and placing that term in the character information so the model is more likely to say it naturally.</p><p>The guide's example is Ilyra's curse. A keyword like <code>curse</code> is far too generic, so the curse gets a proper name: <strong>Mark of the Deep</strong>. The persona establishes that the mark is a defining feature, and the Lorebook listens for <code>mark of the deep*</code>.</p><p>Anchoring improves the odds; it does not guarantee exact wording. You still have to watch what the model actually says.</p>
+<div class="example-box"><pre>Original keyword:
+mithril rank
+
+Model keeps saying:
+mithril-ranked
+
+Fix:
+add mithril-rank*</pre></div>
+<p>This is why the guide describes anchoring as iterative. Do not guess forever at every possible variation. Test the bot, see which phrasing it naturally prefers, and add the useful variation.</p>
+
+<h2 id="layering">Layering keywords</h2><p>Layering combines the previous ideas: a broad-but-controlled entry establishes a system, then more specific entries activate as the conversation narrows.</p>
+<div class="example-box"><pre>Umbrella
+Faction: Adventurer's Guild
+Keywords: adventurer*, adventurer's guild*
+→ defines the guild and says a ranked system exists
+
+Specific entries
+Guild Rank: Copper
+Keywords: copper-rank*, copper rank*
+
+Guild Rank: Iron
+Guild Rank: Steel
+Guild Rank: Mithril
+Guild Rank: Adamantine
+...
+
+→ each rank explains its own expectations, power level and role</pre></div>
+<p>If a character persona says they are a <strong>Mithril-ranked adventurer</strong>, you are now using both systems together: the umbrella establishes the guild vocabulary, while the anchored rank makes it more likely that the specific Mithril entry will eventually trigger.</p><p>The result is that the model receives detail only when the conversation needs it instead of carrying the whole hierarchy in every response.</p>
+
+<h2 id="broad-specific">Broad entries vs specific entries</h2><p>Broad keywords are not forbidden. The guide gives customised concepts such as guns, technology or implants as cases where a common term may genuinely mean something special in your setting. The rule is that the broader the trigger, the smaller and more factual the entry should be.</p>
+<ul><li><strong>Broad entry:</strong> establishes context or a rule of the setting.</li><li><strong>Specific entry:</strong> explains mechanics, behavior, consequences, authority or detailed expectations.</li></ul>
+<p>For the Adventurer's Guild example, the general <code>adventurer*</code> entry should say that ranks exist and list them. It should not also explain the power, privileges and expectations of every single rank. Those details belong in the rank entries.</p>
+
+<h2 id="writing">How to write the entry itself</h2><p>The thread recommends factual, compact, instructional writing. Lorebook text does not need to read like a novel.</p>
+<div class="example-box"><pre>Too prose-heavy:
+Noctyrr is a continent governed by the undead entity Morvethra
+where the corruption of undeath has overtaken the land...
+
+Cleaner:
+Noctyrr: continent, ruled by Morvethra, overrun by undead corruption.</pre></div>
+<p>Clear labels also make a large Lorebook much easier to maintain. The entry title is for you; it is not itself a trigger. The guide uses labels such as:</p>
+<div class="example-box"><pre>Faction: Adventurer's Guild
+Faction: Philoponus Empire
+Faction: Imperial Concord of Maritime Commerce
+Character: Lunara Sylviel
+Character: Goddess K'thara
+Relic: Aeterna Luma</pre></div>
+<p>Later Q&amp;A in the thread gives a similarly compact pattern for character entries:</p>
+<div class="example-box"><pre>char: Ursula
+personality: sassy, chaotic, evil
+goals: gain control of Falkenreach
+description: villainous vampire lord; works from behind the scenes;
+powerful vampire trying to regain control of a prominent city</pre></div>
+<p>The point is not that this exact schema is mandatory. It is an example of keeping the information the model needs without padding the entry.</p>
+
+<h2 id="testing">Testing & maintenance</h2><ul><li>Actively test the words your bot uses instead of assuming your keyword list is correct.</li><li>If an entry misses, adjust to the model's natural phrasing rather than adding dozens of broad synonyms.</li><li>Build Lorebook entries alongside the character when possible; it makes useful anchors easier to spot.</li><li>Aim for roughly one or two relevant Lorebook activations per message rather than trying to trigger everything at once.</li><li>Use broader keywords only when the setting really gives that word a special meaning, and keep the entry tiny.</li><li>Guide the model with rules and boundaries rather than using Lorebook text to dictate every plot outcome.</li></ul>
+<div class="source-box"><strong>Source & import note</strong><p>This page keeps the guide's main explanations, examples and useful follow-up Q&amp;A, but removes Discord UI, reactions, repeated quotes and unrelated conversation. Discord unloads messages from long threads as you scroll, so the imported page can only use the messages that were present in the saved capture.</p><p>The original guide also credits KevinKarl and Duke for helping flesh it out.</p><div class="actions"><a class="button primary" href="https://discord.com/channels/1108377954389594236/1461684278311256090" target="_blank" rel="noopener">Open original Discord thread ↗</a></div></div>
+</article></div></main><script src="/assets/catalog.js"></script><script src="/assets/site.js"></script></body></html>
