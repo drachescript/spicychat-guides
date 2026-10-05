@@ -32,7 +32,9 @@ window.GUIDES=[
     "kind": "community",
     "label": "Discord Guide",
     "category": "Lorebooks",
-    "threadStarter": "Sydd",
+    "status": "published",
+    "desc": "a condensed guide to reliable triggers, smaller entries, wildcards, anchoring and layered Lorebooks.",
+    "pageUrl": "/guides/lorebooks/advanced-lorebook-guide/",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1461684278311256090"
   },
   {
@@ -41,7 +43,6 @@ window.GUIDES=[
     "kind": "community",
     "label": "Discord Guide",
     "category": "Memory & Context",
-    "threadStarter": "Bluhdwulf",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1545284681484861560"
   },
   {
@@ -50,7 +51,9 @@ window.GUIDES=[
     "kind": "community",
     "label": "Discord Guide",
     "category": "Bot Creation",
-    "threadStarter": "if u make gta bots ily",
+    "status": "published",
+    "desc": "the useful bot-building advice from the thread, condensed into one page.",
+    "pageUrl": "/guides/bot-creation/bot-creation-guide-2/",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1257593693360357396"
   },
   {
@@ -59,7 +62,6 @@ window.GUIDES=[
     "kind": "community",
     "label": "Discord Guide",
     "category": "Images",
-    "threadStarter": "ᒍᑌᖇᗩI",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1343317636888399884"
   },
   {
@@ -68,7 +70,6 @@ window.GUIDES=[
     "kind": "community",
     "label": "Discord Guide",
     "category": "Memory & Context",
-    "threadStarter": "CalifornianJosh",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1539244941673238528"
   },
   {
@@ -77,7 +78,6 @@ window.GUIDES=[
     "kind": "community",
     "label": "Discord Guide",
     "category": "Images",
-    "threadStarter": "Icyd",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1544917092137181184"
   },
   {
@@ -86,7 +86,9 @@ window.GUIDES=[
     "kind": "community",
     "label": "Discord Guide",
     "category": "Personas & RP",
-    "threadStarter": "Chaosdick",
+    "status": "published",
+    "desc": "use your persona for writing style, pacing and RP rules instead of only appearance/personality.",
+    "pageUrl": "/guides/personas/persona-commands/",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1476421115084673268"
   },
   {
@@ -95,7 +97,6 @@ window.GUIDES=[
     "kind": "community",
     "label": "Discord Guide",
     "category": "RPG & World Building",
-    "threadStarter": "Cult Daddy.",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1546609624856141964"
   },
   {
@@ -104,7 +105,6 @@ window.GUIDES=[
     "kind": "community",
     "label": "Discord Guide",
     "category": "RPG & World Building",
-    "threadStarter": "Sacremas",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1513568510544973984"
   },
   {
@@ -113,7 +113,6 @@ window.GUIDES=[
     "kind": "community",
     "label": "Discord Guide",
     "category": "Bot Creation",
-    "threadStarter": "Dozer",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1553404535228342272"
   },
   {
@@ -122,7 +121,6 @@ window.GUIDES=[
     "kind": "community",
     "label": "Discord Guide",
     "category": "Personas & RP",
-    "threadStarter": "𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔳𝔢",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1550399965115715614"
   },
   {
@@ -131,7 +129,6 @@ window.GUIDES=[
     "kind": "community",
     "label": "Discord Guide",
     "category": "Lorebooks",
-    "threadStarter": "Duke",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1458016679836516484"
   },
   {
@@ -140,7 +137,6 @@ window.GUIDES=[
     "kind": "community",
     "label": "Discord Guide",
     "category": "Personas & RP",
-    "threadStarter": "D-B",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1509579127668080711"
   },
   {
@@ -149,7 +145,6 @@ window.GUIDES=[
     "kind": "community",
     "label": "Discord Guide",
     "category": "Formatting & HUDs",
-    "threadStarter": "Bluhdwulf",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1545293272178499594"
   },
   {
@@ -158,7 +153,6 @@ window.GUIDES=[
     "kind": "community",
     "label": "Discord Guide",
     "category": "AI-assisted Creation",
-    "threadStarter": "Dante Morningstar",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1542036564564250734"
   }
 ];
