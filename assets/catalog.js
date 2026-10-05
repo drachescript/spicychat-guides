@@ -33,7 +33,7 @@ window.GUIDES=[
     "label": "Discord Guide",
     "category": "Lorebooks",
     "status": "published",
-    "desc": "a condensed guide to reliable triggers, smaller entries, wildcards, anchoring and layered Lorebooks.",
+    "desc": "a detailed cleaned-up guide to reliable triggers, entry size, wildcards, anchoring and layered Lorebooks.",
     "pageUrl": "/guides/lorebooks/advanced-lorebook-guide/",
     "sourceUrl": "https://discord.com/channels/1108377954389594236/1461684278311256090"
   },
@@ -52,9 +52,9 @@ window.GUIDES=[
     "label": "Discord Guide",
     "category": "Bot Creation",
     "status": "published",
-    "desc": "the useful bot-building advice from the thread, condensed into one page.",
+    "desc": "the community bot-creation thread cleaned up into one readable guide with the main sections and examples kept.",
     "pageUrl": "/guides/bot-creation/bot-creation-guide-2/",
-    "sourceUrl": "https://discord.com/channels/1108377954389594236/1257593693360357396"
+    "sourceUrl": "https://discord.com/channels/1108377954389594236/1257593693360357396/1257593693360357396"
   },
   {
     "id": "chat-image-v2",
