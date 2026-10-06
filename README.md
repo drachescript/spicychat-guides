@@ -4,17 +4,22 @@ Community-maintained guides and reference material for SpicyChat.
 
 **Site:** https://spicychat-guides.drache.uk/
 
-## Sections
-- Human Guides
-- LLM Guides
-- Community Guides
-- Reference
-- Contributors
+## Main sections
 
-The first source dump contains three Lorebook-focused LLM guides by Hunter plus 15 saved Discord guide/discussion pages. The initial site indexes that material before the Discord captures are cleaned into public, attributed guide content.
+- /bots/ — bot creation, writing behavior, creator workflow, systems, images, models/settings and publishing
+- /persona/ — Persona basics/formatting and Persona Commands
+- /lorebook/ — basics, advanced keyword design, context/tokens and system-heavy uses
+- /group/ — multi-character bots and Group Chats
+- /guides/ — everything in one searchable list
+- /llm/ — separate guides written for an assisting LLM
+- /reference/ — original Discord source threads
 
-Personal/community guides stay attributed to their original authors and are not silently rewritten as official documentation.
+## Current status
 
-The giant saved Discord HTML asset folders are intentionally not committed to the public site repository.
+All human guides are currently marked **WIP / not complete** so they can be reviewed before being treated as finished.
+
+The human pages are not Discord reposts. They condense and reorganize useful information from the source threads, merge useful follow-up replies into the relevant sections, and leave out reactions, repeated quotes and unrelated chatter.
+
+The source exports are not committed to the public repository. Original Discord threads stay linked from the guide metadata/source page.
 
 SpicyChat Guides is an independent community project and is not affiliated with, endorsed by, or sponsored by SpicyChat.
