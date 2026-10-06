@@ -1,0 +1,10 @@
+(function(){
+const id=window.GUIDE_ID, meta=(window.GUIDES||[]).find(x=>x.id===id), content=(window.GUIDE_CONTENT||{})[id], root=document.querySelector("[data-guide-page]");
+const e=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+if(!root||!meta||!content){if(root)root.innerHTML='<section class="section"><div class="article-wrap"><div class="notice">guide draft not found.</div></div></section>';return}
+document.title=meta.title+" · SpicyChat Guides";
+const sourceLinks=(meta.sources||[]).map(s=>'<a href="'+e(s.url)+'" target="_blank" rel="noopener">'+e(s.title)+' ↗</a>').join("");
+root.innerHTML='<section class="article-head"><div class="article-wrap"><span class="eyebrow">'+e(meta.subsection||meta.section)+'</span><h1>'+e(meta.title)+'</h1><p class="summary">'+e(meta.desc)+'</p><div class="article-meta"><span>WIP · not complete</span><span>'+e(meta.section)+'</span><span>community draft</span></div></div></section><div class="article-wrap article-layout"><aside class="article-toc"><strong>on this page</strong><div data-toc></div></aside><article class="article-body"><div class="wip-banner"><strong>WIP — not complete.</strong> this is a review draft built from the Discord source thread(s). wording, missing details, old information and overlap with other guides can still change.</div>'+content.body+'<div class="source-box"><strong>Sources used for this draft</strong><p>the page is rewritten/organised from the useful information in these threads rather than reposting the whole conversation.</p><div class="source-list">'+sourceLinks+'</div></div></article></div>';
+const toc=root.querySelector("[data-toc]");
+root.querySelectorAll(".article-body h2[id]").forEach(h=>{const a=document.createElement("a");a.href="#"+h.id;a.textContent=h.textContent;toc.appendChild(a)});
+})();
