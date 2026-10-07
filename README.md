@@ -12,7 +12,7 @@ Community-maintained guides and reference material for SpicyChat.
 - /group/ — multi-character bots and Group Chats
 - /guides/ — everything in one searchable list
 - /llm/ — separate guides written for an assisting LLM
-- /reference/ — original Discord source threads
+- /reference/ — original Discord source threads and public JSON references
 
 ## Current status
 
@@ -23,3 +23,9 @@ The human pages are not Discord reposts. They condense and reorganize useful inf
 The source exports are not committed to the public repository. Original Discord threads stay linked from the guide metadata/source page.
 
 SpicyChat Guides is an independent community project and is not affiliated with, endorsed by, or sponsored by SpicyChat.
+
+## Public JSON reference files
+
+- `/tags.json` — current chatbot tags
+- `/lorebook-tags.json` — current Lorebook tag picker values
+- `/blocked-words.json` — community-curated blocked-word/moderation reference
