@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "status": "community-curated-not-official",
+  "source": {
+    "title": "Blocked Words and AI Moderation EXPLAINED (simplified)",
+    "author": "CalifornianJosh | System Bots",
+    "notes": [
+      "The author explicitly states they are not SpicyChat staff and that this is a curated list based on observed automod behavior.",
+      "The source says words that contain one of these terms can also be flagged; the example given is class -> classroom.",
+      "In the source, terms marked with + were reported to extend to similar word forms. The + marker is represented below by variantRoots."
+    ]
+  },
+  "matchingNotes": {
+    "substringMatchesReported": true,
+    "variantsReported": true
+  },
+  "categories": {
+    "underage": {
+      "label": "UNDERAGE FLAG",
+      "words": [
+        "Child",
+        "Young",
+        "Baby",
+        "Boy",
+        "Girl",
+        "Short",
+        "Small",
+        "Petite",
+        "Tiny",
+        "Loli",
+        "Minor",
+        "Kid",
+        "Underage",
+        "Teen",
+        "Innocent",
+        "Infant",
+        "Little",
+        "School",
+        "Teacher",
+        "Student",
+        "Adolescent",
+        "Juvenile",
+        "Brat",
+        "Youth",
+        "Backpack",
+        "Runaway",
+        "Insecure",
+        "Fragile",
+        "Uniform",
+        "Class",
+        "Prodigy",
+        "Pupil",
+        "Born",
+        "Birth",
+        "Hatchling",
+        "One",
+        "Two",
+        "Three",
+        "Four",
+        "Five",
+        "Six",
+        "Seven",
+        "Eight",
+        "Nine",
+        "Ten",
+        "Eleven",
+        "Twelve"
+      ],
+      "variantRoots": [
+        "Loli"
+      ]
+    },
+    "incest": {
+      "label": "INCEST FLAG",
+      "words": [
+        "Mom",
+        "Dad",
+        "Sister",
+        "Brother",
+        "Cousin",
+        "Uncle",
+        "Aunt",
+        "Mother",
+        "Father",
+        "Grandpa",
+        "Daughter",
+        "Son",
+        "Relationship",
+        "Adopt",
+        "Family",
+        "Paternal",
+        "Twin",
+        "Sibling",
+        "Relative",
+        "King",
+        "Queen",
+        "Prince",
+        "Lineage",
+        "Bloodline"
+      ],
+      "variantRoots": [
+        "Grandpa",
+        "Prince"
+      ]
+    },
+    "bestiality": {
+      "label": "BESTIALITY FLAG",
+      "words": [
+        "Dog",
+        "Horse",
+        "Bull",
+        "Minotaur",
+        "Beast",
+        "Monster",
+        "Creature",
+        "Animal",
+        "Farm",
+        "Bred",
+        "Tail",
+        "Fur",
+        "Paw"
+      ],
+      "variantRoots": [
+        "Bred"
+      ]
+    },
+    "abuse": {
+      "label": "ABUSE FLAG",
+      "words": [
+        "Rape",
+        "Force",
+        "Kill",
+        "Murder",
+        "Torture",
+        "Abuse",
+        "Violent",
+        "Trauma",
+        "Tremble",
+        "Intimidate",
+        "Push"
+      ],
+      "variantRoots": [
+        "Violent",
+        "Intimidate"
+      ]
+    },
+    "other": {
+      "label": "OTHER FLAG",
+      "words": [
+        "God",
+        "Purity"
+      ],
+      "variantRoots": []
+    }
+  },
+  "counts": {
+    "categories": 5,
+    "words": 97,
+    "variantRoots": 6
+  }
+}
