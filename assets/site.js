@@ -1,7 +1,7 @@
 (function(){
 const g=window.GUIDES||[];
 const e=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
-const sectionName=s=>({bots:"Bots",persona:"Personas",lorebook:"Lorebooks",group:"Group / Multi-Character",llm:"LLM Guides"}[s]||s);
+const sectionName=s=>({bots:"Bots",persona:"Personas",lorebook:"Lorebooks",group:"Group / Multi-Character",rulebook:"Rulebooks",llm:"LLM Guides"}[s]||s);
 const card=x=>{
  const href=x.pageUrl||"#";
  const wip=x.status==="wip"?'<span class="badge wip">WIP · not complete</span>':"";
