@@ -24,7 +24,7 @@ q?.addEventListener("input",refresh);f?.addEventListener("change",refresh);refre
 const ref=document.querySelector("[data-reference]");
 if(ref){
  const all=[]; const seen=new Set();
- g.forEach(x=>(x.sources||[]).forEach(s=>{if(!seen.has(s.url)){seen.add(s.url);all.push({title:s.title,url:s.url,section:x.section})}}));
- ref.innerHTML=all.map(s=>'<a class="reference-card" href="'+e(s.url)+'" target="_blank" rel="noopener"><span class="badge community">Discord source</span><strong>'+e(s.title)+'</strong><small>'+e(sectionName(s.section))+' · original thread ↗</small></a>').join("");
+ g.forEach(x=>(x.sources||[]).forEach(s=>{if(!seen.has(s.url)){seen.add(s.url);all.push({title:s.title,url:s.url,section:x.section,official:x.sourceType==="official"})}}));
+ ref.innerHTML=all.map(s=>'<a class="reference-card" href="'+e(s.url)+'" target="_blank" rel="noopener"><span class="badge community">'+(s.official?"Official docs":"Discord source")+'</span><strong>'+e(s.title)+'</strong><small>'+e(sectionName(s.section))+' · '+(s.official?"documentation":"original thread")+' ↗</small></a>').join("");
 }
 })();
