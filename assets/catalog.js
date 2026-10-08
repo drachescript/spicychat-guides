@@ -486,6 +486,24 @@ window.GUIDES=[
     ]
   },
   {
+    "id": "rulebook-basics",
+    "title": "Creating a Rulebook: Meters, Influence Rules & Playtesting",
+    "kind": "human",
+    "section": "rulebook",
+    "subsection": "Getting Started",
+    "status": "wip",
+    "label": "Guide",
+    "desc": "how to build Rulebooks, set up meters and evaluations, use influence levels/combined rules, playtest, and attach them to chats.",
+    "pageUrl": "/rulebook/basics/",
+    "sourceType": "official",
+    "sources": [
+      {
+        "title": "SpicyChat Rulebooks — official documentation",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks"
+      }
+    ]
+  },
+  {
     "id": "advanced-lorebook-llm",
     "title": "Advanced Lorebook LLM Guide",
     "kind": "llm",
