@@ -357,6 +357,10 @@ window.GUIDES=[
       {
         "title": "Personal Guide to Writing Lorebooks for SpicyChat.AI",
         "url": "https://discord.com/channels/1108377954389594236/1458016679836516484/1458016679836516484"
+      },
+      {
+        "title": "Hunter — Unified Lorebook LLM Production System v6",
+        "url": "/llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt"
       }
     ]
   },
@@ -374,6 +378,10 @@ window.GUIDES=[
       {
         "title": "Advanced Lorebook Guide For Authors",
         "url": "https://discord.com/channels/1108377954389594236/1461684278311256090/1461684278311256090"
+      },
+      {
+        "title": "Hunter — Unified Lorebook LLM Production System v6",
+        "url": "/llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt"
       }
     ]
   },
@@ -399,6 +407,10 @@ window.GUIDES=[
       {
         "title": "Explaining memory (tokens) in laymen's terms",
         "url": "https://discord.com/channels/1108377954389594236/1539244941673238528/1539244941673238528"
+      },
+      {
+        "title": "Hunter — Unified Lorebook LLM Production System v6",
+        "url": "/llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt"
       }
     ]
   },
@@ -428,6 +440,10 @@ window.GUIDES=[
       {
         "title": "Working on an in-depth magic/combat system",
         "url": "https://discord.com/channels/1108377954389594236/1456871167267700736/1456871167267700736"
+      },
+      {
+        "title": "Hunter — Unified Lorebook LLM Production System v6",
+        "url": "/llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt"
       }
     ]
   },
