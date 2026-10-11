@@ -34,7 +34,7 @@ SpicyChat Guides is an independent community project and is not affiliated with,
 ## Hunter's original documents (October 2026)
 
 - `/llm/hunter/` — inventory of nine current source files supplied by Hunter.
-- `/llm/hunter-files.json` — file/version catalog and upload status.
-- `/llm/originals/` — intended location of the exact originals. GitHub currently has an explanatory README in this folder; the nine original source files are in the separate upload-ready ZIP until the binary/text files are uploaded through GitHub.
+- `/llm/hunter-files.json` — file/version catalog, verified filenames/sizes and download links.
+- `/llm/originals/` — all nine originals are uploaded, including the `.docx`, with a manifest recording filenames, sizes and SHA-256 digests.
 
 Selected human guides have already been expanded with clearly labeled concepts from these originals. The original files themselves must not be replaced with those edited human versions.
