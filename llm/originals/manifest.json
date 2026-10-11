@@ -1,0 +1,50 @@
+{
+  "source": "Files supplied by Hunter (October 2026)",
+  "original_files": [
+    {
+      "filename": "Multi-Character LLM Guide v2.txt",
+      "bytes": 26130,
+      "sha256": "46b11ede3481bfd15ef0a4ee0f6bcc8663360b8fd62b08562d6b27c2425f8b34"
+    },
+    {
+      "filename": "Research LLM Guide v1.txt",
+      "bytes": 66824,
+      "sha256": "f7b916333217cd091bc6645ffbf8cdb86f5a6f09ad6f461c4c5935fc9660659a"
+    },
+    {
+      "filename": "Single Character LLM Guide v5.txt",
+      "bytes": 20966,
+      "sha256": "d6f32e527bee8e16f56d8e2029607f58a570e37df7ec1d89e34fcfcb900c8fc8"
+    },
+    {
+      "filename": "SpicyChat_Reference v1.md",
+      "bytes": 16587,
+      "sha256": "fb544c0fce9524c71bfd9cb00efb483071d913b0aaf101aaac615643b2fd8718"
+    },
+    {
+      "filename": "TTRPG LLM Guide v1.txt",
+      "bytes": 58313,
+      "sha256": "2078b366de0d2bbfd16d8f1b14718c377cbee00e12f90563b99901fc9ef326da"
+    },
+    {
+      "filename": "Tagging & Discovery LLM Guide v2.txt",
+      "bytes": 13968,
+      "sha256": "6f8b89995ad267ae2b4eaacf520c0e1f67fea16b9c265878e06f1d1262dbb817"
+    },
+    {
+      "filename": "Understanding SpicyChat.AI.docx",
+      "bytes": 329975,
+      "sha256": "859639215f15b89d6012260e0b0e60f89bae8d654162a6518938ff89676e9805"
+    },
+    {
+      "filename": "Unified_Lorebook_LLM_Production_System_v4.txt",
+      "bytes": 68878,
+      "sha256": "e8de38c15ccae4b54c2228071bbf22c5c7fe52d51396484e049085948673670f"
+    },
+    {
+      "filename": "World Bot LLM Guide v1.txt",
+      "bytes": 32624,
+      "sha256": "91621a738866a70b68357bf5d359dc8007f99c8881865b571d8d28fc576e64c2"
+    }
+  ]
+}

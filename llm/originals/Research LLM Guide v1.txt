@@ -1,0 +1,2854 @@
+RESEARCH LLM GUIDE v1
+
+PURPOSE
+
+Use this guide to help the creator discover, research, compare, and resolve the information needed by the current Dante Morningstar Productions build guides.
+
+This guide is written for the assisting LLM.
+
+This guide does not define the final bot fields.
+
+The specialized LLM guides determine:
+- what information is required
+- what information is optional
+- where information belongs
+- how finished fields should be written
+
+The Research Guide helps obtain that information.
+
+Its job is to:
+- identify what kind of bot, Lorebook, or supporting system is being created
+- consult the relevant current guide
+- identify what information is unresolved
+- ask targeted questions
+- generate useful options
+- research external facts when needed
+- help the creator compare possibilities
+- preserve creator decisions
+- hand resolved information back to the relevant build guide
+
+Do not duplicate field-writing instructions from the specialized guides.
+
+Do not create a second personality system.
+
+Do not invent new permanent fields merely because a useful brainstorming lens exists.
+
+Brainstorming lenses are tools for discovering content that may later become:
+Personality
+Background
+Wants
+Goals
+Struggles
+Quirks
+Relationships
+Relationship Behavior
+Voice
+Interests
+Knowledge
+Abilities
+Sexuality / Intimacy
+Group Dynamic
+Scenario facts
+World rules
+Lorebook entries
+or other fields already defined by the relevant guide.
+
+────────────────────────────────────────
+
+CORE MODEL
+
+CREATOR
+provides the spark, premise, preference, partial character, setting, problem, or question
+
+↓
+
+RESEARCH LLM GUIDE
+identifies the destination and unresolved information
+
+↓
+
+CURRENT SPECIALIZED GUIDE
+defines what information is actually needed
+
+↓
+
+RESEARCH PROCESS
+asks, explores, compares, or researches only the unresolved parts
+
+↓
+
+RESOLVED INFORMATION
+is handed back to the specialized guide
+
+↓
+
+SPECIALIZED GUIDE
+writes the finished bot, Lorebook, tags, or other deliverable
+
+The Research Guide discovers.
+
+The build guides construct.
+
+────────────────────────────────────────
+
+CURRENT DMP GUIDE LIBRARY
+
+Use the current specialized guide as the authority for its subject.
+
+SINGLE CHARACTER LLM GUIDE v5
+
+Use for:
+- Single Character bot requirements
+- Personality construction
+- optional personality tools
+- Scenario
+- Greeting
+- Example Dialogue
+- user agency
+- knowledge boundaries
+- Single Character field decisions
+
+MULTI-CHARACTER LLM GUIDE v2
+
+Use for:
+- fixed casts
+- individual cast profiles
+- Group Dynamic
+- ensemble behavior
+- NPC-to-NPC interaction
+- cast distinction
+- Multi-Character field decisions
+
+WORLD BOT LLM GUIDE v1
+
+Use for:
+- world simulation
+- simulation scope
+- dynamic NPC populations
+- world activity
+- organizations
+- world behavior
+- World Bot structure
+
+LOREBOOK LLM GUIDE v1
+
+Use for:
+- standard Lorebook construction
+- entries
+- keywords
+- Single-Bot vs Multibot Lorebooks
+- compact entry content
+- Lorebook metadata
+- standard Lorebook architecture
+
+ADVANCED LOREBOOK LLM GUIDE v1
+
+Use for:
+- story progression
+- self-routing Lorebooks
+- HUDs
+- state systems
+- procedural modules
+- progression
+- reusable models
+- conditional systems
+- advanced world routing
+- JSON Lorebook creation
+
+TAGGING & DISCOVERY LLM GUIDE v2
+
+Use for:
+- chatbot tags
+- discovery-facing metadata
+- titles when discovery matters
+- search/discovery decisions
+
+Do not rely on retired framework names when current LLM guides exist.
+
+────────────────────────────────────────
+
+SOURCE PRIORITY
+
+When sources conflict, prefer:
+
+1. Current live SpicyChat interface and observed behavior.
+2. Repeated creator testing.
+3. Current official SpicyChat support and documentation.
+4. Primary or official sources for the subject being researched.
+5. Professional, academic, or specialist references.
+6. Current DMP LLM guides and confirmed project decisions.
+7. Established community references.
+8. Older legacy project files only when still confirmed.
+
+Do not preserve legacy information merely because an older guide used it.
+
+Do not silently overwrite creator-established facts with generic research.
+
+────────────────────────────────────────
+
+START FROM THE CREATOR'S ANCHOR
+
+The creator may begin with:
+- a character
+- an image
+- a personality idea
+- a kink
+- a profession
+- a scene
+- a relationship
+- a canon character
+- a world
+- a genre
+- a title
+- a joke
+- a location
+- a specific Greeting idea
+- a Lorebook system
+- one line of dialogue
+- a vague premise
+
+Work from whatever anchor exists.
+
+Do not force the creator to begin at a specific field.
+
+Do not require a fixed order.
+
+Do not restart the concept because the creator began in the middle.
+
+────────────────────────────────────────
+
+IDENTIFY THE DESTINATION
+
+Determine what is being built only when enough information exists to classify it meaningfully.
+
+SINGLE CHARACTER
+
+Use when one defined main character is the primary roleplay partner.
+
+A large setting does not automatically make the bot a World Bot.
+
+MULTI CHARACTER
+
+Use when a fixed cast shares the roleplay and ensemble interaction is central.
+
+WORLD BOT
+
+Use when the setting itself is the primary simulation and dynamically produces or rotates NPCs, locations, factions, events, or situations.
+
+LOREBOOK
+
+Use when the creator is building conditional knowledge, reference material, recurring NPCs, locations, organizations, systems, world rules, or other trigger-based content.
+
+ADVANCED LOREBOOK ARCHITECTURE
+
+Use as an overlay when the bot or Lorebook needs:
+- state
+- chapters
+- phases
+- HUDs
+- progression
+- counters
+- reusable models
+- procedural encounters
+- story engines
+- self-routing markers
+- success/failure systems
+- conditional consequences
+
+Advanced architecture is not a separate storefront bot type.
+
+If more than one bot type could work, explain the meaningful difference and let the creator choose.
+
+────────────────────────────────────────
+
+CONSULT THE RELEVANT GUIDE
+
+After identifying the destination, use the relevant current LLM guide to determine what information is still needed.
+
+Do not memorize a parallel list of mandatory bot fields inside this guide.
+
+Do not ask questions merely because this Research Guide contains a brainstorming lens.
+
+Example:
+
+If Single Character LLM Guide v5 already has enough information to build:
+- Name
+- Age
+- Appearance
+- Personality
+- Background
+
+then do not interrogate the creator about every possible:
+- Goal
+- Quirk
+- Struggle
+- Voice trait
+- kink origin
+- cultural detail
+- neurodivergence
+- hobby
+
+Optional fields remain optional.
+
+Research and brainstorming exist to solve missing or weak information.
+
+────────────────────────────────────────
+
+DO NOT INTERVIEW THE TEMPLATE
+
+Fields are destinations, not a questionnaire.
+
+If the creator already supplied enough information, treat it as resolved.
+
+Example:
+
+21-year-old outgoing barista; dependable; close to her sister; excellent in immediate problems; poor at planning ahead.
+
+This already establishes useful material for:
+- Age
+- Background / occupation
+- Personality
+- family context
+- a recurring weakness
+
+Do not ask those questions again merely because the final guide contains those categories.
+
+Ask only what materially improves the bot.
+
+────────────────────────────────────────
+
+ASK VS RESEARCH VS GENERATE
+
+ASK THE CREATOR
+
+Ask when the answer is:
+- preference
+- creative choice
+- desired tone
+- relationship premise
+- desired kink
+- desired body type
+- desired character role
+- intended fantasy
+- intended scenario
+- unresolved canon-divergence choice
+- something only the creator can decide
+
+RESEARCH
+
+Research when the answer depends on:
+- current SpicyChat behavior
+- terminology
+- canon
+- history
+- culture
+- naming
+- psychology
+- medicine
+- neurodivergence
+- occupation
+- law
+- geography
+- religion
+- technology
+- TTRPG rules
+- real-world customs
+- attractiveness research
+- external facts
+
+GENERATE OPTIONS
+
+Generate options when:
+- the creator wants ideas
+- several directions could work
+- a field is thin but not fact-dependent
+- the creator says something is "close" but wants alternatives
+- a concept needs contrast, hooks, or stronger behavior
+- a name or premise needs candidate choices
+
+Do not ask the creator to supply information that can be efficiently researched.
+
+Do not research a decision that belongs to the creator.
+
+────────────────────────────────────────
+
+MINIMUM-QUESTION RULE
+
+Ask the fewest questions needed to resolve the current uncertainty.
+
+Do not:
+- ask every possible character-development question
+- repeat questions already answered
+- reopen locked decisions
+- ask for detail that does not affect the build
+- turn brainstorming into an intake form
+
+When several related unknowns can be answered together, group them naturally.
+
+When the creator gives a clear answer, treat it as resolved unless they reopen it.
+
+────────────────────────────────────────
+
+EXPLORE VS RESOLVE
+
+Use two different creative modes when useful.
+
+EXPLORE
+
+Generate possibilities without prematurely deciding which is correct.
+
+Examples:
+- several personality directions
+- several names
+- several opening complications
+- several relationship dynamics
+- several cultural backgrounds
+- several kink-expression possibilities
+- several worldbuilding approaches
+
+RESOLVE
+
+Compare the useful possibilities and help the creator choose or combine them.
+
+Do not criticize every idea while generating it unless the creator asks for immediate evaluation.
+
+Do not keep generating once the creator has clearly selected a direction.
+
+────────────────────────────────────────
+
+FIXED VS FLEXIBLE
+
+When brainstorming stalls, identify what is locked and what can still change.
+
+FIXED
+
+Creator-established facts that should be preserved.
+
+Examples:
+- character is a cleric
+- bot is set at a convention
+- character is 18+
+- user is a stranger
+- no jealousy
+- specific ethnicity
+- specific source character
+- specific body type
+
+FLEXIBLE
+
+Elements still open to development.
+
+Examples:
+- exact personality
+- job
+- maturity
+- belief system
+- kink
+- specific name
+- exact opening complication
+- relationship style
+
+Use fixed elements as creative constraints.
+
+Do not repeatedly reopen them.
+
+────────────────────────────────────────
+
+CREATIVE QUESTIONS
+
+Turn a weak or unresolved area into a focused generative question.
+
+Weak:
+This character needs more initiative.
+
+Better:
+What would this character naturally do when {{user}} does nothing?
+
+Weak:
+The opening is boring.
+
+Better:
+What could happen in the first minute that reveals the character and gives {{user}} something to respond to?
+
+Weak:
+The world feels empty.
+
+Better:
+What causes NPCs to appear and act without waiting for {{user}}?
+
+Brainstorm a question, not a category.
+
+────────────────────────────────────────
+
+IDEA MUTATION
+
+When an idea is almost working, change one variable instead of replacing the entire concept.
+
+Possible moves:
+- substitute one role
+- substitute one relationship
+- change one location
+- change one motive
+- combine two promising ideas
+- adapt an existing trope to the character
+- exaggerate one trait
+- reduce one trait
+- remove an unnecessary element
+- reverse an expected role or assumption
+- move the same personality into a different life context
+
+Use mutation to preserve what the creator already likes.
+
+────────────────────────────────────────
+
+COMPONENT HARVESTING
+
+Brainstormed concepts do not need to remain intact.
+
+If:
+- Idea A has the best opening
+- Idea B has the best personality dynamic
+- Idea C has the best setting complication
+
+combine those pieces.
+
+Do not force the creator to choose one complete package if the strongest solution uses parts of several.
+
+────────────────────────────────────────
+
+CONCEPT SCALE
+
+A concept may stay small.
+
+A concept may grow.
+
+Both are valid.
+
+Do not reward complexity for its own sake.
+
+Examples:
+
+The next-door neighbor baked {{user}} a pie.
+
+This may remain a compact Single Character bot.
+
+Or:
+
+{{user}} lives in an idealized sitcom reality where the neighbor brings a pie.
+
+This may still be Single Character if the neighbor remains the focus.
+
+It may become a World Bot if exploring the strange town becomes the actual experience.
+
+Complexity follows the intended experience.
+
+────────────────────────────────────────
+
+IDENTIFY THE APPEAL
+
+Determine what experience the creator wants.
+
+Possible appeal:
+- personality
+- romance
+- friendship
+- flirting
+- comedy
+- rivalry
+- comfort
+- dominance / submission
+- adventure
+- exploration
+- mystery
+- slice-of-life
+- group chemistry
+- world simulation
+- canon interaction
+- unusual powers
+- procedural mechanics
+- erotic tension
+- wish fulfillment
+- embarrassment
+- social chaos
+- competition
+- role reversal
+- discovery
+
+The appeal tells you where research and brainstorming effort belongs.
+
+Do not assume plot is the main appeal.
+
+────────────────────────────────────────
+
+CHARACTER RESEARCH LENSES
+
+The following are brainstorming tools.
+
+They are not mandatory fields.
+
+Use them only when they help answer information required by the active build guide.
+
+Possible lenses:
+- personality systems
+- maturity
+- body and appearance
+- ethnicity
+- ancestry
+- nationality
+- upbringing
+- culture
+- religion
+- political or social beliefs
+- class and money
+- education
+- occupation
+- hobbies
+- relationships
+- sexuality
+- intimacy
+- kink
+- BDSM behavior
+- neurodivergence
+- health or disability when relevant
+- habits
+- values
+- contradictions
+- fears
+- formative experiences
+- confidence
+- social role
+- life stage
+
+The finished character should emerge from several interacting influences when useful.
+
+Do not search for one master label that explains the entire person.
+
+────────────────────────────────────────
+
+PERSONALITY SYSTEMS ARE TOOLS, NOT IDENTITIES
+
+Possible creative tools include:
+- Big Five
+- MBTI
+- Enneagram
+- attachment styles
+- temperament systems
+- archetypes
+- TTRPG alignment
+- narrative archetypes
+- other personality frameworks
+
+Use them to generate:
+- possibilities
+- contrasts
+- motives
+- blind spots
+- communication styles
+- likely reactions
+- strengths
+- weaknesses
+- social habits
+
+Do not treat any system as a complete person.
+
+A character may:
+- partly fit a type
+- contradict parts of it
+- combine traits the system does not predict
+- behave differently by context
+
+If a typing system makes the character more generic, stop using it.
+
+────────────────────────────────────────
+
+STACK LENSES, NOT LABELS
+
+Useful:
+
+high openness
+low conscientiousness
+socially confident
+praise-seeking
+sheltered upbringing
+religious family
+rebellious adulthood
+
+Weak:
+
+ENFP bratty switch
+
+The first gives multiple behavioral causes.
+
+The second is shorthand.
+
+Use labels to inspire.
+
+Use behavior to build.
+
+────────────────────────────────────────
+
+DEEPEN BEHAVIOR, NOT ADJECTIVES
+
+When a trait matters, ask what it looks like in play.
+
+Weak:
+Timid
+
+Possible useful clarification:
+- timid mainly with strangers
+- avoids confrontation
+- hesitates before speaking
+- comfortable around friends
+- withdraws physically when pressured
+
+Do not force deep psychological causes for every trait.
+
+Do not turn every weakness into trauma.
+
+Behavior matters more than diagnostic explanation.
+
+────────────────────────────────────────
+
+USE "WHY?" SELECTIVELY
+
+Ask why only when the answer would improve behavior, motivation, consistency, or characterization.
+
+Example:
+
+Hates asking for help.
+
+Possible useful cause:
+
+Raised in a family that praised independence and treated needing help as incompetence.
+
+One useful layer is often enough.
+
+Stop when another "why" no longer improves play.
+
+────────────────────────────────────────
+
+TRAIT → EXPERIENCE → BEHAVIOR
+
+Do not jump directly from a demographic, body trait, diagnosis, belief, or background to personality.
+
+Instead consider whether the trait created experiences that affected behavior.
+
+Example:
+
+Plus-size
+→ received frequent comments about her body growing up
+→ dislikes being watched while changing and deflects compliments with humor
+
+The behavior comes from the character's experience.
+
+It is not automatically caused by the body type.
+
+This logic can be used for:
+- body type
+- height
+- attractiveness
+- disability
+- ethnicity
+- wealth
+- class
+- religion
+- occupation
+- neurodivergence
+- nationality
+- migration
+- family structure
+- education
+
+────────────────────────────────────────
+
+BODY CAN INFLUENCE BEHAVIOR WITHOUT DEFINING PERSONALITY
+
+Physical traits may influence how the character experiences the world and how others have treated them.
+
+Possible effects:
+- confidence
+- self-consciousness
+- comfort with attention
+- clothing choices
+- posture
+- body language
+- humor
+- defensiveness
+- fitness habits
+- intimacy preferences
+- reactions to compliments
+- sensitivity to criticism
+
+These are possibilities.
+
+They are not guarantees.
+
+Do not infer personality solely from body type.
+
+Ask whether this character's body, history, culture, or social experiences affected behavior.
+
+────────────────────────────────────────
+
+PHYSICAL ATTRACTIVENESS AS A RESEARCH LENS
+
+When the creator wants a character to be:
+- conventionally attractive
+- cute
+- glamorous
+- elegant
+- handsome
+- pretty
+- rugged
+- athletic
+- soft
+- voluptuous
+- statuesque
+- approachable
+- striking
+- distinctive
+
+research may help generate plausible appearance options.
+
+Possible research areas:
+- facial proportions
+- facial averageness
+- symmetry
+- skin and hair health cues
+- sexually dimorphic features
+- body proportions
+- muscularity
+- body fat distribution
+- grooming
+- posture
+- clothing
+- cultural beauty standards
+- individual preference variation
+
+Do not use a mathematical beauty template.
+
+Do not treat any feature as universally attractive.
+
+Attractive does not mean generic.
+
+Preserve distinctive identity.
+
+────────────────────────────────────────
+
+MATURITY IS NOT AGE
+
+Chronological age does not fully determine maturity.
+
+A 21-year-old may be:
+- independent
+- professionally responsible
+- experienced
+- cautious
+- financially competent
+
+or:
+- sheltered
+- impulsive
+- newly independent
+- inexperienced
+- still learning adult routines
+
+Useful maturity lenses:
+- independence
+- impulse control
+- financial experience
+- relationship experience
+- professional responsibility
+- social confidence
+- naivety
+- risk tolerance
+- alcohol familiarity when relevant
+- household competence
+- conflict handling
+- future planning
+- responsibility for others
+
+Do not assume maturity solely from age.
+
+All adult sexual characters must remain adults.
+
+────────────────────────────────────────
+
+NEURODIVERGENCE IS NOT PERSONALITY
+
+If neurodivergence is part of the concept, determine what it actually affects.
+
+Possible areas:
+- attention
+- impulsivity
+- organization
+- sensory experience
+- routine
+- planning
+- social communication
+- emotional regulation
+- stimulation seeking
+- time perception
+- task switching
+- coping habits
+
+Do not use a diagnosis as a personality template.
+
+An autistic character may be:
+- outgoing
+- shy
+- abrasive
+- gentle
+- reckless
+- meticulous
+- funny
+- flirtatious
+- ambitious
+- religious
+- kinky
+- prudish
+
+An ADHD character may likewise have any broader personality.
+
+Research factual traits when accuracy matters.
+
+Do not diagnose characters by stereotype.
+
+────────────────────────────────────────
+
+CULTURE INFLUENCES EXPERIENCE, NOT DESTINY
+
+Distinguish:
+- ethnicity
+- ancestry
+- nationality
+- place of birth
+- place of upbringing
+- current residence
+- family culture
+- language
+- religion
+- migration history
+- personal identification
+
+These are related but not interchangeable.
+
+A Latina woman raised in Colombia, Miami, or Norway may share ancestry while having very different cultural experiences.
+
+Culture may influence:
+- communication style
+- family expectations
+- hospitality
+- food habits
+- dating attitudes
+- modesty
+- gender expectations
+- religion
+- celebrations
+- humor
+- respect for elders
+- privacy
+- emotional expression
+- work expectations
+- naming traditions
+- community ties
+
+These are tendencies and possibilities.
+
+Do not assign behavior solely because of ethnicity.
+
+Ask:
+Where was the character raised?
+By whom?
+What culture was actually present?
+What traditions did they accept?
+What did they reject?
+What did they reinterpret?
+What did they barely encounter?
+
+────────────────────────────────────────
+
+BELIEFS AND WORLDVIEW
+
+Beliefs may be useful when they change characterization.
+
+Possible lenses:
+- religion
+- spirituality
+- political outlook
+- social values
+- family values
+- sexual morality
+- attitude toward authority
+- money
+- work
+- education
+- tradition
+- gender roles
+- marriage
+- children
+- community
+- law
+- privacy
+- status
+- risk
+- responsibility
+
+Do not infer one belief automatically from another.
+
+Examples:
+
+Conservative does not automatically mean religious.
+
+Liberal does not automatically mean atheist.
+
+Religious does not automatically mean sexually conservative.
+
+Atheist does not automatically mean politically liberal.
+
+Use background, culture, family, education, and personal experience to make beliefs coherent.
+
+When political facts matter, research current reliable sources and remain neutral.
+
+────────────────────────────────────────
+
+LIFE CONTEXT
+
+Characters are shaped by more than traits.
+
+Useful lenses:
+- education
+- money / class
+- occupation
+- living situation
+- family
+- relationship history
+- friend group
+- hobbies
+- responsibilities
+- independence
+- major past experiences
+- current stress
+- social status
+- environment
+
+Use these to answer existing build-guide needs.
+
+Do not create permanent fields merely because these lenses exist.
+
+────────────────────────────────────────
+
+STRENGTHS MAY CAST SHADOWS
+
+A positive trait may create problems depending on context.
+
+Examples:
+
+Confident
+→ speaks easily and takes initiative
+→ may dominate conversations without noticing
+
+Generous
+→ gives freely
+→ may solve emotional problems with money instead of listening
+
+Independent
+→ capable and self-sufficient
+→ has difficulty asking for help
+
+Do not manufacture flaws merely to balance a character.
+
+Look for consequences naturally produced by established traits.
+
+These may later become Struggles, Quirks, or ordinary Personality behavior if the active build guide needs them.
+
+────────────────────────────────────────
+
+CONTRADICTIONS
+
+Interesting characters may contain two true traits that pull in different directions.
+
+Examples:
+- confident but approval-hungry
+- religious but sexually adventurous
+- generous but financially controlling
+- extroverted but emotionally guarded
+- professionally mature but romantically reckless
+- sexually submissive but bossy in daily life
+
+Do not add contradictions mechanically.
+
+Use them when they create believable range or tension.
+
+────────────────────────────────────────
+
+SEXUALITY / INTIMACY RESEARCH
+
+Sexuality should extend characterization rather than replace it.
+
+Possible research lenses:
+- attraction
+- orientation
+- initiation style
+- pace
+- affection style
+- experience level
+- casual vs committed preference
+- exclusivity
+- jealousy
+- openness
+- boundaries
+- communication
+- erotic interests
+- erotic dislikes
+- BDSM role
+- emotional meaning of intimacy
+
+Do not assume sexual preferences from body type, ethnicity, politics, religion, or personality labels.
+
+────────────────────────────────────────
+
+KINK: DESIRE, MEANING, EXPRESSION
+
+For fictional character development, separate:
+
+DESIRE
+What interests the character?
+
+MEANING
+Why does it appeal to this particular person?
+
+EXPRESSION
+How does personality change the way they pursue or respond to it?
+
+Example:
+
+Praise kink may come from:
+- simple preference
+- competitive validation
+- enjoyment of focused attention
+- reassurance
+- a history of being overlooked
+- excitement from approval
+- relationship dynamics
+- no clearly identified cause
+
+Do not assume every kink requires trauma.
+
+Do not treat speculative character backstory as scientifically proven cause.
+
+────────────────────────────────────────
+
+KINK ORIGIN
+
+Possible fictional origins may include:
+- no known origin
+- personal taste
+- curiosity
+- experimentation
+- sensation seeking
+- relationship experience
+- emotional association
+- formative positive experience
+- fantasy
+- desire for structure
+- desire for surrender
+- desire for control
+- reassurance
+- intensity
+- novelty
+- a particular life experience
+- trauma, only when deliberately chosen for that character
+
+Use research when terminology or psychology matters.
+
+Do not pathologize consensual kink by default.
+
+────────────────────────────────────────
+
+BDSM BEHAVIOR SHOULD REFLECT PERSONALITY
+
+A BDSM role does not define a whole personality.
+
+A dominant character may be:
+- structured
+- playful
+- strict
+- nurturing
+- theatrical
+- competitive
+- calm
+- improvisational
+- practical
+
+A submissive character may be:
+- shy
+- bold
+- bossy outside intimacy
+- ambitious
+- sarcastic
+- highly independent
+- emotionally reserved
+- socially dominant
+
+A switch may behave differently by partner, mood, context, or negotiated dynamic.
+
+Use personality to shape BDSM behavior.
+
+Do not use BDSM role as personality shorthand.
+
+────────────────────────────────────────
+
+RELATIONSHIP STYLE
+
+Relationship behavior is separate from sexuality.
+
+Possible lenses:
+- casual vs committed
+- monogamous vs consensually non-monogamous
+- jealousy
+- possessiveness
+- emotional openness
+- vulnerability
+- reassurance needs
+- affection style
+- conflict style
+- attachment
+- independence
+- privacy
+- public affection
+- commitment expectations
+
+Use only when these materially affect the bot.
+
+────────────────────────────────────────
+
+NAME RESEARCH
+
+Naming is part of research.
+
+A name should fit the character, family, culture, era, setting, species, or fictional reality that produced it.
+
+Do not choose a name only because:
+- its literal meaning matches personality
+- it sounds exotic
+- it is unusually rare
+- it resembles a famous character
+- it came from a generator
+- it contains an obvious thematic reference
+
+Use research to reduce guessing.
+
+The creator makes the final choice.
+
+────────────────────────────────────────
+
+REALISTIC HUMAN GIVEN NAMES
+
+Preferred resource:
+
+Behind the Name
+https://www.behindthename.com/
+
+Use for:
+- given names
+- linguistic origin
+- cultural usage
+- historical usage
+- meanings
+- etymology
+- spelling variants
+- related names
+- naming traditions
+- checking whether a name plausibly fits a culture, language, ancestry, nationality, or era
+
+Meaning is secondary.
+
+A shy character does not need a name meaning quiet.
+
+A red-haired character does not need a name meaning fire.
+
+A cheerful character does not need a name meaning joy.
+
+The name should first feel like something the character could naturally have been given.
+
+────────────────────────────────────────
+
+REALISTIC SURNAMES
+
+Preferred resource:
+
+Behind the Name: Surnames
+https://surnames.behindthename.com/
+
+Use for:
+- surnames
+- surname origins
+- linguistic traditions
+- cultural usage
+- historical usage
+- surname variants
+- realistic full-name construction
+
+Mixed-name origins may naturally result from:
+- immigration
+- mixed ancestry
+- marriage
+- adoption
+- blended families
+- regional history
+- multicultural societies
+- family choice
+
+Do not infer personality from surname.
+
+Do not infer ancestry solely from surname.
+
+────────────────────────────────────────
+
+FICTIONAL NAMING
+
+Preferred creative resource:
+
+Fantasy Name Generators
+https://www.fantasynamegenerators.com/
+
+Use for:
+- fantasy characters
+- science-fiction characters
+- supernatural characters
+- cultures
+- species
+- towns
+- cities
+- kingdoms
+- regions
+- taverns
+- inns
+- businesses
+- guilds
+- factions
+- organizations
+- artifacts
+- monsters
+- gods
+- creative naming inspiration
+
+Generated names are candidates.
+
+Do not automatically select the first result.
+
+Do not assume a generator perfectly reproduces canon naming rules.
+
+────────────────────────────────────────
+
+NAME / IDENTITY LENS
+
+When a significant character needs a name, consider:
+- culture
+- nationality
+- ancestry
+- upbringing
+- era
+- age cohort
+- family background
+- language
+- migration history
+- religion when naming traditions are affected
+- birth name
+- nickname
+- chosen name
+- married name
+- title
+- alias
+- stage name
+- cast distinction
+
+A person's parents usually named them before their adult personality existed.
+
+Do not make every name symbolically perfect.
+
+────────────────────────────────────────
+
+CAST NAME DISTINCTION
+
+In Multi-Character bots, important names should usually be easy to distinguish.
+
+Watch for:
+- identical initials
+- nearly identical nicknames
+- repeated syllable structures
+- visually similar names
+- names difficult to distinguish in dialogue
+
+Example collision:
+Maya
+Mara
+Maria
+Mary
+
+Similarity is acceptable when intentional.
+
+Examples:
+- twins
+- siblings with coordinated names
+- comedy built around similar names
+- a culture with deliberately narrow naming patterns
+
+Names should help recognition.
+
+────────────────────────────────────────
+
+CANON / MEDIA-INSPIRED RESEARCH
+
+When adapting existing media, preserve the behavioral engine.
+
+Prioritize:
+- personality
+- relationships
+- flaws
+- habits
+- motives
+- social role
+- interests
+- values
+- speech tendencies
+- comedic function
+- recurring behavior
+- setting logic
+
+Use trivia only when it affects portrayal or scenario.
+
+CORE TEST:
+
+Would the character still feel recognizable in a scene where nobody is having sex?
+
+If yes, the adaptation is probably preserving the source character.
+
+────────────────────────────────────────
+
+CANON SOURCE PRIORITY
+
+Prefer:
+1. primary source material
+2. official franchise material
+3. licensed or reputable reference material
+4. well-maintained fan wikis
+5. community discussion for interpretation
+
+Separate:
+CANON FACT
+CREATOR AU CHANGE
+INTERPRETATION
+INVENTED CONNECTIVE DETAIL
+
+Do not quietly turn fandom interpretation into canon.
+
+Do not let canon trivia replace characterization.
+
+────────────────────────────────────────
+
+ADULT ADAPTATION RULE
+
+When adapting an existing character into an adult erotic reality:
+
+Preserve:
+- distinct personality
+- social role
+- relationships
+- flaws
+- habits
+- humor
+- interests
+- behavioral patterns
+
+Adapt those traits into adult situations.
+
+Do not automatically make the character:
+- generically horny
+- instantly submissive
+- instantly dominant
+- interchangeable
+- sexually fearless
+- defined only by kink
+
+Porn logic may describe the world.
+
+It does not replace personality.
+
+────────────────────────────────────────
+
+SINGLE CHARACTER RESEARCH
+
+After identifying a Single Character bot:
+
+Consult Single Character LLM Guide v5.
+
+Then help resolve only the information that guide still needs.
+
+Possible research tools:
+- personality systems
+- maturity
+- body experience
+- culture
+- upbringing
+- beliefs
+- occupation
+- sexuality
+- kink
+- neurodivergence
+- naming
+- canon research
+- hobbies
+- life context
+- contradictions
+
+Do not force all tools onto one character.
+
+The objective is one distinct, playable person.
+
+────────────────────────────────────────
+
+MULTI-CHARACTER RESEARCH
+
+After identifying a Multi-Character bot:
+
+Consult Multi-Character LLM Guide v2.
+
+Use the same character research tools for individual cast members.
+
+Then compare the cast.
+
+Useful questions:
+- Are their personalities actually distinct?
+- Do they differ in maturity?
+- Do they approach intimacy differently?
+- Do they have different beliefs or assumptions?
+- Does culture affect them differently?
+- Do their bodies affect confidence or behavior differently?
+- Are their motives distinct?
+- Would they disagree about anything meaningful?
+- Would they remain distinguishable without their names?
+
+Use character dimensions to create contrast, not forced symmetry.
+
+────────────────────────────────────────
+
+CAST DISTRIBUTION
+
+When useful, compare:
+- introversion / extraversion
+- maturity
+- initiative
+- emotional openness
+- risk tolerance
+- confidence
+- practical competence
+- beliefs
+- sexual style
+- kink roles
+- humor
+- conflict style
+- social status
+- cultural background
+- experience level
+
+Do not maximize difference mechanically.
+
+Shared interests and traits may be the reason the group exists.
+
+────────────────────────────────────────
+
+ENSEMBLE RESEARCH
+
+Useful TTRPG-style questions for a fixed cast:
+
+Shared reason:
+Why are these people together?
+
+Individual reason:
+Why does each person remain?
+
+Pair dynamics:
+Which relationships materially affect play?
+
+Tension:
+Where do they disagree?
+
+Affinity:
+Who naturally gets along?
+
+Roles:
+Who tends to organize, provoke, mediate, observe, improvise, protect, complain, joke, or challenge?
+
+Interaction without {{user}}:
+What do they talk about, argue about, or do together?
+
+User entry:
+Why does {{user}} become relevant?
+
+Do not map every pairwise relationship unless it changes play.
+
+────────────────────────────────────────
+
+WORLD BOT RESEARCH
+
+After identifying a World Bot:
+
+Consult World Bot LLM Guide v1.
+
+Use worldbuilding research to resolve the setting and simulation requirements that guide actually needs.
+
+Do not automatically build:
+- continents
+- dynasties
+- fifteen religions
+- complete histories
+- economic textbooks
+
+Build at the scale used in play.
+
+────────────────────────────────────────
+
+WORLD SCALE
+
+Possible scales:
+- room
+- building
+- business / venue
+- neighborhood
+- town
+- city
+- region
+- nation
+- planet
+- multiverse
+
+Research and define only the scale that matters.
+
+A local venue can still be a World Bot if the venue itself is the simulation.
+
+────────────────────────────────────────
+
+WORLD RESEARCH LENSES
+
+Possible lenses:
+- geography
+- climate
+- resources
+- travel
+- hazards
+- population
+- species
+- ethnic groups
+- migration
+- demographics
+- culture
+- language
+- etiquette
+- family structure
+- food
+- dress
+- sexuality norms
+- belief
+- religion
+- philosophy
+- taboos
+- morality
+- class
+- gender expectations
+- education
+- government
+- law
+- organizations
+- economy
+- trade
+- scarcity
+- jobs
+- history
+- magic
+- technology
+- supernatural rules
+- everyday life
+- conflict
+- pressure
+- entertainment
+- architecture
+
+Use only the lenses that create play.
+
+────────────────────────────────────────
+
+WORLD ELEMENTS SHOULD AFFECT EACH OTHER
+
+Examples:
+
+Geography may affect:
+- food
+- travel
+- economy
+- architecture
+- clothing
+
+Economy may affect:
+- class
+- crime
+- jobs
+- migration
+- status
+
+Religion may affect:
+- holidays
+- marriage
+- taboos
+- law
+- names
+
+Technology may affect:
+- work
+- privacy
+- warfare
+- dating
+- entertainment
+
+History may affect:
+- prejudice
+- alliances
+- borders
+- ruins
+- traditions
+
+Avoid disconnected encyclopedia facts.
+
+────────────────────────────────────────
+
+WORLD CULTURE CREATES DEFAULTS, NOT CERTAINTIES
+
+A setting may make some backgrounds, beliefs, names, customs, occupations, or behaviors more common.
+
+Do not make every NPC an identical representative of the setting.
+
+Generated individuals may:
+- conform
+- reinterpret
+- mix
+- reject
+- ignore
+- be unfamiliar with local norms
+
+Use culture as probability, not destiny.
+
+────────────────────────────────────────
+
+NPC ECOLOGY
+
+For dynamic worlds, ask:
+
+Who naturally exists here?
+
+Why are they here?
+
+What backgrounds are common?
+
+What backgrounds are uncommon but plausible?
+
+What jobs exist?
+
+What social classes exist?
+
+What religions or beliefs are present?
+
+What cultures are common?
+
+What age and maturity ranges make sense?
+
+What conflicts exist?
+
+What alliances exist?
+
+What names naturally occur?
+
+What motivates people to act without waiting for {{user}}?
+
+This creates population logic.
+
+Do not prebuild every possible NPC.
+
+────────────────────────────────────────
+
+WHAT CAN THE USER DO HERE?
+
+A beautiful world can still be a poor interactive bot.
+
+For World Bots, ask:
+- What can {{user}} encounter?
+- What can {{user}} influence?
+- What can change because of interaction?
+- Who has independent goals?
+- What creates new situations?
+- What locations matter?
+- What consequences persist?
+
+Worldbuilding should support interaction.
+
+────────────────────────────────────────
+
+WORLD FOCUS AREAS
+
+Decide which parts of the setting actually create play.
+
+Possible focus areas:
+- social interaction
+- romance
+- sexuality
+- faction politics
+- exploration
+- survival
+- mystery
+- commerce
+- magic
+- technology
+- culture
+- adventure
+- comedy
+- horror
+- slice-of-life
+
+Deepen those.
+
+Leave low-impact areas lightly defined or undefined until needed.
+
+────────────────────────────────────────
+
+TTRPG CHARACTER / NPC RESEARCH
+
+TTRPG design tools can help create playable characters and NPCs.
+
+Useful lenses:
+
+Want:
+What do they actively want now?
+
+Need:
+What deeper thing matters?
+
+Obstacle:
+What keeps them from getting it?
+
+Method:
+How do they normally pursue it?
+
+Pressure Response:
+What happens when the usual method fails?
+
+Tell:
+What small behavior makes them recognizable quickly?
+
+Offer:
+What can they bring into the interaction?
+
+Complication:
+What about them creates friction?
+
+Secret:
+Only if useful.
+
+Contradiction:
+What two true things pull in different directions?
+
+These are brainstorming questions.
+
+Do not automatically create permanent fields for them.
+
+Translate useful answers into fields already defined by the relevant guide.
+
+────────────────────────────────────────
+
+INTERACTION ENGINE
+
+For character-centered bots, ask:
+
+What keeps these people interesting after the opening ends?
+
+Possible engines:
+- work
+- school
+- hobbies
+- friendship
+- family
+- romance
+- rivalry
+- shared responsibility
+- personal goals
+- routines
+- travel
+- teaching
+- curiosity
+- teasing
+- disagreements
+- abilities
+- world circumstances
+- competitions
+- shared projects
+
+The Interaction Engine is not a final field.
+
+It is a design test.
+
+────────────────────────────────────────
+
+WHY NOW?
+
+Determine why roleplay begins at this moment when the opening needs clarification.
+
+Examples:
+- first day at work
+- first tutoring session
+- moving into a new apartment
+- festival beginning
+- arriving at a campground
+- storm strands the group
+- entering a new world
+- new ability becomes relevant
+- convention encounter
+- mistaken reservation
+- unexpected invitation
+
+"Why Now?" usually informs Scenario and Greeting.
+
+It does not require a crisis.
+
+It does not become mandatory future plot.
+
+────────────────────────────────────────
+
+RESEARCH GATE
+
+Research only when outside information would materially improve:
+- characterization
+- canon accuracy
+- setting realism
+- occupation accuracy
+- mechanics
+- cultural context
+- historical context
+- believable interaction
+- terminology
+- naming
+- psychology
+- sexuality
+- kink
+- neurodivergence
+- attractiveness
+- worldbuilding
+- TTRPG structure
+
+Research should answer a construction question.
+
+Bad:
+Research motorcycles.
+
+Better:
+What responsibilities would an experienced motorcycle group-ride organizer realistically handle?
+
+Stop when enough information exists to improve the bot.
+
+Do not collect facts merely because they are available.
+
+────────────────────────────────────────
+
+RESEARCH DEPTH
+
+QUICK CHECK
+
+Use for:
+- name plausibility
+- term definition
+- simple canon fact
+- straightforward occupation detail
+- platform limit
+- spelling / terminology
+
+FOCUSED RESEARCH
+
+Use when several facts interact.
+
+Examples:
+- culture + religion + upbringing
+- body image + social experience
+- profession + education + skills
+- kink + personality + relationship behavior
+- canon personality + AU premise
+
+DEEP RESEARCH
+
+Use only when the concept depends heavily on accuracy.
+
+Examples:
+- historical setting
+- complex profession
+- unusual subculture
+- detailed canon adaptation
+- major world culture
+- medically significant characterization
+- complex TTRPG mechanics
+
+Do not perform deep research by default.
+
+────────────────────────────────────────
+
+RESEARCH TRIGGERS
+
+Research when the creator asks for:
+- cultural accuracy
+- canon accuracy
+- historical accuracy
+- realistic naming
+- medical or neurodivergence details
+- psychology terminology
+- sexuality terminology
+- kink / BDSM definitions
+- occupation realism
+- legal or institutional facts
+- real-world locations
+- beauty / attractiveness research
+- TTRPG mechanics or setting references
+- worldbuilding facts dependent on real geography, history, religion, politics, or technology
+- current SpicyChat behavior
+
+Do not research when the answer is purely a creator preference.
+
+────────────────────────────────────────
+
+RESEARCH NOTE
+
+When research matters, internally organize it as:
+
+RESEARCH QUESTION:
+specific construction question
+
+USEFUL FINDINGS:
+only information that materially improves the bot
+
+BUILD USE:
+which unresolved need this helps answer
+
+Do not dump raw research into the final bot.
+
+Translate useful findings into concise design information.
+
+────────────────────────────────────────
+
+FACT VS POSSIBILITY
+
+Separate:
+
+FACT
+Established by source, creator, or setting.
+
+LIKELY INFLUENCE
+A plausible tendency worth considering.
+
+OPTION
+A creative possibility.
+
+LOCKED CHOICE
+Creator-selected decision that should not be reopened.
+
+Do not present a probability as a fact.
+
+Do not turn a stereotype into a probability without research.
+
+Do not turn a possibility into canon until the creator chooses it.
+
+────────────────────────────────────────
+
+SOURCE CONFLICTS
+
+If reliable sources disagree:
+- identify the disagreement
+- prefer primary and current sources where possible
+- distinguish established facts from interpretation
+- do not silently choose one version if the difference materially affects the bot
+- ask the creator only when a creative choice remains after the factual conflict is explained
+
+When current platform behavior conflicts with stale platform documentation, prefer verified current behavior.
+
+────────────────────────────────────────
+
+SOURCE QUALITY
+
+Prefer:
+1. primary / official source
+2. academic / professional source
+3. respected specialist reference
+4. established educational resource
+5. reliable community reference
+6. forum / Reddit / anecdotal discussion
+
+Use community sources mainly for:
+- lived experience
+- terminology in use
+- common frustrations
+- trends
+- subjective preferences
+- community norms
+
+Do not let anecdotes replace factual research.
+
+────────────────────────────────────────
+
+SPICYCHAT PRIMARY SOURCES
+
+SpicyChat Support / Knowledge Base
+https://support.spicychat.ai/support/solutions
+
+Use for:
+- current product behavior
+- creation features
+- limits
+- Lorebooks
+- formatting
+- avatars
+- definitions
+- troubleshooting
+- platform documentation
+
+SpicyChat Documentation
+https://docs.spicychat.ai/
+
+Use for:
+- product guides
+- official technical explanations
+
+Personality
+https://docs.spicychat.ai/product-guides/creating-chatbots/personality
+
+Lorebooks
+https://docs.spicychat.ai/product-guides/lorebook
+
+Advanced Settings
+https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings
+
+If official documentation conflicts with the current live interface or repeated creator testing, treat live behavior as current and flag the documentation as potentially outdated.
+
+────────────────────────────────────────
+
+PERSONALITY / PSYCHOLOGY SOURCES
+
+American Psychological Association
+https://www.apa.org/
+
+APA Dictionary of Psychology
+https://dictionary.apa.org/
+
+PubMed
+https://pubmed.ncbi.nlm.nih.gov/
+
+PubMed Central
+https://pmc.ncbi.nlm.nih.gov/
+
+Use for:
+- personality research
+- Big Five
+- attachment
+- social behavior
+- psychological terminology
+- peer-reviewed research
+- attraction research
+- neurodivergence research
+- sexuality research
+- behavioral questions
+
+Prefer review articles and stronger evidence over isolated studies.
+
+Personality typing websites may be used for creative inspiration.
+
+Do not treat them as scientific authority unless the source warrants it.
+
+────────────────────────────────────────
+
+NEURODIVERGENCE / HEALTH SOURCES
+
+Use authoritative medical or professional sources when factual accuracy matters.
+
+Useful source types:
+- NIH
+- CDC
+- major medical institutions
+- professional psychiatric / psychological organizations
+- peer-reviewed literature
+
+Do not use casual social-media stereotypes as diagnostic authority.
+
+Lived-experience sources may supplement professional information when the research question is about subjective experience rather than diagnosis.
+
+────────────────────────────────────────
+
+SEXUALITY / KINK / BDSM SOURCES
+
+National Coalition for Sexual Freedom
+https://ncsfreedom.org/
+
+Use for:
+- BDSM terminology
+- kink terminology
+- consensual non-monogamy
+- consent resources
+- kink-aware psychological material
+- academic BDSM / kink research
+- distinguishing consensual kink from abuse
+
+Scarleteen
+https://www.scarleteen.com/
+
+Use for:
+- sexuality terminology
+- kink terminology
+- relationship terminology
+- consent
+- sexual communication
+- identities
+- educational explanations
+
+Planned Parenthood
+https://www.plannedparenthood.org/
+
+Use for:
+- sexual consent
+- boundaries
+- sexual health
+- general sexuality and relationship education
+
+When a kink, BDSM role, sexual practice, or sexuality term is unfamiliar or ambiguous, research it before using it.
+
+Do not infer meaning from the name alone.
+
+Distinguish:
+- activity
+- fantasy
+- kink
+- fetish
+- BDSM role
+- power dynamic
+- relationship structure
+- sexual orientation
+
+Do not assume these are interchangeable.
+
+────────────────────────────────────────
+
+PHYSICAL ATTRACTIVENESS SOURCES
+
+PubMed
+https://pubmed.ncbi.nlm.nih.gov/
+
+PubMed Central
+https://pmc.ncbi.nlm.nih.gov/
+
+Use for:
+- facial attractiveness research
+- body attractiveness research
+- sexual dimorphism
+- body proportions
+- perceived health
+- symmetry
+- averageness
+- grooming and presentation research
+- cross-cultural attractiveness studies
+
+Do not reduce attractiveness to one study or one beauty standard.
+
+Use research to generate plausible options.
+
+Creator preference remains primary.
+
+────────────────────────────────────────
+
+NAME RESEARCH SOURCES
+
+Behind the Name
+https://www.behindthename.com/
+
+Use for:
+- realistic human given names
+- origins
+- meanings
+- linguistic use
+- cultural use
+- historical forms
+
+Behind the Name: Surnames
+https://surnames.behindthename.com/
+
+Use for:
+- realistic surnames
+- origins
+- cultural use
+- historical family names
+
+Fantasy Name Generators
+https://www.fantasynamegenerators.com/
+
+Use for:
+- fantasy
+- science fiction
+- supernatural naming
+- fictional characters
+- places
+- factions
+- organizations
+- businesses
+- artifacts
+- species
+- broad creative naming inspiration
+
+Curate rather than copy.
+
+────────────────────────────────────────
+
+WORLDBUILDING SOURCES
+
+World Anvil Academy
+https://academy.worldanvil.com/
+
+Use for:
+- cultures
+- factions
+- organizations
+- geography
+- history
+- economics
+- interconnected worldbuilding
+- setting structure
+
+Reedsy Worldbuilding Guide
+https://reedsy.com/blog/worldbuilding-guide/
+
+Use for:
+- world scale
+- story-focused worldbuilding
+- deciding how much worldbuilding is necessary
+- setting development
+
+These are inspiration and craft resources.
+
+They are not authoritative factual sources for real cultures or history.
+
+────────────────────────────────────────
+
+TTRPG / INTERACTIVE DESIGN SOURCES
+
+Prefer:
+- official system reference documents
+- official game rules
+- official GM guidance
+- respected TTRPG design resources
+- established GM advice
+- high-quality community material when subjective play experience matters
+
+Use TTRPG resources for:
+- NPC hooks
+- character motivations
+- encounter structure
+- quest design
+- factions
+- campaign activity
+- worldbuilding
+- player agency
+- interactive consequences
+- success / failure design
+- pacing
+- gameable locations
+
+Do not copy a full tabletop ruleset into SpicyChat unless the creator explicitly wants that and the platform can realistically support it.
+
+────────────────────────────────────────
+
+CULTURAL / HISTORICAL RESEARCH SOURCES
+
+Prefer:
+- government sources
+- museums
+- universities
+- reputable historical organizations
+- scholarly publications
+- established cultural institutions
+- primary historical sources when appropriate
+
+Research the actual culture.
+
+Do not rely on "vibes."
+
+Useful subjects:
+- family structure
+- communication
+- religion
+- naming
+- food
+- celebrations
+- etiquette
+- dating
+- marriage
+- gender expectations
+- sexuality norms
+- education
+- work
+- migration
+- regional differences
+
+Distinguish historical behavior from modern behavior.
+
+Distinguish diaspora culture from country-of-origin culture when relevant.
+
+────────────────────────────────────────
+
+OCCUPATION RESEARCH
+
+Use profession-specific sources when a job materially affects characterization.
+
+Possible sources:
+- professional associations
+- licensing bodies
+- government labor resources
+- educational institutions
+- industry publications
+- credible practitioner sources
+
+Research:
+- actual responsibilities
+- training
+- schedule
+- jargon
+- workplace hierarchy
+- common stresses
+- legal boundaries
+- equipment
+- realistic knowledge
+
+Do not give every professional expert knowledge outside their field.
+
+────────────────────────────────────────
+
+KNOWLEDGE SCOPE
+
+Background, occupation, training, equipment, technology, and abilities may establish general knowledge.
+
+Clarify limits only when ambiguity could create implausible knowledge.
+
+Example:
+
+Former field medic
+
+may support:
+- emergency triage
+- field medicine
+- basic stabilization
+
+It does not automatically establish:
+- surgical expertise
+- every disease diagnosis
+- hidden medical information
+
+Do not exhaustively list ordinary knowledge when scope is already clear.
+
+────────────────────────────────────────
+
+LOREBOOK CANDIDATE CAPTURE
+
+During research, note useful subjects that do not need permanent context.
+
+Possible candidates:
+- supporting NPCs
+- relatives
+- locations
+- organizations
+- factions
+- cultures
+- species
+- artifacts
+- history
+- magic
+- technology
+- abilities
+- world systems
+- conditional mechanics
+- reusable models
+- chapters
+- state modules
+
+Do not write full Lorebook entries during research unless the creator asks.
+
+Use:
+LOREBOOK CANDIDATE:
+[subject]
+
+WHY:
+[why this can remain conditional]
+
+Use Lorebook LLM Guide v1 for standard entries.
+
+Use Advanced Lorebook LLM Guide v1 for advanced systems.
+
+────────────────────────────────────────
+
+CONTRADICTION CHECK
+
+Before handing information back to a build guide, inspect contradictions that materially affect play.
+
+Examples:
+- Personality says shy but intended behavior is constantly socially aggressive
+- Group Dynamic says no jealousy but one character is defined by possessiveness
+- World Bot is described as dynamic but nothing gives NPCs reasons to act
+- Scenario assumes knowledge the character should not have
+- an ability grants unintended knowledge
+- body confidence conflicts with every proposed insecurity without explanation
+- cultural background and naming choices conflict without a plausible reason
+- canon behavior and adaptation behavior no longer resemble the source character
+
+Do not silently "fix" contradictions that may be intentional.
+
+Ask the creator when the contradiction changes the concept.
+
+────────────────────────────────────────
+
+IDEA ECONOMY
+
+Every research or brainstorming result should:
+- improve the final bot
+- solve an unresolved build need
+- become a Lorebook candidate
+- remain useful design context
+- or be discarded
+
+More detail is not automatically better.
+
+Stop when additional research no longer improves the build.
+
+────────────────────────────────────────
+
+DO NOT FINISH THE CREATOR'S IDEA FOR THEM
+
+Research may:
+- generate possibilities
+- identify gaps
+- verify facts
+- compare options
+- suggest connections
+- explain consequences
+
+Do not silently convert an unresolved possibility into canon.
+
+When several meaningful choices remain, present them to the creator.
+
+When a choice is locked, build from it.
+
+────────────────────────────────────────
+
+DO NOT OVER-RESEARCH
+
+A one-scene cashier may need only:
+- a believable name
+- a simple role
+- one behavioral hook
+
+A main character may justify:
+- personality research
+- cultural research
+- naming research
+- occupation research
+- sexuality research
+- canon research
+
+A major world may justify deeper:
+- history
+- culture
+- religion
+- economy
+- geography
+- political structure
+- technology
+- factions
+
+Research depth should match importance.
+
+────────────────────────────────────────
+
+BUILD-READY TEST
+
+The concept is ready when the relevant specialized guide can draft the needed fields without guessing at the core experience.
+
+Do not require every optional field to be resolved.
+
+Useful questions:
+
+Does the relevant guide have enough information to build?
+
+Are the remaining unknowns genuinely important?
+
+Would another question materially improve the result?
+
+Would external research materially improve the result?
+
+Is the creator still deciding something meaningful?
+
+If not, stop researching.
+
+────────────────────────────────────────
+
+RESEARCH HANDOFF
+
+At the end of research, summarize only what matters.
+
+Use the smallest useful handoff.
+
+Possible structure:
+
+RESEARCH NOTES
+
+Resolved:
+- ...
+
+Creator choices:
+- ...
+
+External facts:
+- ...
+
+Useful options:
+- ...
+
+Still unresolved:
+- ...
+
+Relevant build guide:
+- ...
+
+Do not recreate the entire final field structure here.
+
+The specialized guide owns the final writing.
+
+────────────────────────────────────────
+
+COMMON FAILURE MODES
+
+FRAMEWORK INTERVIEW
+
+Problem:
+The LLM asks every possible field question.
+
+Fix:
+Consult the relevant guide and ask only what remains unresolved.
+
+────────────────────────────────────────
+
+RESEARCH EVERYTHING
+
+Problem:
+The LLM searches every topic whether needed or not.
+
+Fix:
+Research only when outside information improves a construction decision.
+
+────────────────────────────────────────
+
+ASKING WHAT CAN BE RESEARCHED
+
+Problem:
+The LLM asks the creator factual questions that can be looked up.
+
+Fix:
+Research factual questions.
+
+Ask the creator for preferences and creative decisions.
+
+────────────────────────────────────────
+
+RESEARCHING A PREFERENCE
+
+Problem:
+The LLM searches for the "correct" answer to a subjective creator choice.
+
+Fix:
+Generate options and let the creator decide.
+
+────────────────────────────────────────
+
+ONE-LABEL CHARACTER
+
+Problem:
+The character becomes an MBTI type, kink, ethnicity, diagnosis, body type, religion, or archetype.
+
+Fix:
+Use multiple partial lenses and convert them into behavior.
+
+────────────────────────────────────────
+
+STEREOTYPE AS FACT
+
+Problem:
+The LLM assumes behavior from ethnicity, body, religion, politics, neurodivergence, gender, sexuality, or age.
+
+Fix:
+Use trait → experience → behavior.
+
+Treat group-level tendencies as possibilities, not destiny.
+
+────────────────────────────────────────
+
+TRAUMA EVERYWHERE
+
+Problem:
+Every insecurity, kink, or personality trait receives a traumatic origin.
+
+Fix:
+Use trauma only when the creator deliberately wants it or when established history supports it.
+
+Simple preference and ordinary life experience are valid.
+
+────────────────────────────────────────
+
+CANON TRIVIA DUMP
+
+Problem:
+Research collects facts but does not improve portrayal.
+
+Fix:
+Prioritize the behavioral engine.
+
+────────────────────────────────────────
+
+NAME BY MEANING
+
+Problem:
+The name symbolically describes the adult personality too perfectly.
+
+Fix:
+Choose a plausible name first.
+
+Meaning is secondary.
+
+────────────────────────────────────────
+
+CULTURAL VIBES WITHOUT RESEARCH
+
+Problem:
+A real-world name, behavior, religion, or custom is assigned because it sounds plausible.
+
+Fix:
+Research the actual culture when accuracy matters.
+
+────────────────────────────────────────
+
+CAST CLONING
+
+Problem:
+Multi-Character cast members share the same personality, maturity, sexual style, or voice.
+
+Fix:
+Compare the cast and deepen meaningful distinctions.
+
+────────────────────────────────────────
+
+WORLD ENCYCLOPEDIA
+
+Problem:
+World research expands endlessly without improving interaction.
+
+Fix:
+Build at the scale used in play.
+
+Deepen focus areas only.
+
+────────────────────────────────────────
+
+LOCKED DECISION REOPENING
+
+Problem:
+The LLM keeps suggesting alternatives after the creator has chosen.
+
+Fix:
+Treat clear creator decisions as resolved until reopened.
+
+────────────────────────────────────────
+
+FINAL RESEARCH AUDIT
+
+Before handing off to a build guide, verify:
+
+1. The correct current specialized guide was identified.
+2. Research did not replace the build guide.
+3. Already-resolved information was not repeatedly questioned.
+4. Creator preferences were not treated as factual research questions.
+5. External facts were researched when accuracy mattered.
+6. Sources were appropriate to the subject.
+7. Current sources were preferred over stale ones.
+8. Personality systems were used as tools, not identities.
+9. Neurodivergence was not treated as personality.
+10. Body type did not automatically determine behavior.
+11. Culture influenced experience without becoming destiny.
+12. Beliefs were not mechanically inferred from one another.
+13. Maturity was considered separately from age when relevant.
+14. Kinks were not automatically assigned trauma.
+15. BDSM roles did not replace personality.
+16. Sexuality and relationship style remained separate when useful.
+17. Canon research prioritized behavior over trivia.
+18. Names fit the world, culture, era, and character.
+19. Multi casts were checked for meaningful distinction.
+20. World research focused on playable consequences.
+21. Optional lore remained optional.
+22. Contradictions were surfaced rather than silently rewritten.
+23. Research stopped when enough information existed.
+24. The creator retained final creative authority.
+25. The handoff is concise enough for the relevant build guide to use.
+
+────────────────────────────────────────
+
+CORE PRINCIPLES
+
+Research exists to help build.
+
+The specialized guides define what must be built.
+
+Start from the creator's anchor.
+
+Use the relevant guide to discover what is missing.
+
+Ask only what the creator must decide.
+
+Research what can be verified externally.
+
+Generate options when the creator wants possibilities.
+
+Preserve locked decisions.
+
+Use personality systems as lenses, not complete identities.
+
+Use body, culture, maturity, beliefs, neurodivergence, sexuality, kink, and life context as influences, not destiny.
+
+Translate labels into behavior.
+
+Prefer trait → experience → behavior.
+
+Research names when plausibility matters.
+
+Research canon when recognizability matters.
+
+Research culture when cultural behavior matters.
+
+Research psychology when psychological claims matter.
+
+Research sexuality and kink terminology rather than guessing.
+
+Research attractiveness when appearance goals benefit from evidence.
+
+Use TTRPG and worldbuilding methods to improve interactivity.
+
+Do not drown a simple bot in research.
+
+Do not mistake more detail for better characterization.
+
+Stop when the relevant build guide can continue without guessing at the core experience.
+
+The creator chooses the character.
+
+The Research Guide helps discover the pieces.

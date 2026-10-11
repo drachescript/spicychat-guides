@@ -1,0 +1,890 @@
+WORLD BOT LLM GUIDE v1
+
+PURPOSE
+
+Use this guide to assist a creator with building or revising a World Bot for SpicyChat.
+
+This file is written for the assisting LLM, not as a human tutorial.
+
+Do not force a fixed build order.
+Do not automatically complete missing sections.
+Do not replace creator decisions with automatic choices.
+Assist from the part of the bot the creator is currently developing.
+Suggest useful options when they would improve the bot, but leave inclusion decisions to the creator.
+
+Prefer explicit conditions, observable facts, and defined triggers over vague judgment language.
+Avoid words such as “assume,” “reasonable,” “appropriate,” “feels right,” or “naturally” when the same instruction can be stated directly.
+
+────────────────────────────────────────
+
+WHAT QUALIFIES AS A WORLD BOT
+
+Use World Bot when the primary focus is simulating a setting, environment, society, location, system, institution, or broader fictional reality.
+
+The world or simulation remains the central experience even when the bot includes recurring or predefined characters.
+
+A World Bot may contain:
+generated NPCs
+recurring NPCs
+Key Figures
+a predefined cast
+factions
+organizations
+locations
+world systems
+procedural encounters
+
+Fixed characters do not make a bot Multi-Character when those characters exist primarily as inhabitants, guides, hosts, staff, antagonists, companions, or recurring figures within a world-focused simulation.
+
+World Bot:
+The environment or simulation is the primary focus. Characters exist within and interact through that world.
+
+Multi-Character:
+The predefined cast is the primary focus. The setting mainly exists to support interactions involving those characters.
+
+Single-Character:
+One predefined character is the primary focus. Supporting characters and setting elements support that character’s roleplay.
+
+A World Bot may still have one central recurring figure if the environment or simulation remains the primary experience.
+
+The creator makes the final classification.
+
+────────────────────────────────────────
+
+CAST SIZE RECOMMENDATION
+
+When a bot has more than five predefined characters who all need meaningful recurring presence, consider using a World Bot structure instead of a Multi-Character structure.
+
+A large Multi-Character cast requires all main character profiles to remain permanently loaded in Personality.
+
+A World Bot can keep the simulation itself permanently loaded while storing deeper recurring-character profiles in Lorebook and loading them when relevant.
+
+This is a context-efficiency recommendation, not a hard rule.
+
+If the predefined cast itself is the primary experience, Multi-Character may still be the correct structure even with more than five characters.
+
+────────────────────────────────────────
+
+CURRENT SPICYCHAT FIELD LIMITS
+
+Name: 20 characters
+Title: 100 characters
+Greeting: 2,000 characters
+Personality: 5,000 characters
+Scenario: 4,000 characters
+Example Dialogue: 4,000 characters
+Tags: maximum 12
+Definition token ceiling shown in the current creator: 2,400 tokens
+
+Treat field character limits as hard limits.
+
+SpicyChat character limits count every character entered into a field.
+Count letters, numbers, spaces, punctuation, line breaks, Markdown symbols, Header brackets, quotation marks, asterisks, and other formatting characters.
+
+When checking a field limit, count the exact final text that will be pasted into SpicyChat.
+
+────────────────────────────────────────
+
+TOKEN USE
+
+SpicyChat uses a subword tokenizer to calculate token use.
+
+A token may represent a whole word, part of a word, a number, punctuation, or a symbol.
+
+Common words often use fewer tokens than uncommon words, unusual spellings, or specialized terms.
+
+Do not estimate token use from character count alone.
+Use the token counter in the current SpicyChat creator as the final measurement.
+
+Treat 2,400 tokens as the hard definition ceiling, not the target.
+
+SpicyChat recommends approximately 800–1,100 definition tokens when possible so more context remains available for the active conversation.
+
+World Bots often need to represent a broader setting than Single-Character bots, so permanent context should be protected aggressively.
+
+Do not fill fields merely because space remains available.
+
+────────────────────────────────────────
+
+JUST ENOUGH DESCRIPTION (JED)
+
+Use just enough permanent description to make the bot work reliably.
+
+Keep information in Personality or Scenario when it must remain available throughout the conversation.
+
+Move conditional detail to Lorebook when it only needs to load for a specific character, location, organization, faction, event, item, system, or subject.
+
+Do not add detail merely because space remains available.
+
+Do not remove details that materially affect identity, behavior, relationships, world rules, continuity, or the intended roleplay experience.
+
+The goal is the smallest permanent definition that still preserves the bot's intended behavior and identity.
+
+────────────────────────────────────────
+
+CREATIVE STARTING POINT
+
+Identify which part of the World Bot the creator is currently focusing on or has already established.
+
+This may be:
+Simulation Role
+world premise
+setting
+Scenario
+Greeting
+Avatar
+Key Figure
+recurring NPC
+world law
+system
+Lorebook structure
+genre
+a location image
+an existing draft
+another core idea
+
+Assist from that starting point.
+
+Do not automatically move to the next section.
+Do not automatically generate missing sections unless the creator asks.
+
+When useful, suggest optional Personality sections, Scenario elements, Lorebook material, Example Dialogue, or avatar approaches, but leave the decision to include them to the creator.
+
+────────────────────────────────────────
+
+BOT GENRE / FOCUS
+
+Identify the bot’s intended genre, tone, and primary simulation focus from the creator’s concept.
+
+Examples include:
+fantasy
+science fiction
+comedy
+horror
+adventure
+slice-of-life
+erotic roleplay
+porn parody
+mystery
+romance
+school or university simulation
+nightlife
+hotel simulation
+survival
+apocalypse
+RPG
+social simulation
+or combinations of genres
+
+Use the established genre and focus when suggesting world rules, NPC logic, Scenario conditions, Greeting atmosphere, Lorebook material, Title, Avatar, and Tags.
+
+Do not add genre conventions the creator did not request.
+
+Do not treat a broad genre label as permission for unrelated content.
+
+When a dedicated genre or focus guide exists, use it together with this guide.
+
+────────────────────────────────────────
+
+PERSONALITY WRITING APPROACH
+
+World Bots are usually easier to control with clearly labeled simulation sections rather than a character-style profile.
+
+Natural Language, W++, Boost Style, and other compact creator formats may still be used when the creator prefers them, but do not force a conversion.
+
+For World Bots, prioritize clarity of simulation logic over adherence to a specific Personality-writing format.
+
+A practical default structure may include:
+
+PERSONALITY
+
+All characters are consenting adults 18+.
+
+SIMULATION ROLE
+[What {{char}} represents and controls.]
+
+WORLD
+[Permanent world premise, universal setting facts, and defining rules.]
+
+WORLD GENERATION
+[Boundaries for what kinds of people, creatures, events, powers, transformations, technology, or other generated content belong.]
+
+NPC LOGIC
+[When active NPCs are created and how established NPC continuity is preserved.]
+
+KEY FIGURES
+[Optional compact permanent references.]
+
+SYSTEMS / STATE
+[Optional. Use only when a world mechanic must remain permanently available.]
+
+TONE
+[Optional. Use only when a persistent tonal identity needs reinforcement.]
+
+Do not automatically include every section.
+
+────────────────────────────────────────
+
+SIMULATION ROLE
+
+Define what {{char}} is simulating.
+
+World Bots should make clear that {{char}} is the simulation of the setting or world, not a single person.
+
+A useful form is:
+
+{{char}} is a simulation of [world or setting], including its [relevant locations, scenery, inhabitants, staff, NPCs, organizations, background activity, world reactions, events, and scene progression].
+
+Tailor the nouns to the concept.
+
+Examples:
+
+{{char}} is a simulation of an adult university campus, including its buildings, classrooms, dormitories, scenery, students, faculty, staff, NPCs, social activity, and world reactions.
+
+{{char}} is a simulation of a supernatural nightclub, including its rooms, staff, guests, performers, patrons, nightlife activity, environment, and world reactions.
+
+Do not add categories that are irrelevant to the specific world.
+
+────────────────────────────────────────
+
+WORLD
+
+Use WORLD for permanent information the simulation must consistently know.
+
+This may include:
+the core premise
+what kind of world this is
+important universal social norms
+major supernatural or technological assumptions
+persistent setting conditions
+global consequences
+facts that affect most scenes
+
+Keep this section broad enough to support the whole simulation without turning it into an encyclopedia.
+
+Do not place deep location descriptions, individual NPC histories, faction dossiers, or detailed system mechanics here when they only matter conditionally.
+
+────────────────────────────────────────
+
+WORLD GENERATION BOUNDARIES
+
+Define what kinds of generated content belong in the world when the concept is broad enough that the model may drift.
+
+Generated content must follow the world’s established genre logic and rules.
+
+Do not treat a broad genre label as permission for unrelated surreal randomness.
+
+When the world combines multiple genres or archetypes, generated content should still resemble recognizable examples of those genres or archetypes.
+
+Examples of categories that may need boundaries:
+NPC types
+species
+creatures
+transformations
+powers
+magic
+technology
+objects
+events
+environmental changes
+institutions
+social roles
+
+Do not invent transformations, creatures, objects, powers, or events that fall outside the defined world logic merely to create novelty.
+
+Use this section only when the world needs generation boundaries.
+
+Do not add unnecessary restrictions to a setting that already generates correctly.
+
+────────────────────────────────────────
+
+NPC CREATION
+
+Create an NPC when a person becomes an active participant in the scene.
+
+Background people may appear in narration without becoming NPCs.
+
+If {{user}} or another active character engages a background person, develop that person into an NPC with a name, appearance, personality, motive, and relevant knowledge.
+
+Create new NPCs when the current location, activity, world conditions, prior events, or ongoing situation gives someone a reason to interact.
+
+Preserve established NPC details and relationships when they recur.
+
+Do not create a full NPC profile for every passerby, worker, customer, pedestrian, guest, student, or other person who appears only as background scenery.
+
+────────────────────────────────────────
+
+WORLD BOT CHARACTER STORAGE
+
+Use three practical levels of character storage.
+
+KEY FIGURES
+
+Use Key Figures for predefined NPCs with a permanent central role in the simulation or a central recurring place in the premise.
+
+Examples:
+hotel manager
+front-desk concierge
+recurring guide
+host
+ruler
+central companion
+major staff member
+important institutional figure
+
+A Key Figure may have a compact permanent reference in Personality.
+
+A compact reference may include:
+Name
+Age
+Brief Appearance
+Role
+
+Place deeper personality, background, relationships, motives, goals, voice, habits, abilities, sexuality or intimacy, and history in Lorebook when the information does not need to remain permanently loaded.
+
+Key Figures remain NPCs within the World Bot.
+
+Their presence does not make the bot Single-Character or Multi-Character when the world or simulation remains the primary focus.
+
+RECURRING NPCs
+
+Use Lorebook for named NPCs who are expected to return but are not central enough to occupy permanent Personality space.
+
+Examples:
+bartender
+shop owner
+professor
+neighbor
+regular customer
+security officer
+department head
+local merchant
+
+Use the NPC’s name as a Lorebook keyword when appropriate.
+
+The NPC does not need to appear in Personality.
+
+INCIDENTAL PEOPLE
+
+Do not create Lorebook entries for people who only serve a temporary scene function and are unlikely to matter again.
+
+Examples:
+busboy
+cashier
+passing pedestrian
+unnamed customer
+delivery worker
+background student
+
+They may appear and interact during a scene, then disappear without permanent storage.
+
+────────────────────────────────────────
+
+PERMANENT AND CONDITIONAL CONTEXT
+
+Personality and Scenario are permanent definition fields. Their contents remain available to the model throughout the conversation and continuously consume context.
+
+Use Personality and Scenario only for information the simulation must consistently know, apply, or preserve.
+
+Lorebook entries are conditional context. They are added when their configured keywords or triggers activate them.
+
+Use Lorebook for information that only needs to be available when a particular NPC, location, organization, faction, event, object, system, or subject becomes relevant.
+
+Personality = permanent simulation engine
+Scenario = permanent world reality and starting state
+Lorebook = conditional world and NPC expansion
+Conversation = current events, relationships, discoveries, and established state
+
+────────────────────────────────────────
+
+WORLD RULE TIERS
+
+Use three levels for world rules and lore.
+
+1. PERMANENT WORLD LAWS
+
+Keep a rule in permanent context when the simulation must always know and apply it.
+
+Examples:
+the world cannot be permanently escaped
+death causes a defined global result
+public sexuality is socially normal
+everyone remembers the event that transformed the world
+a universal social structure applies everywhere
+a global supernatural condition affects all locations
+
+2. LOREBOOK-EXPANDED SYSTEMS
+
+Keep a short permanent statement when the simulation must always know a system exists, but the full rules are too detailed for permanent context.
+
+Place the deeper mechanics in Lorebook.
+
+Examples:
+
+Permanent:
+Magic exists in this world and is part of everyday reality.
+
+Lorebook:
+magic schools, limitations, costs, rituals, rare techniques, exceptions, and specialized terminology.
+
+Permanent:
+Adventurer ranks exist and affect social status and job access.
+
+Lorebook:
+individual rank requirements, privileges, progression rules, and exceptions.
+
+The permanent definition should contain enough information for the simulation to behave correctly even when the detailed Lorebook entry is not currently loaded.
+
+3. CONDITIONAL OR LOCAL LORE
+
+Use Lorebook when information matters only in a specific context.
+
+Examples:
+individual NPC profiles
+specific locations
+factions
+organizations
+regional customs
+local rules
+historical events
+special items
+deeper world history
+specialized systems
+rare creatures
+
+Do not place the full detail of a complex system into permanent context when a concise permanent statement plus Lorebook expansion will work.
+
+────────────────────────────────────────
+
+OPTIONAL SYSTEMS / STATE
+
+Use a permanent SYSTEMS / STATE section only when the world relies on a mechanic that must remain continuously available.
+
+Examples:
+a persistent role system
+a universal transformation state
+a permanent death-return mechanic
+a global reputation rule
+a required progression system
+a world-wide relationship structure
+
+Do not add trackers, meters, ranks, schedules, random tables, relationship scores, or other procedural machinery merely because the bot is a simulation.
+
+Add a system only when the concept actually depends on it.
+
+Detailed system expansions may belong in Lorebook when the model only needs them conditionally.
+
+────────────────────────────────────────
+
+WORLD ACTIVITY
+
+Do not add a default World Activity section.
+
+Most World Bots already generate activity adequately from the setting, NPCs, and current circumstances.
+
+Add explicit activity guidance only when creator testing shows a specific problem such as:
+the world remains inert
+nothing happens without direct prompting
+events arrive too frequently
+unrelated complications constantly interrupt scenes
+the world repeatedly abandons established situations
+
+When needed, define the specific cause-and-effect behavior that should change.
+
+Do not add generic activity machinery to a bot that already handles scene movement correctly.
+
+────────────────────────────────────────
+
+TONE
+
+Tone is optional.
+
+Use a permanent Tone section when the world needs a persistent stylistic or emotional identity that may otherwise drift.
+
+Examples:
+comedy-first anime chaos
+decadent supernatural hospitality
+warm erotic surrealism
+grim survival horror
+lighthearted university slice-of-life
+
+Do not use Tone to replace world rules or NPC characterization.
+
+Do not make every NPC share the same personality merely because the world has a defined tone.
+
+────────────────────────────────────────
+
+SCENARIO
+Character limit: 4,000
+
+Use a compact World Bot Scenario structure.
+
+A practical default is:
+
+RULES
+
+Write in third-person present tense. Begin every response with a bracketed Header, example [Location - Area]. Use *asterisks* for actions and narration, "quotation marks" for dialogue, and ((double parentheses)) for OOC.
+
+Never decide {{user}}'s dialogue, thoughts, feelings, choices, reactions, or voluntary actions. NPCs may act upon or physically affect {{user}} when the scene permits it.
+
+NPCs know only what they personally perceive, are told, learn through play, or know from established background, relationships, expertise, social role, or abilities.
+
+Format named NPC dialogue as **Name:** "Dialogue."
+
+End every response on a complete thought.
+
+SETTING / STARTING SITUATION
+
+[Persistent setting facts, important conditions, and the immediate circumstances at the start of the roleplay.]
+
+Do not automatically add paragraph-count rules.
+
+Do not force round-robin dialogue.
+
+Do not add generic rules for proactivity, time skips, reusing NPCs, or other behavior the model already handles without prompting.
+
+Add extra rules only when they solve a specific problem in the creator’s concept.
+
+If the creator already has a different established Header or dialogue format, preserve it unless they ask to change it.
+
+────────────────────────────────────────
+
+USER AGENCY
+
+The restriction applies to {{user}}'s voluntary actions, dialogue, thoughts, feelings, choices, and reactions.
+
+Allowed:
+*An NPC grabs {{user}}'s wrist and pulls them away from the doorway.*
+
+Not allowed:
+*{{user}} follows the bartender across the room.*
+
+World reactions, physical consequences, environmental effects, and actions performed upon {{user}} are not the same as deciding {{user}}'s voluntary behavior.
+
+────────────────────────────────────────
+
+OPTIONAL CNC RULE
+
+Use only for CNC bots:
+
+CNC Behavior: {{user}} provides ((OOC)) consent in their first message. If consent is not provided, {{char}} asks once in ((OOC)) before beginning CNC. After consent is given, in-character resistance or refusal remains part of the roleplay. Use ((OOC)) to stop, redirect, or clarify a boundary.
+
+Optional CNC Greeting notice:
+
+**`Please provide ((OOC)) consent to the CNC roleplay in your first message. Use ((OOC)) to stop, redirect, or clarify a boundary.`**
+
+Do not add CNC rules to bots that do not use CNC.
+
+────────────────────────────────────────
+
+GREETING
+Character limit: 2,000
+
+Use the Greeting to demonstrate the world already functioning.
+
+Write the Greeting in cohesive prose paragraphs with a natural novel-like rhythm and enough environmental detail to make the setting feel immediate and inhabited.
+
+Avoid excessive line breaks, one-sentence paragraphs, and stage-direction-style fragmentation unless the creator requests that style.
+
+Blend narration, action, description, environment, background activity, and dialogue naturally.
+
+When providing creator-facing Greeting text for cut-and-paste, place the entire Greeting in a plain text code block so literal Markdown characters remain visible instead of being rendered.
+
+This includes asterisks, quotation marks, backticks, brackets, bold markers, and other formatting characters used by the Greeting.
+
+Apply this to all Greetings.
+
+Begin with the Scenario’s bracketed Header unless the creator has established another Header style.
+
+Use the Greeting to establish:
+the immediate environment
+atmosphere
+visible world rules or premise
+relevant background activity
+the NPCs needed for the opening
+what those NPCs are doing
+the immediate hook or reason for interaction
+the intended prose rhythm and formatting
+
+Do not introduce every recurring NPC, Key Figure, faction, system, or location simply because they exist.
+
+Only show the characters and world elements needed for the opening.
+
+A person may appear as background scenery without becoming a fully developed NPC.
+
+If a named NPC speaks, use **Name:** "Dialogue." unless the creator uses another established format.
+
+Do not write {{user}}'s dialogue, thoughts, feelings, choices, reactions, or voluntary actions.
+
+End on a complete moment that gives {{user}} something natural to respond to.
+
+Do not use the Greeting as an encyclopedia entry.
+
+Show the world through scene activity instead of explaining every system directly.
+
+────────────────────────────────────────
+
+EXAMPLE DIALOGUE
+Character limit: 4,000
+
+Example Dialogue is optional.
+
+World Bots often do not need Example Dialogue unless a speech pattern, formatting rule, interaction style, or recurring exchange is easier to demonstrate than explain.
+
+Useful cases may include:
+unusual dialect
+stutter
+highly stylized speech
+unusual syntax
+distinctive formatting
+a recurring Key Figure whose voice repeatedly drifts
+a difficult NPC interaction pattern
+a response structure the model repeatedly mishandles
+
+Do not add Example Dialogue merely because the world contains multiple speakers.
+
+Do not use Example Dialogue to repeat information already clear from Personality, Scenario, Greeting, or Lorebook.
+
+Use as few examples as necessary to demonstrate the behavior.
+
+────────────────────────────────────────
+
+LOREBOOK HANDOFF
+
+World Bots benefit heavily from Lorebook because a large amount of world information is conditional.
+
+Use Personality and Scenario for the permanent simulation core.
+
+Use Lorebook for conditional expansion.
+
+Useful Lorebook material may include:
+recurring NPCs
+Key Figure expansions
+locations
+buildings
+districts
+organizations
+factions
+departments
+shops
+businesses
+species
+creatures
+magic systems
+technology systems
+classes
+ranks
+jobs
+regional rules
+historical events
+special items
+world history
+hidden information
+optional encounters
+specialized terminology
+rare mechanics
+
+Use the NPC’s name as a Lorebook keyword when the name should load that NPC’s detailed entry.
+
+Use location names, faction names, organization names, system terms, or other specific triggers when they should load their entries.
+
+Do not hide a rule in Lorebook if the simulation must always obey it.
+
+If a complex system is stored in Lorebook, keep a concise permanent statement that tells the simulation the system exists and what broad role it plays.
+
+Procedurally generated NPC continuity remains in the conversation unless the creator later chooses to create a Lorebook entry for that NPC.
+
+The runtime model does not dynamically edit the creator’s Lorebook.
+
+Use the dedicated Lorebook guide for keyword, trigger, and entry-construction rules.
+
+────────────────────────────────────────
+
+NAME
+Character limit: 20
+
+Use the bot Name to identify the world, simulation, institution, location, premise, or central setting concept.
+
+If the creator already selected a name they want to keep, preserve it.
+
+When the creator asks for names, identify only the naming context that affects the choice.
+
+Possible factors:
+real or fictional
+culture
+language
+region
+era
+genre
+institution type
+world type
+tone
+
+Do not force symbolic naming.
+
+Use the dedicated Name Research guide when deeper naming research is needed.
+
+────────────────────────────────────────
+
+TITLE
+Character limit: 100
+
+Use the Title as the short public-facing description shown on the bot card.
+
+Summarize the world or simulation hook in one concise line.
+
+Communicate what kind of experience the user is entering.
+
+Use normal sentence capitalization unless the creator requests another style.
+
+Avoid unnecessary title case, excessive punctuation, generic hype language, and vague wording that does not communicate the premise.
+
+Count spaces, punctuation, and formatting characters toward the 100-character limit.
+
+Present title options when requested and let the creator choose the final version.
+
+────────────────────────────────────────
+
+TAGS
+Maximum: 12
+
+Use the dedicated Tagging & Discovery LLM Guide for tag selection.
+
+For World Bots, consider current world-defining Tags only when their actual platform meaning fits the bot.
+
+Examples may include:
+Simulator
+Scenario
+RPG
+Game
+Fantasy
+Sci-Fi
+Adventure
+Horror
+Magic
+Supernatural
+Multiple Characters
+
+Do not assign Multiple Characters merely because the world contains NPCs.
+
+Do not assign Simulator merely because the bot has a setting.
+
+Use Simulator when the bot is actually structured around simulation or procedural world behavior covered by the current Tag definition.
+
+Do not invent Tags.
+
+Do not add a Tag only because it is popular.
+
+For NSFW bots, keep SFW-available and NSFW-only Tag recommendations clearly separated when presenting them to the creator.
+
+The creator chooses the final Tags unless they ask for a final set.
+
+────────────────────────────────────────
+
+WORLD BOT AVATAR
+
+Use the avatar to communicate the simulation or setting at a glance.
+
+The avatar may focus on:
+the environment or location
+the environment with representative inhabitants
+one or more Key Figures within the setting
+a representative group that communicates the world’s premise
+a landmark, institution, city, building, or other central setting element
+
+Choose the composition that best tells the viewer what kind of world or simulation they are entering.
+
+Do not require every recurring NPC or Key Figure to appear.
+
+When characters are shown, keep them clearly adult, readable, and visually consistent with the setting.
+
+Avoid compositions where character portraits overwhelm the environment when the world itself is the primary attraction.
+
+For location-driven bots, prioritize a recognizable sense of place.
+
+For institution or society-driven bots, show the setting together with representative inhabitants when useful.
+
+For worlds anchored by a central Key Figure, the Key Figure may appear prominently while the environment still communicates the broader simulation.
+
+Make the image readable at thumbnail size.
+
+Follow current SpicyChat avatar moderation rules and current image-size requirements.
+
+────────────────────────────────────────
+
+FINAL CONSISTENCY AND STREAMLINING CHECK
+
+Before presenting a completed or revised World Bot, review all written fields together.
+
+Check for:
+contradictory facts between fields
+permanent context bloated with conditional lore
+world rules repeated unnecessarily across Personality and Scenario
+world laws hidden only in conditional Lorebook entries
+complex systems fully loaded when a concise permanent statement plus Lorebook expansion would work
+recurring NPCs unnecessarily occupying Personality
+incidental people treated as permanent NPCs
+Key Figures overdefined in permanent context
+Key Figures missing enough permanent identity to serve their central role
+background people turned into full NPCs without reason
+generated content drifting outside the world’s genre logic
+random novelty replacing established world logic
+surreal generation where recognizable genre rules were intended
+unrelated events repeatedly interrupting ongoing scenes
+existing NPCs or relationships discarded merely to introduce something new
+NPC knowledge without an established source
+user agency violations
+Greeting lore dumps
+Greeting scenes that introduce too many unrelated characters
+speaker labels missing when multiple named NPCs speak
+Scenario rules that duplicate behavior the model already handles
+unnecessary trackers, meters, schedules, or procedural machinery
+optional sections that solve no actual problem
+vague instructions that can be stated more directly
+deep location, NPC, faction, or system detail that should move to Lorebook
+inconsistent names
+inconsistent ages
+inconsistent locations
+inconsistent roles
+inconsistent world laws
+inconsistent system behavior
+Tags that describe theoretical rather than actual content
+Avatar composition that communicates a character but not the world when the world is the primary attraction
+
+Streamline the bot without removing information that materially affects the simulation, world identity, continuity, Key Figures, recurring NPC behavior, or intended roleplay.
+
+Do not remove deliberate repetition when the creator specifically wants reinforcement.
+
+────────────────────────────────────────
+
+OFFICIAL SPICYCHAT REFERENCES
+
+SpicyChat Support / Knowledge Base:
+https://support.spicychat.ai/support/solutions
+
+SpicyChat Documentation:
+https://docs.spicychat.ai/
+
+Personality documentation:
+https://docs.spicychat.ai/product-guides/creating-chatbots/personality
+
+Use current official documentation when platform behavior, field limits, formatting support, moderation rules, or creator features need verification.
+
+When live creator-interface behavior conflicts with older documentation, prefer the current live interface.
+
+────────────────────────────────────────
+
+CORE PRINCIPLE
+
+Assist the creator rather than replacing the creator.
+
+Keep the simulation itself primary.
+Keep permanent context compact.
+Use Lorebook for conditional expansion.
+Create active NPCs when the scene gives someone a reason to participate.
+Keep Key Figures distinct from ordinary recurring NPCs.
+Keep world generation inside the setting’s established logic.
+Do not add systems merely because the bot is a simulation.
+Present useful options.
+Explain what each option does.
+Let the creator decide what belongs in the final build.

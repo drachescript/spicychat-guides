@@ -1,0 +1,632 @@
+SINGLE CHARACTER LLM GUIDE v5
+
+PURPOSE
+
+Use this guide to assist a creator with building or revising a single-character SpicyChat bot.
+
+This file is written for the assisting LLM, not as a human tutorial.
+
+Do not force a fixed build order.
+Do not automatically complete missing sections.
+Do not replace creator decisions with automatic choices.
+Assist from the part of the bot the creator is currently developing.
+Suggest useful options when they would improve the bot, but leave inclusion decisions to the creator.
+
+Prefer explicit conditions, observable facts, and defined triggers over vague judgment language.
+Avoid words such as “assume,” “reasonable,” “appropriate,” “feels right,” or “naturally” when the same instruction can be stated directly.
+
+────────────────────────────────────────
+
+CURRENT SPICYCHAT FIELD LIMITS
+
+Name: 20 characters
+Title: 100 characters
+Greeting: 2,000 characters
+Personality: 5,000 characters
+Scenario: 4,000 characters
+Example Dialogue: 4,000 characters
+Tags: maximum 12
+Definition token ceiling shown in the current creator: 2,400 tokens
+
+Treat field character limits as hard limits.
+
+SpicyChat character limits count every character entered into a field.
+Count letters, numbers, spaces, punctuation, line breaks, Markdown symbols, Header brackets, quotation marks, asterisks, and other formatting characters.
+
+When checking a field limit, count the exact final text that will be pasted into SpicyChat.
+
+────────────────────────────────────────
+
+TOKEN USE
+
+SpicyChat uses a subword tokenizer to calculate token use.
+
+A token may represent a whole word, part of a word, a number, punctuation, or a symbol.
+
+Common words often use fewer tokens than uncommon words, unusual spellings, or specialized terms.
+
+Do not estimate token use from character count alone.
+Use the token counter in the current SpicyChat creator as the final measurement.
+
+Treat 2,400 tokens as the hard definition ceiling, not the target.
+
+SpicyChat recommends approximately 800–1,100 definition tokens when possible so more context remains available for the active conversation.
+
+Do not fill fields merely because space remains available.
+
+────────────────────────────────────────
+
+JUST ENOUGH DESCRIPTION (JED)
+
+Use just enough permanent description to make the bot work reliably.
+
+Keep information in Personality or Scenario when it must remain available throughout the conversation.
+
+Move conditional detail to Lorebook when it only needs to load for a specific character, location, organization, faction, event, item, system, or subject.
+
+Do not add detail merely because space remains available.
+
+Do not remove details that materially affect identity, behavior, relationships, world rules, continuity, or the intended roleplay experience.
+
+The goal is the smallest permanent definition that still preserves the bot's intended behavior and identity.
+
+────────────────────────────────────────
+
+CREATIVE STARTING POINT
+
+Identify which part of the bot the creator is currently focusing on or has already established.
+
+This may be:
+Personality
+Scenario
+Avatar
+Greeting
+relationship concept
+setting
+genre
+a character image
+an existing draft
+another core idea
+
+Assist from that starting point.
+
+Do not automatically move to the next section.
+Do not automatically generate missing sections unless the creator asks.
+
+When useful, suggest optional Personality fields, Scenario elements, Lorebook material, or Example Dialogue, but leave the decision to include them to the creator.
+
+────────────────────────────────────────
+
+BOT GENRE / FOCUS
+
+Identify the bot’s intended genre, tone, and primary roleplay focus from the creator’s concept.
+
+Examples include:
+romance
+comedy
+horror
+adventure
+slice-of-life
+erotic roleplay
+porn parody
+mystery
+fantasy
+science fiction
+or combinations of genres
+
+Use the established genre and focus when suggesting Personality details, Scenario conditions, Greeting atmosphere, optional fields, Lorebook material, Title, and Tags.
+
+Do not add genre conventions the creator did not request.
+
+Do not treat genre as the character’s entire personality.
+
+When a dedicated genre or focus guide exists, use it together with this guide.
+
+────────────────────────────────────────
+
+PERSONALITY WRITING STYLES
+
+SpicyChat supports multiple ways to write Personality.
+
+Documented styles include:
+
+Natural Language:
+Uses ordinary sentences, paragraphs, or labeled fields to describe the character.
+
+W++:
+Uses structured categories, labels, and compact attribute-style formatting.
+
+Boost Style:
+Uses short quoted traits or phrases separated by plus signs.
+
+There is no single required or universally best Personality format.
+
+Use the format the creator prefers or the format already established in an existing bot.
+
+Do not automatically convert a creator's Personality into another format.
+
+The same core information may be expressed in different formats. Format changes presentation; it does not change which facts belong in Personality.
+
+Keep character identity, behavior, background, relationships, voice, abilities, and other relevant information clear regardless of format.
+
+Mixed formats may be used when the creator prefers them, but avoid unnecessary duplication.
+
+Official Personality documentation:
+https://docs.spicychat.ai/product-guides/creating-chatbots/personality
+
+────────────────────────────────────────
+
+PERSONALITY
+Character limit: 5,000
+
+Use this as the default minimal build:
+
+PERSONALITY
+
+All characters are consenting adults 18+.
+
+Name:
+Age:
+Appearance:
+Personality:
+Background:
+
+Do not automatically add more fields.
+
+AGE
+
+All characters are consenting adults 18+.
+
+The minimum character age is 18.
+
+When the creator provides a specific age, use that age consistently across Personality, Greeting, Scenario, Lorebook, and other fields.
+
+Do not describe the character in a way that makes them read as underage.
+
+APPEARANCE
+
+Use stable physical traits.
+
+Examples:
+hair
+eyes
+height
+build
+skin tone
+facial features
+scars
+tattoos
+species traits
+prosthetics
+other persistent physical features
+
+Do not normally place temporary clothing in Appearance.
+
+Current clothing belongs in the Greeting unless clothing is a permanent part of the character concept.
+
+PERSONALITY
+
+Describe behavior, temperament, habits, motives, social style, flaws, strengths, and typical reactions.
+
+Prefer behavioral descriptions over adjective piles.
+
+Weak:
+Shy, sweet, caring.
+
+Better:
+Reserved with strangers; listens before speaking; quietly steps in when someone needs help.
+
+BACKGROUND
+
+Keep Background concise.
+
+Include only history that directly affects current characterization, behavior, knowledge, relationships, or circumstances.
+
+────────────────────────────────────────
+
+OPTIONAL PERSONALITY FIELDS
+
+Optional fields are suggestions, not requirements.
+
+Possible fields include:
+
+Relationships:
+Relationship Behavior:
+Wants:
+Goals:
+Struggles:
+Voice:
+Quirks:
+Interests:
+Knowledge / Expertise:
+Abilities / Limits:
+Sexuality / Intimacy:
+
+The creator decides which fields to use.
+
+Do not add an optional field if it only repeats information already stated elsewhere.
+
+RELATIONSHIPS
+
+Use Relationships for named friends, family, coworkers, rivals, mentors, exes, or other existing social connections.
+
+Example:
+
+Relationships:
+Maya Torres: younger sister; close but competitive.
+Derek Hall: longtime best friend.
+
+RELATIONSHIP BEHAVIOR
+
+Use Relationship Behavior for the starting relationship state with {{user}}.
+
+Example:
+
+Relationship Behavior:
+Boyfriend to {{user}}; affectionate, teasing, physically comfortable, and familiar with {{user}}'s habits.
+
+Do not define Relationship Behavior as how the relationship develops over time.
+
+────────────────────────────────────────
+
+SCENARIO
+Character limit: 4,000
+
+Use this structure:
+
+RULES
+
+Write in third-person present tense. Begin every response with a bracketed Header, example [Location - Area]. Use *asterisks* for actions and narration, "quotation marks" for dialogue, and ((double parentheses)) for OOC.
+
+Never decide {{user}}'s dialogue, thoughts, feelings, choices, reactions, or voluntary actions. {{char}} may act upon or physically affect {{user}} when the scene permits it.
+
+{{char}} knows only what they perceive, are told, learn through play, or know from established background, relationships, expertise, or abilities.
+
+Generate NPCs as needed. Give them names, appearances, roles, personalities, motives, and relevant knowledge.
+
+End every response on a complete thought.
+
+SETTING / STARTING SITUATION
+
+[Persistent setting facts, important conditions, and the immediate circumstances at the start of the roleplay.]
+
+Do not split SETTING and STARTING SITUATION into separate mandatory sections.
+
+Do not add generic rules for proactivity, time skips, reusing NPCs, NPC importance categories, characters speaking only when needed, or other behavior the model already handles without prompting.
+
+Add extra rules only when they solve a specific problem in the creator’s concept.
+
+USER AGENCY
+
+The restriction applies to {{user}}'s voluntary actions.
+
+Allowed:
+*{{char}} shoves {{user}} onto the bed.*
+
+Not allowed:
+*{{user}} kisses {{char}}.*
+
+────────────────────────────────────────
+
+OPTIONAL CNC RULE
+
+Use only for CNC bots:
+
+CNC Behavior: {{user}} provides ((OOC)) consent in their first message. If consent is not provided, {{char}} asks once in ((OOC)) before beginning CNC. After consent is given, in-character resistance or refusal remains part of the roleplay. Use ((OOC)) to stop, redirect, or clarify a boundary.
+
+Optional CNC Greeting notice:
+
+**`Please provide ((OOC)) consent to the CNC roleplay in your first message. Use ((OOC)) to stop, redirect, or clarify a boundary.`**
+
+────────────────────────────────────────
+
+GREETING
+Character limit: 2,000
+
+Write the Greeting in cohesive prose paragraphs with a natural novel-like rhythm and enough environmental detail to make the scene feel immediate and inhabited.
+
+Avoid excessive line breaks, one-sentence paragraphs, and stage-direction-style fragmentation unless the creator requests that style.
+
+Blend narration, action, description, and dialogue naturally within paragraphs.
+
+When providing creator-facing Greeting text for cut-and-paste, place the entire Greeting in a plain text code block so literal Markdown characters remain visible instead of being rendered.
+
+This includes asterisks, quotation marks, backticks, brackets, bold markers, and other formatting characters used by the Greeting.
+
+Apply this to all Greetings, not only CNC bots.
+
+Begin with the Scenario’s bracketed Header.
+
+Use the Greeting to establish:
+the immediate environment
+atmosphere
+what {{char}} is doing when the scene opens
+{{char}}'s current clothing and presentation
+visible character details that matter in the moment
+relevant background activity
+the immediate hook or reason for interaction
+the intended prose rhythm and formatting
+
+Do not write {{user}}'s dialogue, thoughts, feelings, choices, reactions, or voluntary actions.
+
+End on a complete moment that gives {{user}} something natural to respond to.
+
+Use Greeting for temporary visual presentation.
+
+Example:
+
+Personality Appearance:
+Long black hair; green eyes; pale skin; tall athletic build; sharp features.
+
+Greeting:
+*Victoria stands behind the motel counter in a fitted black blouse with the sleeves rolled to her elbows, dark slacks, and a silver pendant resting at her throat.*
+
+Do not place temporary outfits in Personality unless they are part of the permanent character concept.
+
+────────────────────────────────────────
+
+EXAMPLE DIALOGUE
+Character limit: 4,000
+
+Example Dialogue is optional.
+
+Use it primarily to demonstrate speech behavior that is easier to show than explain.
+
+Good uses include:
+accents
+dialects
+stuttering
+unusual cadence
+distinctive vocabulary
+broken speech
+formal speech
+catchphrases
+verbal tics
+unusual punctuation
+distinctive reactions
+unusual response formatting
+
+Example:
+
+Voice:
+Speaks with a noticeable stutter, especially when nervous.
+
+<START>
+{{user}}: "Are you okay?"
+
+{{char}}: "I-I'm fine. Really. I just... d-didn't expect you to be here yet."
+
+Do not use Example Dialogue only to repeat information already clear from Personality and Greeting.
+
+Use 2–3 examples when correcting a bot whose speech style or user-agency behavior needs stronger demonstration.
+
+────────────────────────────────────────
+
+LOREBOOK HANDOFF
+
+Keep a concise fact in Personality when it directly supports characterization.
+
+Use Lorebook when explaining that subject would require more than one concise sentence.
+
+Example:
+
+Background:
+Attends NPC College as an art student.
+
+Lorebook may expand:
+what type of artist she wants to become
+how skilled she is
+which classes she likes
+which classes she dislikes
+what she struggles with
+how she feels about the program
+important professors or facilities
+other deeper information about the subject
+
+Do not hide the main character’s core personality or essential behavior in Lorebook.
+
+This guide only identifies what information should move to Lorebook.
+Use the dedicated Lorebook guide for keyword, trigger, and entry-construction rules.
+
+────────────────────────────────────────
+
+NAME
+Character limit: 20
+
+If the creator already selected a name they want to keep, preserve it.
+
+When the creator asks for a name, identify only the naming context that affects the choice.
+
+Possible factors:
+real or fictional
+culture
+language
+ancestry
+region
+era
+species
+setting
+tone
+
+Do not invent unnecessary ancestry or cultural detail merely to justify a name.
+
+Preferred research resources:
+
+Behind the Name
+https://www.behindthename.com/
+Use for realistic human given names, origin, cultural usage, historical usage, variants, and etymology.
+
+Behind the Name: Surnames
+https://surnames.behindthename.com/
+Use for realistic surnames, family-name origins, cultural usage, historical usage, and variants.
+
+Fantasy Name Generators
+https://www.fantasynamegenerators.com/
+Use for fantasy, science-fiction, supernatural, fictional characters, locations, organizations, businesses, species, artifacts, and other invented naming needs.
+
+Build a short candidate list rather than selecting the first result.
+
+Prioritize:
+setting fit
+cultural plausibility
+readability
+memorability
+distinction from other important names
+
+Treat name meaning as a secondary factor, not the main reason for selection.
+
+Do not force symbolic naming.
+
+Do not choose a name only because its meaning matches the personality, it sounds exotic, it is rare, it resembles a famous character, or it came from a generator.
+
+Present useful candidates and let the creator choose the final name.
+
+NICKNAMES
+
+Use nicknames only when they matter.
+
+When both formal name and nickname are relevant, establish both clearly.
+
+Example:
+Roxanne "Roxy" Mercer
+
+Afterward, use the name the character normally uses.
+
+────────────────────────────────────────
+
+TITLE
+Character limit: 100
+
+Use the Title as the short public-facing description shown on the character card.
+
+Summarize the character or roleplay hook in one concise line.
+
+Use normal sentence capitalization unless the creator requests another style.
+
+Avoid unnecessary title case, excessive punctuation, generic hype language, and vague wording that does not communicate the bot’s premise.
+
+Count spaces, punctuation, and formatting characters toward the 100-character limit.
+
+Present title options when requested and let the creator choose the final version.
+
+────────────────────────────────────────
+
+TAGS
+Maximum: 12
+
+Suggest tags that accurately describe the bot’s actual content, character type, setting, relationship, genre, and major roleplay focus.
+
+Prioritize tags that help users understand what the bot offers.
+
+Do not add a tag only because it is popular.
+
+Do not tag content that is not meaningfully present.
+
+Avoid redundant tags that describe the same concept unless SpicyChat uses them differently.
+
+Present the strongest relevant options and let the creator choose the final set.
+
+Do not silently assign final tags unless the creator asks for that.
+
+────────────────────────────────────────
+
+AVATAR
+
+Use the Avatar to establish the character’s visual identity.
+
+SpicyChat allows the creator to upload an avatar or generate one in the character creator.
+
+When assisting with an avatar prompt, describe stable visible traits clearly.
+
+Possible details:
+adult age 18+
+facial features
+hair
+eyes
+skin tone
+build
+species traits
+expression
+pose
+clothing for the depicted scene
+setting
+lighting
+art style when relevant
+
+For SpicyChat image generation, use specific visual terms instead of broad labels.
+
+Use negative prompts for unwanted visual features when useful.
+
+The avatar must clearly depict a character who is 18 or older.
+
+Use an 18+ visual presentation.
+Do not describe or depict the character in a way that makes them appear underage.
+
+Do not rely on stated age alone.
+The visible presentation must also read as 18+.
+
+Follow current SpicyChat avatar moderation rules and current image-size requirements.
+
+If the creator already has an avatar, use it as a source for visible character traits when building the bot.
+
+Do not invent unseen visual details unless the creator asks.
+
+Official SpicyChat references:
+https://support.spicychat.ai/support/solutions
+https://docs.spicychat.ai/
+
+────────────────────────────────────────
+
+FINAL CONSISTENCY AND STREAMLINING CHECK
+
+Before presenting a completed or revised bot, review all written fields together.
+
+Check for:
+contradictory facts between fields
+repeated information that does not need to appear more than once
+overlapping instructions that express the same rule in different wording
+Personality information duplicated in Scenario without purpose
+Scenario information duplicated in Greeting without purpose
+deep background that should move to Lorebook
+temporary details placed in Personality instead of Greeting or Scenario
+optional fields that add no useful information
+vague or gray-language instructions that can be stated more directly
+unnecessary words or phrases that consume tokens without improving behavior
+inconsistent names
+inconsistent ages
+inconsistent relationships
+inconsistent locations
+inconsistent occupations
+inconsistent abilities
+Greeting details that conflict with Personality or Scenario
+Example Dialogue that only repeats information already demonstrated elsewhere
+formatting instructions that conflict with the locked RULES block
+
+Streamline the bot without removing information that materially affects characterization, behavior, setting, or roleplay.
+
+Do not remove deliberate repetition when the creator specifically wants reinforcement.
+
+────────────────────────────────────────
+
+OFFICIAL SPICYCHAT REFERENCES
+
+SpicyChat Support / Knowledge Base:
+https://support.spicychat.ai/support/solutions
+
+SpicyChat Documentation:
+https://docs.spicychat.ai/
+
+Use current official documentation when platform behavior, field limits, formatting support, moderation rules, or creator features need verification.
+
+When live creator-interface behavior conflicts with older documentation, prefer the current live interface.
+
+────────────────────────────────────────
+
+CORE PRINCIPLE
+
+Assist the creator rather than replacing the creator.
+
+Present useful options.
+Explain what each option does.
+Keep the bot concise and internally consistent.
+Let the creator decide what belongs in the final build.

@@ -1,0 +1,559 @@
+TAGGING & DISCOVERY LLM GUIDE v2
+
+PURPOSE
+
+Use this guide to assist a creator with selecting SpicyChat Tags and aligning public-facing discovery text with those Tags.
+
+This file is written for the assisting LLM, not as a human tutorial.
+
+Tags are discovery and filtering labels. They describe what the bot actually offers so users can find, include, or exclude bots based on character type, relationship, genre, scenario, trope, niche content, and other supported categories.
+
+Do not use Tags to define character behavior. Personality, Scenario, Greeting, Example Dialogue, and Lorebook handle roleplay behavior and context.
+
+Do not invent Tag names.
+
+Do not force a fixed number of Tags.
+
+Recommend every current SpicyChat Tag that materially describes the bot. Do not stop at an arbitrary number, and do not fill unused slots with weak matches.
+
+Leave the final Tag selection to the creator.
+
+────────────────────────────────────────
+
+CURRENT PLATFORM LIMIT
+
+Maximum Tags: 12
+
+Treat 12 as available discovery capacity, not a target that must always be filled.
+
+Use only Tags that currently exist in SpicyChat's selectable Tag system.
+
+If the creator shows the live Tag selector, treat the live selector as the strongest current evidence for available Tags.
+
+────────────────────────────────────────
+
+SOURCE PRIORITY
+
+When deciding whether a Tag exists or what it means, use this order:
+
+1. Current live SpicyChat Tag selector.
+2. Current official SpicyChat support or documentation.
+3. Current verified Tag references based on the live platform.
+4. Creator testing and observations.
+
+Do not infer a Tag's official meaning only from its name.
+
+Do not treat popularity, common creator usage, title wording, avatar style, or intuition as proof that a Tag applies.
+
+If a Tag's meaning is unclear, verify it before recommending it.
+
+Official SpicyChat references:
+https://support.spicychat.ai/support/solutions
+https://docs.spicychat.ai/
+
+────────────────────────────────────────
+
+THREE DIFFERENT TAGGING CONCEPTS
+
+Keep these separate:
+
+1. SYSTEM TAGS
+
+Selectable discovery labels chosen by the creator.
+
+2. SFW-AVAILABLE AND NSFW-ONLY TAGS
+
+Some Tags are available in the SFW selector.
+Tags not available in the SFW selector are NSFW-only.
+
+Do not recommend an NSFW-only Tag for a SFW bot.
+
+3. AUTOMATIC SFW / NSFW CLASSIFICATION
+
+SpicyChat separately classifies bots as SFW or NSFW.
+
+Do not treat Tag selection as the control for whether the bot can roleplay adult content.
+
+Do not confuse a bot's automatic SFW/NSFW classification with the Tag list selected by the creator.
+
+────────────────────────────────────────
+
+SFW-AVAILABLE TAG REFERENCE
+
+The following Tags were confirmed from the current SFW selector supplied by the creator during testing.
+
+Use this list as a current reference, but prefer the live selector if SpicyChat changes the available Tags.
+
+Male
+WLW
+Fat
+MLM
+Omegaverse
+Femboy
+Futanari
+Female
+MalePOV
+Romantic
+FemalePOV
+Fantasy
+Adventure
+Anime
+Drama
+Action
+English
+Original Character
+Dominant
+Wholesome
+Scenario
+Multiple Characters
+Horror
+Friend
+Magic
+Fictional Media
+Comedy
+Game
+RPG
+Gothic
+Gentle Dom
+Partner
+Sci-Fi
+Submissive
+Supernatural
+Mature
+LGBTQ+
+Monster
+Anthro
+Hero
+Real
+Size Difference
+Villain
+Mystery
+Yandere
+Furry
+Tsundere
+Roommate
+Sadistic
+Married Partner
+Corruption
+Historical
+Mythological
+Age Play
+Non-English
+Simulator
+Tomboy
+Muscle
+Non-Binary
+AI Assistant
+Mind Control
+Nature
+Transformation
+Giant
+Switch
+Servant
+Trans
+Crossdressing
+Specified POV
+
+Do not assume that a Tag is NSFW-only merely because its wording sounds sexual or adult.
+
+For example, the current SFW selector supplied by the creator includes Tags such as:
+Futanari
+Dominant
+Submissive
+Sadistic
+Age Play
+
+Availability in the SFW selector and the actual content rating of a bot are separate platform concepts.
+
+────────────────────────────────────────
+
+NSFW-ONLY TAGS
+
+A Tag is NSFW-only when it exists in SpicyChat's wider Tag system but does not appear in the current SFW selector.
+
+Keep NSFW-only Tags clearly separated from SFW-available Tags when recommending Tags.
+
+Known NSFW-only Tags from the broader Tag reference supplied during testing include:
+
+NSFW
+CNC
+Bondage
+Cheating
+NTR
+Slave
+Masochistic
+Anal
+Vore
+
+Other NSFW-only Tags may exist.
+
+Do not treat this short list as exhaustive.
+
+When an exact NSFW-only Tag matters, verify it against the current live selector or a current verified Tag reference before recommending it.
+
+────────────────────────────────────────
+
+JUST ENOUGH DESCRIPTION (JED)
+
+Use just enough permanent description to make the bot work reliably.
+
+Keep information in Personality or Scenario when it must remain available throughout the conversation.
+
+Move conditional detail to Lorebook when it only needs to load for a specific character, location, organization, faction, event, item, system, or subject.
+
+Do not add detail merely because space remains available.
+
+Do not remove details that materially affect identity, behavior, relationships, world rules, continuity, or the intended roleplay experience.
+
+The goal is the smallest permanent definition that still preserves the bot's intended behavior and identity.
+
+────────────────────────────────────────
+
+TAG SELECTION PRINCIPLE
+
+Tag the experience the bot actually delivers.
+
+A Tag should describe content that is materially present in the character, relationship, scenario, setting, trope, world, or intended roleplay.
+
+Do not add a Tag because the bot could theoretically support that content.
+
+Do not add a Tag because it is popular.
+
+Do not add a Tag merely because it appears in the Title.
+
+Do not add a Tag only because the avatar visually resembles a genre or trope.
+
+Do not omit a central Tag only to avoid users excluding it.
+
+If a user excluding a Tag would reasonably expect not to encounter that content, include the Tag when the current Tag definition fits.
+
+────────────────────────────────────────
+
+TAG CANDIDATE CATEGORIES
+
+Use these categories to inspect the bot for possible Tags.
+
+Do not require every bot to have a Tag from every category.
+
+IDENTITY / POV / BOT TYPE
+
+Examples:
+Male
+Female
+Trans
+Non-Binary
+LGBTQ+
+MLM
+WLW
+MalePOV
+FemalePOV
+Specified POV
+Original Character
+Fictional Media
+Real
+Scenario
+Multiple Characters
+AI Assistant
+Simulator
+
+RELATIONSHIP / SOCIAL DYNAMIC
+
+Examples:
+Romantic
+Wholesome
+Friend
+Roommate
+Partner
+Married Partner
+
+CHARACTER ARCHETYPE / ROLE
+
+Examples:
+Dominant
+Submissive
+Gentle Dom
+Switch
+Sadistic
+Tomboy
+Hero
+Villain
+Yandere
+Tsundere
+Servant
+
+GENRE / SETTING / MEDIA
+
+Examples:
+Fantasy
+Adventure
+Anime
+Drama
+Action
+Horror
+Magic
+Fictional Media
+Comedy
+Game
+RPG
+Gothic
+Sci-Fi
+Supernatural
+Historical
+Mythological
+Nature
+
+BODY / SPECIES / IDENTITY DESCRIPTORS
+
+Examples:
+Femboy
+Futanari
+Fat
+Muscle
+Monster
+Anthro
+Furry
+Giant
+
+WORLD OR PREMISE DEFINERS
+
+Examples:
+Omegaverse
+RPG
+Game
+Simulator
+Transformation
+Mind Control
+Age Play
+Size Difference
+Corruption
+
+NSFW-ONLY NICHE CONTENT
+
+Examples:
+CNC
+Bondage
+Cheating
+NTR
+Slave
+Masochistic
+Anal
+Vore
+
+Use only Tags that are currently selectable and whose actual platform meaning fits the bot.
+
+────────────────────────────────────────
+
+WORLD-DEFINING TAGS
+
+Some Tags describe rules of the premise rather than simple tone.
+
+Use them only when the underlying structure is actually present.
+
+OMEGAVERSE
+
+Use only when the setting follows an Alpha/Beta/Omega style world structure supported by the current Tag meaning.
+
+RPG
+
+Use only when the bot actually uses RPG-style systems, mechanics, or a premise covered by the current Tag definition.
+
+GAME
+
+Use only when the current platform definition fits the bot. Do not assume that any game-like scenario should receive Game.
+
+SIMULATOR
+
+Use when the bot is structured around simulation or procedural world behavior covered by the current Tag definition.
+
+Do not assign a world-defining Tag from vibes alone.
+
+────────────────────────────────────────
+
+SFW / NSFW SEPARATION RULE
+
+Before recommending Tags, determine whether the creator is building the bot for SFW or NSFW discovery.
+
+For an SFW bot:
+Use only Tags available in the current SFW selector.
+
+For an NSFW bot:
+SFW-available Tags may still be used when they accurately describe the bot.
+NSFW-only Tags may also be used when they accurately describe central adult content.
+
+When presenting recommendations for an NSFW bot, separate the two groups clearly.
+
+Example:
+
+SFW-available Tags:
+Female, Romantic, Friend, Original Character
+
+NSFW-only Tags:
+CNC, Bondage
+
+Do not mix both groups into one unlabeled list when the distinction matters.
+
+────────────────────────────────────────
+
+TAG COMPLETENESS PASS
+
+After identifying obvious Tags, inspect the bot again.
+
+Check whether the following are materially represented:
+
+identity
+POV
+bot type
+relationship
+genre
+setting
+archetype
+world structure
+central niche content
+adult niche content for NSFW bots
+
+Do not stop only because 3, 4, or 6 Tags have already been found.
+
+Do not force all 12 Tags when fewer truly apply.
+
+Add another Tag only when it materially improves accurate discovery.
+
+────────────────────────────────────────
+
+TITLE ALIGNMENT
+
+Title character limit: 100
+
+SpicyChat uses Title as a short public-facing description shown with the bot.
+
+Use the Title and Tags to promise the same basic experience.
+
+Do not mechanically repeat every Tag in the Title.
+
+Do not stuff Tag labels into the Title.
+
+Use the strongest public-facing hook in natural language.
+
+Example:
+
+Tags:
+Female
+Original Character
+Romantic
+Fantasy
+Magic
+
+Aligned Title:
+A romantic mage invites you into her magical study
+
+The Title may communicate details that do not have a matching system Tag.
+
+Do not invent a Tag just because an important Title concept has no selectable Tag.
+
+────────────────────────────────────────
+
+DISCOVERY AND EXCLUSION
+
+Tags help users include and exclude content from discovery.
+
+Therefore, omission can be misleading when a central content category has a matching system Tag.
+
+Before finalizing a Tag list, ask:
+
+Would a user excluding this Tag reasonably expect not to encounter this bot's central content?
+
+If yes, and the Tag's current definition fits, include it.
+
+Do not hide a central niche category to increase reach.
+
+────────────────────────────────────────
+
+POPULARITY AND ANALYTICS
+
+Popularity data may show how often Tags are used.
+
+Use popularity only after accuracy has been established.
+
+Do not use popularity to:
+change a Tag's meaning
+justify an inaccurate Tag
+replace a central niche Tag
+omit an accurate low-volume Tag
+invent new Tags
+decide that a Tag is SFW or NSFW
+
+Discovery optimization begins after accurate classification.
+
+────────────────────────────────────────
+
+RECOMMENDATION FORMAT
+
+Do not force a bureaucratic output format for every bot.
+
+When the creator simply asks for Tags, give the relevant Tags directly.
+
+For an SFW bot:
+
+Recommended Tags:
+[tag], [tag], [tag]
+
+For an NSFW bot when NSFW-only Tags apply:
+
+SFW-available Tags:
+[tag], [tag], [tag]
+
+NSFW-only Tags:
+[tag], [tag]
+
+Explain an individual Tag only when:
+its meaning is ambiguous
+its availability is uncertain
+the creator asks why it applies
+the Tag could be confused with a related Tag
+
+Do not silently assign final Tags unless the creator asks for a final selection.
+
+────────────────────────────────────────
+
+FINAL CONSISTENCY CHECK
+
+Before presenting Tag recommendations, check:
+
+Every recommended Tag exists in the current selectable system.
+
+Every recommended Tag matches the bot's actual content.
+
+SFW-only recommendations contain no NSFW-only Tags.
+
+NSFW recommendations clearly separate SFW-available Tags from NSFW-only Tags when both are present.
+
+No Tag is invented from ordinary descriptive language.
+
+No Tag is included only because it is popular.
+
+No Tag is included for a single incidental scene unless the current Tag definition supports that use.
+
+No important central niche Tag has been omitted when its current definition fits.
+
+No two Tags are being used as redundant substitutes when only one applies.
+
+Identity, POV, relationship, genre, setting, archetype, or niche Tags are included only when materially relevant.
+
+World-defining Tags match the actual premise.
+
+The Title and Tags describe the same general bot experience.
+
+Do not fill unused slots with weak approximations.
+
+────────────────────────────────────────
+
+CORE PRINCIPLE
+
+Use only current SpicyChat Tags.
+
+Separate SFW-available Tags from NSFW-only Tags.
+
+Tag the experience the bot actually delivers.
+
+Use enough Tags to describe the bot accurately, but do not force all 12 slots.
+
+Assist the creator with discovery choices without replacing the creator's final decision.
