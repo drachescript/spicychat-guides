@@ -1,14 +1,15 @@
 # Hunter's original source files
 
-The source files in this directory are Hunter's originals, not rewritten human guides. Keep exact filenames and original bytes (including the Word document).
+All nine original files supplied by Hunter are present in this directory.
 
-Prepared source bundle: `hunter_originals_for_github.zip` (provided alongside this update). Extract its `llm/originals/` folder to the matching path in the repository.
+- Keep the original filenames and contents; don't replace them with the edited human-readable guide text.
+- `manifest.json` records expected sizes and SHA-256 checksums for the supplied files.
+- `/llm/hunter/` lists the originals with direct view/download links.
+- `/llm/hunter-files.json` is the website-readable inventory.
 
-Once the nine original files are uploaded, update `/llm/hunter-files.json` statuses/links and the `/llm/hunter/` page to make the downloads active.
+**Note:** `SpicyChat_Reference v1.md` is a community reference, not official SpicyChat documentation.
 
-These reference files are written for an assisting LLM; `SpicyChat_Reference v1.md` collects community observations and should not be mistaken for official SpicyChat documentation.
-
-Contents:
+Files:
 - Multi-Character LLM Guide v2.txt
 - Research LLM Guide v1.txt
 - Single Character LLM Guide v5.txt
