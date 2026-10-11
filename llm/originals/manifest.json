@@ -45,6 +45,15 @@
       "filename": "World Bot LLM Guide v1.txt",
       "bytes": 32624,
       "sha256": "91621a738866a70b68357bf5d359dc8007f99c8881865b571d8d28fc576e64c2"
+    },
+    {
+      "filename": "Unified_Lorebook_LLM_Production_System_v6.txt",
+      "bytes": 91228,
+      "sha256": "e9f97a28fc9c33b56f03a290f940b5225c1d6fdd06601eeca75a1886bb39e480"
     }
+  ],
+  "current_lorebook_system": "Unified_Lorebook_LLM_Production_System_v6.txt",
+  "archived_lorebook_systems": [
+    "Unified_Lorebook_LLM_Production_System_v4.txt"
   ]
 }
