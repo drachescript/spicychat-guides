@@ -33,8 +33,10 @@ SpicyChat Guides is an independent community project and is not affiliated with,
 
 ## Hunter's original documents (October 2026)
 
-- `/llm/hunter/` — inventory of nine current source files supplied by Hunter.
+- `/llm/hunter/` — inventory of nine current source files and one archived earlier version.
 - `/llm/hunter-files.json` — file/version catalog, verified filenames/sizes and download links.
-- `/llm/originals/` — all nine originals are uploaded, including the `.docx`, with a manifest recording filenames, sizes and SHA-256 digests.
+- `/llm/originals/` — all nine current originals and the older Lorebook v4 are uploaded, including the `.docx`, with a manifest recording filenames, sizes and SHA-256 digests.
 
 Selected human guides have already been expanded with clearly labeled concepts from these originals. The original files themselves must not be replaced with those edited human versions.
+
+Hunter updated Unified Lorebook LLM Production System to **v6** on 2026-10-11. The older v4 remains available separately for reference.
