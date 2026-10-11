@@ -602,18 +602,18 @@ window.GUIDES=[
     "originalBytes": 329975
   },
   {
-    "id": "hunter-unified-lorebook-llm-production-system-v4",
-    "title": "Unified Lorebook LLM Production System v4",
+    "id": "hunter-unified-lorebook-llm-production-system-v6",
+    "title": "Unified Lorebook LLM Production System v6",
     "kind": "llm",
     "section": "llm",
     "subsection": "Lorebooks",
     "status": "available",
     "label": "LLM System",
-    "desc": "bulk and advanced Lorebooks, routing/connection maps, nonrecursive retrieval and JSON validation.",
+    "desc": "Updated standalone system for Lorebook entries, bulk populations, advanced modules, JSON adapters and evidence-based QA.",
     "author": "Hunter",
-    "pageUrl": "/llm/originals/Unified_Lorebook_LLM_Production_System_v4.txt",
-    "originalFilename": "Unified_Lorebook_LLM_Production_System_v4.txt",
-    "originalBytes": 68878
+    "pageUrl": "/llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt",
+    "originalFilename": "Unified_Lorebook_LLM_Production_System_v6.txt",
+    "originalBytes": 91228
   },
   {
     "id": "hunter-world-bot-llm-guide-v1",
