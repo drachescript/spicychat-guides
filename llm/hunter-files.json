@@ -1,0 +1,79 @@
+{
+  "author": "Hunter",
+  "status": "preserved-local-pending-site-upload",
+  "updated": "2026-10-11",
+  "files": [
+    {
+      "file": "Multi-Character LLM Guide v2.txt",
+      "title": "Multi-Character LLM Guide v2",
+      "kind": "LLM Guide",
+      "description": "how to build a defined cast, Group Dynamic, shared context budgets and where supporting NPCs belong.",
+      "expectedPath": "/llm/originals/Multi-Character LLM Guide v2.txt",
+      "status": "pending-original-upload"
+    },
+    {
+      "file": "Research LLM Guide v1.txt",
+      "title": "Research LLM Guide v1",
+      "kind": "LLM Guide",
+      "description": "how an assistant should distinguish asking, research, option generation, concept resolution and fact-checking.",
+      "expectedPath": "/llm/originals/Research LLM Guide v1.txt",
+      "status": "pending-original-upload"
+    },
+    {
+      "file": "Single Character LLM Guide v5.txt",
+      "title": "Single Character LLM Guide v5",
+      "kind": "LLM Guide",
+      "description": "character fields, Just Enough Description, greetings, token economy and Lorebook handoff.",
+      "expectedPath": "/llm/originals/Single Character LLM Guide v5.txt",
+      "status": "pending-original-upload"
+    },
+    {
+      "file": "SpicyChat_Reference v1.md",
+      "title": "SpicyChat Reference v1",
+      "kind": "Reference",
+      "description": "dated community findings and source-handling notes, kept separate from current platform documentation.",
+      "expectedPath": "/llm/originals/SpicyChat_Reference v1.md",
+      "status": "pending-original-upload"
+    },
+    {
+      "file": "Tagging & Discovery LLM Guide v2.txt",
+      "title": "Tagging & Discovery LLM Guide v2",
+      "kind": "LLM Guide",
+      "description": "discovery labels, SFW/NSFW distinctions, accuracy, exclusions and selector verification.",
+      "expectedPath": "/llm/originals/Tagging & Discovery LLM Guide v2.txt",
+      "status": "pending-original-upload"
+    },
+    {
+      "file": "TTRPG LLM Guide v1.txt",
+      "title": "TTRPG LLM Guide v1",
+      "kind": "LLM Guide",
+      "description": "game loop, state management, stat systems, rolls, player choice and TTRPG design.",
+      "expectedPath": "/llm/originals/TTRPG LLM Guide v1.txt",
+      "status": "pending-original-upload"
+    },
+    {
+      "file": "Understanding SpicyChat.AI.docx",
+      "title": "Understanding SpicyChat.AI",
+      "kind": "12-chapter document",
+      "description": "the full 12-chapter explanatory book covering bot types, fields, personality, greetings, memory, Lorebooks, discovery, testing and publishing.",
+      "expectedPath": "/llm/originals/Understanding SpicyChat.AI.docx",
+      "status": "pending-original-upload"
+    },
+    {
+      "file": "Unified_Lorebook_LLM_Production_System_v4.txt",
+      "title": "Unified Lorebook LLM Production System v4",
+      "kind": "LLM System",
+      "description": "bulk and advanced Lorebooks, routing/connection maps, nonrecursive retrieval and JSON validation.",
+      "expectedPath": "/llm/originals/Unified_Lorebook_LLM_Production_System_v4.txt",
+      "status": "pending-original-upload"
+    },
+    {
+      "file": "World Bot LLM Guide v1.txt",
+      "title": "World Bot LLM Guide v1",
+      "kind": "LLM Guide",
+      "description": "simulated worlds, key NPCs, world rule tiers, agency, changing state and conditional references.",
+      "expectedPath": "/llm/originals/World Bot LLM Guide v1.txt",
+      "status": "pending-original-upload"
+    }
+  ]
+}
