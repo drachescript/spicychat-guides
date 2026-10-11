@@ -2,7 +2,7 @@
   "author": "Hunter",
   "status": "available",
   "updated": "2026-10-11",
-  "fileCount": 9,
+  "fileCount": 10,
   "files": [
     {
       "file": "Multi-Character LLM Guide v2.txt",
@@ -93,12 +93,25 @@
       "title": "Unified Lorebook LLM Production System v4",
       "kind": "LLM System",
       "description": "bulk and advanced Lorebooks, routing/connection maps, nonrecursive retrieval and JSON validation.",
-      "status": "available",
+      "status": "archived",
       "path": "llm/originals/Unified_Lorebook_LLM_Production_System_v4.txt",
       "siteUrl": "/llm/originals/Unified_Lorebook_LLM_Production_System_v4.txt",
       "githubUrl": "https://github.com/drachescript/spicychat-guides/blob/main/llm/originals/Unified_Lorebook_LLM_Production_System_v4.txt",
       "bytes": 68878,
-      "sha256": "e8de38c15ccae4b54c2228071bbf22c5c7fe52d51396484e049085948673670f"
+      "sha256": "e8de38c15ccae4b54c2228071bbf22c5c7fe52d51396484e049085948673670f",
+      "supersededBy": "Unified_Lorebook_LLM_Production_System_v6.txt"
+    },
+    {
+      "file": "Unified_Lorebook_LLM_Production_System_v6.txt",
+      "title": "Unified Lorebook LLM Production System v6",
+      "kind": "LLM System",
+      "description": "Updated standalone system for Lorebook entries, bulk populations, advanced modules, JSON adapters and evidence-based QA.",
+      "status": "available",
+      "path": "llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt",
+      "siteUrl": "/llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt",
+      "githubUrl": "https://github.com/drachescript/spicychat-guides/blob/main/llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt",
+      "bytes": 91228,
+      "sha256": "e9f97a28fc9c33b56f03a290f940b5225c1d6fdd06601eeca75a1886bb39e480"
     },
     {
       "file": "World Bot LLM Guide v1.txt",
@@ -112,5 +125,7 @@
       "bytes": 32624,
       "sha256": "91621a738866a70b68357bf5d359dc8007f99c8881865b571d8d28fc576e64c2"
     }
-  ]
+  ],
+  "currentFileCount": 9,
+  "archivedFileCount": 1
 }
