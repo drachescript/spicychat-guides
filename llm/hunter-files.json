@@ -1,20 +1,33 @@
 {
   "author": "Hunter",
   "status": "available",
-  "updated": "2026-10-11",
-  "fileCount": 10,
+  "updated": "2026-10-12",
+  "fileCount": 16,
   "files": [
     {
       "file": "Multi-Character LLM Guide v2.txt",
       "title": "Multi-Character LLM Guide v2",
       "kind": "LLM Guide",
       "description": "how to build a defined cast, Group Dynamic, shared context budgets and where supporting NPCs belong.",
-      "status": "available",
+      "status": "archived",
       "path": "llm/originals/Multi-Character LLM Guide v2.txt",
       "siteUrl": "/llm/originals/Multi-Character%20LLM%20Guide%20v2.txt",
       "githubUrl": "https://github.com/drachescript/spicychat-guides/blob/main/llm/originals/Multi-Character%20LLM%20Guide%20v2.txt",
       "bytes": 26130,
-      "sha256": "46b11ede3481bfd15ef0a4ee0f6bcc8663360b8fd62b08562d6b27c2425f8b34"
+      "sha256": "46b11ede3481bfd15ef0a4ee0f6bcc8663360b8fd62b08562d6b27c2425f8b34",
+      "supersededBy": "Multi-Character LLM Guide v3.txt"
+    },
+    {
+      "file": "Multi-Character LLM Guide v3.txt",
+      "title": "Multi-Character LLM Guide v3",
+      "kind": "LLM Guide",
+      "description": "fixed main casts, Group Dynamic, user agency and updated Scenario and Greeting guidelines.",
+      "status": "available",
+      "path": "llm/originals/Multi-Character LLM Guide v3.txt",
+      "siteUrl": "/llm/originals/Multi-Character%20LLM%20Guide%20v3.txt",
+      "githubUrl": "https://github.com/drachescript/spicychat-guides/blob/main/llm/originals/Multi-Character%20LLM%20Guide%20v3.txt",
+      "bytes": 26434,
+      "sha256": "d551f87c2ecdf8d1aab929432b5b6806db9937d442cdda55366c02104f33cdab"
     },
     {
       "file": "Research LLM Guide v1.txt",
@@ -33,12 +46,25 @@
       "title": "Single Character LLM Guide v5",
       "kind": "LLM Guide",
       "description": "character fields, Just Enough Description, greetings, token economy and Lorebook handoff.",
-      "status": "available",
+      "status": "archived",
       "path": "llm/originals/Single Character LLM Guide v5.txt",
       "siteUrl": "/llm/originals/Single%20Character%20LLM%20Guide%20v5.txt",
       "githubUrl": "https://github.com/drachescript/spicychat-guides/blob/main/llm/originals/Single%20Character%20LLM%20Guide%20v5.txt",
       "bytes": 20966,
-      "sha256": "d6f32e527bee8e16f56d8e2029607f58a570e37df7ec1d89e34fcfcb900c8fc8"
+      "sha256": "d6f32e527bee8e16f56d8e2029607f58a570e37df7ec1d89e34fcfcb900c8fc8",
+      "supersededBy": "Single Character LLM Guide v6.txt"
+    },
+    {
+      "file": "Single Character LLM Guide v6.txt",
+      "title": "Single Character LLM Guide v6",
+      "kind": "LLM Guide",
+      "description": "single-character bot workflow, Scenario rules, user agency, formatting and field limits.",
+      "status": "available",
+      "path": "llm/originals/Single Character LLM Guide v6.txt",
+      "siteUrl": "/llm/originals/Single%20Character%20LLM%20Guide%20v6.txt",
+      "githubUrl": "https://github.com/drachescript/spicychat-guides/blob/main/llm/originals/Single%20Character%20LLM%20Guide%20v6.txt",
+      "bytes": 21270,
+      "sha256": "7c4d22ccd23a3f065ce03c073122971950367322977e3eed9f97f61464e4c47a"
     },
     {
       "file": "SpicyChat_Reference v1.md",
@@ -69,12 +95,25 @@
       "title": "TTRPG LLM Guide v1",
       "kind": "LLM Guide",
       "description": "game loop, state management, stat systems, rolls, player choice and TTRPG design.",
-      "status": "available",
+      "status": "archived",
       "path": "llm/originals/TTRPG LLM Guide v1.txt",
       "siteUrl": "/llm/originals/TTRPG%20LLM%20Guide%20v1.txt",
       "githubUrl": "https://github.com/drachescript/spicychat-guides/blob/main/llm/originals/TTRPG%20LLM%20Guide%20v1.txt",
       "bytes": 58313,
-      "sha256": "2078b366de0d2bbfd16d8f1b14718c377cbee00e12f90563b99901fc9ef326da"
+      "sha256": "2078b366de0d2bbfd16d8f1b14718c377cbee00e12f90563b99901fc9ef326da",
+      "supersededBy": "TTRPG LLM Guide v2.txt"
+    },
+    {
+      "file": "TTRPG LLM Guide v2.txt",
+      "title": "TTRPG LLM Guide v2",
+      "kind": "LLM Guide",
+      "description": "text adventure loop, optional RPG complexity, user agency and Scenario conventions.",
+      "status": "available",
+      "path": "llm/originals/TTRPG LLM Guide v2.txt",
+      "siteUrl": "/llm/originals/TTRPG%20LLM%20Guide%20v2.txt",
+      "githubUrl": "https://github.com/drachescript/spicychat-guides/blob/main/llm/originals/TTRPG%20LLM%20Guide%20v2.txt",
+      "bytes": 58603,
+      "sha256": "ed3b6b17446b1a3517c49b2a1238f229ce1cf80adacb6657763eb4903c4e10ff"
     },
     {
       "file": "Understanding SpicyChat.AI.docx",
@@ -102,6 +141,19 @@
       "supersededBy": "Unified_Lorebook_LLM_Production_System_v6.txt"
     },
     {
+      "file": "Unified_Lorebook_LLM_Production_System_v5.txt",
+      "title": "Unified Lorebook LLM Production System v5",
+      "kind": "LLM System",
+      "description": "Previous development version; v6 remains Hunter's latest supplied Unified Lorebook system.",
+      "status": "archived",
+      "supersededBy": "Unified_Lorebook_LLM_Production_System_v6.txt",
+      "path": "llm/originals/Unified_Lorebook_LLM_Production_System_v5.txt",
+      "siteUrl": "/llm/originals/Unified_Lorebook_LLM_Production_System_v5.txt",
+      "githubUrl": "https://github.com/drachescript/spicychat-guides/blob/main/llm/originals/Unified_Lorebook_LLM_Production_System_v5.txt",
+      "bytes": 69121,
+      "sha256": "b0ee81391454b228fab3af25d3889e730fbe96a6a1222405daedb23847efdf90"
+    },
+    {
       "file": "Unified_Lorebook_LLM_Production_System_v6.txt",
       "title": "Unified Lorebook LLM Production System v6",
       "kind": "LLM System",
@@ -118,14 +170,39 @@
       "title": "World Bot LLM Guide v1",
       "kind": "LLM Guide",
       "description": "simulated worlds, key NPCs, world rule tiers, agency, changing state and conditional references.",
-      "status": "available",
+      "status": "archived",
       "path": "llm/originals/World Bot LLM Guide v1.txt",
       "siteUrl": "/llm/originals/World%20Bot%20LLM%20Guide%20v1.txt",
       "githubUrl": "https://github.com/drachescript/spicychat-guides/blob/main/llm/originals/World%20Bot%20LLM%20Guide%20v1.txt",
       "bytes": 32624,
-      "sha256": "91621a738866a70b68357bf5d359dc8007f99c8881865b571d8d28fc576e64c2"
+      "sha256": "91621a738866a70b68357bf5d359dc8007f99c8881865b571d8d28fc576e64c2",
+      "supersededBy": "World Bot LLM Guide v2.txt"
+    },
+    {
+      "file": "World Bot LLM Guide v2.txt",
+      "title": "World Bot LLM Guide v2",
+      "kind": "LLM Guide",
+      "description": "world simulation structure, conditional NPCs, scenario rules, and authoring workflow.",
+      "status": "available",
+      "path": "llm/originals/World Bot LLM Guide v2.txt",
+      "siteUrl": "/llm/originals/World%20Bot%20LLM%20Guide%20v2.txt",
+      "githubUrl": "https://github.com/drachescript/spicychat-guides/blob/main/llm/originals/World%20Bot%20LLM%20Guide%20v2.txt",
+      "bytes": 32965,
+      "sha256": "b5d981717230728acf6e1f4998b2b5399fb3a5092a73935c85ca81468080a39c"
+    },
+    {
+      "file": "Understanding Single-Character Bots.docx",
+      "title": "Understanding Single-Character Bots",
+      "kind": "Guidebook",
+      "description": "Hunter's new detailed single-character bot book; separate from Understanding SpicyChat.AI.",
+      "status": "pending-upload",
+      "expectedPath": "llm/originals/Understanding Single-Character Bots.docx",
+      "bytes": 60653,
+      "sha256": "3852d8173306c8289a629ed86799c76d0011ea939c368b48e6ab2781f2681fe0"
     }
   ],
   "currentFileCount": 9,
-  "archivedFileCount": 1
+  "archivedFileCount": 6,
+  "pendingFileCount": 1,
+  "latestLorebookSystem": "Unified_Lorebook_LLM_Production_System_v6.txt"
 }
