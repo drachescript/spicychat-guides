@@ -50,10 +50,49 @@
       "filename": "Unified_Lorebook_LLM_Production_System_v6.txt",
       "bytes": 91228,
       "sha256": "e9f97a28fc9c33b56f03a290f940b5225c1d6fdd06601eeca75a1886bb39e480"
+    },
+    {
+      "filename": "Multi-Character LLM Guide v3.txt",
+      "bytes": 26434,
+      "sha256": "d551f87c2ecdf8d1aab929432b5b6806db9937d442cdda55366c02104f33cdab"
+    },
+    {
+      "filename": "Single Character LLM Guide v6.txt",
+      "bytes": 21270,
+      "sha256": "7c4d22ccd23a3f065ce03c073122971950367322977e3eed9f97f61464e4c47a"
+    },
+    {
+      "filename": "World Bot LLM Guide v2.txt",
+      "bytes": 32965,
+      "sha256": "b5d981717230728acf6e1f4998b2b5399fb3a5092a73935c85ca81468080a39c"
+    },
+    {
+      "filename": "TTRPG LLM Guide v2.txt",
+      "bytes": 58603,
+      "sha256": "ed3b6b17446b1a3517c49b2a1238f229ce1cf80adacb6657763eb4903c4e10ff"
+    },
+    {
+      "filename": "Unified_Lorebook_LLM_Production_System_v5.txt",
+      "bytes": 69121,
+      "sha256": "b0ee81391454b228fab3af25d3889e730fbe96a6a1222405daedb23847efdf90"
     }
   ],
   "current_lorebook_system": "Unified_Lorebook_LLM_Production_System_v6.txt",
   "archived_lorebook_systems": [
     "Unified_Lorebook_LLM_Production_System_v4.txt"
+  ],
+  "current_guides": {
+    "Single Character": "Single Character LLM Guide v6.txt",
+    "Multi-Character": "Multi-Character LLM Guide v3.txt",
+    "World Bot": "World Bot LLM Guide v2.txt",
+    "TTRPG": "TTRPG LLM Guide v2.txt",
+    "Unified Lorebook": "Unified_Lorebook_LLM_Production_System_v6.txt"
+  },
+  "pending_original_files": [
+    {
+      "filename": "Understanding Single-Character Bots.docx",
+      "bytes": 60653,
+      "sha256": "3852d8173306c8289a629ed86799c76d0011ea939c368b48e6ab2781f2681fe0"
+    }
   ]
 }
