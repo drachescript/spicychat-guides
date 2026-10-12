@@ -31,12 +31,13 @@ SpicyChat Guides is an independent community project and is not affiliated with,
 - `/lorebook-tags.json` — current Lorebook tag picker values
 - `/blocked-words.json` — community-curated blocked-word/moderation reference
 
-## Hunter's original documents (October 2026)
+## Hunter's original files (updated October 12, 2026)
 
-- `/llm/hunter/` — inventory of nine current source files and one archived earlier version.
-- `/llm/hunter-files.json` — file/version catalog, verified filenames/sizes and download links.
-- `/llm/originals/` — all nine current originals and the older Lorebook v4 are uploaded, including the `.docx`, with a manifest recording filenames, sizes and SHA-256 digests.
+- `/llm/hunter/` — current original files, past versions, and one pending Word document.
+- `/llm/hunter-files.json` — inventory with download links, versions, sizes and status.
+- `/llm/originals/` — 15 original files preserved with their original filenames, plus a manifest.
+- Current: Single Character v6, Multi-Character v3, World Bot v2, TTRPG v2, Unified Lorebook v6. Research v1, Tagging v2, Reference v1 and Understanding SpicyChat.AI remain unchanged.
+- Previous files remain downloadable, including Unified Lorebook v4 and v5 (neither supersedes v6).
+- `Understanding Single-Character Bots.docx` is still pending GitHub upload. It is a separate book, not a replacement for `Understanding SpicyChat.AI.docx`.
 
-Selected human guides have already been expanded with clearly labeled concepts from these originals. The original files themselves must not be replaced with those edited human versions.
-
-Hunter updated Unified Lorebook LLM Production System to **v6** on 2026-10-11. The older v4 remains available separately for reference.
+Human guides continue to be edited separately from the original LLM files and remain public WIP drafts for review.
