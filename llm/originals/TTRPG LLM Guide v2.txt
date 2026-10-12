@@ -1,0 +1,2259 @@
+TTRPG LLM GUIDE v2
+
+PURPOSE
+
+Use this guide to help create and run TTRPG-style text adventures in SpicyChat.
+
+This guide is written for the assisting LLM.
+
+It supplements:
+- Research LLM Guide v1
+- World Bot LLM Guide v2
+- Lorebook LLM Guide v3
+- Advanced Lorebook LLM Guide v3
+- Single Character LLM Guide v6
+- Multi-Character LLM Guide v3
+- Tagging & Discovery LLM Guide v2
+
+Those guides remain authoritative for their own subjects.
+
+This guide combines TTRPG design, text-adventure design, interactive-fiction design, World Bot simulation, Lorebook architecture, advanced state systems, simplified RPG mechanics, exploration, quests, combat, NPCs, monsters, items, puzzles, quizzes, traps, progression, and persistent consequences.
+
+The goal is not to reproduce a complete tabletop rules engine inside SpicyChat.
+
+The goal is to create a playable text adventure that behaves like a TTRPG while remaining reliable enough for an LLM-driven conversation.
+
+────────────────────────────────────────
+
+CORE PRINCIPLE
+
+A TTRPG text adventure is not merely a chatbot with HP.
+
+Treat it as:
+
+WORLD
++
+PLAYER CHARACTER
++
+STATE
++
+RULES
++
+CONSEQUENCES
++
+FREEFORM PLAYER ACTION
+
+The world presents situations.
+
+{{user}} controls the player character.
+
+The LLM controls the environment, NPCs, enemies, hazards, consequences, world reactions, rules adjudication, and scene progression.
+
+Never write {{user}}’s dialogue, thoughts, feelings, choices, reactions, or voluntary actions. NPCs may act upon or physically affect {{user}}.
+
+Insert this user-agency rule verbatim in the Scenario RULES block. Do not paraphrase it or add a scene-permission qualifier. Resolve declared player actions and direct physical consequences without writing {{user}}’s response.
+
+────────────────────────────────────────
+
+THE BASIC GAME LOOP
+
+WORLD STATE
+↓
+Describe the current situation
+↓
+{{user}} attempts something
+↓
+Interpret the attempted action
+↓
+Determine whether a roll is needed
+↓
+Resolve success, failure, cost, or complication
+↓
+Update state
+↓
+NPCs and environment react
+↓
+Present the new situation
+↓
+Return control to {{user}}
+
+Do not advance through a predetermined story regardless of player action.
+
+Do not decide the player's move merely to keep the plot moving.
+
+────────────────────────────────────────
+
+DESCRIBE → INVITE → RESOLVE → CHANGE
+
+DESCRIBE
+Give enough information for the player to understand the current situation.
+
+INVITE
+Leave room for the player to choose what to do.
+
+RESOLVE
+Resolve what the player actually attempts.
+
+CHANGE
+Update the world according to the result.
+
+Then describe the new state.
+
+Avoid:
+
+DESCRIBE
+→ decide what {{user}} does
+→ continue the story
+
+That creates an AI-written story rather than a text adventure.
+
+────────────────────────────────────────
+
+PLAYER FREEDOM
+
+The player may attempt any plausible action.
+
+The LLM may suggest obvious options when useful, but suggestions are not menu locks.
+
+Example suggestions:
+- examine the altar
+- question the priest
+- inspect the door
+- search the room
+
+But {{user}} may instead climb the wall, cast a spell, bribe the guard, break a window, leave, wait, or invent another approach.
+
+OPTIONS ARE SUGGESTIONS, NOT LIMITS.
+
+────────────────────────────────────────
+
+BOT TYPE
+
+Most full TTRPG text adventures should normally use a World Bot because the setting, NPCs, enemies, locations, events, and consequences are the primary simulation.
+
+Use Single Character when one GM-like character or companion is the actual focus and the world is secondary.
+
+Use Multi-Character when a fixed adventuring party or fixed cast is the primary experience.
+
+Use World Bot when the world itself is the roleplay engine, NPCs appear dynamically, locations matter, quests matter, enemies and events rotate, and the user can explore freely.
+
+Consult World Bot LLM Guide v2 for final World Bot construction.
+
+────────────────────────────────────────
+
+FOUNDATION ARCHITECTURE
+
+Use four major layers.
+
+PERMANENT CARD
+Stores rules needed nearly every scene.
+
+Examples:
+- simulation role
+- player agency
+- knowledge limits
+- universal game rules
+- roll rules
+- state-update rules
+- formatting rules
+- permanent world laws
+
+LOREBOOK
+Stores conditional information.
+
+Examples:
+- locations
+- factions
+- recurring NPCs
+- monsters
+- items
+- classes
+- spells
+- conditions
+- quests
+- puzzle modules
+- trap modules
+- regions
+- religions
+- cultures
+- encounter models
+
+CONVERSATION
+Stores what actually happened.
+
+Examples:
+- current location
+- current HP
+- current quest stage
+- whether a bridge collapsed
+- which NPC survived
+- whether an artifact was found
+- faction attitude
+- discovered secrets
+
+HUD / STATE DISPLAY
+Repeats only the essential changing state that benefits from reinforcement.
+
+Examples:
+- HP
+- Level
+- Progress
+- Conditions
+- Location
+- active combat state
+
+Permanent card = invariants.
+Lorebook = conditional possibilities.
+Conversation = current reality.
+HUD = selected visible state.
+
+────────────────────────────────────────
+
+SMALL CENTER, LARGE EDGES
+
+Keep permanent context small.
+
+Move conditional complexity outward into Lorebook.
+
+The permanent card should not grow every time the world gains another dungeon, monster, spell, faction, quest, town, or NPC.
+
+Those belong in conditional modules unless they are truly universal.
+
+────────────────────────────────────────
+
+VISIBLE STATE VS HIDDEN STATE
+
+VISIBLE STATE
+Information the player benefits from seeing.
+
+Examples:
+- HP
+- Level
+- Progress
+- Conditions
+- Gold
+- currently equipped weapon
+- obvious quest objective
+
+HIDDEN STATE
+Information the world needs but the player should not automatically know.
+
+Examples:
+- secret door discovered=false
+- assassin identity
+- merchant trust score
+- trap armed=true
+- cult alerted=true
+- NPC betrayal planned=true
+- hidden reputation
+- monster waiting in next room
+
+Do not print hidden state unless the player discovers it.
+
+────────────────────────────────────────
+
+STATE CLASSES
+
+CORE STATE
+Track continuously.
+
+Recommended:
+- Level
+- HP
+- Progress
+- major Conditions
+- Location
+
+ACTIVE STATE
+Track while relevant.
+
+Examples:
+- combat
+- current quest
+- temporary effects
+- limited-use resources
+- puzzle progress
+- chase progress
+
+WORLD FLAGS
+Track meaningful consequences.
+
+Examples:
+- bridge destroyed
+- mayor rescued
+- faction hostile
+- artifact discovered
+- goblin chief dead
+- gate unlocked
+- curse active
+
+REFERENCE DATA
+Do not repeatedly track.
+
+Examples:
+- monster definitions
+- spell descriptions
+- item descriptions
+- class information
+- location lore
+- faction lore
+- condition rules
+
+Reference Data belongs in Lorebook.
+
+────────────────────────────────────────
+
+TRACK ONLY STATE THAT CHANGES PLAY
+
+Do not track information merely because a game could track it.
+
+Useful state changes later behavior.
+
+Examples:
+- HP matters because it affects survival
+- Poisoned matters because it changes future actions
+- Quest Stage matters because it changes what can happen
+- Reputation matters if NPC behavior changes
+- Gold matters if purchases matter
+
+Usually unnecessary:
+- forty minor counters
+- decorative statistics
+- values never referenced again
+- complete accounting of every mundane possession
+
+Every tracked variable creates another continuity burden.
+
+────────────────────────────────────────
+
+DEFAULT COMPLEXITY
+
+The recommended default is SIMPLE RPG MODE.
+
+Do not default to full Pathfinder-style bookkeeping.
+
+Use more complexity only when the creator wants it.
+
+STORY MODE
+
+Track only what the story needs, such as Level if desired, HP or a simple condition state, Talents, and Abilities.
+
+Use few or no numerical Stats.
+
+SIMPLE RPG MODE
+
+Track:
+- Level
+- Progress
+- HP
+- 4 Stats
+- Talents
+- Abilities
+- Conditions
+- important Gear
+
+This is the recommended default.
+
+CRUNCHY MODE
+
+Use an actual external ruleset such as Pathfinder 2e only when the creator explicitly wants system accuracy, relevant rules are available, and the extra bookkeeping is acceptable.
+
+────────────────────────────────────────
+
+DEFAULT CHARACTER MODEL
+
+[CHARACTER]
+
+Name:
+Level:
+Progress: 0/5
+HP: 10/10
+
+Might: +0
+Agility: +0
+Mind: +0
+Presence: +0
+
+Talents:
+-
+
+Abilities:
+-
+
+Gear:
+-
+
+Conditions:
+None
+
+This is a default template, not a universal law.
+
+────────────────────────────────────────
+
+THE FOUR DEFAULT STATS
+
+MIGHT
+Use for strength, endurance, force, lifting, breaking, resisting physical strain, and some melee actions.
+
+AGILITY
+Use for speed, stealth, reflexes, coordination, balance, acrobatics, precision, and some ranged actions.
+
+MIND
+Use for knowledge, reasoning, investigation, perception when appropriate, magic when appropriate, and character-skill support for puzzles.
+
+PRESENCE
+Use for persuasion, intimidation, deception, leadership, performance, and social influence.
+
+Use the Stat that logically matches the attempted action.
+
+────────────────────────────────────────
+
+STAT SCALE
+
+Suggested Simple RPG range:
+
+-2 = severe weakness
+-1 = weak
++0 = ordinary
++1 = capable
++2 = strong
++3 = exceptional
+
+Keep modifiers small.
+
+────────────────────────────────────────
+
+TALENTS
+
+Talents describe areas of notable competence.
+
+Examples:
+- Swordfighter
+- Athletics
+- Scholar
+- Thief
+- Herbalist
+- Arcane Lore
+- Survival
+- Negotiator
+- Sailor
+- Investigator
+- Healer
+- Blacksmith
+- Acrobat
+
+A relevant Talent may grant a simple bonus such as +1 when clearly applicable.
+
+Do not create dozens of hyper-specific micro-skills unless the creator wants that style.
+
+────────────────────────────────────────
+
+ABILITIES
+
+Abilities are distinctive active or passive capabilities.
+
+Examples:
+- Magic Missile
+- Shield
+- Rage
+- Sneak Attack
+- Lay on Hands
+- Wild Shape
+- Fire Bolt
+- Shadow Step
+- Battle Cry
+
+An Ability should state only what the system needs to adjudicate it.
+
+Do not reproduce huge tabletop rules text when a compact functional description is enough.
+
+────────────────────────────────────────
+
+DEFAULT CHECK SYSTEM
+
+Recommended Simple RPG check:
+
+Roll 1d6 + relevant Stat.
+
+Suggested targets:
+
+Easy: 3
+Normal: 4
+Hard: 5
+Extreme: 6+
+
+Relevant Talent:
+usually +1 when clearly applicable
+
+Do not make every action a roll.
+
+────────────────────────────────────────
+
+WHEN TO ROLL
+
+Only roll when:
+- success is uncertain
+- failure is plausible
+- failure would matter
+
+Do not roll for ordinary actions with no meaningful uncertainty or consequence.
+
+Rolling should create tension, not paperwork.
+
+────────────────────────────────────────
+
+IMPOSSIBLE ACTIONS
+
+A high roll does not make an impossible action possible.
+
+A successful social roll does not make a loyal king surrender the kingdom without reason.
+
+A successful Might roll does not let an ordinary human lift a mountain.
+
+A successful stealth roll does not make someone invisible while standing under direct observation with no cover.
+
+Use rolls inside the boundaries of established reality.
+
+────────────────────────────────────────
+
+WHO ROLLS?
+
+PLAYER-ROLLED MODE
+
+The bot gives die, modifier, and target.
+
+Example:
+
+((Roll 1d6 + Mind. Target 5.))
+
+The user reports the result.
+
+This provides more reliable randomness.
+
+NARRATIVE ROLL MODE
+
+The LLM resolves uncertainty narratively or simulates a roll.
+
+Use when the creator wants faster flow and precise randomness is not important.
+
+Do not claim LLM-generated randomness is mechanically reliable.
+
+EXTERNAL DICE MODE
+
+The user uses physical dice, app dice, or another trusted roller.
+
+This is best when actual randomness matters.
+
+────────────────────────────────────────
+
+DEGREES OF RESULT
+
+Possible outcomes:
+
+STRONG SUCCESS
+The action succeeds especially well.
+
+SUCCESS
+The intended action succeeds.
+
+SUCCESS WITH COST
+The action succeeds but creates damage, lost time, noise, resource loss, exposure, or another complication.
+
+FAILURE WITH CONSEQUENCE
+The action fails and the world changes against the player.
+
+FAILURE WITH INFORMATION
+The action fails but reveals useful information.
+
+BLOCKED
+Use only when the action is genuinely impossible or unavailable.
+
+Avoid repeated "Nothing happens."
+
+────────────────────────────────────────
+
+FAIL FORWARD
+
+When appropriate, failure should move the game into a new state.
+
+Example:
+
+Lockpick attempt fails.
+
+Weak result:
+The door stays locked.
+
+Better result:
+The pick snaps inside the lock. The door remains shut, and footsteps sound from the other side.
+
+The player failed.
+
+The game continued.
+
+────────────────────────────────────────
+
+LEVEL AND PROGRESS
+
+Recommended default:
+
+Level: 1
+Progress: 0/5
+
+Award Progress for meaningful accomplishments such as completing a significant objective, defeating a major threat, making an important discovery, resolving a meaningful challenge, or changing the world in a major way.
+
+At 5 Progress:
+- increase Level by 1
+- reset Progress to 0
+- present advancement choices to {{user}}
+
+Do not automatically choose player advancements.
+
+────────────────────────────────────────
+
+LEVEL-UP OPTIONS
+
+Simple advancement examples:
+- +2 Maximum HP
+- improve one Stat
+- gain a Talent
+- gain an Ability
+- upgrade an existing Ability
+- gain a class feature
+- unlock a new spell tier
+- improve an existing Talent
+
+Use only options appropriate to the campaign.
+
+Player-controlled choices remain with {{user}}.
+
+────────────────────────────────────────
+
+HP
+
+Keep HP small enough to track easily.
+
+Example design ranges:
+
+ordinary adventurer: 8–12 HP
+tough adventurer: 10–15 HP
+weak creature: 1–3 HP
+standard enemy: 3–6 HP
+elite enemy: 6–10 HP
+boss: 10–20+ HP
+
+These are suggestions, not fixed laws.
+
+────────────────────────────────────────
+
+CONDITIONS
+
+Use compact conditions such as Poisoned, Burning, Frightened, Stunned, Restrained, Bleeding, Exhausted, Blessed, Cursed, or Invisible.
+
+Only track a condition if it changes play.
+
+A reusable condition should define what it does, how it ends, whether it stacks, and whether it has a duration.
+
+Store reusable condition definitions in Lorebook when useful.
+
+────────────────────────────────────────
+
+DEFAULT HUD
+
+Use a compact HUD when persistent reinforcement materially improves reliability.
+
+Example:
+
+[LV 4 | Progress 2/5 | HP 8/10 | Conditions: None]
+
+Do not automatically print the full character sheet every response.
+
+Use an expanded status display only when requested, leveling, entering combat, recovering after major changes, or when state becomes complicated.
+
+The HUD should support roleplay rather than dominate it.
+
+────────────────────────────────────────
+
+OPTIONAL STATUS COMMAND
+
+A roleplay convention may use:
+
+/status
+
+This is not necessarily a native platform command.
+
+Treat it as an agreed OOC request.
+
+When {{user}} requests status, show the current visible character state.
+
+Do not reveal hidden world flags.
+
+────────────────────────────────────────
+
+COMBAT PRINCIPLE
+
+Combat should create tactical choices without overwhelming the conversation.
+
+Default Simple RPG combat should track combatants, HP, position when relevant, conditions, important resources, and major terrain features.
+
+Do not reproduce a full tactical miniatures engine unless the creator wants it.
+
+────────────────────────────────────────
+
+DEFAULT ATTACK RESOLUTION
+
+Roll 1d6 + relevant Stat against enemy Difficulty.
+
+On success:
+deal the weapon or ability's damage.
+
+On strong success:
+optionally gain +1 damage, improved position, or a useful secondary effect.
+
+On failure:
+the attack fails or creates a reasonable complication.
+
+Do not automatically punish every missed attack with damage.
+
+────────────────────────────────────────
+
+SIMPLE DAMAGE
+
+Example values:
+
+Light weapon: 1
+Standard weapon: 2
+Heavy weapon: 3
+Powerful special attack: 3–5
+
+Keep math small.
+
+────────────────────────────────────────
+
+MONSTER TEMPLATE
+
+Goblin Scout
+Difficulty: 4
+HP: 3
+Damage: 1
+
+Traits:
+Sneaky
+Cowardly
+Shortbow
+
+Behavior:
+Prefers cover and distance.
+Flees when badly outmatched.
+
+This gives the LLM challenge, durability, threat, capabilities, and behavior.
+
+Do not reduce monsters to numbers alone.
+
+────────────────────────────────────────
+
+BOSS TEMPLATE
+
+Young Dragon
+Difficulty: 6
+HP: 15
+Damage: 3
+
+Traits:
+Flying
+Armored
+Fire Breath
+
+Behavior:
+Uses altitude and terrain.
+Protects its hoard.
+Becomes reckless when badly wounded.
+
+Optional Phase Change:
+At 7 HP or lower, Fire Breath becomes more frequent but defenses weaken.
+
+Boss fights may use phases, changing terrain, objectives, weak points, summoned minions, or escalating hazards.
+
+Do not make every boss merely a larger HP pool.
+
+────────────────────────────────────────
+
+PATHFINDER MONSTER RESEARCH
+
+Use Pathfinder Monster Core and Monster Core 2 as reference sources when appropriate for monster roles, creature abilities, encounter variety, creature behavior, fantasy ecology, boss inspiration, and level-based examples.
+
+Do not reproduce copyrighted stat blocks wholesale.
+
+Translate useful design ideas into the simpler active system unless the creator explicitly requests Pathfinder rules.
+
+────────────────────────────────────────
+
+NPCS
+
+NPCs should have enough identity to act without waiting for {{user}}.
+
+Useful NPC elements:
+- role
+- motive
+- knowledge
+- personality
+- relationship
+- current concern
+- useful capability
+- one or two memorable traits
+
+Do not build full player-character sheets for every incidental NPC.
+
+────────────────────────────────────────
+
+NPC CORE AS REFERENCE
+
+Use Pathfinder NPC Core as a useful reference for occupations, social roles, NPC archetypes, specialists, organizations, ancestry-based NPC ideas, recurring NPC functions, behavior, society, and relationship progression.
+
+Use it as a design reference rather than copying large protected passages.
+
+────────────────────────────────────────
+
+NPC INITIATIVE
+
+NPCs may pursue goals, leave, investigate, negotiate, lie, trade, hide, fight, flee, betray, help, ask favors, change opinions, and react to consequences.
+
+NPCs should not exist only to wait for {{user}}.
+
+────────────────────────────────────────
+
+NPC KNOWLEDGE
+
+NPCs know only what they directly perceive, were told, learned previously, or reasonably know from background, profession, culture, faction, or abilities.
+
+Do not give NPCs hidden plot knowledge merely because the LLM knows it.
+
+────────────────────────────────────────
+
+LOCATIONS
+
+A location should provide playable affordances.
+
+Useful elements:
+- obvious description
+- exits
+- NPCs
+- objects
+- hazards
+- secrets
+- interactable features
+- current activity
+- consequences of prior events
+
+Do not describe every detail at once.
+
+Let exploration reveal layers.
+
+────────────────────────────────────────
+
+DESCRIPTION LAYERS
+
+ARRIVAL
+Give obvious information.
+
+EXAMINE
+Give closer visible detail.
+
+SEARCH
+Reveal concealed but physically discoverable information when appropriate.
+
+CHECK
+Use a roll only if uncertainty matters.
+
+SECRET
+Do not reveal until something actually exposes it.
+
+────────────────────────────────────────
+
+OBJECT AFFORDANCES
+
+Objects should suggest plausible interaction.
+
+Example:
+
+Rusty Iron Door
+
+Observable:
+- heavy iron
+- corroded lock
+- scratches near bottom
+
+Possible interactions:
+- examine
+- open
+- force
+- pick lock
+- listen
+- use tools
+- search nearby
+- find another route
+
+Do not treat these as the only allowed actions.
+
+If {{user}} pours acid into the lock, reason from the established world.
+
+────────────────────────────────────────
+
+EXITS AND NAVIGATION
+
+Locations should make navigation understandable.
+
+Use obvious exits, discovered routes, blocked routes, hidden routes, shortcuts, locked paths, and changed terrain.
+
+A destroyed bridge should remain destroyed until repaired.
+
+A discovered secret passage should remain known.
+
+Conversation state overrides the generic location template.
+
+────────────────────────────────────────
+
+QUESTS
+
+A quest should create direction without becoming a railroad.
+
+Useful quest structure:
+
+HOOK
+Why might {{user}} care?
+
+OBJECTIVE
+What is currently being attempted?
+
+OBSTACLE
+What complicates it?
+
+STATE
+What stage is active?
+
+OUTCOMES
+What meaningful results are possible?
+
+CONSEQUENCES
+What changes after success, failure, abandonment, or alternate resolution?
+
+────────────────────────────────────────
+
+QUEST STATE
+
+Example:
+
+Quest: The Missing Caravan
+Status: Active
+Stage: Search the eastern road
+Known Clues:
+- wagon tracks
+- broken blue feather
+Objective:
+Find the caravan
+
+Do not permanently print every quest detail if not needed.
+
+Store deeper quest information in Lorebook.
+
+Conversation tracks what actually happened.
+
+────────────────────────────────────────
+
+QUEST PROGRESSION
+
+Use observable state changes.
+
+Example:
+
+Stage 1: Learn the caravan is missing.
+Stage 2: Find signs of ambush.
+Stage 3: Locate survivors or attackers.
+Stage 4: Resolve the threat.
+Terminal states:
+- caravan rescued
+- caravan destroyed
+- attackers allied with
+- quest abandoned
+
+Do not advance stages merely because enough turns passed.
+
+Advance when something in play actually changes.
+
+────────────────────────────────────────
+
+QUEST FAILURE
+
+Failure should be valid when appropriate.
+
+Examples:
+- hostage dies
+- target escapes
+- rival completes objective first
+- town loses supplies
+- faction attitude worsens
+- alternate route becomes necessary
+
+Do not erase the scene and pretend success happened.
+
+Failure creates a new state.
+
+────────────────────────────────────────
+
+WORLD FLAGS
+
+Use state flags conceptually.
+
+Examples:
+
+BridgeIntact=false
+GoblinChiefAlive=false
+ArtifactFound=true
+CultAlerted=true
+
+These do not need to be literal code.
+
+Their purpose is to keep causality clear.
+
+If BridgeIntact=false, the bridge should not casually reappear later.
+
+────────────────────────────────────────
+
+FACTIONS
+
+Faction design may include purpose, values, resources, leadership, territory, enemies, allies, current objective, and attitude toward {{user}}.
+
+Store faction detail in Lorebook.
+
+Track only faction state that materially affects play.
+
+────────────────────────────────────────
+
+REPUTATION
+
+Use reputation only if NPC behavior changes because of it.
+
+Simple categories may be enough:
+
+Hostile
+Distrusted
+Neutral
+Liked
+Trusted
+Allied
+
+Or use a small numeric score if needed.
+
+Do not maintain complicated reputation math unless the campaign needs it.
+
+────────────────────────────────────────
+
+INVENTORY
+
+Track important inventory.
+
+Recommended:
+- weapons
+- armor
+- consumables
+- quest items
+- rare tools
+- important treasure
+- currency if spending matters
+
+Do not track every mundane object unless the creator wants survival simulation.
+
+────────────────────────────────────────
+
+TREASURE
+
+Treasure should matter because it improves capability, opens options, solves problems, creates choices, has story significance, can be traded, creates risk, or reveals lore.
+
+Use Pathfinder Treasure Vault and relevant Player Core treasure sections as inspiration for weapons, armor, consumables, magical items, alchemy, artifacts, relics, and cursed items.
+
+Do not reproduce protected item text wholesale.
+
+────────────────────────────────────────
+
+ITEM MODEL
+
+Healing Potion
+Type: Consumable
+Effect: Restore 3 HP.
+Uses: 1
+
+Shadow Lantern
+Type: Wondrous
+Effect: Reveals invisible creatures within its light.
+Limit: Works for 3 scenes before recharge.
+
+Moonstone Key
+Type: Quest Item
+Use: Opens the sealed observatory.
+Story State: Possessed by {{user}}
+
+Keep item rules compact.
+
+────────────────────────────────────────
+
+MAGIC
+
+Magic may be ability-based, spell-list based, or freeform within limits.
+
+Decide how constrained magic should be.
+
+Do not let magic solve every obstacle merely because the user describes an undefined spell.
+
+If using freeform magic, establish scope, cost, limits, risks, relevant Stat, and what the character actually knows.
+
+────────────────────────────────────────
+
+RESOURCE SYSTEMS
+
+Optional resources may include Mana, Focus, Stamina, Rage, Ammo, Charges, Luck, or Hero Points.
+
+Use only resources that materially improve play.
+
+Do not track five overlapping resource bars in a simple game.
+
+────────────────────────────────────────
+
+EXPLORATION
+
+Exploration should reward observation, curiosity, navigation, preparation, experimentation, risk assessment, and creative tool use.
+
+Do not require rolls to discover everything.
+
+Some clues should be visible.
+Some require examination.
+Some require searches.
+Some require checks.
+Some require actual puzzle-solving.
+
+────────────────────────────────────────
+
+TIME
+
+Track time only when it matters.
+
+Possible scales:
+- narrative scene
+- morning / afternoon / evening / night
+- watches
+- hours
+- turns during dangerous situations
+- days during travel
+
+Time may affect schedules, weather, patrols, deadlines, rest, spell recovery, hunger, and events.
+
+Do not track minutes if nothing depends on them.
+
+────────────────────────────────────────
+
+REST
+
+Rest may restore HP, abilities, resources, or conditions.
+
+Define the campaign's rest rules once.
+
+Do not accidentally fully heal characters after every scene unless that is intended.
+
+────────────────────────────────────────
+
+TRAVEL
+
+Travel may be narrated quickly, event-based, hex-based, or survival-focused.
+
+Use the level of detail that serves the campaign.
+
+Possible travel events:
+- weather
+- encounters
+- landmarks
+- NPC travelers
+- discoveries
+- hazards
+- resource problems
+- shortcuts
+
+Do not force random encounters every journey.
+
+────────────────────────────────────────
+
+RANDOM ENCOUNTERS
+
+Procedural does not mean random.
+
+Random encounters should still fit location, ecology, faction activity, time, weather, and previous consequences.
+
+A city street should not produce a cave hydra without explanation.
+
+────────────────────────────────────────
+
+TEXT-ADVENTURE WORLD MODEL
+
+Classic text adventures suggest thinking in terms of:
+
+ROOMS / LOCATIONS
+where the player can be
+
+OBJECTS
+things the player can inspect or manipulate
+
+ACTIONS
+what the player attempts
+
+NPCS
+actors with motives and reactions
+
+FLAGS
+facts that changed
+
+PUZZLES
+problems solved through reasoning or interaction
+
+EXITS
+ways to move
+
+CONSEQUENCES
+changes caused by action
+
+Use this mental model even though SpicyChat is not a parser engine.
+
+────────────────────────────────────────
+
+FREEFORM INPUT VS CHOICES
+
+SpicyChat supports freeform conversation.
+
+Use that strength.
+
+Optional choices can help when the player seems stuck, several obvious actions exist, a tutorial needs clarity, or rapid pacing is desired.
+
+Do not make choice menus mandatory unless the creator explicitly wants a choice-based game.
+
+────────────────────────────────────────
+
+TEXT COMMANDS
+
+Optional roleplay commands may include:
+
+/status
+/inventory
+/quests
+/help
+/map
+
+These are conventions.
+
+Do not claim they are native platform functions unless verified.
+
+The LLM should respond consistently when the user invokes them.
+
+────────────────────────────────────────
+
+MAPS
+
+A text map may be simple.
+
+Example:
+
+Village Square
+├─ North: Temple
+├─ East: Market
+├─ South: South Gate
+└─ West: Inn
+
+Only show known routes.
+
+Do not reveal hidden rooms or undiscovered paths.
+
+────────────────────────────────────────
+
+PUZZLES
+
+Puzzles test reasoning, discovery, pattern recognition, or interaction.
+
+A good puzzle should usually include:
+
+SETUP
+What can be observed?
+
+CLUE STRUCTURE
+What information points toward the solution?
+
+INTERACTION
+What can be manipulated, compared, arranged, decoded, or inferred?
+
+SOLUTION
+What answer follows from the clues?
+
+FEEDBACK
+How does the player learn whether progress is correct?
+
+CONSEQUENCE
+What changes after solution, failure, bypass, or abandonment?
+
+────────────────────────────────────────
+
+PUZZLE FAIRNESS
+
+Do not create a puzzle whose answer depends on information never provided.
+
+Do not require the player to guess what the designer was thinking.
+
+Do not use unrelated obscure trivia as the only path unless the adventure establishes that knowledge.
+
+Do not present meaningless props as important unless deliberate misdirection is intended.
+
+A puzzle should be solvable from available clues, reasonable inference, established world knowledge, provided tools, or learnable information.
+
+────────────────────────────────────────
+
+PUZZLE TYPES
+
+Possible puzzle types include:
+- observation
+- pattern recognition
+- sequence
+- logic
+- deduction
+- wordplay
+- riddle
+- cipher
+- symbol matching
+- spatial reasoning
+- ordering
+- classification
+- combination
+- environmental interaction
+- object manipulation
+- information synthesis
+- social deduction
+- memory
+- navigation
+- metapuzzle
+- resource tradeoff
+- perspective
+- timing
+- cause-and-effect
+
+Do not default every puzzle to a riddle.
+
+────────────────────────────────────────
+
+MECHANIC-FIRST PUZZLE
+
+When useful, begin with:
+
+What does the player actually do?
+
+Then ask:
+
+Why does that interaction make sense in this world?
+
+Example:
+
+Mechanic:
+Rotating one statue changes a door elsewhere.
+
+Fiction:
+Ancient observatory statues redirect magical starlight through hidden channels.
+
+────────────────────────────────────────
+
+PUZZLE BYPASS
+
+Many puzzles should permit alternate solutions.
+
+Examples:
+- solve it normally
+- break the mechanism
+- use magic
+- find another route
+- persuade someone who knows the solution
+- sacrifice a resource
+- trigger the consequence knowingly
+
+Do not require one designer-approved solution unless the premise truly demands it.
+
+────────────────────────────────────────
+
+HINT LADDER
+
+When the player is stuck, use escalating hints.
+
+Hint 1:
+Draw attention to the relevant object or clue.
+
+Hint 2:
+Explain the relationship between clues.
+
+Hint 3:
+Narrow the required operation.
+
+Hint 4:
+Give an almost-explicit solution.
+
+Do not immediately reveal the answer unless the user asks directly.
+
+────────────────────────────────────────
+
+METAPUZZLES
+
+A metapuzzle uses results from earlier puzzles as inputs.
+
+Earlier puzzles may produce symbols, words, numbers, items, positions, or fragments.
+
+Those later combine into a larger final solution.
+
+Track which components have actually been discovered.
+
+────────────────────────────────────────
+
+QUIZZES
+
+A quiz checks knowledge.
+
+A puzzle transforms clues into a solution.
+
+Quiz types may include:
+- lore quiz
+- NPC knowledge quiz
+- academic quiz
+- trivia contest
+- ritual or temple trial
+- memory quiz
+- deduction quiz
+- multiple choice
+- open answer
+
+────────────────────────────────────────
+
+QUIZ FAIRNESS
+
+Do not punish the player for failing to know information the adventure never provided unless the question is clearly intended as outside general knowledge.
+
+When a quiz tests adventure lore:
+- establish the knowledge first
+- allow books, NPCs, inscriptions, lessons, or prior scenes to provide it
+- let attentive play matter
+
+Do not use obscure trivia merely to block progress.
+
+────────────────────────────────────────
+
+TRAPS
+
+A trap should be an interactive hazard, not merely surprise damage.
+
+Useful trap structure:
+
+TELLS
+What signs suggest danger?
+
+TRIGGER
+What activates it?
+
+EFFECT
+What happens?
+
+COUNTERPLAY
+How can it be avoided, disabled, resisted, redirected, exploited, or bypassed?
+
+CONSEQUENCE
+What changes if it activates?
+
+RESET
+Can it trigger again?
+
+────────────────────────────────────────
+
+TRAP TYPES
+
+Possible trap types:
+- mechanical
+- magical
+- environmental
+- social
+- alarm
+- capture
+- poison
+- area denial
+- puzzle-trap
+- timed trap
+- resource drain
+- movement trap
+- pit
+- projectile
+- crushing
+- lock-in
+- transformation
+- teleportation
+- monster-release
+- combination trap
+
+────────────────────────────────────────
+
+TRAPS NEED COUNTERPLAY
+
+A trap is more interesting when the player can notice it, understand it, avoid it, disable it, resist it, exploit it, redirect it, or knowingly accept the risk.
+
+Avoid invisible unavoidable HP taxes.
+
+────────────────────────────────────────
+
+TRAP EXAMPLE
+
+Swinging Blade Hall
+
+Tells:
+- grooves cut into opposite walls
+- dust disturbed in narrow arcs
+- old blood on the floor
+
+Trigger:
+pressure plate halfway down corridor
+
+Effect:
+blades sweep across the hall
+
+Counterplay:
+- notice plate
+- jam mechanism
+- leap trigger zone
+- activate it from safety
+- climb above blade path
+- find another route
+
+Consequences may include damage, noise, alarm, separation, or damaged equipment depending on the player's actual approach.
+
+────────────────────────────────────────
+
+PUZZLE / QUIZ / TRAP SOURCES
+
+Room Escape Artist
+https://roomescapeartist.com/
+
+Use for:
+- puzzle design
+- clue readability
+- escape-room mechanics
+- hint systems
+- immersion
+- playtesting
+- accessibility
+- avoiding accidental red herrings
+- metapuzzle inspiration
+
+That Guy With The Puzzles
+https://www.thatguywiththepuzzles.com/
+
+Use for:
+- puzzle-design resources
+- escape-room design references
+- puzzle creation inspiration
+- playtesting ideas
+
+BoardGameGeek
+https://boardgamegeek.com/
+
+Use for puzzle-game inspiration, community discussion, challenge mechanics, and board-game puzzle references.
+
+Treat as community/inspiration material, not universal authority.
+
+The Angry GM
+https://theangrygm.com/
+
+Use selectively for RPG trap design, challenge structure, puzzle criticism, and GM-facing design ideas.
+
+Treat opinions as commentary, not rules authority.
+
+────────────────────────────────────────
+
+TEXT-ADVENTURE / INTERACTIVE-FICTION SOURCES
+
+Interactive Fiction Technology Foundation
+https://iftechfoundation.org/
+
+Use for:
+- parser interactive fiction
+- interactive-fiction concepts
+- tools and educational resources
+- world-model design
+- text-adventure history
+
+Choice of Games / ChoiceScript
+https://www.choiceofgames.com/make-your-own-games/choicescript-intro/
+
+Use for:
+- variables
+- flags
+- scene structure
+- conditional choices
+- stats screens
+- branching logic
+- persistent consequences
+- choice-driven interactive fiction
+
+Use design ideas.
+
+Do not pretend SpicyChat executes ChoiceScript.
+
+────────────────────────────────────────
+
+TTRPG DESIGN SOURCES
+
+Use Research LLM Guide v1 for broader source selection.
+
+Useful source categories include official TTRPG rules, official GM guides, official system reference documents, respected GM resources, established game-design resources, and community experience when subjective play matters.
+
+Pathfinder Remaster reference files currently available to this project include:
+- GM Core
+- Player Core
+- Player Core 2
+- Monster Core
+- Monster Core 2
+- NPC Core
+- Treasure Vault Remaster
+
+Use them as design references.
+
+Do not force Pathfinder mechanics into a Simple RPG bot unless requested.
+
+────────────────────────────────────────
+
+PATHFINDER AS REFERENCE IMPLEMENTATION
+
+Pathfinder provides useful examples for character creation, levels, classes, ancestries, skills, feats, spells, equipment, checks, HP, conditions, encounter mode, exploration mode, downtime, encounter design, rewards, hazards, creature building, worldbuilding, subsystems, monsters, NPCs, and treasure.
+
+Use Pathfinder to understand what a robust TTRPG system may need.
+
+Then simplify aggressively for an LLM text adventure unless the creator wants full Pathfinder play.
+
+────────────────────────────────────────
+
+LOREBOOK ROUTING FOR TTRPGS
+
+Self-routing works especially well for TTRPG bots.
+
+Stable visible terms can route conditional modules.
+
+Example:
+
+[Location - Blackwood Mine]
+
+may load mine description, hazards, local enemies, and local NPCs.
+
+Quest: Missing Caravan
+
+may load current quest rules, known NPCs, and possible outcomes.
+
+Poisoned
+
+may load the Poisoned condition definition.
+
+Goblin
+
+may load a goblin reference or reusable enemy model.
+
+Do not rely on one Lorebook entry recursively triggering another.
+
+The conversation text is the router.
+
+────────────────────────────────────────
+
+LOCATION HEADERS
+
+A location header can provide both orientation and Lorebook routing.
+
+Recommended project format:
+
+[Location - Area]
+
+Examples:
+
+[Blackwood Mine - Entrance]
+[Silverkeep - Market District]
+[Sunken Temple - Flooded Sanctum]
+
+Keep wording stable when it functions as a routing term.
+
+────────────────────────────────────────
+
+HUD AS ROUTER
+
+A HUD label can also create stable vocabulary.
+
+Example:
+
+[LV 4 | HP 8/10 | Poisoned]
+
+The word Poisoned may naturally keep the condition module relevant.
+
+Do not overload the HUD with every possible rule.
+
+Keep frequently repeated text compact.
+
+────────────────────────────────────────
+
+QUEST MARKERS AS ROUTERS
+
+Stable quest labels may route quest entries.
+
+Example:
+
+Quest: The Missing Caravan
+Stage: Ambush Site
+
+Do not print hidden future stages.
+
+────────────────────────────────────────
+
+LOREBOOK MODULE FAMILIES
+
+A TTRPG Lorebook may include modules for:
+
+LOCATIONS
+- towns
+- rooms
+- dungeons
+- regions
+
+NPCS
+- recurring allies
+- villains
+- merchants
+- quest givers
+
+FACTIONS
+- governments
+- guilds
+- cults
+- armies
+
+CREATURES
+- monster types
+- enemy models
+- bosses
+
+ITEMS
+- weapons
+- artifacts
+- quest items
+- consumables
+
+SYSTEMS
+- conditions
+- magic
+- crafting
+- reputation
+- travel
+
+QUESTS
+- hooks
+- stages
+- outcomes
+- consequences
+
+PUZZLES
+- clues
+- solution logic
+- hints
+
+TRAPS
+- tells
+- trigger
+- effect
+- counterplay
+
+CULTURE
+- religions
+- customs
+- laws
+- species
+- regional behavior
+
+Keep entries modular.
+
+────────────────────────────────────────
+
+REUSABLE MODELS
+
+Reusable models define a type, not an individual.
+
+Examples:
+- Bandit model
+- Town Guard model
+- Traveling Merchant model
+- Goblin Scout model
+- Tavern Patron model
+- Puzzle Door model
+- Wilderness Encounter model
+
+A recurring named NPC should have individual identity that can override the generic model.
+
+Established conversation state overrides the template.
+
+────────────────────────────────────────
+
+PROCEDURAL ENCOUNTERS
+
+Procedural encounters should arise from causes.
+
+Possible causes:
+- location
+- time
+- faction activity
+- weather
+- quest state
+- prior choices
+- travel
+- reputation
+- resource scarcity
+- environmental danger
+
+Do not inject random encounters merely because several turns passed.
+
+────────────────────────────────────────
+
+DISCOVERY SYSTEM
+
+Hidden information should become known through play.
+
+Possible discovery sources:
+- observation
+- examination
+- search
+- NPC testimony
+- documents
+- successful checks
+- puzzles
+- magic
+- prior consequences
+
+Do not print hidden truths merely because the relevant Lorebook entry is active.
+
+Loaded information is model knowledge, not automatically character knowledge.
+
+────────────────────────────────────────
+
+STORY ENGINE
+
+Some TTRPG adventures may have acts, chapters, phases, or major quest stages.
+
+Use a hybrid architecture:
+
+Permanent:
+overall order and universal transition rules
+
+Lorebook:
+stage-specific detail
+
+Conversation:
+current actual stage
+
+Do not force progression if the user abandons, changes, or breaks the expected route unless the adventure explicitly requires it.
+
+────────────────────────────────────────
+
+SANDBOX VS STORY-DRIVEN
+
+SANDBOX
+Use when exploration is central, multiple quests exist, factions act independently, player chooses direction, and world state matters more than chapter order.
+
+STORY-DRIVEN
+Use when one main adventure arc exists, ordered phases matter, set pieces matter, and progression is important.
+
+HYBRID
+Use when major story states exist but the player has freedom within and between them.
+
+Do not confuse story structure with player control.
+
+────────────────────────────────────────
+
+SOCIAL ENCOUNTERS
+
+Social scenes should use NPC motives, knowledge, beliefs, relationships, leverage, and consequences.
+
+A successful Presence check may improve an attempt.
+
+It does not erase loyalty, hatred, fear, impossible demands, missing leverage, or established facts.
+
+Roleplay may remove the need for a roll when the outcome is obvious.
+
+────────────────────────────────────────
+
+NEGOTIATION
+
+When a social goal is difficult, consider:
+- what the NPC wants
+- what the NPC fears
+- what the NPC knows
+- what {{user}} offers
+- what leverage exists
+- what relationship already exists
+- whether compromise is possible
+
+Use checks to resolve uncertainty, not to replace characterization.
+
+────────────────────────────────────────
+
+MYSTERIES
+
+Mysteries need enough clues to remain solvable.
+
+Useful approach:
+- multiple clues can point toward the same important conclusion
+- avoid making one obscure clue the only path
+- false leads should be distinguishable from accidental confusion
+- NPCs may lie for reasons
+- evidence should remain consistent
+
+Track clues found, suspects cleared, discovered facts, and false assumptions only when relevant.
+
+Do not reveal the answer early because the LLM knows it.
+
+────────────────────────────────────────
+
+PUZZLES VS CHARACTER CHECKS
+
+Do not automatically let Mind +3 solve a genuine player-facing puzzle.
+
+A character check may reveal a hint, notice a detail, identify a symbol, or narrow possibilities.
+
+The player can still solve the puzzle.
+
+If the campaign is intended to be character-skill driven rather than player-skill driven, the creator may choose otherwise.
+
+────────────────────────────────────────
+
+DEATH AND DEFEAT
+
+Decide campaign stakes during design.
+
+Possible defeat models:
+- death is possible
+- unconscious capture
+- injury
+- resource loss
+- quest failure
+- retreat
+- respawn
+- story consequence
+
+Do not assume death must exist.
+
+Do not assume defeat must be erased.
+
+Failure should match the intended experience.
+
+────────────────────────────────────────
+
+SAVE / CONTINUITY
+
+SpicyChat conversation state is not a formal database save system.
+
+Do not claim perfect persistence.
+
+Use compact HUDs, stable state language, repeated important consequences, Lorebook modules, and concise continuity summaries when supported.
+
+Avoid tracking too many variables.
+
+The more state a bot tracks, the greater the risk of drift.
+
+────────────────────────────────────────
+
+STATE CORRECTION
+
+When a contradiction appears:
+- prefer clearly established recent conversation state
+- preserve explicit player-acquired items, injuries, discoveries, and quest outcomes
+- correct the state rather than inventing an explanation unless the fiction supports one
+
+Example:
+
+If the bridge was destroyed earlier, do not casually describe crossing the intact bridge later.
+
+────────────────────────────────────────
+
+USER CORRECTIONS
+
+If {{user}} corrects a state mistake, accept the correction when it matches established play.
+
+Example:
+
+((I still have the Moonstone Key.))
+
+Do not argue with the player about a continuity mistake created by the model.
+
+────────────────────────────────────────
+
+FORMATTING
+
+Use the project's current World Bot formatting rules.
+
+Typical format:
+
+[Location - Area]
+
+*Environmental narration and actions.*
+
+**NPC Name:** "Dialogue."
+
+((OOC when genuinely needed.))
+
+Do not require every NPC to speak.
+
+Do not end on a bare speaker label.
+
+Do not write {{user}}'s actions or thoughts.
+
+────────────────────────────────────────
+
+RESPONSE DESIGN
+
+A strong TTRPG response usually does some combination of:
+- establish immediate surroundings
+- show consequences
+- portray relevant NPC actions
+- resolve the user's attempt
+- update important state
+- introduce new information
+- leave a meaningful decision point
+
+Do not cram every system into every reply.
+
+────────────────────────────────────────
+
+PACING
+
+Use short mechanical resolution when action is simple.
+
+Use richer prose when location, emotion, discovery, boss encounters, or dramatic consequences matter.
+
+Do not let HUD/state formatting consume the roleplay.
+
+────────────────────────────────────────
+
+RULES VS FICTION
+
+Rules serve the fiction.
+
+The fiction constrains the rules.
+
+If the fiction establishes darkness, a locked door, a broken leg, a hostile army, or a collapsing bridge, the mechanical resolution should respect it.
+
+Do not use abstract mechanics to erase obvious fictional reality.
+
+────────────────────────────────────────
+
+CREATOR DECISIONS
+
+Possible design decisions include bot type, campaign premise, setting, Story/Simple/Crunchy mode, dice method, death/defeat rules, advancement method, HUD visibility, inventory importance, quest emphasis, puzzle frequency, freeform magic, and map use.
+
+Do not ask all of these automatically.
+
+Use Research LLM Guide v1 and the relevant build guide to identify what actually remains unresolved.
+
+────────────────────────────────────────
+
+TTRPG RESEARCH HANDOFF
+
+When enough is known, summarize only useful decisions.
+
+Possible structure:
+
+TTRPG TYPE:
+World / Single / Multi
+
+CAMPAIGN PREMISE:
+
+SYSTEM MODE:
+Story / Simple / Crunchy
+
+PLAYER STATE:
+what must be tracked
+
+CORE RULES:
+resolution, damage, advancement
+
+WORLD STRUCTURE:
+sandbox / story / hybrid
+
+LOREBOOK MODULES:
+locations, NPCs, monsters, quests, etc.
+
+ADVANCED SYSTEMS:
+HUD, progression, state markers, quest stages, reputation, etc.
+
+OPEN QUESTIONS:
+only what still materially matters
+
+Then use the relevant DMP build guides.
+
+────────────────────────────────────────
+
+COMMON FAILURE MODES
+
+TOO MUCH MATH
+Problem: The bot attempts to reproduce a full tabletop sheet without needing it.
+Fix: Use Simple RPG Mode.
+
+ROLLING FOR EVERYTHING
+Problem: Every mundane action becomes a check.
+Fix: Roll only when uncertainty and consequence matter.
+
+FAKE RANDOMNESS CLAIMS
+Problem: The model presents generated outcomes as reliable dice randomness.
+Fix: Use player/external dice when real randomness matters.
+
+USER AGENCY LOSS
+Problem: The GM narrates the player attacking, fleeing, agreeing, or feeling afraid.
+Fix: Resolve only actions {{user}} actually declares.
+
+RAILROADING
+Problem: The story advances regardless of player choices.
+Fix: Track state and consequences. Let choices alter routes and outcomes.
+
+EMPTY FAILURE
+Problem: Failure produces "nothing happens."
+Fix: Use consequence, information, cost, or changed state.
+
+MAGIC SOLVES EVERYTHING
+Problem: Undefined magic bypasses every obstacle.
+Fix: Define scope, limits, costs, and known capabilities.
+
+SOCIAL NATURAL-20 MIND CONTROL
+Problem: A good roll overrides an NPC's identity or reality.
+Fix: Rolls resolve plausible uncertainty only.
+
+INVISIBLE TRAP TAX
+Problem: Trap has no warning or counterplay and only deals damage.
+Fix: Use tells, trigger, effect, counterplay, consequence.
+
+UNFAIR PUZZLE
+Problem: Solution requires missing or obscure information.
+Fix: Provide enough clues and meaningful feedback.
+
+QUIZ FROM NOWHERE
+Problem: Player is tested on lore never presented.
+Fix: Establish the knowledge first.
+
+LOREBOOK OVERLOAD
+Problem: Too many broad keywords load too much content.
+Fix: Use specific routing terms and compact frequently triggered entries.
+
+STATE EXPLOSION
+Problem: The bot tracks dozens of values that rarely matter.
+Fix: Track only state that changes play.
+
+HIDDEN STATE LEAK
+Problem: The bot reveals secrets because the Lorebook entry is active.
+Fix: Loaded information is not automatically player-visible information.
+
+NPC TEMPLATE CLONES
+Problem: Every guard, merchant, or goblin behaves identically.
+Fix: Reusable model provides baseline behavior; individual circumstances and identity create variation.
+
+WORLD RESET
+Problem: Consequences disappear between scenes.
+Fix: Conversation state overrides generic Lorebook possibilities.
+
+────────────────────────────────────────
+
+FINAL TTRPG AUDIT
+
+Before delivering a TTRPG bot or system, verify:
+
+1. {{user}} controls the player character.
+2. The world reacts to actual player actions.
+3. The bot type matches the intended experience.
+4. Permanent rules are limited to what is needed nearly every scene.
+5. Conditional material is moved to Lorebook.
+6. Current reality is carried in conversation state.
+7. HUD displays only useful visible state.
+8. Hidden state remains hidden.
+9. State variables change later behavior.
+10. The default system is no crunchier than needed.
+11. Rolls occur only when uncertainty and consequence matter.
+12. Impossible actions remain impossible regardless of roll.
+13. Real randomness is not falsely claimed.
+14. Progression does not steal player advancement choices.
+15. Combat includes behavior and terrain, not only HP.
+16. NPCs have motives and knowledge limits.
+17. Locations provide interactable affordances.
+18. Exploration reveals information in layers.
+19. Quests have state and consequences.
+20. Failure can create new states.
+21. Inventory tracks only important items.
+22. Magic has usable limits.
+23. Puzzles are solvable from available information.
+24. Quizzes test available or intentionally external knowledge.
+25. Traps have tells and counterplay when appropriate.
+26. Puzzle hints can escalate without instantly spoiling.
+27. Stable location, quest, and state markers support Lorebook routing when useful.
+28. Broad-trigger Lorebook entries remain compact.
+29. Conversation state overrides generic templates.
+30. Long play does not require permanent context to grow continuously.
+31. The game remains enjoyable when no combat is happening.
+32. The game remains playable when the player ignores an expected route.
+33. The world remembers meaningful consequences.
+34. Mechanics support roleplay instead of replacing it.
+
+────────────────────────────────────────
+
+CORE PRINCIPLES
+
+The player controls the hero.
+
+The LLM controls the world.
+
+Describe enough to support a meaningful choice.
+
+Resolve only what the player actually attempts.
+
+Roll only when uncertainty matters.
+
+Failure should create play.
+
+Use the simplest mechanics that preserve meaningful decisions.
+
+Track only state that changes future behavior.
+
+Keep permanent context small.
+
+Use Lorebook for conditional reference and modules.
+
+Use Advanced Lorebook systems for state, routing, progression, quests, and reusable models.
+
+Let conversation carry current reality.
+
+Use visible state intentionally.
+
+Keep hidden state hidden.
+
+Make NPCs act from motives.
+
+Make locations interactive.
+
+Make monsters behavioral, not merely numerical.
+
+Make quests stateful, not scripted.
+
+Make puzzles fair.
+
+Make quizzes grounded.
+
+Make traps interactive.
+
+Let consequences persist.
+
+Use Pathfinder as a robust reference, not mandatory bookkeeping.
+
+Use interactive-fiction design to support freeform exploration.
+
+Use TTRPG mechanics to create uncertainty and consequence.
+
+Build a game that can survive the player doing something unexpected.
+
+That is the point.
