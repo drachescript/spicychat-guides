@@ -59,6 +59,14 @@ window.GUIDES=[
       {
         "title": "Bot Creation guide 2.0",
         "url": "https://discord.com/channels/1108377954389594236/1257593693360357396/1257593693360357396"
+      },
+      {
+        "title": "Hunter — Single Character LLM Guide v6",
+        "url": "/llm/originals/Single%20Character%20LLM%20Guide%20v6.txt"
+      },
+      {
+        "title": "Hunter — World Bot LLM Guide v2",
+        "url": "/llm/originals/World%20Bot%20LLM%20Guide%20v2.txt"
       }
     ]
   },
@@ -197,6 +205,10 @@ window.GUIDES=[
       {
         "title": "Using AI (ChatGPT, Claude, etc.) to help write Bots",
         "url": "https://discord.com/channels/1108377954389594236/1542036564564250734/1542036564564250734"
+      },
+      {
+        "title": "Hunter — Single Character LLM Guide v6",
+        "url": "/llm/originals/Single%20Character%20LLM%20Guide%20v6.txt"
       }
     ]
   },
@@ -277,6 +289,10 @@ window.GUIDES=[
       {
         "title": "LitRPG Game Lorebook questions",
         "url": "https://discord.com/channels/1108377954389594236/1513568510544973984/1513568510544973984"
+      },
+      {
+        "title": "Hunter — TTRPG LLM Guide v2",
+        "url": "/llm/originals/TTRPG%20LLM%20Guide%20v2.txt"
       }
     ]
   },
@@ -473,6 +489,10 @@ window.GUIDES=[
       {
         "title": "Bot Creation guide 2.0",
         "url": "https://discord.com/channels/1108377954389594236/1257593693360357396/1257593693360357396"
+      },
+      {
+        "title": "Hunter — Multi-Character LLM Guide v3",
+        "url": "/llm/originals/Multi-Character%20LLM%20Guide%20v3.txt"
       }
     ]
   },
@@ -520,18 +540,18 @@ window.GUIDES=[
     ]
   },
   {
-    "id": "hunter-multi-character-llm-guide-v2",
-    "title": "Multi-Character LLM Guide v2",
+    "id": "hunter-multi-character-llm-guide-v3",
+    "title": "Multi-Character LLM Guide v3",
     "kind": "llm",
     "section": "llm",
     "subsection": "Character & World Bots",
     "status": "available",
     "label": "LLM Guide",
-    "desc": "how to build a defined cast, Group Dynamic, shared context budgets and where supporting NPCs belong.",
+    "desc": "fixed main casts, Group Dynamic, user agency and updated Scenario and Greeting guidelines.",
     "author": "Hunter",
-    "pageUrl": "/llm/originals/Multi-Character%20LLM%20Guide%20v2.txt",
-    "originalFilename": "Multi-Character LLM Guide v2.txt",
-    "originalBytes": 26130
+    "pageUrl": "/llm/originals/Multi-Character%20LLM%20Guide%20v3.txt",
+    "originalFilename": "Multi-Character LLM Guide v3.txt",
+    "originalBytes": 26434
   },
   {
     "id": "hunter-research-llm-guide-v1",
@@ -548,18 +568,18 @@ window.GUIDES=[
     "originalBytes": 66824
   },
   {
-    "id": "hunter-single-character-llm-guide-v5",
-    "title": "Single Character LLM Guide v5",
+    "id": "hunter-single-character-llm-guide-v6",
+    "title": "Single Character LLM Guide v6",
     "kind": "llm",
     "section": "llm",
     "subsection": "Character & World Bots",
     "status": "available",
     "label": "LLM Guide",
-    "desc": "character fields, Just Enough Description, greetings, token economy and Lorebook handoff.",
+    "desc": "single-character bot workflow, Scenario rules, user agency, formatting and field limits.",
     "author": "Hunter",
-    "pageUrl": "/llm/originals/Single%20Character%20LLM%20Guide%20v5.txt",
-    "originalFilename": "Single Character LLM Guide v5.txt",
-    "originalBytes": 20966
+    "pageUrl": "/llm/originals/Single%20Character%20LLM%20Guide%20v6.txt",
+    "originalFilename": "Single Character LLM Guide v6.txt",
+    "originalBytes": 21270
   },
   {
     "id": "hunter-spicychat-reference-v1",
@@ -590,18 +610,18 @@ window.GUIDES=[
     "originalBytes": 13968
   },
   {
-    "id": "hunter-ttrpg-llm-guide-v1",
-    "title": "TTRPG LLM Guide v1",
+    "id": "hunter-ttrpg-llm-guide-v2",
+    "title": "TTRPG LLM Guide v2",
     "kind": "llm",
     "section": "llm",
     "subsection": "RPG & Systems",
     "status": "available",
     "label": "LLM Guide",
-    "desc": "game loop, state management, stat systems, rolls, player choice and TTRPG design.",
+    "desc": "text adventure loop, optional RPG complexity, user agency and Scenario conventions.",
     "author": "Hunter",
-    "pageUrl": "/llm/originals/TTRPG%20LLM%20Guide%20v1.txt",
-    "originalFilename": "TTRPG LLM Guide v1.txt",
-    "originalBytes": 58313
+    "pageUrl": "/llm/originals/TTRPG%20LLM%20Guide%20v2.txt",
+    "originalFilename": "TTRPG LLM Guide v2.txt",
+    "originalBytes": 58603
   },
   {
     "id": "hunter-understanding-spicychat-ai",
@@ -632,17 +652,17 @@ window.GUIDES=[
     "originalBytes": 91228
   },
   {
-    "id": "hunter-world-bot-llm-guide-v1",
-    "title": "World Bot LLM Guide v1",
+    "id": "hunter-world-bot-llm-guide-v2",
+    "title": "World Bot LLM Guide v2",
     "kind": "llm",
     "section": "llm",
     "subsection": "Character & World Bots",
     "status": "available",
     "label": "LLM Guide",
-    "desc": "simulated worlds, key NPCs, world rule tiers, agency, changing state and conditional references.",
+    "desc": "world simulation structure, conditional NPCs, scenario rules, and authoring workflow.",
     "author": "Hunter",
-    "pageUrl": "/llm/originals/World%20Bot%20LLM%20Guide%20v1.txt",
-    "originalFilename": "World Bot LLM Guide v1.txt",
-    "originalBytes": 32624
+    "pageUrl": "/llm/originals/World%20Bot%20LLM%20Guide%20v2.txt",
+    "originalFilename": "World Bot LLM Guide v2.txt",
+    "originalBytes": 32965
   }
 ];
