@@ -1,22 +1,12 @@
-# Hunter's original source files
+# Hunter's original files
 
-All nine current original files supplied by Hunter are present, plus the earlier Unified Lorebook v4 for reference.
+This folder keeps Hunter's files under their supplied filenames, without rewriting them.
 
-- Keep the original filenames and contents; don't replace them with the edited human-readable guide text.
-- `manifest.json` records expected sizes and SHA-256 checksums for the supplied files.
-- `/llm/hunter/` lists the originals with direct view/download links.
-- `/llm/hunter-files.json` is the website-readable inventory.
+- Nine current original files and six earlier versions are available as of October 12, 2026.
+- Unified Lorebook v6 is the current system. v5 and v4 are retained as older originals.
+- `Understanding Single-Character Bots.docx` is a separate new Word guidebook awaiting upload. `Understanding SpicyChat.AI.docx` stays available.
+- `manifest.json` has checksums, byte sizes and version information. Pending uploads are listed separately.
+- `/llm/hunter/` provides individual open/download links.
+- Human-readable adaptations are maintained separately; don't overwrite Hunter's original files with them.
 
-**Note:** `SpicyChat_Reference v1.md` is a community reference, not official SpicyChat documentation.
-
-Files:
-- Multi-Character LLM Guide v2.txt
-- Research LLM Guide v1.txt
-- Single Character LLM Guide v5.txt
-- SpicyChat_Reference v1.md
-- Tagging & Discovery LLM Guide v2.txt
-- TTRPG LLM Guide v1.txt
-- Understanding SpicyChat.AI.docx
-- Unified_Lorebook_LLM_Production_System_v4.txt (older version)
-- Unified_Lorebook_LLM_Production_System_v6.txt (current)
-- World Bot LLM Guide v1.txt
+The SpicyChat Reference is a community working reference, not official documentation.
