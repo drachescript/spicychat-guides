@@ -43,7 +43,8 @@ window.GUIDES=[
         "title": "Quick Persona Guide",
         "url": "https://discord.com/channels/1108377954389594236/1441801729862537386/1441801729862537386"
       }
-    ]
+    ],
+    "originalArchive": "/assets/originals/persona-commands.json"
   },
   {
     "id": "bot-creation",
@@ -378,7 +379,8 @@ window.GUIDES=[
         "title": "Hunter — Unified Lorebook LLM Production System v6",
         "url": "/llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt"
       }
-    ]
+    ],
+    "originalArchive": "/assets/originals/lorebook-basics.json"
   },
   {
     "id": "lorebook-advanced",
@@ -399,7 +401,8 @@ window.GUIDES=[
         "title": "Hunter — Unified Lorebook LLM Production System v6",
         "url": "/llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt"
       }
-    ]
+    ],
+    "originalArchive": "/assets/originals/lorebook-advanced.json"
   },
   {
     "id": "lorebook-context",
