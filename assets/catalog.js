@@ -214,6 +214,25 @@ window.GUIDES=[
     ]
   },
   {
+    "id": "genai-generic-bots",
+    "title": "Making AI-Assisted Bots Feel Less Generic",
+    "kind": "human",
+    "section": "bots",
+    "subsection": "Creator Workflow",
+    "status": "wip",
+    "label": "Community guide",
+    "desc": "Common AI-writing habits to spot before publishing: names, clothing, exaggerated traits, filler likes and token-heavy repetition.",
+    "author": "eldespertando",
+    "pageUrl": "/bots/genai-generic-bots/",
+    "originalArchive": "/assets/originals/genai-generic-bots.json",
+    "sources": [
+      {
+        "title": "GPT is ~~not~~ creative: Things to look out for when creating bots with GenAI",
+        "url": "https://discord.com/channels/1108377954389594236/1559568458814062652"
+      }
+    ]
+  },
+  {
     "id": "testing-feedback",
     "title": "Testing Bots & Making Feedback Useful",
     "kind": "human",
