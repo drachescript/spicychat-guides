@@ -50,44 +50,73 @@ async function loadOriginal(){
  if(loaded)return;
  loaded=true;
  const target=root.querySelector("[data-original-transcript]");
- if(!meta.originalArchive){
-  target.innerHTML='<div class="original-note">There isn’t an imported Discord transcript for this guide yet. The original thread and file links above still work. We’ll add the source messages here as they’re reviewed.</div>';
+ const archive=meta.originalArchive||(!official?"/assets/originals/"+encodeURIComponent(id)+".json":null);
+ if(!archive){
+  target.innerHTML='<div class="original-note">The documentation link above is the original source. There isn’t a separate Discord transcript for this guide.</div>';
   return;
  }
  target.innerHTML='<div class="original-note">loading original posts…</div>';
  try{
-  const response=await fetch(meta.originalArchive,{credentials:"same-origin"});
-  if(!response.ok)throw new Error("Source not found");
+  const response=await fetch(archive,{credentials:"same-origin"});
+  if(!response.ok){
+   target.innerHTML='<div class="original-note">The original Discord messages aren’t imported on this page yet. You can still open the source threads above.</div>';
+   return;
+  }
   const payload=await response.json();
-  if(!Array.isArray(payload.threads)||!payload.threads.length)throw new Error("No posts provided");
-  const threads=payload.threads.map(thread=>{
-   const notes=thread.complete?
-    "all messages present in this export for this thread":
-    "selected messages from the available export — this is not a complete transcript";
-   const posts=(thread.messages||[]).map(post=>{
-    const link=post.url||thread.url;
-    return '<div class="original-message">'+
-      '<div class="original-message-head"><strong>'+e(post.author||"unknown")+'</strong>'+
-      '<time datetime="'+e(post.timestamp||"")+'">'+e(post.timestamp?new Date(post.timestamp).toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"}):"date unavailable")+'</time>'+
-      '<a href="'+e(link)+'" target="_blank" rel="noopener" aria-label="Open original Discord message">message ↗</a></div>'+
-      '<div class="original-message-text"></div>'+
-      ((post.attachments||[]).length?'<div class="original-attachments">'+post.attachments.map(a=>
-       '<a href="'+e(a.url)+'" target="_blank" rel="noopener">'+e(a.name||"attachment")+' ↗</a>').join("")+'</div>':"")+
-      '</div>';
-   }).join("");
-   return '<section class="original-thread"><h3>'+e(thread.title||"Discord discussion")+'</h3>'+
-   '<p class="original-note">'+e(notes)+' · '+(thread.messages||[]).length+' shown'+(thread.totalExportMessages?' / '+e(thread.totalExportMessages)+' in the available export':"")+'</p>'+posts+'</section>';
-  }).join("");
-  target.innerHTML=threads;
-  let idx=0;
+  if(!Array.isArray(payload.threads)||!payload.threads.length)throw new Error("No original posts supplied");
+  target.replaceChildren();
   for(const thread of payload.threads){
-    for(const post of thread.messages||[]){
-      const node=target.querySelectorAll(".original-message-text")[idx++];
-      if(node)node.textContent=post.content||""; // Original wording, never parse as HTML.
+   const section=document.createElement("section");section.className="original-thread";
+   const title=document.createElement("h3");title.textContent=thread.title||"Discord discussion";section.appendChild(title);
+   const note=document.createElement("p");note.className="original-note";
+   note.textContent=(thread.complete?"Messages in the available source":"Available source messages; the exported thread may be incomplete")+
+    " · "+(thread.messages||[]).length+" message(s) in this archive";
+   section.appendChild(note);
+   const list=document.createElement("div");section.appendChild(list);
+   const messages=thread.messages||[];
+   let rendered=0;
+   const more=document.createElement("button");more.type="button";more.className="original-more";
+   function renderNext(){
+    const end=Math.min(messages.length,rendered+20);
+    const chunk=document.createDocumentFragment();
+    for(;rendered<end;rendered++){
+     const msg=messages[rendered];
+     const item=document.createElement("div");item.className="original-message";
+     const header=document.createElement("div");header.className="original-message-head";
+     const who=document.createElement("strong");who.textContent=msg.author||"unknown";header.appendChild(who);
+     const when=document.createElement("time");
+     if(msg.timestamp){
+      when.dateTime=msg.timestamp;
+      const date=new Date(msg.timestamp);
+      when.textContent=Number.isNaN(date.valueOf())?msg.timestamp:date.toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"});
+     }else when.textContent="date unavailable";
+     header.appendChild(when);
+     const link=document.createElement("a");link.href=msg.url||thread.url||"#";
+     link.target="_blank";link.rel="noopener";link.textContent="message ↗";
+     header.appendChild(link);item.appendChild(header);
+     const textNode=document.createElement("div");textNode.className="original-message-text";
+     textNode.textContent=msg.content||"";item.appendChild(textNode);
+     if((msg.attachments||[]).length){
+      const attachments=document.createElement("div");attachments.className="original-attachments";
+      for(const att of msg.attachments){
+       const a=document.createElement("a");a.href=att.url||msg.url||thread.url||"#";a.target="_blank";a.rel="noopener";
+       a.textContent=(att.name||"attachment")+" ↗";attachments.appendChild(a);
+      }
+      item.appendChild(attachments);
+     }
+     chunk.appendChild(item);
     }
+    list.appendChild(chunk);
+    if(rendered>=messages.length)more.remove();
+    else more.textContent="Show "+Math.min(20,messages.length-rendered)+" more original messages";
+   }
+   more.addEventListener("click",renderNext);
+   renderNext();
+   if(rendered<messages.length)section.appendChild(more);
+   target.appendChild(section);
   }
  }catch(err){
-  target.innerHTML='<div class="original-note">The archived messages could not be loaded. You can still open the original sources above.</div>';
+  target.innerHTML='<div class="original-note">Couldn’t load the archived messages right now. The source links above are still available.</div>';
  }
 }
 function setView(view,updateUrl){
