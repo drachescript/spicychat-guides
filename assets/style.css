@@ -42,3 +42,5 @@
 .original-attachments{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
 .original-attachments a{font-size:11px;color:#ff9ab0}
 @media(max-width:650px){.original-thread{padding:12px}.original-message-head a{margin-left:0}.original-sources{grid-template-columns:1fr}.guide-tab{padding:12px 16px}}
+
+.original-more{display:block;width:100%;margin:13px 0 2px;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:#171a21;color:#f0d7e0;font:inherit;font-size:12px;cursor:pointer;text-align:center}.original-more:hover{border-color:#ec3d68}
