@@ -69,7 +69,7 @@ async function loadOriginal(){
    const section=document.createElement("section");section.className="original-thread";
    const title=document.createElement("h3");title.textContent=thread.title||"Discord discussion";section.appendChild(title);
    const note=document.createElement("p");note.className="original-note";
-   note.textContent=(thread.complete?"Messages in the available source":"Available source messages; the exported thread may be incomplete")+
+   note.textContent=(String(payload.captureCompleteness||"").includes("only one source post")?"Partial preview only — full thread import pending":thread.complete?"Messages in the available export":"Messages from the available export; Discord may have omitted older posts")+
     " · "+(thread.messages||[]).length+" message(s) in this archive";
    section.appendChild(note);
    const list=document.createElement("div");section.appendChild(list);
