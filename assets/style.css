@@ -11,3 +11,34 @@
 /* Let the home section cards accommodate Rulebooks as a fifth category. */
 .section-grid{grid-template-columns:repeat(auto-fit,minmax(188px,1fr))}
 .article-body h2[id]{scroll-margin-top:90px}
+
+
+/* Guide and original-source views */
+.guide-tabbar{display:flex;gap:8px;padding:18px 0 0;border-bottom:1px solid var(--line);overflow-x:auto}
+.guide-tab{appearance:none;font:inherit;font-size:13px;font-weight:750;color:var(--muted);cursor:pointer;background:transparent;border:0;border-bottom:2px solid transparent;padding:12px 21px;margin-bottom:-1px;border-radius:9px 9px 0 0}
+.guide-tab:hover{color:white;background:rgba(255,255,255,.035)}
+.guide-tab[aria-selected="true"]{border-bottom-color:#ec3d68;color:white;background:rgba(236,61,104,.065)}
+.guide-tab:focus-visible{outline:2px solid #ec3d68;outline-offset:-2px}
+[role="tabpanel"][hidden]{display:none!important}
+.original-view{padding:32px 0 75px}
+.original-view h2{font-size:26px;letter-spacing:-.03em;margin:0 0 12px}
+.original-view>p{color:var(--muted);font-size:14px;max-width:760px}
+.original-sources{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:11px;margin:25px 0 34px}
+.original-source{border:1px solid var(--line);border-radius:13px;background:#13151b;padding:15px;display:flex;flex-direction:column;gap:8px;text-decoration:none}
+.original-source:hover{border-color:#545b67}
+.original-source strong{font-size:13px;color:#edf0f4}
+.original-source span:last-child{font-size:11px;color:#ff9ab0}
+.original-source-kind{font-size:10px;color:var(--faint);text-transform:uppercase;letter-spacing:.08em}
+.original-thread{border:1px solid var(--line);border-radius:15px;padding:17px 19px;margin:23px 0;background:#101216}
+.original-thread h3{font-size:18px;margin:0 0 4px}
+.original-note{border:1px solid var(--line);border-radius:11px;padding:13px 15px;margin:16px 0 21px;color:var(--muted);font-size:12px}
+.original-thread .original-note{padding:0;border:0;margin:4px 0 16px}
+.original-message{padding:17px 0;border-top:1px solid rgba(255,255,255,.075)}
+.original-message-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 12px;margin-bottom:10px;font-size:12px}
+.original-message-head strong{color:#f4f5fa;font-size:13px}
+.original-message-head time{color:var(--faint);font-size:11px}
+.original-message-head a{margin-left:auto;color:#ff9ab0;text-decoration:none}
+.original-message-text{white-space:pre-wrap;overflow-wrap:anywhere;color:#c9cdd6;font-size:13px;line-height:1.65;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.original-attachments{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.original-attachments a{font-size:11px;color:#ff9ab0}
+@media(max-width:650px){.original-thread{padding:12px}.original-message-head a{margin-left:0}.original-sources{grid-template-columns:1fr}.guide-tab{padding:12px 16px}}
