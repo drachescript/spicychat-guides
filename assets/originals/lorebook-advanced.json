@@ -1,0 +1,21 @@
+{
+  "source": "Discord export provided by site owner",
+  "captureCompleteness": "unknown — only one source post reproduced in this on-site preview",
+  "threads": [
+    {
+      "title": "Advanced Lorebook Guide For Authors",
+      "url": "https://discord.com/channels/1108377954389594236/1461684278311256090/1461684278311256090",
+      "complete": false,
+      "totalExportMessages": 32,
+      "messages": [
+        {
+          "author": "Sydd",
+          "timestamp": "2026-01-16T11:31:28.730000+00:00",
+          "url": "https://discord.com/channels/1108377954389594236/1461684278311256090/1461684278311256090",
+          "content": "**This guide assumes the following:**\n\n- You already know what lorebooks are and have a basic understanding of how they work.\n- You understand how lorebooks interact with context memory.\n- You are struggling to get lorebook entries to trigger reliably.\n- You are anxious about making keywords too specific and breaking triggers.\n\n(Duke has an excellent guide that covers fundamentals in detail, so there’s no point in me repeating what’s already been explained well.)\n\nBefore we proceed, there is one **extremely important rule** you must understand.\n\nThroughout this guide, I’ll refer to anchoring keywords in personas, scenarios, or character descriptions.\nThis does **not** mean keywords trigger from those sections.\n\n**Keywords will ONLY ever trigger when they are typed in the actual conversation by the user or by the LLM.**\n\nThey do NOT trigger from:\n- the persona\n- the scenario\n- the lorebook itself\n\nPersona anchoring exists only to *encourage* the model to naturally use those terms in dialogue.\n\nPlease keep this in mind as you continue reading.\nMost lorebook issues come from misunderstanding this single rule.",
+          "attachments": []
+        }
+      ]
+    }
+  ]
+}
