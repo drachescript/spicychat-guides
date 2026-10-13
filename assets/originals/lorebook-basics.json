@@ -1,0 +1,21 @@
+{
+  "source": "Discord export provided by site owner",
+  "captureCompleteness": "unknown — only one source post reproduced in this on-site preview",
+  "threads": [
+    {
+      "title": "Personal Guide to Writing Lorebooks for SpicyChat.AI",
+      "url": "https://discord.com/channels/1108377954389594236/1458016679836516484/1458016679836516484",
+      "complete": false,
+      "totalExportMessages": 37,
+      "messages": [
+        {
+          "author": "Duke",
+          "timestamp": "2026-01-06T08:37:45.113000+00:00",
+          "url": "https://discord.com/channels/1108377954389594236/1458016679836516484/1458016679836516484",
+          "content": "*Based on my experience using lorebooks on SpicyChat, here’s what I’ve found works best for creating consistent, usable, and effective lore for world-building and storytelling.*\n\n**How Lorebooks Work**\n\nLorebooks are structured guides that help the AI remember context, maintain consistency, and respond according to your world or story. They are not meant to replace character creation.\n\n*Keyword Triggers:* Specific words or phrases that, when mentioned in chat, prompt the AI to reference relevant lore entries.\n\n*Memory Reinforcement:* Keeps characters, settings, and story elements consistent across interactions.\n\nWorld-Building: Ideal for RPGs, fanfiction, or interactive storytelling where internal logic and continuity matter.\n\nFrom my personal experience, thinking of a lorebook as a tool to guide the AI, rather than a book or character itself, gives the best results.",
+          "attachments": []
+        }
+      ]
+    }
+  ]
+}
