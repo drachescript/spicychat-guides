@@ -1,0 +1,1 @@
+Original Discord transcripts supplied by the project owner. These files preserve the full original text of the messages present in the provided Discord export, in chronological order. Their source exports may be incomplete and these JSONs are not a claim that the whole Discord thread was captured. Each guide loads its own data only when Original is opened.

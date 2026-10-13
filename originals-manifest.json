@@ -1,0 +1,115 @@
+{
+  "summary": {
+    "persona-basics": {
+      "threads": 3,
+      "messages": 216,
+      "bytes": 89916
+    },
+    "persona-commands": {
+      "threads": 2,
+      "messages": 314,
+      "bytes": 132710
+    },
+    "bot-creation": {
+      "threads": 1,
+      "messages": 530,
+      "bytes": 241485
+    },
+    "advanced-character-build": {
+      "threads": 1,
+      "messages": 11,
+      "bytes": 17044
+    },
+    "writing-style": {
+      "threads": 4,
+      "messages": 121,
+      "bytes": 45227
+    },
+    "stop-speaking-for-user": {
+      "threads": 4,
+      "messages": 42,
+      "bytes": 16287
+    },
+    "ooc-cmd": {
+      "threads": 4,
+      "messages": 64,
+      "bytes": 65213
+    },
+    "slow-burn": {
+      "threads": 1,
+      "messages": 65,
+      "bytes": 36855
+    },
+    "ai-assisted-writing": {
+      "threads": 1,
+      "messages": 24,
+      "bytes": 20432
+    },
+    "testing-feedback": {
+      "threads": 2,
+      "messages": 62,
+      "bytes": 31790
+    },
+    "memory-context": {
+      "threads": 2,
+      "messages": 18,
+      "bytes": 25405
+    },
+    "markdown-huds": {
+      "threads": 1,
+      "messages": 6,
+      "bytes": 9427
+    },
+    "rpg-bots": {
+      "threads": 2,
+      "messages": 27,
+      "bytes": 18578
+    },
+    "tagging": {
+      "threads": 2,
+      "messages": 99,
+      "bytes": 71032
+    },
+    "image-generation": {
+      "threads": 2,
+      "messages": 650,
+      "bytes": 310549
+    },
+    "models-settings": {
+      "threads": 2,
+      "messages": 568,
+      "bytes": 255468
+    },
+    "lorebook-basics": {
+      "threads": 1,
+      "messages": 37,
+      "bytes": 14471
+    },
+    "lorebook-advanced": {
+      "threads": 1,
+      "messages": 32,
+      "bytes": 19694
+    },
+    "lorebook-context": {
+      "threads": 3,
+      "messages": 86,
+      "bytes": 37119
+    },
+    "lorebook-rpg-systems": {
+      "threads": 4,
+      "messages": 19,
+      "bytes": 14152
+    },
+    "multi-character-bots": {
+      "threads": 4,
+      "messages": 543,
+      "bytes": 247537
+    },
+    "group-chats": {
+      "threads": 3,
+      "messages": 80,
+      "bytes": 24048
+    }
+  },
+  "missing": []
+}
