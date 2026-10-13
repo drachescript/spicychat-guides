@@ -1,0 +1,91 @@
+{
+  "source": "Saved Discord HTML supplied by site owner on October 13, 2026",
+  "captureCompleteness": "partial — 11 messages visible in the saved page; older or later replies may not be included",
+  "threads": [
+    {
+      "title": "GPT is ~~not~~ creative: Things to look out for when creating bots with GenAI",
+      "url": "https://discord.com/channels/1108377954389594236/1559568458814062652",
+      "complete": false,
+      "totalExportMessages": 11,
+      "messages": [
+        {
+          "author": "eldespertando",
+          "timestamp": "2026-10-13T14:08:15.962Z",
+          "url": "https://discord.com/channels/1108377954389594236/1559568458814062652/1559568458814062652",
+          "content": "When using chatbots (regardless of platform) there are certain telltale signs that I notice when a creator has resorted to GenAI when making their bots. Now, that doesn't mean it's automatically bad. I also use ChatGPT on occasion to help me with my bot making process, as do many other creators on SC who are much more prolific , productive, and better than me.\n\nReadily accessible GenAI like Grok, Gemini, DeepSeek or ChatGPT have proven to be valuable assistants for creating bots. They are amazing tools to help you brainstorm ideas for bot personas and scenarios. And they are so easy to use and eager to help, that it becomes very tempting to just throw a few ideas at the AI and ask it to “fill in the blanks” to get a bot finished in virtually no time.\n\nHowever, as much as it might seem that way: GenAI is NOT a creative tool. It is a great tool to ASSIST in creativity, but much of the legwork still ha to be done by the creator itself. There are a couple of things that make it VERY apparent even to a casual observer that a bot has been created by AI, or that the creator didn’t pay much attention to the results the AI presented to them. The result can be twofold:\n\n1) Bots feel very similar, because they all carry the same traits that GenAI LOVES to include no matter what.\n2) Even if you did a lot of the work yourself, users might recognize at a glance that GenAI played a major part in the creation process, and tend to avoid it, because they believe… see point number 1.\n\nIt’s not hard to avoid such pitfalls if you know what to look out for. Just a little bit of conscious choices, careful reading, and maybe a little bit of research or a “second opinion” run can help immensely to improve the quality of your bots. \n\nThis thread aims to point out some of the most obvious things GenAI like Gemini, Grok, DeepSeek or ChatGPT like to do that will potentially harm the Quality of your bots. It is by no means complete but may hopefully serve as a useful guide regardless.",
+          "attachments": []
+        },
+        {
+          "author": "eldespertando",
+          "timestamp": "2026-10-13T14:08:56.050Z",
+          "url": "https://discord.com/channels/1108377954389594236/1559568458814062652/1559568626955190295",
+          "content": "It’s all in the name!,\n,Some see a nice picture and get an idea for a bot. Others have an idea for a nice scenario and begin from there. Regardless of which approach you use, quite often one central aspect is forgotten: What the bot’s name is supposed to be. It may seem like an afterthought or a triviality to you – but it’s one of the biggest flags signaling the involvement of Gen AI, and the lack of care of a creator, when the bot was made (and yes, it’s also a trap that I’ve fallen into a few times). And: A character’s name is THE FIRST THING A PROSPECTIVE USER SEES; The image might be the most important thing, yes. But if a name seems obviously AI generated? Chances are people give it a wide berth before even giving the character a try!\n\nGo to a chatbot platform – any platform, really – and do a search for the name “Elara Voss”. You’ll be astounded how many bots there are carrying this name. But how many Elara’s do you know in real life? Between ChatGPT 3 and 5.1, “Elara” was the GenAI’s favorite female first name of choice, and “Voss” its favorite surname. The GenAI doesn’t really look for a name that reflects the character outside of a shallow pool and with VERY broad strokes. It just picks the first or second it comes across and tosses that onto your bot. Things have gotten a little better in the models that came out in recent months, and not by much; and if you’re using a free tier of a GenAI, you WILL run into the naming problem continuously.\n\nEarly on GenAIs favorite female names were “Elara”, “Emily”, or “Lily”; if it was a “classy” woman you wanted, “Vivienne”, “Vivian” or “Victoria” are still among its favorites (notice a pattern there?). Lately names like “Natalie” or “Naomi” have started to fill in the roster. Preferred AI last names are usually very short ones like “Voss”, “Vonn”, “Vaughn”, “Wren” or “Hart”. If it’s a Latina character, chances are the AI gives him or her the last name “Reyes”. And so on.",
+          "attachments": []
+        },
+        {
+          "author": "eldespertando",
+          "timestamp": "2026-10-13T14:08:59.807Z",
+          "url": "https://discord.com/channels/1108377954389594236/1559568458814062652/1559568642713190556",
+          "content": "What can you do to prevent it? The most obvious way would be: Think of a name yourself first! You don’t have to be excessive about it and research the top 20 girls’ names in Arkansas in 2001 when you want to make a 25-year-old character from that area (though yes, I am the kind of guy who does just that, I admit). But hand picking a name not only makes the character appear less like careless AI slop – it often can help you with the characters’ personality as well. Names can carry meanings and associations; sometimes, a name just feels right! AI doesn’t feel, doesn’t empathize – so it will never be able to evoke that kind of association with an auto-generated one.\n\nIf you think that’s too hard, provide the AI with more context. If you’ve got a specific setting, ask the AI to research common names in that area for you and then make suggestions based on THAT before proceeding to build the persona. Tell it directly to come up with names that are associated with a specific feeling or core personality trait – or, heck, even appearance – before naming the character. Most importantly, have the AI make SEVERAL suggestions. Don’t just pick the first convenient one and then run with it. \n\nThat doesn’t mean that you NEVER can name a character Lily or Vivian. But when picking that name, you should have at least some associations with it, and have that be reflected in the personality of the bot. Trust me – that process alone already makes the character more rounded and appear less careless!",
+          "attachments": []
+        },
+        {
+          "author": "eldespertando",
+          "timestamp": "2026-10-13T14:09:26.661Z",
+          "url": "https://discord.com/channels/1108377954389594236/1559568458814062652/1559568755347165197",
+          "content": "By all Appearances,\n,Yes, yes, most of the female bots are voluptuous with hourglass figures and heart-shaped faces, men are broad-shouldered hunks with a narrow waist; that’s what we’re all (at least in western cultures) are more or less hard-coded to find attractive. But if you start reading the same visual descriptions over and over again, a bot can feel very identical to others, even if you made their personalities more versatile.\n\nOversized Hoodies. Pale and freckled faces. Heart-shaped pendants. Fitted jeans. How often have you noticed these visual descriptors in a bot, especially high school- or college-aged ones? No, by no means do you have to get EXCESSIVE about clothing details; LLMs are notoriously bad about keeping track of those anyways. But the amount of college girl chatbots running around in oversized hoodies is STAGGERING. But again, think about the character: What do you associate with an oversized hoodie? What about a character wearing a shirt? A blouse and Blazer? Cargo Pants? Tank tops? You immediately got different pictures in your head, don’t you? So why should the chatbots all wear the same things?\n\nThis is an easy thing to spot when the AI coughs out a character, and very easily amended to avoid having the characters feel too similar to one another. (edited)Tuesday, 13 October 2026 at 10:10",
+          "attachments": []
+        },
+        {
+          "author": "eldespertando",
+          "timestamp": "2026-10-13T14:09:46.528Z",
+          "url": "https://discord.com/channels/1108377954389594236/1559568458814062652/1559568838675271721",
+          "content": "Some traits just dominate,\n, When I say this, I mean it in two ways:\n\n For one, some traits are interpreted by AI in a way that completely overshadows any other kind of behavior. It’s been mentioned several times in other guides, but it bears repeating: A character who’s “dominant” isn’t just commanding and assertive: He’s often interpreted as an aggressive and overbearing tyrant who refuses to take no for an answer. “Sarcastic” should also used with care, unless you want a character to be a smug asshole the entire time. And “depressed” makes a character often so terribly glum and withdrawn that any attempt to coax an answer out of the bot ends in exchanges of silence or the character leaving – roleplay over.\n\nSometimes these traits can be balanced by giving the character several more to counterbalance things a bit; don’t give them just 3 character traits, but rather 7 or 8. But that doesn’t always work in the intended fashion. I’ve noticed some creators working with “weights” in a sense (dominant: 0.8; caring: 1.2); but this is much more technical and I personally have very little experience with that.\n\nThe option that works best in my opinion is to either use alternate terms that go into a similar direction but don’t carry as much weight with LLMs (“assertive” instead of “dominant”, “dejected” instead of “depressed”, etc.), though it takes some experience and trial and error to work out what works best there. Another, though more token-heavy way is to clearly define how the trait should manifest. Put down something like:",
+          "attachments": []
+        },
+        {
+          "author": "eldespertando",
+          "timestamp": "2026-10-13T14:09:49.281Z",
+          "url": "https://discord.com/channels/1108377954389594236/1559568458814062652/1559568850222186588",
+          "content": "Secondly – and this is more SC-specific – some traits GenAI defines can turn into unexpected landmines that, on cursory glance, might be easily missed. It happened to me when I didn’t really notice that the GenAI hat suggested that a character of mine hates being “infantilized”; meaning that although the character is adult, they hate being treated like a kid or someone who can’t decide for themselves. “Being Babied” is also something I’ve seem come up a few times. As long as you keep things SFW, everything seems alright. The second things turn spicy however, the landmine goes off: The personality disintegrates, bot and scenario go off the rails. \n\nThat’s because the NSFW-Filters latch onto the “infant” part of “infantilized” and the “baby” implied with “babied”! So, ALWAYS read carefully through what ChatGPT, Grok, Gemini, DeepSeek or whomever gave you! If you have a 1% bot that’s not NTR and you don’t understand why, something like this might be the reason behind it! (edited)Tuesday, 13 October 2026 at 10:10",
+          "attachments": []
+        },
+        {
+          "author": "eldespertando",
+          "timestamp": "2026-10-13T14:10:10.397Z",
+          "url": "https://discord.com/channels/1108377954389594236/1559568458814062652/1559568938789109841",
+          "content": "Likes alike,\n,Similarly to Names and Appearance, GenAI just LOVES sprinkling certain traits into characters. They almost always dislike being pitied (but what if you want a character to react positively if you show genuine compassion? The LLM might misinterpret that as pity). GenAI characters LOVE night drives, or late-night (something or other). Porches during thunderstorms. Coffee. Rain.\n\nIt’s mostly just a minor thing. Some of that stuff is merely fluff. Do you really need a nighttime car ride with a bot set in high school during the day? Some on the other hand CAN be informative, for instance when the bot is set on a rainy November afternoon. Adjusting these sorts of things to whether they’re relevant to the scenario at hand, or whether they’re not, can make a difference in how the bot feels. It’s more subtle than the earlier examples… but it’s there. (edited)Tuesday, 13 October 2026 at 10:10",
+          "attachments": []
+        },
+        {
+          "author": "eldespertando",
+          "timestamp": "2026-10-13T14:12:08.105Z",
+          "url": "https://discord.com/channels/1108377954389594236/1559568458814062652/1559569432492249122",
+          "content": "There’s no limit,\n,So, you’ve got a name. The appearance is clear and versatile. You’ve carefully defined personality traits. What a character likes or dislikes is not generic but rather a specific quirk. So, you tell your GenAI tool of choice to create a bot, and….it returns you a 12.000 character essay. Great. Have fun fitting that into SC’s persona box.  Even when making creative additional use of the Scenario box as well, you won’t be able to fit more than 9.000 overall.\n\nEven if you’re on another platform that doesn’t have an upper limit on the persona, taking the entire thing verbatim isn’t advisable: It’s just an excessive amount of tokens that makes the bot’s memory deteriorate faster.\n\nWell, no matter: Gemini 3.1 and GPT 5 have gotten quite good at counting characters. So, just tell them to create a persona that’s no longer that 5.000 characters (including spaces). Send the prompt, and sure enough: It returns something that’s between 4.700 characters and 4.950 characters long. Perfect! Maybe create a few lorebook entries to round out some of the categories externally. Copy, paste, send… right?\n\n Not so fast! GenAI loves to help. In fact, it loves to help you so much, it wants to give you as much bang for your buck as possible. You’ve asked for 5.000 characters? Well, then it tries to put as much information into the persona as possible within that limit. But read again: Why does it say, “hates being pitied” under “personality” and “pity” under “Dislikes”? Why are there three different instructions on how the bot behaves in one very specific instance. And don’t these two sentences essentially say the same thing?",
+          "attachments": []
+        },
+        {
+          "author": "eldespertando",
+          "timestamp": "2026-10-13T14:12:34.136Z",
+          "url": "https://discord.com/channels/1108377954389594236/1559568458814062652/1559569541674311723",
+          "content": "Give GenAI an upper limit, and it likes to fill it – even if that means bloating things. These LLMs are trained to assume that “longer answer” = “better answer”. If the answer is too short, just cram more filler into it to make it appear “better”. Just make a little experiment: After you’ve created an entire persona in a Gen AI, ask it to just generate a category that’s present in the persona, like “Appearance” or “likes”. The result will almost ALWAYS be much longer than it was before – without actually providing anything new: it just tagged on a few more additional definitions to the traits that already were there. Verbosity is not the same as detail; it’s just additional words bloating up the token size.\n\nSame can go for Lorebook entries. Ask it to create an entry on something, then look back into the persona. Chances are that there’s a lot of stuff in that entry that’s already in the persona itself. I’ve had situations where 80-90 % of a suggested Lorebook entry were just almost word-by-word repetitions of what was already in the persona. Yes, sometimes it’s good to “reinforce” certain things in an LLM by repeating things, but most of the time, this stuff can be thrown out without making any difference, other than putting less strain on the bot’s memory.\n\nIf you don’t have the time to painstakingly go through every detail yourself – and I don’t blame you – have the GenAI proofread the persona for you! Open a NEW chat, copy the entire persona into that, and then ask the GenAI to check the persona for superfluous or redundant information. The AI will go about it with a more or less fresh mind – and it probably will find MUCH more that can be thrown out without issues than you’d expect (but word of advice, tell the AI to give you the results in a before/after fashion so that you can pinpoint the changes quicker and more efficiently).",
+          "attachments": []
+        },
+        {
+          "author": "eldespertando",
+          "timestamp": "2026-10-13T14:12:57.306Z",
+          "url": "https://discord.com/channels/1108377954389594236/1559568458814062652/1559569638856073428",
+          "content": "So. Those are my general observations on that topic. Do you have something to add? What are your experiences? Are there more names/appearance details/personality traits/likes and dislikes that I forgot to mention? Let’s make this a living document and share our experiences. Hope that helps.",
+          "attachments": []
+        },
+        {
+          "author": "Babayak",
+          "timestamp": "2026-10-13T14:14:22.744Z",
+          "url": "https://discord.com/channels/1108377954389594236/1559568458814062652/1559569997209014423",
+          "content": "Oh the dreaded Elara Voss",
+          "attachments": []
+        }
+      ]
+    }
+  ]
+}
