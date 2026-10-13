@@ -1,0 +1,21 @@
+{
+  "source": "Discord export provided by site owner",
+  "captureCompleteness": "unknown — only one source post reproduced in this on-site preview",
+  "threads": [
+    {
+      "title": "How to get better Roleplays with Persona — a guide (Persona Commands)",
+      "url": "https://discord.com/channels/1108377954389594236/1476421115084673268/1476421115084673268",
+      "complete": false,
+      "totalExportMessages": 121,
+      "messages": [
+        {
+          "author": "Chaos",
+          "timestamp": "2026-02-26T03:30:24.414000+00:00",
+          "url": "https://discord.com/channels/1108377954389594236/1476421115084673268/1476421115084673268",
+          "content": "Hey Discord, I updated my guide. My original guide was a messy thread, scattered, full of random comments and goonery. But I'm cleaning it up here for you all. Talking about personas — not just \"I'm a tall elf with green eyes,\" but sneaky ways to make the bot your perfect RP partner.\n\n**Why Personas Are Your Secret Weapon**\n\nMost people treat personas like a character sheet: name, gender, appearance, a few traits. Cool, but basic. The bot (we'll call it {{char}}) reads your persona as part of the roleplay context. If you say \"green eyes,\" it'll reference them. If you say \"male,\" it'll use \"he.\" Easy peasy.\n\nBut here's the hack: the bot treats your persona like instructions. Give it demands about how to write, and boom—customized RP. We're tuning the AI's style, not just dictating plot. This works within token limits and context windows; it's robust and low-effort. Hate flowery crap? Tell it to go lean. Want horror vibes? Demand a haunting tone. It's giving the bot a job description.",
+          "attachments": []
+        }
+      ]
+    }
+  ]
+}
