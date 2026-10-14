@@ -54,3 +54,21 @@ Each transcript loads only when someone opens **Original**, and long threads sho
 The initial source messages for Persona Commands, Lorebook Basics, and Advanced Lorebooks are already committed. Additional full source-export snapshots are prepared as a changed-files ZIP for uploading to the matching folder. No source messages are fabricated for guides that lack imported originals; their source links remain visible.
 
 Hunter's original TXT/MD files remain unmodified in `/llm/originals/` with past versions archived. The separate `Understanding Single-Character Bots.docx` is a pending original upload.
+
+## New WIP guide topics (October 2026)
+
+All of these stay public with WIP · not complete labels, with a cleaned Guide view and an Original tab linking back to their source material.
+
+- `/bots/fields/` — what belongs in each character field
+- `/bots/greetings/` — usable opening messages and user agency
+- `/bots/anypov/` — inclusive character setups without accidental POV locks
+- `/bots/plist-vs-prose/` — compact lists, prose and hybrids
+- `/bots/repetitive-responses/` — parroting, looping and generic response diagnosis
+- `/rulebook/templates/` — six editor recipes based on official beta docs, **not verified importable JSON**
+- `/bots/moderation/` — CalifornianJosh's community moderation guide, with added interpretation and false-positive reporting
+- `/bots/example-dialogue/` — secondary guide on speech/behavior demonstration
+- `/lorebook/troubleshooting/` — secondary guide diagnosing keywords, retrieval and context issues
+
+Existing `/bots/testing-feedback/` was expanded with a practical test matrix and report template. Existing Rulebook Basics was checked against updated beta documentation and the conflicting guidance around removing/replacing Rulebooks was flagged.
+
+Original Discord threads and Hunter files remain separately linked; draft text must not be presented as unmodified originals.
