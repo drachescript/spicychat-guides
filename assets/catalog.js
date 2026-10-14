@@ -307,7 +307,7 @@ window.GUIDES=[
     "subsection": "Creator Workflow",
     "status": "wip",
     "label": "Guide",
-    "desc": "why creators test private builds, what to actually test, and how to separate useful performance feedback from model/user noise.",
+    "desc": "practical test scripts for user agency, unexpected choices, AnyPOV, long chats, behavior drift and useful bug reports.",
     "pageUrl": "/bots/testing-feedback/",
     "sources": [
       {
@@ -644,7 +644,7 @@ window.GUIDES=[
     "subsection": "Getting Started",
     "status": "wip",
     "label": "Guide",
-    "desc": "how to build Rulebooks, set up meters and evaluations, use influence levels/combined rules, playtest, and attach them to chats.",
+    "desc": "creating Rulebooks with meters, evaluation, influence rules and playtesting; updated for current beta docs.",
     "pageUrl": "/rulebook/basics/",
     "sourceType": "official",
     "sources": [
