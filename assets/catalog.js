@@ -72,6 +72,31 @@ window.GUIDES=[
     ]
   },
   {
+    "id": "bot-fields",
+    "title": "Personality vs Scenario vs Greeting vs Example Dialogue",
+    "section": "bots",
+    "subsection": "Getting Started",
+    "desc": "what goes in each character field, what belongs in Lorebook or Rulebook, and how to repair a muddled card.",
+    "pageUrl": "/bots/fields/",
+    "sources": [
+      {
+        "title": "Bot Creation guide 2.0",
+        "url": "https://discord.com/channels/1108377954389594236/1257593693360357396/1257593693360357396"
+      },
+      {
+        "title": "Hunter — Single Character LLM Guide v6",
+        "url": "/llm/originals/Single%20Character%20LLM%20Guide%20v6.txt"
+      },
+      {
+        "title": "SpicyChat Advanced Settings documentation",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings"
+      }
+    ],
+    "kind": "human",
+    "label": "Guide",
+    "status": "wip"
+  },
+  {
     "id": "advanced-character-build",
     "title": "Advanced Character Build & Token Efficiency",
     "kind": "human",
@@ -116,6 +141,48 @@ window.GUIDES=[
         "url": "https://discord.com/channels/1108377954389594236/1482716824935202878/1482716824935202878"
       }
     ]
+  },
+  {
+    "id": "bot-example-dialogue",
+    "title": "Writing Example Dialogue That Actually Helps",
+    "section": "bots",
+    "subsection": "Writing & Behavior",
+    "desc": "teach voice and behavior through examples without training the bot to repeat canned phrases.",
+    "pageUrl": "/bots/example-dialogue/",
+    "sources": [
+      {
+        "title": "Bot Creation guide 2.0",
+        "url": "https://discord.com/channels/1108377954389594236/1257593693360357396/1257593693360357396"
+      },
+      {
+        "title": "Hunter — Single Character LLM Guide v6",
+        "url": "/llm/originals/Single%20Character%20LLM%20Guide%20v6.txt"
+      }
+    ],
+    "kind": "human",
+    "label": "Guide",
+    "status": "wip"
+  },
+  {
+    "id": "bot-greetings",
+    "title": "How to Write a Good Greeting",
+    "section": "bots",
+    "subsection": "Writing & Behavior",
+    "desc": "setting a playable opening, handing control to the user, showing your writing style and testing alternate responses.",
+    "pageUrl": "/bots/greetings/",
+    "sources": [
+      {
+        "title": "Bot Creation guide 2.0",
+        "url": "https://discord.com/channels/1108377954389594236/1257593693360357396/1257593693360357396"
+      },
+      {
+        "title": "Hunter — Single Character LLM Guide v6",
+        "url": "/llm/originals/Single%20Character%20LLM%20Guide%20v6.txt"
+      }
+    ],
+    "kind": "human",
+    "label": "Guide",
+    "status": "wip"
   },
   {
     "id": "stop-speaking-for-user",
@@ -336,6 +403,32 @@ window.GUIDES=[
         "url": "https://discord.com/channels/1108377954389594236/1448843862939402320/1448843862939402320"
       }
     ]
+  },
+  {
+    "id": "moderation-josh",
+    "title": "Blocked Words and AI Moderation (CalifornianJosh + Reference)",
+    "section": "bots",
+    "subsection": "Publishing",
+    "desc": "Josh's observed moderation-word reference, how classification differs from tags, and how to document possible false positives.",
+    "pageUrl": "/bots/moderation/",
+    "author": "CalifornianJosh | System Bots",
+    "sources": [
+      {
+        "title": "Blocked Words and AI Moderation EXPLAINED (simplified)",
+        "url": "https://discord.com/channels/1108377954389594236/1455988558639661136/1455988558639661136"
+      },
+      {
+        "title": "Community blocked-word reference",
+        "url": "/blocked-words.json"
+      },
+      {
+        "title": "SpicyChat Community Guidelines",
+        "url": "https://docs.spicychat.ai/community-guidelines"
+      }
+    ],
+    "kind": "human",
+    "label": "Community guide",
+    "status": "wip"
   },
   {
     "id": "image-generation",
@@ -560,6 +653,112 @@ window.GUIDES=[
         "url": "https://docs.spicychat.ai/product-guides/rulebooks"
       }
     ]
+  },
+  {
+    "id": "bot-anypov",
+    "title": "Creating Proper AnyPOV Bots",
+    "section": "bots",
+    "subsection": "Character Design",
+    "desc": "avoid unintentional gender, body and relationship assumptions while keeping a character's identity consistent.",
+    "pageUrl": "/bots/anypov/",
+    "sources": [
+      {
+        "title": "Bot Creation guide 2.0",
+        "url": "https://discord.com/channels/1108377954389594236/1257593693360357396/1257593693360357396"
+      },
+      {
+        "title": "Hunter — Single Character LLM Guide v6",
+        "url": "/llm/originals/Single%20Character%20LLM%20Guide%20v6.txt"
+      }
+    ],
+    "kind": "human",
+    "label": "Guide",
+    "status": "wip"
+  },
+  {
+    "id": "bot-plist-prose",
+    "title": "PList vs Prose Personalities",
+    "section": "bots",
+    "subsection": "Advanced Creation",
+    "desc": "compare compact trait fields, prose and hybrids; migrate an old bot without losing important behavior.",
+    "pageUrl": "/bots/plist-vs-prose/",
+    "sources": [
+      {
+        "title": "Bot Creation guide 2.0",
+        "url": "https://discord.com/channels/1108377954389594236/1257593693360357396/1257593693360357396"
+      },
+      {
+        "title": "Hunter — Single Character LLM Guide v6",
+        "url": "/llm/originals/Single%20Character%20LLM%20Guide%20v6.txt"
+      }
+    ],
+    "kind": "human",
+    "label": "Guide",
+    "status": "wip"
+  },
+  {
+    "id": "bot-repetition",
+    "title": "Fixing Repetitive or Generic Bot Responses",
+    "section": "bots",
+    "subsection": "Troubleshooting",
+    "desc": "diagnose parroting, scene loops, stock gestures and response drift with focused tests rather than giant negative prompts.",
+    "pageUrl": "/bots/repetitive-responses/",
+    "sources": [
+      {
+        "title": "Bad habits and formatting issues",
+        "url": "https://discord.com/channels/1108377954389594236/1493789227631116298/1493789227631116298"
+      },
+      {
+        "title": "All the goddamn annoyances of LLMs speaking",
+        "url": "https://discord.com/channels/1108377954389594236/1482716824935202878/1482716824935202878"
+      }
+    ],
+    "kind": "human",
+    "label": "Guide",
+    "status": "wip"
+  },
+  {
+    "id": "rulebook-templates",
+    "title": "Rulebook Examples and Templates",
+    "section": "rulebook",
+    "subsection": "Examples",
+    "desc": "worked editor recipes for Trust, Stamina, Coins, d20, a story clock with win/lose outcomes, and hidden meters.",
+    "pageUrl": "/rulebook/templates/",
+    "sourceType": "official",
+    "sources": [
+      {
+        "title": "SpicyChat Rulebooks — official documentation",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks"
+      }
+    ],
+    "kind": "human",
+    "label": "Guide",
+    "status": "wip"
+  },
+  {
+    "id": "lorebook-troubleshoot",
+    "title": "Why Isn't My Lorebook Working?",
+    "section": "lorebook",
+    "subsection": "Troubleshooting",
+    "desc": "diagnose missed keywords, overbroad triggers, context overload, early secrets and untested JSON imports.",
+    "pageUrl": "/lorebook/troubleshooting/",
+    "sources": [
+      {
+        "title": "Advanced Lorebook Guide For Authors",
+        "url": "https://discord.com/channels/1108377954389594236/1461684278311256090/1461684278311256090"
+      },
+      {
+        "title": "Official SpicyChat Lorebook guide",
+        "url": "https://docs.spicychat.ai/product-guides/lorebook"
+      },
+      {
+        "title": "Hunter — Unified Lorebook LLM Production System v6",
+        "url": "/llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt"
+      }
+    ],
+    "kind": "human",
+    "label": "Guide",
+    "status": "wip"
   },
   {
     "id": "hunter-multi-character-llm-guide-v3",
