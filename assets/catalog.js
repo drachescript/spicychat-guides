@@ -665,7 +665,7 @@ window.GUIDES=[
         "url": "https://discord.com/channels/1108377954389594236/1557097057787846726/1559601026640781326"
       }
     ],
-    "originalArchive": "/assets/originals/rulebooks-feedback.json"
+    "originalLinksOnly": true
   },
   {
     "id": "bot-anypov",
@@ -759,7 +759,7 @@ window.GUIDES=[
     "kind": "human",
     "label": "Guide",
     "status": "wip",
-    "originalArchive": "/assets/originals/rulebooks-feedback.json"
+    "originalLinksOnly": true
   },
   {
     "id": "lorebook-troubleshoot",
