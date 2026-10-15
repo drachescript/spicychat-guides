@@ -651,8 +651,21 @@ window.GUIDES=[
       {
         "title": "SpicyChat Rulebooks — official documentation",
         "url": "https://docs.spicychat.ai/product-guides/rulebooks"
+      },
+      {
+        "title": "Rulebooks feedback and discussion — Discord, October 2026",
+        "url": "https://discord.com/channels/1108377954389594236/1557097057787846726"
+      },
+      {
+        "title": "Rulebooks October 13 shipped changes — Booster",
+        "url": "https://discord.com/channels/1108377954389594236/1316530500499673149/1559600606866579550"
+      },
+      {
+        "title": "Rulebooks v4.7.0 planned improvements — Booster, October 13",
+        "url": "https://discord.com/channels/1108377954389594236/1557097057787846726/1559601026640781326"
       }
-    ]
+    ],
+    "originalArchive": "/assets/originals/rulebooks-feedback.json"
   },
   {
     "id": "bot-anypov",
@@ -729,11 +742,24 @@ window.GUIDES=[
       {
         "title": "SpicyChat Rulebooks — official documentation",
         "url": "https://docs.spicychat.ai/product-guides/rulebooks"
+      },
+      {
+        "title": "Rulebooks feedback and discussion — Discord, October 2026",
+        "url": "https://discord.com/channels/1108377954389594236/1557097057787846726"
+      },
+      {
+        "title": "Rulebooks October 13 shipped changes — Booster",
+        "url": "https://discord.com/channels/1108377954389594236/1316530500499673149/1559600606866579550"
+      },
+      {
+        "title": "Rulebooks v4.7.0 planned improvements — Booster, October 13",
+        "url": "https://discord.com/channels/1108377954389594236/1557097057787846726/1559601026640781326"
       }
     ],
     "kind": "human",
     "label": "Guide",
-    "status": "wip"
+    "status": "wip",
+    "originalArchive": "/assets/originals/rulebooks-feedback.json"
   },
   {
     "id": "lorebook-troubleshoot",
