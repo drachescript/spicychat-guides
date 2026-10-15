@@ -663,6 +663,18 @@ window.GUIDES=[
       {
         "title": "Rulebooks v4.7.0 planned improvements — Booster, October 13",
         "url": "https://discord.com/channels/1108377954389594236/1557097057787846726/1559601026640781326"
+      },
+      {
+        "title": "chongoos — Rulebooks Beta Test Report (v4.5.6 attachment)",
+        "url": "https://discord.com/channels/1108377954389594236/1557097057787846726/1558286385968980049"
+      },
+      {
+        "title": "torinthiakyna — Persona Accessibility Familiarity test (attachment)",
+        "url": "https://discord.com/channels/1108377954389594236/1557097057787846726/1557241582867185775"
+      },
+      {
+        "title": "Booster — October 14 Rulebook tag/filter preview",
+        "url": "https://discord.com/channels/1108377954389594236/1557097057787846726/1560085874463608913"
       }
     ],
     "originalLinksOnly": true
@@ -754,6 +766,18 @@ window.GUIDES=[
       {
         "title": "Rulebooks v4.7.0 planned improvements — Booster, October 13",
         "url": "https://discord.com/channels/1108377954389594236/1557097057787846726/1559601026640781326"
+      },
+      {
+        "title": "chongoos — Rulebooks Beta Test Report (v4.5.6 attachment)",
+        "url": "https://discord.com/channels/1108377954389594236/1557097057787846726/1558286385968980049"
+      },
+      {
+        "title": "torinthiakyna — Persona Accessibility Familiarity test (attachment)",
+        "url": "https://discord.com/channels/1108377954389594236/1557097057787846726/1557241582867185775"
+      },
+      {
+        "title": "Booster — October 14 Rulebook tag/filter preview",
+        "url": "https://discord.com/channels/1108377954389594236/1557097057787846726/1560085874463608913"
       }
     ],
     "kind": "human",
