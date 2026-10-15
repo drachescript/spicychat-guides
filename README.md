@@ -72,3 +72,15 @@ All of these stay public with WIP · not complete labels, with a cleaned Guide v
 Existing `/bots/testing-feedback/` was expanded with a practical test matrix and report template. Existing Rulebook Basics was checked against updated beta documentation and the conflicting guidance around removing/replacing Rulebooks was flagged.
 
 Original Discord threads and Hunter files remain separately linked; draft text must not be presented as unmodified originals.
+
+
+## Rulebooks Discord source update (October 15, 2026)
+
+- Primary supplied source: `feedback_rulebooks` Discord channel export, two JSON pages, **1,683 unique messages** from October 6–15, 2026.
+- Community source URL: https://discord.com/channels/1108377954389594236/1557097057787846726
+- Both `/rulebook/basics/` and `/rulebook/templates/` now link the original discussion, the October 13 shipped release, and the planned v4.7.0 announcement.
+- **Original tab import still pending GitHub upload:** put the single generated file `rulebooks-feedback.json` at `assets/originals/rulebooks-feedback.json`. The site already points to this path. Without it, the tabs fall back to the Discord links and display an honest missing-import note.
+- The full provided export is retained separately in the prepared import ZIP; the site view preserves the exact `content` field per message, plus author, time and message URL.
+- The October 13 release notes confirm Unlisted visibility, remove/switch behavior, meter triggers, quarter-minute Story Clock steps, and **800-character descriptions**, whereas the official documentation currently says 300 for description length and its FAQ still contradicts the shipped Rulebook switching feature.
+- The October 13 v4.7.0 roadmap describes features planned for the following week, **not already released**. Don't convert those proposals into current instructions until deployment is verified.
+- The separate `announcements`, `concept_immersive_mode` and `feedback_gallery` exports were only briefly reviewed; do not treat the immersive-mode concept as a shipped feature.
