@@ -50,6 +50,10 @@ async function loadOriginal(){
  if(loaded)return;
  loaded=true;
  const target=root.querySelector("[data-original-transcript]");
+ if(meta.originalLinksOnly){
+  target.innerHTML='<div class="original-note">The original discussion is hosted on Discord. Use the source links above to read it there; the full discussion export is not reproduced on this website.</div>';
+  return;
+ }
  const archive=meta.originalArchive||(!official?"/assets/originals/"+encodeURIComponent(id)+".json":null);
  if(!archive){
   target.innerHTML='<div class="original-note">The documentation link above is the original source. There isn’t a separate Discord transcript for this guide.</div>';
