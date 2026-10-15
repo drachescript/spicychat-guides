@@ -84,3 +84,13 @@ Original Discord threads and Hunter files remain separately linked; draft text m
 - The October 13 release notes confirm Unlisted visibility, remove/switch behavior, meter triggers, quarter-minute Story Clock steps, and **800-character descriptions**, whereas the official documentation currently says 300 for description length and its FAQ still contradicts the shipped Rulebook switching feature.
 - The October 13 v4.7.0 roadmap describes features planned for the following week, **not already released**. Don't convert those proposals into current instructions until deployment is verified.
 - The separate `announcements`, `concept_immersive_mode` and `feedback_gallery` exports were only briefly reviewed; do not treat the immersive-mode concept as a shipped feature.
+
+
+## Attachment-enabled Rulebook export review (October 15, 2026)
+
+- Latest HTML export: two `feedback_rulebooks` pages with **1,685 distinct exported message IDs**, spanning October 6–15. This is separate from the previous two-page JSON snapshot that counted 1,683; the two snapshots should not be treated as byte-identical.
+- The HTML presents **196 attachment links**: 191 local files, including screenshots and two text reports, plus five videos left as external Discord CDN links. Links with expiring CDN tokens may not remain accessible.
+- Attached reports used to refine human guides: `Rulebooks_Beta_Test_Report.txt` (chongoos, v4.5.6, Oct 9) and `message.txt` (torinthiakyna, Persona Accessibility Familiarity, Oct 7).
+- The screenshots verify that certain UI states and bugs were observed, not that every issue remains unfixed in later releases. The October 14 tag/filter redesign and creator-debug comments are **planned**, not shipped in this captured period.
+- `/rulebook/basics/` and `/rulebook/templates/` now discuss these findings with attributed direct-message links. Both Original tabs remain **Discord links only**; do not commit the channel transcript, screenshots, or attachment bundle to the public guide site.
+- Extra supplied channels: public/group Lorebooks, Story Mode, beta tester help, and broad chat. They were skimmed for cross-system issues and have not been republished.
