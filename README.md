@@ -94,3 +94,24 @@ Original Discord threads and Hunter files remain separately linked; draft text m
 - The screenshots verify that certain UI states and bugs were observed, not that every issue remains unfixed in later releases. The October 14 tag/filter redesign and creator-debug comments are **planned**, not shipped in this captured period.
 - `/rulebook/basics/` and `/rulebook/templates/` now discuss these findings with attributed direct-message links. Both Original tabs remain **Discord links only**; do not commit the channel transcript, screenshots, or attachment bundle to the public guide site.
 - Extra supplied channels: public/group Lorebooks, Story Mode, beta tester help, and broad chat. They were skimmed for cross-system issues and have not been republished.
+
+## Official documentation refresh (October 19, 2026)
+
+Official source index: https://docs.spicychat.ai/llms.txt
+
+**Rulebooks:** official docs now contain 11 subguides. Reviewed the overview, first-build walkthrough, in-chat use, meters, meter movement, influence rules, playtest, JSON/AI import and troubleshooting/limits. Three listed subpages (visibility/version details, examples to clone, common recipes) were linked from the docs index but unavailable to our retrieval at review time; do not claim their full text was verified.
+
+Documented changes reflected in our WIP guides:
+- 10 total meters, **8 visible** (+N more after first 4); new Pick one and Collection.
+- event-based/periodic Dice, scheduled timing, persistent or time-limited outcomes, and meter-conditioned triggers.
+- highest-priority AI rule wins among matches on each meter (the old “largest impact” claim is historical).
+- Only when, Set to, keyword and trigger behavior, Number “Detect from messages”, and 60 AI questions per turn.
+- creator-enabled manual adjustments of eligible Shown values; Private edits apply from the next message; Public/Unlisted after review.
+- JSON import up to 2 MB, AI Skill generation workflow, starter templates, cloning, Playtest traces and current limits (2–6 tags for Public/Unlisted, including a Focus tag).
+- the October 13 roadmap remains quoted only as dated history, rather than presenting its now-documented features as unavailable.
+
+**Lorebooks:** current official guide confirms Public/Private, public profile/discovery/favorites, JSON import, 5,000 entries and 2,000 characters per entry, and one attached Lorebook per character.
+
+**Other reviewed docs:** Group Chat (2–10 bots, context behavior), Semantic Memory 2.0 / Memory Manager, Search Command and Director Mode; these now have source-linked clarifications in the appropriate human guide.
+
+Original source policy remains unchanged: Rulebooks' Original tabs link to Discord and official docs; no channel transcript is hosted. Hunter's original files remain byte-unchanged. Every edited human guide stays publicly visible as WIP. This comparison checked published documentation, not authenticated in-app operation on every browser/app version.
