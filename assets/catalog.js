@@ -239,6 +239,16 @@ window.GUIDES=[
       {
         "title": "Does /cmd stay OOC still work?",
         "url": "https://discord.com/channels/1108377954389594236/1522095543793352804/1522095543793352804"
+      },
+      {
+        "title": "Official Search Command",
+        "url": "https://docs.spicychat.ai/product-guides/search-command",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Director Mode",
+        "url": "https://docs.spicychat.ai/product-guides/director-mode",
+        "sourceType": "official"
       }
     ]
   },
@@ -338,6 +348,16 @@ window.GUIDES=[
       {
         "title": "Explaining memory (tokens) in laymen's terms",
         "url": "https://discord.com/channels/1108377954389594236/1539244941673238528/1539244941673238528"
+      },
+      {
+        "title": "Official Semantic Memory 2.0",
+        "url": "https://docs.spicychat.ai/product-guides/premium-features/semantic-memory-2.0",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Memory Manager",
+        "url": "https://docs.spicychat.ai/product-guides/premium-features/memory-manager",
+        "sourceType": "official"
       }
     ]
   },
@@ -490,6 +510,11 @@ window.GUIDES=[
       {
         "title": "Hunter — Unified Lorebook LLM Production System v6",
         "url": "/llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt"
+      },
+      {
+        "title": "Official Lorebook — current guide",
+        "url": "https://docs.spicychat.ai/product-guides/lorebook",
+        "sourceType": "official"
       }
     ],
     "originalArchive": "/assets/originals/lorebook-basics.json"
@@ -633,6 +658,11 @@ window.GUIDES=[
       {
         "title": "Private bot groupchats for self indulgence",
         "url": "https://discord.com/channels/1108377954389594236/1540971992524652564/1540971992524652564"
+      },
+      {
+        "title": "Official Group Chat — creating and using Groups",
+        "url": "https://docs.spicychat.ai/product-guides/group-chat",
+        "sourceType": "official"
       }
     ]
   },
@@ -675,6 +705,26 @@ window.GUIDES=[
       {
         "title": "Booster — October 14 Rulebook tag/filter preview",
         "url": "https://discord.com/channels/1108377954389594236/1557097057787846726/1560085874463608913"
+      },
+      {
+        "title": "Official Rulebooks — Meters",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/meters",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — Making meters move",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/making-meters-move",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — Using in chat",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/using-a-rulebook-in-chat",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — FAQ and current limits",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/troubleshooting-faq-and-limits",
+        "sourceType": "official"
       }
     ],
     "originalLinksOnly": true
@@ -778,6 +828,26 @@ window.GUIDES=[
       {
         "title": "Booster — October 14 Rulebook tag/filter preview",
         "url": "https://discord.com/channels/1108377954389594236/1557097057787846726/1560085874463608913"
+      },
+      {
+        "title": "Official Rulebooks — Your first Rulebook",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/your-first-rulebook-in-10-minutes",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — Meters",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/meters",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — Import, export and AI",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/import-export-and-ai",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — Playtest and checks",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/playtest-and-checks",
+        "sourceType": "official"
       }
     ],
     "kind": "human",
