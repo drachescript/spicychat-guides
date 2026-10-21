@@ -27,6 +27,12 @@ window.GUIDES=[
         "url": "https://docs.spicychat.ai/product-guides/premium-features/user-personas",
         "sourceType": "official"
       }
+    ],
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "persona-commands",
+      "bot-anypov",
+      "bot-creation"
     ]
   },
   {
@@ -49,7 +55,12 @@ window.GUIDES=[
         "url": "https://discord.com/channels/1108377954389594236/1441801729862537386/1441801729862537386"
       }
     ],
-    "originalArchive": "/assets/originals/persona-commands.json"
+    "originalArchive": "/assets/originals/persona-commands.json",
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "persona-basics",
+      "ooc-cmd"
+    ]
   },
   {
     "id": "bot-creation",
@@ -109,6 +120,13 @@ window.GUIDES=[
         "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/visibility",
         "sourceType": "official"
       }
+    ],
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "bot-fields",
+      "bot-greetings",
+      "test-your-bot",
+      "tagging"
     ]
   },
   {
@@ -139,7 +157,13 @@ window.GUIDES=[
     ],
     "kind": "human",
     "label": "Guide",
-    "status": "wip"
+    "status": "wip",
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "bot-creation",
+      "bot-greetings",
+      "bot-example-dialogue"
+    ]
   },
   {
     "id": "advanced-character-build",
@@ -166,6 +190,12 @@ window.GUIDES=[
         "url": "https://docs.spicychat.ai/advanced/tokens-and-context",
         "sourceType": "official"
       }
+    ],
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "bot-plist-prose",
+      "bot-fields",
+      "test-your-bot"
     ]
   },
   {
@@ -195,6 +225,10 @@ window.GUIDES=[
         "title": "All the goddamn annoyances of LLMs speaking",
         "url": "https://discord.com/channels/1108377954389594236/1482716824935202878/1482716824935202878"
       }
+    ],
+    "relatedIds": [
+      "bot-repetition",
+      "bot-example-dialogue"
     ]
   },
   {
@@ -221,7 +255,12 @@ window.GUIDES=[
     ],
     "kind": "human",
     "label": "Guide",
-    "status": "wip"
+    "status": "wip",
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "bot-greetings",
+      "writing-style"
+    ]
   },
   {
     "id": "bot-greetings",
@@ -247,7 +286,13 @@ window.GUIDES=[
     ],
     "kind": "human",
     "label": "Guide",
-    "status": "wip"
+    "status": "wip",
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "bot-fields",
+      "stop-speaking-for-user",
+      "test-your-bot"
+    ]
   },
   {
     "id": "stop-speaking-for-user",
@@ -281,6 +326,12 @@ window.GUIDES=[
         "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings",
         "sourceType": "official"
       }
+    ],
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "bot-greetings",
+      "bot-anypov",
+      "test-your-bot"
     ]
   },
   {
@@ -320,7 +371,9 @@ window.GUIDES=[
         "url": "https://docs.spicychat.ai/product-guides/director-mode",
         "sourceType": "official"
       }
-    ]
+    ],
+    "lastReviewed": "2026-10-19",
+    "officialChecked": "2026-10-19"
   },
   {
     "id": "slow-burn",
@@ -342,6 +395,11 @@ window.GUIDES=[
         "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/personality",
         "sourceType": "official"
       }
+    ],
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "bot-fields",
+      "test-your-bot"
     ]
   },
   {
@@ -363,6 +421,11 @@ window.GUIDES=[
         "title": "Hunter — Single Character LLM Guide v6",
         "url": "/llm/originals/Single%20Character%20LLM%20Guide%20v6.txt"
       }
+    ],
+    "relatedIds": [
+      "genai-generic-bots",
+      "bot-creation",
+      "test-your-bot"
     ]
   },
   {
@@ -382,6 +445,10 @@ window.GUIDES=[
         "title": "GPT is ~~not~~ creative: Things to look out for when creating bots with GenAI",
         "url": "https://discord.com/channels/1108377954389594236/1559568458814062652"
       }
+    ],
+    "relatedIds": [
+      "ai-assisted-writing",
+      "test-your-bot"
     ]
   },
   {
@@ -434,6 +501,13 @@ window.GUIDES=[
         "url": "https://docs.spicychat.ai/product-guides/premium-features/semantic-memory-2.0",
         "sourceType": "official"
       }
+    ],
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "testing-feedback",
+      "bot-repetition",
+      "bot-anypov",
+      "lorebook-troubleshoot"
     ]
   },
   {
@@ -465,6 +539,12 @@ window.GUIDES=[
         "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings",
         "sourceType": "official"
       }
+    ],
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "test-your-bot",
+      "bot-repetition",
+      "bot-creation"
     ]
   },
   {
@@ -496,6 +576,12 @@ window.GUIDES=[
         "url": "https://docs.spicychat.ai/product-guides/premium-features/memory-manager",
         "sourceType": "official"
       }
+    ],
+    "lastReviewed": "2026-10-21",
+    "officialChecked": "2026-10-19",
+    "relatedIds": [
+      "lorebook-context",
+      "test-your-bot"
     ]
   },
   {
@@ -538,6 +624,12 @@ window.GUIDES=[
         "title": "Hunter — TTRPG LLM Guide v2",
         "url": "/llm/originals/TTRPG%20LLM%20Guide%20v2.txt"
       }
+    ],
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "rulebook-basics",
+      "lorebook-rpg-systems",
+      "test-your-bot"
     ]
   },
   {
@@ -569,6 +661,11 @@ window.GUIDES=[
         "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/title",
         "sourceType": "official"
       }
+    ],
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "bot-creation",
+      "test-your-bot"
     ]
   },
   {
@@ -595,7 +692,10 @@ window.GUIDES=[
     ],
     "kind": "human",
     "label": "Community guide",
-    "status": "wip"
+    "status": "wip",
+    "relatedIds": [
+      "tagging"
+    ]
   },
   {
     "id": "image-generation",
@@ -664,7 +764,14 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "originalArchive": "/assets/originals/lorebook-basics.json"
+    "originalArchive": "/assets/originals/lorebook-basics.json",
+    "lastReviewed": "2026-10-21",
+    "officialChecked": "2026-10-19",
+    "relatedIds": [
+      "lorebook-advanced",
+      "lorebook-troubleshoot",
+      "lorebook-context"
+    ]
   },
   {
     "id": "lorebook-advanced",
@@ -691,7 +798,13 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "originalArchive": "/assets/originals/lorebook-advanced.json"
+    "originalArchive": "/assets/originals/lorebook-advanced.json",
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "lorebook-basics",
+      "lorebook-troubleshoot",
+      "lorebook-context"
+    ]
   },
   {
     "id": "lorebook-context",
@@ -725,6 +838,12 @@ window.GUIDES=[
         "url": "https://docs.spicychat.ai/product-guides/lorebook",
         "sourceType": "official"
       }
+    ],
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "lorebook-troubleshoot",
+      "memory-context",
+      "lorebook-basics"
     ]
   },
   {
@@ -763,6 +882,12 @@ window.GUIDES=[
         "url": "https://docs.spicychat.ai/product-guides/lorebook",
         "sourceType": "official"
       }
+    ],
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "rulebook-basics",
+      "rpg-bots",
+      "lorebook-advanced"
     ]
   },
   {
@@ -801,6 +926,12 @@ window.GUIDES=[
         "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings",
         "sourceType": "official"
       }
+    ],
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "group-chats",
+      "bot-example-dialogue",
+      "test-your-bot"
     ]
   },
   {
@@ -831,6 +962,12 @@ window.GUIDES=[
         "url": "https://docs.spicychat.ai/product-guides/group-chat",
         "sourceType": "official"
       }
+    ],
+    "lastReviewed": "2026-10-21",
+    "officialChecked": "2026-10-19",
+    "relatedIds": [
+      "multi-character-bots",
+      "lorebook-context"
     ]
   },
   {
@@ -894,7 +1031,14 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "originalLinksOnly": true
+    "originalLinksOnly": true,
+    "lastReviewed": "2026-10-19",
+    "officialChecked": "2026-10-19",
+    "relatedIds": [
+      "rulebook-templates",
+      "lorebook-rpg-systems",
+      "test-your-bot"
+    ]
   },
   {
     "id": "bot-anypov",
@@ -925,7 +1069,13 @@ window.GUIDES=[
     ],
     "kind": "human",
     "label": "Guide",
-    "status": "wip"
+    "status": "wip",
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "persona-basics",
+      "bot-greetings",
+      "test-your-bot"
+    ]
   },
   {
     "id": "bot-plist-prose",
@@ -951,7 +1101,12 @@ window.GUIDES=[
     ],
     "kind": "human",
     "label": "Guide",
-    "status": "wip"
+    "status": "wip",
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "advanced-character-build",
+      "bot-fields"
+    ]
   },
   {
     "id": "bot-repetition",
@@ -972,7 +1127,13 @@ window.GUIDES=[
     ],
     "kind": "human",
     "label": "Guide",
-    "status": "wip"
+    "status": "wip",
+    "lastReviewed": "2026-10-21",
+    "relatedIds": [
+      "writing-style",
+      "test-your-bot",
+      "memory-context"
+    ]
   },
   {
     "id": "rulebook-templates",
@@ -1035,7 +1196,13 @@ window.GUIDES=[
     "kind": "human",
     "label": "Guide",
     "status": "wip",
-    "originalLinksOnly": true
+    "originalLinksOnly": true,
+    "lastReviewed": "2026-10-19",
+    "officialChecked": "2026-10-19",
+    "relatedIds": [
+      "rulebook-basics",
+      "rpg-bots"
+    ]
   },
   {
     "id": "lorebook-troubleshoot",
@@ -1060,7 +1227,12 @@ window.GUIDES=[
     ],
     "kind": "human",
     "label": "Guide",
-    "status": "wip"
+    "status": "wip",
+    "relatedIds": [
+      "lorebook-basics",
+      "lorebook-advanced",
+      "lorebook-context"
+    ]
   },
   {
     "id": "hunter-multi-character-llm-guide-v3",
