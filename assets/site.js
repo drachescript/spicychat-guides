@@ -2,7 +2,7 @@
 const g=window.GUIDES||[];
 const nav=document.querySelector(".topbar nav.links");
 if(nav){
- for(const [label,url] of [["Start Here","/start/"],["Find Help","/troubleshooting/"]]){
+ for(const [label,url] of [["Find Help","/troubleshooting/"],["Start Here","/start/"]]){
   if(!nav.querySelector('a[href="'+url+'"]')){const a=document.createElement("a");a.href=url;a.textContent=label;nav.insertBefore(a,nav.firstChild);}
  }
 }
