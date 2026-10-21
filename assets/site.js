@@ -1,11 +1,19 @@
 (function(){
 const g=window.GUIDES||[];
+const nav=document.querySelector(".topbar nav.links");
+if(nav){
+ for(const [label,url] of [["Start Here","/start/"],["Find Help","/troubleshooting/"]]){
+  if(!nav.querySelector('a[href="'+url+'"]')){const a=document.createElement("a");a.href=url;a.textContent=label;nav.insertBefore(a,nav.firstChild);}
+ }
+}
+
 const e=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
 const sectionName=s=>({bots:"Bots",persona:"Personas",lorebook:"Lorebooks",group:"Group / Multi-Character",rulebook:"Rulebooks",llm:"LLM Guides"}[s]||s);
 const card=x=>{
  const href=x.pageUrl||"#";
+ const review=x.lastReviewed?'<div class="meta">Content reviewed '+e(x.lastReviewed)+'</div>':"";
  const wip=x.status==="wip"?'<span class="badge wip">WIP · not complete</span>':"";
- return '<article class="card guide-card"><a class="card-click" href="'+e(href)+'" aria-label="Open '+e(x.title)+'"></a><div class="badges"><span class="badge '+(x.kind==="llm"?"llm":"community")+'">'+e(x.label||"Guide")+'</span>'+wip+'</div><h3>'+e(x.title)+'</h3><p>'+e(x.desc||"")+'</p><div class="meta">'+e(sectionName(x.section))+(x.subsection?' · '+e(x.subsection):'')+'</div><span class="read-label">open guide →</span></article>';
+ return '<article class="card guide-card"><a class="card-click" href="'+e(href)+'" aria-label="Open '+e(x.title)+'"></a><div class="badges"><span class="badge '+(x.kind==="llm"?"llm":"community")+'">'+e(x.label||"Guide")+'</span>'+wip+'</div><h3>'+e(x.title)+'</h3><p>'+e(x.desc||"")+'</p><div class="meta">'+e(sectionName(x.section))+(x.subsection?' · '+e(x.subsection):'')+'</div>'+review+'<span class="read-label">open guide →</span></article>';
 };
 const mount=(selector,items)=>{const n=document.querySelector(selector);if(n)n.innerHTML=items.map(card).join("")};
 mount("[data-all]",g);
