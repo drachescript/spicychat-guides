@@ -23,8 +23,8 @@ window.GUIDES=[
         "url": "https://discord.com/channels/1108377954389594236/1536515979964715178/1536515979964715178"
       },
       {
-        "title": "Official Persona guide",
-        "url": "https://docs.spicychat.ai/product-guides/personas",
+        "title": "Official User Personas guide",
+        "url": "https://docs.spicychat.ai/product-guides/premium-features/user-personas",
         "sourceType": "official"
       }
     ]
