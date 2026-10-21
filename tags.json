@@ -79,7 +79,6 @@
     "Size Difference",
     "Slave",
     "Smell",
-    "Step-Family",
     "Submissive",
     "Supernatural",
     "Switch",
@@ -93,5 +92,10 @@
     "Wholesome",
     "Yandere"
   ],
-  "count": 91
+  "count": 90,
+  "source": {
+    "type": "SpicyChat Chatbot create editor — expanded All tags picker",
+    "appVersion": "4.7.2",
+    "captured": "2026-10-21"
+  }
 }
