@@ -29,7 +29,7 @@ SpicyChat Guides is an independent community project and is not affiliated with,
 
 ## Public JSON reference files
 
-- `/tags.json` — **91 chatbot-tag names**, as captured in a snapshot committed October 7, 2026; not a verified live/current exhaustive picker list
+- `/tags.json` — **90 chatbot-tag names**, taken from the fully expanded Chatbot creation tag picker in SpicyChat web v4.7.2, captured October 21, 2026
 - `/lorebook-tags.json` — **227 Lorebook-tag names**, captured from editor v4.5.2 on October 6, 2026; not verified against the current picker
 - `/blocked-words.json` — community-curated blocked-word/moderation reference
 
@@ -136,8 +136,9 @@ All human guides remain WIP and publicly browseable.
 
 ### Tag reference verification (October 21, 2026)
 
-- Checked both JSON files for correct counts, nonempty values and duplicates. Both pass integrity checks; neither file was modified.
-- The official [character tags documentation](https://docs.spicychat.ai/product-guides/creating-chatbots/tags) confirms **up to 12 tags** on a character, with at least **2 required for public characters**, but does not enumerate the complete current picker.
-- The live SpicyChat tag picker was not accessible for an exact comparison during this review. Treat both lists as **dated snapshots**, not a guarantee that every current option is included or every listed item remains selectable.
-- `NSFW` and `Low Quality` require special care when interpreting the chatbot list: SpicyChat documents NSFW/SFW as an automatic discovery classification, and Low Quality as a platform-applied label. Their presence in a public filter does not prove they are selectable by creators in the normal tag editor.
-- Update the arrays only when an actual editor capture or trustworthy current tag endpoint makes a name-by-name comparison possible. Preserve the original spelling/capitalization from that source.
+- The chatbot list was compared **name for name and in order** with an owner-provided saved `https://spicychat.ai/chatbot/create` HTML page, with the **All tags** picker fully expanded. The source reported **web version 4.7.2**.
+- **90 names** appeared in the picker. The previous October 7 JSON contained **91**. The only difference was **`Step-Family`**, absent from the new capture; there were **no added tags**. `tags.json` was updated to exactly match the 90 captured names and now records source/version/date metadata.
+- **`NSFW` and `Low Quality` both visibly appeared as button options inside the creator's tag picker.** The saved HTML verifies that they were displayed; it does not itself prove any specific tag's successful submission or how moderation treats it.
+- The editor displays **0/12**, consistent with the official [character-tag guide](https://docs.spicychat.ai/product-guides/creating-chatbots/tags), which requires at least two tags on public characters.
+- The Lorebook picker was not part of this capture. `lorebook-tags.json` stays at **227 names from v4.5.2 (October 6)** until a separate Lorebook editor capture can be compared.
+- Editor captures reflect the available options at that version and time; future deployments or account-specific conditions may differ. Do not publish the full saved HTML because it contains personal interface and extension state.
