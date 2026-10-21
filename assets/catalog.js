@@ -385,6 +385,58 @@ window.GUIDES=[
     ]
   },
   {
+    "id": "test-your-bot",
+    "title": "Test Your Bot Before Publishing",
+    "kind": "human",
+    "section": "bots",
+    "subsection": "Creator Workflow",
+    "status": "wip",
+    "label": "Guide",
+    "desc": "A practical five-pass testing process for character behavior, unexpected choices, long chats, optional mechanics, regressions and publication readiness.",
+    "pageUrl": "/bots/test-your-bot/",
+    "originalLinksOnly": true,
+    "sources": [
+      {
+        "title": "So should you play your own bot before anyone sees it? — community discussion",
+        "url": "https://discord.com/channels/1108377954389594236/1541631173367955566/1541631173367955566"
+      },
+      {
+        "title": "Is feedback on your bots ACTUALLY useful? — community discussion",
+        "url": "https://discord.com/channels/1108377954389594236/1509553237232058508/1509553237232058508"
+      },
+      {
+        "title": "Official SpicyChat — Creating Chatbots",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official SpicyChat — Advanced Settings",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official SpicyChat — Greeting",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/greeting",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official SpicyChat — Lorebooks",
+        "url": "https://docs.spicychat.ai/product-guides/lorebook",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official SpicyChat — Rulebook Playtest and Checks",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/playtest-and-checks",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official SpicyChat — Semantic Memory 2.0",
+        "url": "https://docs.spicychat.ai/product-guides/premium-features/semantic-memory-2.0",
+        "sourceType": "official"
+      }
+    ]
+  },
+  {
     "id": "testing-feedback",
     "title": "Testing Bots & Making Feedback Useful",
     "kind": "human",
