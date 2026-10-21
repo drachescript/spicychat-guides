@@ -21,6 +21,11 @@ window.GUIDES=[
       {
         "title": "How do you do personas?",
         "url": "https://discord.com/channels/1108377954389594236/1536515979964715178/1536515979964715178"
+      },
+      {
+        "title": "Official Persona guide",
+        "url": "https://docs.spicychat.ai/product-guides/personas",
+        "sourceType": "official"
       }
     ]
   },
@@ -68,6 +73,41 @@ window.GUIDES=[
       {
         "title": "Hunter — World Bot LLM Guide v2",
         "url": "/llm/originals/World%20Bot%20LLM%20Guide%20v2.txt"
+      },
+      {
+        "title": "Official SpicyChat character creation fields",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official character name",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/name",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official title guidance",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/title",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Greeting limit",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/greeting",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Personality limit",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/personality",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official character tags",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/tags",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official visibility and definition visibility",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/visibility",
+        "sourceType": "official"
       }
     ]
   },
@@ -90,6 +130,11 @@ window.GUIDES=[
       {
         "title": "SpicyChat Advanced Settings documentation",
         "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings"
+      },
+      {
+        "title": "Official character creation",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots",
+        "sourceType": "official"
       }
     ],
     "kind": "human",
@@ -110,6 +155,16 @@ window.GUIDES=[
       {
         "title": "Machinery Based Character Build Guide",
         "url": "https://discord.com/channels/1108377954389594236/1553404535228342272/1553404535228342272"
+      },
+      {
+        "title": "Official character Personality guidance",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/personality",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official tokens and context",
+        "url": "https://docs.spicychat.ai/advanced/tokens-and-context",
+        "sourceType": "official"
       }
     ]
   },
@@ -157,6 +212,11 @@ window.GUIDES=[
       {
         "title": "Hunter — Single Character LLM Guide v6",
         "url": "/llm/originals/Single%20Character%20LLM%20Guide%20v6.txt"
+      },
+      {
+        "title": "Official Example Dialogue syntax",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings",
+        "sourceType": "official"
       }
     ],
     "kind": "human",
@@ -178,6 +238,11 @@ window.GUIDES=[
       {
         "title": "Hunter — Single Character LLM Guide v6",
         "url": "/llm/originals/Single%20Character%20LLM%20Guide%20v6.txt"
+      },
+      {
+        "title": "Official Greeting guidance",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/greeting",
+        "sourceType": "official"
       }
     ],
     "kind": "human",
@@ -210,6 +275,11 @@ window.GUIDES=[
       {
         "title": "Tricks to reduce the bot speaking and acting as the user",
         "url": "https://discord.com/channels/1108377954389594236/1524809613562613910/1524809613562613910"
+      },
+      {
+        "title": "Official Scenario and dialogue format",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings",
+        "sourceType": "official"
       }
     ]
   },
@@ -266,6 +336,11 @@ window.GUIDES=[
       {
         "title": "How to make a slow burn bot - a guide/recommendation",
         "url": "https://discord.com/channels/1108377954389594236/1214595239550128178/1214595239550128178"
+      },
+      {
+        "title": "Official character Personality",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/personality",
+        "sourceType": "official"
       }
     ]
   },
@@ -327,6 +402,16 @@ window.GUIDES=[
       {
         "title": "Is feedback on your bots ACTUALLY useful?",
         "url": "https://discord.com/channels/1108377954389594236/1509553237232058508/1509553237232058508"
+      },
+      {
+        "title": "Official character creation guidance",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official advanced settings",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings",
+        "sourceType": "official"
       }
     ]
   },
@@ -421,6 +506,16 @@ window.GUIDES=[
       {
         "title": "Tag your public bot properly",
         "url": "https://discord.com/channels/1108377954389594236/1448843862939402320/1448843862939402320"
+      },
+      {
+        "title": "Official character tags and limits",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/tags",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official name/title rules",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/title",
+        "sourceType": "official"
       }
     ]
   },
@@ -537,6 +632,11 @@ window.GUIDES=[
       {
         "title": "Hunter — Unified Lorebook LLM Production System v6",
         "url": "/llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt"
+      },
+      {
+        "title": "Official Lorebook retrieval and attachment",
+        "url": "https://docs.spicychat.ai/product-guides/lorebook",
+        "sourceType": "official"
       }
     ],
     "originalArchive": "/assets/originals/lorebook-advanced.json"
@@ -567,6 +667,11 @@ window.GUIDES=[
       {
         "title": "Hunter — Unified Lorebook LLM Production System v6",
         "url": "/llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt"
+      },
+      {
+        "title": "Official Lorebook retrieval and context budget",
+        "url": "https://docs.spicychat.ai/product-guides/lorebook",
+        "sourceType": "official"
       }
     ]
   },
@@ -600,6 +705,11 @@ window.GUIDES=[
       {
         "title": "Hunter — Unified Lorebook LLM Production System v6",
         "url": "/llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt"
+      },
+      {
+        "title": "Official Lorebook rules",
+        "url": "https://docs.spicychat.ai/product-guides/lorebook",
+        "sourceType": "official"
       }
     ]
   },
@@ -633,6 +743,11 @@ window.GUIDES=[
       {
         "title": "Hunter — Multi-Character LLM Guide v3",
         "url": "/llm/originals/Multi-Character%20LLM%20Guide%20v3.txt"
+      },
+      {
+        "title": "Official advanced character fields",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings",
+        "sourceType": "official"
       }
     ]
   },
@@ -744,6 +859,16 @@ window.GUIDES=[
       {
         "title": "Hunter — Single Character LLM Guide v6",
         "url": "/llm/originals/Single%20Character%20LLM%20Guide%20v6.txt"
+      },
+      {
+        "title": "Official character visibility and discoverability",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/visibility",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official character tags",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/tags",
+        "sourceType": "official"
       }
     ],
     "kind": "human",
@@ -765,6 +890,11 @@ window.GUIDES=[
       {
         "title": "Hunter — Single Character LLM Guide v6",
         "url": "/llm/originals/Single%20Character%20LLM%20Guide%20v6.txt"
+      },
+      {
+        "title": "Official Personality formats",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/personality",
+        "sourceType": "official"
       }
     ],
     "kind": "human",
