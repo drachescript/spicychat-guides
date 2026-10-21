@@ -29,8 +29,8 @@ SpicyChat Guides is an independent community project and is not affiliated with,
 
 ## Public JSON reference files
 
-- `/tags.json` — current chatbot tags
-- `/lorebook-tags.json` — current Lorebook tag picker values
+- `/tags.json` — **91 chatbot-tag names**, as captured in a snapshot committed October 7, 2026; not a verified live/current exhaustive picker list
+- `/lorebook-tags.json` — **227 Lorebook-tag names**, captured from editor v4.5.2 on October 6, 2026; not verified against the current picker
 - `/blocked-words.json` — community-curated blocked-word/moderation reference
 
 ## Hunter's original files (updated October 12, 2026)
@@ -133,3 +133,11 @@ The `/bots/test-your-bot/` page provides an optional interactive ten-area scorec
 To reduce overlap, `/bots/testing-feedback/` concentrates on interpreting and reporting problems while `/bots/test-your-bot/` owns the testing procedure. The character-field guide now links to the specialized Greeting and Example Dialogue pages rather than restating their full walkthroughs. Existing Discord Original links and all original Hunter documents remain unchanged.
 
 All human guides remain WIP and publicly browseable.
+
+### Tag reference verification (October 21, 2026)
+
+- Checked both JSON files for correct counts, nonempty values and duplicates. Both pass integrity checks; neither file was modified.
+- The official [character tags documentation](https://docs.spicychat.ai/product-guides/creating-chatbots/tags) confirms **up to 12 tags** on a character, with at least **2 required for public characters**, but does not enumerate the complete current picker.
+- The live SpicyChat tag picker was not accessible for an exact comparison during this review. Treat both lists as **dated snapshots**, not a guarantee that every current option is included or every listed item remains selectable.
+- `NSFW` and `Low Quality` require special care when interpreting the chatbot list: SpicyChat documents NSFW/SFW as an automatic discovery classification, and Low Quality as a platform-applied label. Their presence in a public filter does not prove they are selectable by creators in the normal tag editor.
+- Update the arrays only when an actual editor capture or trustworthy current tag endpoint makes a name-by-name comparison possible. Preserve the original spelling/capitalization from that source.
