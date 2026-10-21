@@ -115,3 +115,7 @@ Documented changes reflected in our WIP guides:
 **Other reviewed docs:** Group Chat (2–10 bots, context behavior), Semantic Memory 2.0 / Memory Manager, Search Command and Director Mode; these now have source-linked clarifications in the appropriate human guide.
 
 Original source policy remains unchanged: Rulebooks' Original tabs link to Discord and official docs; no channel transcript is hosted. Hunter's original files remain byte-unchanged. Every edited human guide stays publicly visible as WIP. This comparison checked published documentation, not authenticated in-app operation on every browser/app version.
+
+## Test Your Bot guide
+
+The dedicated `/bots/test-your-bot/` WIP guide contains a five-pass pre-publication test workflow covering opening behavior, unexpected routes, longer-chat consistency, relevant optional systems, regressions and a simple release scorecard. It is intentionally free of fictional examples and sample dialogue. The existing `/bots/testing-feedback/` guide remains focused on interpreting problems and collecting diagnostic feedback; both are linked from Bot Creation. The Original tab uses direct Discord discussion and official documentation links rather than mirroring the channel export.
