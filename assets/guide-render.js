@@ -12,16 +12,35 @@ if(!root||!meta||!content){
   return;
 }
 document.title=meta.title+" · SpicyChat Guides";
+const nav=document.querySelector(".topbar nav.links");
+if(nav){
+ for(const [label,url] of [["Start Here","/start/"],["Find Help","/troubleshooting/"]]){
+  if(!nav.querySelector('a[href="'+url+'"]')){const a=document.createElement("a");a.href=url;a.textContent=label;nav.insertBefore(a,nav.firstChild);}
+ }
+}
+
 const official=meta.sourceType==="official";
 const srcs=meta.sources||[];
 const sourceLinks=srcs.map(s=>'<a href="'+e(s.url)+'" target="_blank" rel="noopener">'+e(s.title)+' ↗</a>').join("");
+const displayDate=value=>{if(!/^\\d{4}-\\d{2}-\\d{2}$/.test(value||""))return null;const [y,m,d]=value.split("-");return new Date(Date.UTC(Number(y),Number(m)-1,Number(d),12)).toLocaleDateString("en-US",{timeZone:"UTC",month:"short",day:"numeric",year:"numeric"});};
+const lastReview=displayDate(meta.lastReviewed);
+const officialReview=displayDate(meta.officialChecked);
+const sourceCategories=[];
+if(srcs.some(x=>x.sourceType==="official"||String(x.url||"").startsWith("https://docs.spicychat.ai/")))sourceCategories.push("official documentation");
+if(srcs.some(x=>String(x.url||"").startsWith("/llm/originals/")))sourceCategories.push("original reference files");
+if(srcs.some(x=>discordSource(x)))sourceCategories.push("community discussion");
+const related=(meta.relatedIds||[]).map(guideId=>(window.GUIDES||[]).find(g=>g.id===guideId&&g.pageUrl)).filter(Boolean).slice(0,5);
+const relatedHtml=related.length?'<section class="guide-next"><h2>Continue reading</h2><div class="guide-next-list">'+related.map(x=>'<a href="'+e(x.pageUrl)+'">'+e(x.title)+' →</a>').join("")+'</div></section>':"";
+const provenanceHtml='<div class="guide-provenance"><strong>Review and sources</strong><span>Last content review: '+(lastReview?e(lastReview):'Not recorded')+'</span>'+(officialReview?'<span>Official docs cross-checked: '+e(officialReview)+'</span>':"")+'<span>Source material: '+e(sourceCategories.join(", ")||"source links below")+'</span><span>Live behavior can vary by model and product version. Check the source links for current platform rules.</span></div>';
+const checklistHtml=id==="test-your-bot"?'<section class="test-checklist" data-bot-test-checklist aria-label="Interactive bot testing checklist"><h2>Your testing checklist</h2><p>Enable scripts to use the browser-local checklist. The full testing guide follows below.</p></section>':"";
+const wayfindingHtml='<div class="guide-wayfinding"><a href="/start/">Start Here →</a><a href="/troubleshooting/">Find a solution →</a></div>';
 const sourceCards=srcs.map(s=>{
  const label=discordSource(s)?"Discord thread":isHunterSource(s)?"Original Hunter file":"Documentation";
  return '<a class="original-source" href="'+e(s.url)+'" target="_blank" rel="noopener"><span class="original-source-kind">'+label+'</span><strong>'+e(s.title)+'</strong><span>Open source ↗</span></a>';
 }).join("");
 root.innerHTML=
 '<section class="article-head"><div class="article-wrap"><span class="eyebrow">'+e(meta.subsection||meta.section)+'</span><h1>'+e(meta.title)+'</h1><p class="summary">'+e(meta.desc)+'</p>'+
-'<div class="article-meta"><span>WIP · not complete</span><span>'+e(meta.section)+'</span><span>community draft</span></div></div></section>'+
+'<div class="article-meta"><span>WIP · not complete</span><span>'+e(meta.section)+'</span><span>community draft</span></div>'+wayfindingHtml+'</div></section>'+
 '<div class="article-wrap"><div class="guide-tabbar" role="tablist" aria-label="Guide views">'+
 '<button class="guide-tab" role="tab" id="guide-tab-clean" aria-controls="guide-panel-clean" aria-selected="true" type="button" data-view="guide">Guide</button>'+
 '<button class="guide-tab" role="tab" id="guide-tab-original" aria-controls="guide-panel-original" aria-selected="false" type="button" data-view="original">Original</button>'+
@@ -31,7 +50,7 @@ root.innerHTML=
 '<div class="wip-banner"><strong>WIP — not complete.</strong> '+(official?
 'this is based on the current SpicyChat Rulebook docs plus reported editor feedback. Rulebooks are in beta and details may change.':
 'this guide is still being reviewed. it condenses community threads and other credited source material; the original sources are under the Original tab.')+'</div>'+
-content.body+
+provenanceHtml+checklistHtml+content.body+relatedHtml+
 '<div class="source-box"><strong>Sources used for this draft</strong><p>you can check the original posts or files under the Original tab.</p><div class="source-list">'+sourceLinks+'</div></div>'+
 '</article></div></section>'+
 '<section id="guide-panel-original" role="tabpanel" aria-labelledby="guide-tab-original" hidden>'+
