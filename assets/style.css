@@ -44,3 +44,12 @@
 @media(max-width:650px){.original-thread{padding:12px}.original-message-head a{margin-left:0}.original-sources{grid-template-columns:1fr}.guide-tab{padding:12px 16px}}
 
 .original-more{display:block;width:100%;margin:13px 0 2px;padding:11px 15px;border:1px solid var(--line);border-radius:10px;background:#171a21;color:#f0d7e0;font:inherit;font-size:12px;cursor:pointer;text-align:center}.original-more:hover{border-color:#ec3d68}
+
+
+/* Compact comparison table within long-form guide pages */
+.article-body table{width:100%;border-collapse:collapse;margin:19px 0 25px;border:1px solid var(--line);font-size:13px;table-layout:fixed}
+.article-body table th,.article-body table td{border-bottom:1px solid var(--line);padding:11px 13px;vertical-align:top;text-align:left;overflow-wrap:anywhere;line-height:1.55}
+.article-body table th{background:#191c23;color:#f0f2f5;font-weight:700}
+.article-body table td{color:#c0c6cf}
+.article-body table th:first-child,.article-body table td:first-child{width:33%}
+@media(max-width:600px){.article-body table{font-size:12px}.article-body table th,.article-body table td{padding:9px 8px}.article-body table th:first-child,.article-body table td:first-child{width:34%}}
