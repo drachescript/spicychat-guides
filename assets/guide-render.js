@@ -14,7 +14,7 @@ if(!root||!meta||!content){
 document.title=meta.title+" · SpicyChat Guides";
 const nav=document.querySelector(".topbar nav.links");
 if(nav){
- for(const [label,url] of [["Start Here","/start/"],["Find Help","/troubleshooting/"]]){
+ for(const [label,url] of [["Find Help","/troubleshooting/"],["Start Here","/start/"]]){
   if(!nav.querySelector('a[href="'+url+'"]')){const a=document.createElement("a");a.href=url;a.textContent=label;nav.insertBefore(a,nav.firstChild);}
  }
 }
@@ -22,7 +22,7 @@ if(nav){
 const official=meta.sourceType==="official";
 const srcs=meta.sources||[];
 const sourceLinks=srcs.map(s=>'<a href="'+e(s.url)+'" target="_blank" rel="noopener">'+e(s.title)+' ↗</a>').join("");
-const displayDate=value=>{if(!/^\\d{4}-\\d{2}-\\d{2}$/.test(value||""))return null;const [y,m,d]=value.split("-");return new Date(Date.UTC(Number(y),Number(m)-1,Number(d),12)).toLocaleDateString("en-US",{timeZone:"UTC",month:"short",day:"numeric",year:"numeric"});};
+const displayDate=value=>{if(!/^\d{4}-\d{2}-\d{2}$/.test(value||""))return null;const [y,m,d]=value.split("-");return new Date(Date.UTC(Number(y),Number(m)-1,Number(d),12)).toLocaleDateString("en-US",{timeZone:"UTC",month:"short",day:"numeric",year:"numeric"});};
 const lastReview=displayDate(meta.lastReviewed);
 const officialReview=displayDate(meta.officialChecked);
 const sourceCategories=[];
