@@ -5,6 +5,8 @@ Community-maintained guides and reference material for SpicyChat.
 **Site:** https://spicychat-guides.drache.uk/
 
 ## Main sections
+- /start/ — guided learning path from idea to tested, published character
+- /troubleshooting/ — problem-first searchable help hub linking to existing guides
 
 - /bots/ — bot creation, writing behavior, creator workflow, systems, images, models/settings and publishing
 - /persona/ — Persona basics/formatting and Persona Commands
@@ -119,3 +121,15 @@ Original source policy remains unchanged: Rulebooks' Original tabs link to Disco
 ## Test Your Bot guide
 
 The dedicated `/bots/test-your-bot/` WIP guide contains a five-pass pre-publication test workflow covering opening behavior, unexpected routes, longer-chat consistency, relevant optional systems, regressions and a simple release scorecard. It is intentionally free of fictional examples and sample dialogue. The existing `/bots/testing-feedback/` guide remains focused on interpreting problems and collecting diagnostic feedback; both are linked from Bot Creation. The Original tab uses direct Discord discussion and official documentation links rather than mirroring the channel export.
+
+## Guide navigation and local test checklist
+
+The `/start/` learning path offers seven linked steps and optional branches for AnyPOV, compact personalities, Lorebooks, Rulebooks, multiple characters and memory. `/troubleshooting/` groups 19 reported problem types into three areas and filters locally in the browser. Both route visitors to existing human guides, rather than duplicating those guides.
+
+Individual guide pages have links to these hubs, related-reading suggestions, attributed source categories and review metadata when the review date is known. `lastReviewed` is a **content review date**, not proof of live platform testing; `officialChecked` records a separately confirmed documentation cross-check. A missing date is displayed as not recorded rather than invented.
+
+The `/bots/test-your-bot/` page provides an optional interactive ten-area scorecard using `assets/bot-checklist.js`. Its status choices are **Not tested**, **Pass**, **Needs work**, and **N/A**. Selections stay in the visitor's browser using localStorage, can be reset, and can be exported as a text file. The feature does not upload private conversations or the checklist statuses to a server.
+
+To reduce overlap, `/bots/testing-feedback/` concentrates on interpreting and reporting problems while `/bots/test-your-bot/` owns the testing procedure. The character-field guide now links to the specialized Greeting and Example Dialogue pages rather than restating their full walkthroughs. Existing Discord Original links and all original Hunter documents remain unchanged.
+
+All human guides remain WIP and publicly browseable.
