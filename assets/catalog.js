@@ -33,7 +33,8 @@ window.GUIDES=[
       "persona-commands",
       "bot-anypov",
       "bot-creation"
-    ]
+    ],
+    "officialChecked": "2026-10-29"
   },
   {
     "id": "persona-commands",
@@ -127,7 +128,8 @@ window.GUIDES=[
       "bot-greetings",
       "test-your-bot",
       "tagging"
-    ]
+    ],
+    "officialChecked": "2026-10-29"
   },
   {
     "id": "bot-fields",
@@ -163,7 +165,8 @@ window.GUIDES=[
       "bot-creation",
       "bot-greetings",
       "bot-example-dialogue"
-    ]
+    ],
+    "officialChecked": "2026-10-29"
   },
   {
     "id": "advanced-character-build",
@@ -260,7 +263,8 @@ window.GUIDES=[
     "relatedIds": [
       "bot-greetings",
       "writing-style"
-    ]
+    ],
+    "officialChecked": "2026-10-29"
   },
   {
     "id": "bot-greetings",
@@ -292,7 +296,8 @@ window.GUIDES=[
       "bot-fields",
       "stop-speaking-for-user",
       "test-your-bot"
-    ]
+    ],
+    "officialChecked": "2026-10-29"
   },
   {
     "id": "stop-speaking-for-user",
@@ -500,15 +505,31 @@ window.GUIDES=[
         "title": "Official SpicyChat — Semantic Memory 2.0",
         "url": "https://docs.spicychat.ai/product-guides/premium-features/semantic-memory-2.0",
         "sourceType": "official"
+      },
+      {
+        "title": "Official SpicyChat — Community Guidelines",
+        "url": "https://docs.spicychat.ai/community-guidelines",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official SpicyChat — Avatar requirements",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/avatar",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — Visibility, review and versions",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/visibility-review-and-versions",
+        "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-10-21",
+    "lastReviewed": "2026-10-29",
     "relatedIds": [
       "testing-feedback",
       "bot-repetition",
       "bot-anypov",
       "lorebook-troubleshoot"
-    ]
+    ],
+    "officialChecked": "2026-10-29"
   },
   {
     "id": "testing-feedback",
@@ -578,7 +599,7 @@ window.GUIDES=[
       }
     ],
     "lastReviewed": "2026-10-21",
-    "officialChecked": "2026-10-19",
+    "officialChecked": "2026-10-29",
     "relatedIds": [
       "lorebook-context",
       "test-your-bot"
@@ -666,7 +687,8 @@ window.GUIDES=[
     "relatedIds": [
       "bot-creation",
       "test-your-bot"
-    ]
+    ],
+    "officialChecked": "2026-10-29"
   },
   {
     "id": "moderation-josh",
@@ -765,8 +787,8 @@ window.GUIDES=[
       }
     ],
     "originalArchive": "/assets/originals/lorebook-basics.json",
-    "lastReviewed": "2026-10-21",
-    "officialChecked": "2026-10-19",
+    "lastReviewed": "2026-10-29",
+    "officialChecked": "2026-10-29",
     "relatedIds": [
       "lorebook-advanced",
       "lorebook-troubleshoot",
@@ -964,7 +986,7 @@ window.GUIDES=[
       }
     ],
     "lastReviewed": "2026-10-21",
-    "officialChecked": "2026-10-19",
+    "officialChecked": "2026-10-29",
     "relatedIds": [
       "multi-character-bots",
       "lorebook-context"
@@ -1029,11 +1051,26 @@ window.GUIDES=[
         "title": "Official Rulebooks — FAQ and current limits",
         "url": "https://docs.spicychat.ai/product-guides/rulebooks/troubleshooting-faq-and-limits",
         "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — Visibility, review and versions",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/visibility-review-and-versions",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — Examples to clone",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/examples-to-clone",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — Common recipes",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/common-recipes",
+        "sourceType": "official"
       }
     ],
     "originalLinksOnly": true,
-    "lastReviewed": "2026-10-19",
-    "officialChecked": "2026-10-19",
+    "lastReviewed": "2026-10-29",
+    "officialChecked": "2026-10-29",
     "relatedIds": [
       "rulebook-templates",
       "lorebook-rpg-systems",
@@ -1106,7 +1143,8 @@ window.GUIDES=[
     "relatedIds": [
       "advanced-character-build",
       "bot-fields"
-    ]
+    ],
+    "officialChecked": "2026-10-29"
   },
   {
     "id": "bot-repetition",
@@ -1191,14 +1229,29 @@ window.GUIDES=[
         "title": "Official Rulebooks — Playtest and checks",
         "url": "https://docs.spicychat.ai/product-guides/rulebooks/playtest-and-checks",
         "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — Visibility, review and versions",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/visibility-review-and-versions",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — Examples to clone",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/examples-to-clone",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — Common recipes",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/common-recipes",
+        "sourceType": "official"
       }
     ],
     "kind": "human",
     "label": "Guide",
     "status": "wip",
     "originalLinksOnly": true,
-    "lastReviewed": "2026-10-19",
-    "officialChecked": "2026-10-19",
+    "lastReviewed": "2026-10-29",
+    "officialChecked": "2026-10-29",
     "relatedIds": [
       "rulebook-basics",
       "rpg-bots"
