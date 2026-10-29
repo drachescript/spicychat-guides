@@ -142,3 +142,20 @@ All human guides remain WIP and publicly browseable.
 - The editor displays **0/12**, consistent with the official [character-tag guide](https://docs.spicychat.ai/product-guides/creating-chatbots/tags), which requires at least two tags on public characters.
 - The Lorebook picker was not part of this capture. `lorebook-tags.json` stays at **227 names from v4.5.2 (October 6)** until a separate Lorebook editor capture can be compared.
 - Editor captures reflect the available options at that version and time; future deployments or account-specific conditions may differ. Do not publish the full saved HTML because it contains personal interface and extension state.
+
+## Official documentation recheck (October 29, 2026)
+
+Reviewed the current official [SpicyChat documentation index](https://docs.spicychat.ai/llms.txt) and opened the Rulebooks overview, all three Rulebook subguides that were unavailable at the earlier audit (Visibility, review and versions; Examples to clone; Common recipes), relevant Rulebook meter/priority/testing references, plus character creation, tag limits, avatar, Lorebooks, Group Chats, Semantic Memory/Memory Manager, Personas, Director Mode/Search, moderation, context, importing and creator analytics.
+
+The **current Rulebooks docs** establish:
+- **15 meters total**, 8 Shown in the chat strip; **Panel only** is a third visibility choice and does not use a strip slot.
+- **Private** needs no review; **Unlisted** requires review but no cover or minimum tags; **Public** requires review, cover and at least 2 tags including Focus.
+- Unlisted/Public have **Save for testing**, separate **Submit for review**, and **Update submission** controls; drafts do not overwrite already approved versions while review is pending.
+- All reviewed submissions need a working movement driver on every meter, and the editor enforces the current validation checks.
+- The seven named Starters include **Energy and Mood**. New official content documents the exact Starter construction and additional recipe patterns.
+- Official limits include 12 levels, 20 keyword groups per meter, 10 triggers per meter, 30 combined rules and 60 AI questions per message; the Rulebook description is 800 characters.
+
+Applied confirmed corrections to the Rulebook Basics and Rulebook Templates guides, added current official links to their Original tabs, and expanded relevant publication checks in Test Your Bot. Clarified Lorebook attachment, edits in ongoing chats and keyword placeholders. Other reviewed guides needed no material change from their previous wording.
+
+This was a documentation audit, not authenticated end-to-end testing of each site feature. The Rulebook Discord original threads remain linked, **not mirrored**. Do not use the stored October 21 HTML captures as proof of an October 29 tag-picker update; the chatbot and Lorebook JSON lists keep their previously verified source dates.
+
