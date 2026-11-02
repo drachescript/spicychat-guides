@@ -1000,7 +1000,7 @@ window.GUIDES=[
     "subsection": "Getting Started",
     "status": "wip",
     "label": "Guide",
-    "desc": "creating Rulebooks with meters, evaluation, influence rules and playtesting; updated for current beta docs.",
+    "desc": "creating Rulebooks with meters, evaluation, influence rules and playtesting; updated for the public web rollout.",
     "pageUrl": "/rulebook/basics/",
     "sourceType": "official",
     "sources": [
@@ -1069,7 +1069,7 @@ window.GUIDES=[
       }
     ],
     "originalLinksOnly": true,
-    "lastReviewed": "2026-10-29",
+    "lastReviewed": "2026-11-01",
     "officialChecked": "2026-10-29",
     "relatedIds": [
       "rulebook-templates",
