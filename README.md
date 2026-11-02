@@ -19,7 +19,7 @@ Community-maintained guides and reference material for SpicyChat.
 
 ## Current status
 
-All human guides are currently marked **WIP / not complete** so they can be reviewed before being treated as finished. Rulebooks are currently in beta, so that guide also needs checking as the feature evolves.
+All human guides are currently marked **WIP / not complete** so they can be reviewed before being treated as finished. Rulebooks have rolled out on SpicyChat web. The Rulebook guides remain WIP while newer release behavior is checked against the live editor and official documentation.
 
 The human pages are not Discord reposts. Discord-based guides condense/reorganize source discussions, while feature guides can also use official documentation. The original sources stay linked from each guide.
 
@@ -30,6 +30,7 @@ SpicyChat Guides is an independent community project and is not affiliated with,
 ## Public JSON reference files
 
 - `/tags.json` — **90 chatbot-tag names**, taken from the fully expanded Chatbot creation tag picker in SpicyChat web v4.7.2, captured October 21, 2026
+- `/rulebook-tags.json` — **61 Rulebook Explore tag names** in four groups, captured from SpicyChat web v4.8.7 on November 1, 2026; this is an Explore-filter snapshot, not an editor-picker audit
 - `/lorebook-tags.json` — **227 Lorebook-tag names**, captured from editor v4.5.2 on October 6, 2026; not verified against the current picker
 - `/blocked-words.json` — community-curated blocked-word/moderation reference
 
@@ -159,3 +160,9 @@ Applied confirmed corrections to the Rulebook Basics and Rulebook Templates guid
 
 This was a documentation audit, not authenticated end-to-end testing of each site feature. The Rulebook Discord original threads remain linked, **not mirrored**. Do not use the stored October 21 HTML captures as proof of an October 29 tag-picker update; the chatbot and Lorebook JSON lists keep their previously verified source dates.
 
+
+## Rulebook Explore release check (November 1, 2026)
+
+Saved SpicyChat web v4.8.7 Rulebooks Explore HTML confirms the Rulebooks browse/create navigation and the expanded tag filters. `/rulebook-tags.json` records all **61 filter tags** grouped as **Focus (17), Genre (22), Mechanics (10), NSFW themes (12)**. These are tag names, not the per-tag result counts beside them. Separate Explore controls include **Narrow by Language**, **Rules visible**, **NSFW**, and sorting. The `Rules visible` control is a feature filter, not a tag. The listing showed 383 results at capture time; this is a changing count and not a fixed catalog total.
+
+Do not publish the saved account HTML or the inspector export. A public Explore-filter capture does not prove all names are available in the creator tag picker. The earlier Rulebook beta Discord notes are kept as dated historical observations, not descriptions of current bugs. Guide sections still marked WIP remain subject to review.
