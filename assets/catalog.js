@@ -774,7 +774,7 @@ window.GUIDES=[
     "subsection": "Basics",
     "status": "wip",
     "label": "Guide",
-    "desc": "what Lorebooks are good for, how keyword triggers work, how to structure entries and what not to put in them.",
+    "desc": "keyword-triggered world facts, JSON imports, editor limits and public/shared Lorebooks.",
     "pageUrl": "/lorebook/basics/",
     "sources": [
       {
@@ -1015,7 +1015,7 @@ window.GUIDES=[
     "subsection": "Getting Started",
     "status": "wip",
     "label": "Guide",
-    "desc": "creating Rulebooks with meters, evaluation, influence rules and playtesting; updated for the public web rollout.",
+    "desc": "meters including Journal, evaluation, influence rules, group compatibility, publishing and playtesting.",
     "pageUrl": "/rulebook/basics/",
     "sourceType": "official",
     "sources": [
@@ -1084,8 +1084,8 @@ window.GUIDES=[
       }
     ],
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-01",
-    "officialChecked": "2026-10-29",
+    "lastReviewed": "2026-11-04",
+    "officialChecked": "2026-11-04",
     "relatedIds": [
       "rulebook-templates",
       "lorebook-rpg-systems",
@@ -1193,7 +1193,7 @@ window.GUIDES=[
     "title": "Rulebook Examples and Templates",
     "section": "rulebook",
     "subsection": "Examples",
-    "desc": "worked editor recipes for Trust, Stamina, Coins, d20, a story clock with win/lose outcomes, and hidden meters.",
+    "desc": "editor recipes for Trust, HP, money, dice, Story clock, Journal and AI/JSON import.",
     "pageUrl": "/rulebook/templates/",
     "sourceType": "official",
     "sources": [
@@ -1265,8 +1265,8 @@ window.GUIDES=[
     "label": "Guide",
     "status": "wip",
     "originalLinksOnly": true,
-    "lastReviewed": "2026-10-29",
-    "officialChecked": "2026-10-29",
+    "lastReviewed": "2026-11-04",
+    "officialChecked": "2026-11-04",
     "relatedIds": [
       "rulebook-basics",
       "rpg-bots"
