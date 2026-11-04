@@ -10,8 +10,8 @@ Community-maintained guides and reference material for SpicyChat.
 
 - /bots/ — bot creation, writing behavior, creator workflow, systems, images, models/settings and publishing
 - /persona/ — Persona basics/formatting and Persona Commands
-- /lorebook/ — basics, advanced keyword design, context/tokens and system-heavy uses
-- /rulebook/ — meters, influence rules, evaluations, playtesting and Rulebook setup
+- /lorebook/ — basics, public sharing, Group Lorebooks, advanced keywords and system-heavy uses
+- /rulebook/ — Rulebook basics, templates, advanced design, system integration and playtesting
 - /group/ — multi-character bots and Group Chats
 - /guides/ — everything in one searchable list
 - /llm/ — separate guides written for an assisting LLM
@@ -166,3 +166,14 @@ This was a documentation audit, not authenticated end-to-end testing of each sit
 Saved SpicyChat web v4.8.7 Rulebooks Explore HTML confirms the Rulebooks browse/create navigation and the expanded tag filters. `/rulebook-tags.json` records all **61 filter tags** grouped as **Focus (17), Genre (22), Mechanics (10), NSFW themes (12)**. These are tag names, not the per-tag result counts beside them. Separate Explore controls include **Narrow by Language**, **Rules visible**, **NSFW**, and sorting. The `Rules visible` control is a feature filter, not a tag. The listing showed 383 results at capture time; this is a changing count and not a fixed catalog total.
 
 Do not publish the saved account HTML or the inspector export. A public Explore-filter capture does not prove all names are available in the creator tag picker. The earlier Rulebook beta Discord notes are kept as dated historical observations, not descriptions of current bugs. Guide sections still marked WIP remain subject to review.
+
+## November 4, 2026 guide refresh
+
+Three new **WIP** guides are available:
+- `/rulebook/advanced/` — multiple meters, conflicting evaluations, faction/survival systems, and playtesting. Third-party public Rulebook cards are research leads, not verified builds.
+- `/rulebook/integration/` — what belongs in a character, Persona, Lorebook, Rulebook or Memory Manager, including Rulebook priority.
+- `/lorebook/sharing/` — Public Lorebooks, reusable worlds, Group Lorebooks and publication/review checks.
+
+Existing guides now document the November 3 Memory Manager rework (staff-announced rollout), Public and Group Lorebooks, the **Journal** Rulebook meter, AI Rulebook Skill and JSON import workflow, and Group Rulebook limitations. The official Lorebook documentation has also been rechecked for editor limits, JSON import, visibility and search features. Historical beta discussions remain identified as historical observations.
+
+Sources: https://docs.spicychat.ai/llms.txt ; https://docs.spicychat.ai/product-guides/rulebooks/meters ; https://docs.spicychat.ai/product-guides/rulebooks/troubleshooting-faq-and-limits ; https://docs.spicychat.ai/product-guides/rulebooks/import-export-and-ai ; https://docs.spicychat.ai/product-guides/lorebook ; https://www.reddit.com/r/SpicyChatAI/comments/1xm18o2/comment/19s2iql1zkzxg/ .
