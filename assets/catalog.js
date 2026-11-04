@@ -527,7 +527,8 @@ window.GUIDES=[
       "testing-feedback",
       "bot-repetition",
       "bot-anypov",
-      "lorebook-troubleshoot"
+      "lorebook-troubleshoot",
+      "creator-analytics"
     ],
     "officialChecked": "2026-10-29"
   },
@@ -691,7 +692,8 @@ window.GUIDES=[
     "lastReviewed": "2026-10-21",
     "relatedIds": [
       "bot-creation",
-      "test-your-bot"
+      "test-your-bot",
+      "creator-analytics"
     ],
     "officialChecked": "2026-10-29"
   },
@@ -1555,6 +1557,44 @@ window.GUIDES=[
       "lorebook-advanced",
       "group-chats",
       "rulebook-integration"
+    ]
+  },
+  {
+    "id": "creator-analytics",
+    "title": "Creator Analytics & Monthly Leaderboard",
+    "kind": "human",
+    "section": "bots",
+    "subsection": "Publishing & Maintenance",
+    "status": "wip",
+    "label": "Guide",
+    "desc": "read requests, users, conversation depth, ratings and Favorites correctly; compare bot performance and understand monthly rankings.",
+    "pageUrl": "/bots/creator-analytics/",
+    "sources": [
+      {
+        "title": "Official SpicyChat Creator Analytics",
+        "url": "https://docs.spicychat.ai/product-guides/creators/creator-analytics",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official SpicyChat Creators Leaderboard",
+        "url": "https://docs.spicychat.ai/product-guides/creators/creators-leaderboard",
+        "sourceType": "official"
+      },
+      {
+        "title": "Current Creators Leaderboard",
+        "url": "https://spicychat.ai/creators/leaderboard",
+        "sourceType": "official"
+      }
+    ],
+    "sourceType": "official",
+    "originalLinksOnly": true,
+    "lastReviewed": "2026-11-04",
+    "officialChecked": "2026-11-04",
+    "relatedIds": [
+      "tagging",
+      "test-your-bot",
+      "bot-greetings",
+      "bot-creation"
     ]
   }
 ];
