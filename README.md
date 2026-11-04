@@ -169,6 +169,9 @@ Do not publish the saved account HTML or the inspector export. A public Explore-
 
 ## November 4, 2026 guide refresh
 
+- `/bots/creator-analytics/` — reading Creator Analytics (requests, depth, ratings, Net Likes), CSV export, and the separate monthly Creators Leaderboard; official source definitions and community interpretation tips.
+
+
 Three new **WIP** guides are available:
 - `/rulebook/advanced/` — multiple meters, conflicting evaluations, faction/survival systems, and playtesting. Third-party public Rulebook cards are research leads, not verified builds.
 - `/rulebook/integration/` — what belongs in a character, Persona, Lorebook, Rulebook or Memory Manager, including Rulebook priority.
