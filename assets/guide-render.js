@@ -48,7 +48,7 @@ root.innerHTML=
 '<section id="guide-panel-clean" role="tabpanel" aria-labelledby="guide-tab-clean">'+
 '<div class="article-wrap article-layout"><aside class="article-toc"><strong>on this page</strong><div data-toc></div></aside><article class="article-body">'+
 '<div class="wip-banner"><strong>WIP — not complete.</strong> '+(official?
-'this is based on the current SpicyChat Rulebook docs plus reported editor feedback. Rulebooks are in beta and details may change.':
+'this follows official SpicyChat documentation and dated community feedback; feature access and editor behavior may vary by account and app version.':
 'this guide is still being reviewed. it condenses community threads and other credited source material; the original sources are under the Original tab.')+'</div>'+
 provenanceHtml+checklistHtml+content.body+relatedHtml+
 '<div class="source-box"><strong>Sources used for this draft</strong><p>you can check the original posts or files under the Original tab.</p><div class="source-list">'+sourceLinks+'</div></div>'+
