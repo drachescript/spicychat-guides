@@ -596,13 +596,18 @@ window.GUIDES=[
         "title": "Official Memory Manager",
         "url": "https://docs.spicychat.ai/product-guides/premium-features/memory-manager",
         "sourceType": "official"
+      },
+      {
+        "title": "SpicyChat staff — November 3 Memory Manager change",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1xm18o2/comment/19s2iql1zkzxg/"
       }
     ],
-    "lastReviewed": "2026-10-21",
-    "officialChecked": "2026-10-29",
+    "lastReviewed": "2026-11-04",
+    "officialChecked": "2026-11-04",
     "relatedIds": [
       "lorebook-context",
-      "test-your-bot"
+      "test-your-bot",
+      "rulebook-integration"
     ]
   },
   {
@@ -784,15 +789,20 @@ window.GUIDES=[
         "title": "Official Lorebook — current guide",
         "url": "https://docs.spicychat.ai/product-guides/lorebook",
         "sourceType": "official"
+      },
+      {
+        "title": "SpicyChat — Public Lorebooks release",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1wv996y/public_lorebooks_are_here/"
       }
     ],
     "originalArchive": "/assets/originals/lorebook-basics.json",
-    "lastReviewed": "2026-10-29",
-    "officialChecked": "2026-10-29",
+    "lastReviewed": "2026-11-04",
+    "officialChecked": "2026-11-04",
     "relatedIds": [
       "lorebook-advanced",
       "lorebook-troubleshoot",
-      "lorebook-context"
+      "lorebook-context",
+      "lorebook-sharing"
     ]
   },
   {
@@ -983,13 +993,18 @@ window.GUIDES=[
         "title": "Official Group Chat — creating and using Groups",
         "url": "https://docs.spicychat.ai/product-guides/group-chat",
         "sourceType": "official"
+      },
+      {
+        "title": "SpicyChat — Shared Group Lorebooks release",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1x64yiz/weekly_update_group_lorebooks_better_filters_more/"
       }
     ],
-    "lastReviewed": "2026-10-21",
-    "officialChecked": "2026-10-29",
+    "lastReviewed": "2026-11-04",
+    "officialChecked": "2026-11-04",
     "relatedIds": [
       "multi-character-bots",
-      "lorebook-context"
+      "lorebook-context",
+      "lorebook-sharing"
     ]
   },
   {
@@ -1412,5 +1427,134 @@ window.GUIDES=[
     "pageUrl": "/llm/originals/World%20Bot%20LLM%20Guide%20v2.txt",
     "originalFilename": "World Bot LLM Guide v2.txt",
     "originalBytes": 32965
+  },
+  {
+    "id": "rulebook-advanced",
+    "title": "Advanced Rulebook Design: Multiple Meters, Risk & Testing",
+    "kind": "human",
+    "section": "rulebook",
+    "subsection": "Advanced",
+    "status": "wip",
+    "label": "Guide",
+    "desc": "build meaningful multi-meter systems, resolve conflicting rules, and test survival or faction mechanics without removing player choice.",
+    "pageUrl": "/rulebook/advanced/",
+    "sourceType": "official",
+    "sources": [
+      {
+        "title": "Official Rulebooks — Meters",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/meters",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — Making meters move",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/making-meters-move",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — Playtest and checks",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/playtest-and-checks",
+        "sourceType": "official"
+      },
+      {
+        "title": "Rulebooks Explore — public examples",
+        "url": "https://spicychat.ai/rulebooks/explore"
+      }
+    ],
+    "originalLinksOnly": true,
+    "lastReviewed": "2026-11-04",
+    "officialChecked": "2026-11-04",
+    "relatedIds": [
+      "rulebook-basics",
+      "rulebook-integration",
+      "rulebook-templates",
+      "rpg-bots"
+    ]
+  },
+  {
+    "id": "rulebook-integration",
+    "title": "Bots, Personas, Lorebooks & Rulebooks: What Goes Where?",
+    "kind": "human",
+    "section": "rulebook",
+    "subsection": "Integrations",
+    "status": "wip",
+    "label": "Guide",
+    "desc": "separate stable character facts, shared world lore, changing state and memory; understand Rulebook priority and Group Lorebooks.",
+    "pageUrl": "/rulebook/integration/",
+    "sourceType": "official",
+    "sources": [
+      {
+        "title": "Official Rulebooks — Using a Rulebook in chat",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/using-a-rulebook-in-chat",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebooks — Visibility, review and versions",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/visibility-review-and-versions",
+        "sourceType": "official"
+      },
+      {
+        "title": "SpicyChat — Group Lorebooks release",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1x64yiz/weekly_update_group_lorebooks_better_filters_more/"
+      },
+      {
+        "title": "SpicyChat — Memory Manager rollout staff reply",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1xm18o2/comment/19s2iql1zkzxg/"
+      },
+      {
+        "title": "Official Lorebook guide",
+        "url": "https://docs.spicychat.ai/product-guides/lorebook",
+        "sourceType": "official"
+      }
+    ],
+    "originalLinksOnly": true,
+    "lastReviewed": "2026-11-04",
+    "officialChecked": "2026-11-04",
+    "relatedIds": [
+      "rulebook-advanced",
+      "lorebook-sharing",
+      "group-chats",
+      "memory-context"
+    ]
+  },
+  {
+    "id": "lorebook-sharing",
+    "title": "Public & Group Lorebooks: Sharing and Reusing Worlds",
+    "kind": "human",
+    "section": "lorebook",
+    "subsection": "Publishing & Sharing",
+    "status": "wip",
+    "label": "Guide",
+    "desc": "publish a reusable Lorebook, discover community worlds, attach them to bots, and use shared Lorebooks in Group Chats.",
+    "pageUrl": "/lorebook/sharing/",
+    "sourceType": "official",
+    "sources": [
+      {
+        "title": "SpicyChat — Public Lorebooks release",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1wv996y/public_lorebooks_are_here/"
+      },
+      {
+        "title": "SpicyChat — Group Lorebooks and creator search",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1x64yiz/weekly_update_group_lorebooks_better_filters_more/"
+      },
+      {
+        "title": "Official Lorebook product guide",
+        "url": "https://docs.spicychat.ai/product-guides/lorebook",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Group Chat product guide",
+        "url": "https://docs.spicychat.ai/product-guides/group-chat",
+        "sourceType": "official"
+      }
+    ],
+    "originalLinksOnly": true,
+    "lastReviewed": "2026-11-04",
+    "officialChecked": "2026-11-04",
+    "relatedIds": [
+      "lorebook-basics",
+      "lorebook-advanced",
+      "group-chats",
+      "rulebook-integration"
+    ]
   }
 ];
