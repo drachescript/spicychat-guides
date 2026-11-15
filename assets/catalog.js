@@ -28,13 +28,14 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-10-21",
+    "lastReviewed": "2026-11-14",
     "relatedIds": [
       "persona-commands",
       "bot-anypov",
-      "bot-creation"
+      "bot-creation",
+      "story-continuity"
     ],
-    "officialChecked": "2026-10-29"
+    "officialChecked": "2026-11-14"
   },
   {
     "id": "persona-commands",
@@ -122,14 +123,15 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-10-21",
+    "lastReviewed": "2026-11-14",
     "relatedIds": [
       "bot-fields",
       "bot-greetings",
       "test-your-bot",
-      "tagging"
+      "tagging",
+      "story-continuity"
     ],
-    "officialChecked": "2026-10-29"
+    "officialChecked": "2026-11-14"
   },
   {
     "id": "bot-fields",
@@ -160,13 +162,14 @@ window.GUIDES=[
     "kind": "human",
     "label": "Guide",
     "status": "wip",
-    "lastReviewed": "2026-10-21",
+    "lastReviewed": "2026-11-14",
     "relatedIds": [
       "bot-creation",
       "bot-greetings",
-      "bot-example-dialogue"
+      "bot-example-dialogue",
+      "story-continuity"
     ],
-    "officialChecked": "2026-10-29"
+    "officialChecked": "2026-11-14"
   },
   {
     "id": "advanced-character-build",
@@ -259,12 +262,13 @@ window.GUIDES=[
     "kind": "human",
     "label": "Guide",
     "status": "wip",
-    "lastReviewed": "2026-10-21",
+    "lastReviewed": "2026-11-14",
     "relatedIds": [
       "bot-greetings",
-      "writing-style"
+      "writing-style",
+      "story-continuity"
     ],
-    "officialChecked": "2026-10-29"
+    "officialChecked": "2026-11-14"
   },
   {
     "id": "bot-greetings",
@@ -577,7 +581,7 @@ window.GUIDES=[
     "subsection": "Systems & Long RPs",
     "status": "wip",
     "label": "Guide",
-    "desc": "pinned-memory compression, scene-state reminders and the basic context-window ideas behind long-running roleplays.",
+    "desc": "long-RP continuity and the rebuilt Memory system: context cutoff, automatic updates, Save to memories and pinning.",
     "pageUrl": "/bots/memory-context/",
     "sources": [
       {
@@ -589,11 +593,6 @@ window.GUIDES=[
         "url": "https://discord.com/channels/1108377954389594236/1539244941673238528/1539244941673238528"
       },
       {
-        "title": "Official Semantic Memory 2.0",
-        "url": "https://docs.spicychat.ai/product-guides/premium-features/semantic-memory-2.0",
-        "sourceType": "official"
-      },
-      {
         "title": "Official Memory Manager",
         "url": "https://docs.spicychat.ai/product-guides/premium-features/memory-manager",
         "sourceType": "official"
@@ -601,14 +600,20 @@ window.GUIDES=[
       {
         "title": "SpicyChat staff — November 3 Memory Manager change",
         "url": "https://www.reddit.com/r/SpicyChatAI/comments/1xm18o2/comment/19s2iql1zkzxg/"
+      },
+      {
+        "title": "Official rebuilt Memory guide",
+        "url": "https://docs.spicychat.ai/product-guides/premium-features/memory",
+        "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-11-04",
-    "officialChecked": "2026-11-04",
+    "lastReviewed": "2026-11-14",
+    "officialChecked": "2026-11-14",
     "relatedIds": [
       "lorebook-context",
       "test-your-bot",
-      "rulebook-integration"
+      "rulebook-integration",
+      "story-continuity"
     ]
   },
   {
@@ -873,12 +878,14 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-10-21",
+    "lastReviewed": "2026-11-14",
     "relatedIds": [
       "lorebook-troubleshoot",
       "memory-context",
-      "lorebook-basics"
-    ]
+      "lorebook-basics",
+      "story-continuity"
+    ],
+    "officialChecked": "2026-11-14"
   },
   {
     "id": "lorebook-rpg-systems",
@@ -1509,13 +1516,14 @@ window.GUIDES=[
       }
     ],
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-04",
-    "officialChecked": "2026-11-04",
+    "lastReviewed": "2026-11-14",
+    "officialChecked": "2026-11-14",
     "relatedIds": [
       "rulebook-advanced",
       "lorebook-sharing",
       "group-chats",
-      "memory-context"
+      "memory-context",
+      "story-continuity"
     ]
   },
   {
@@ -1595,6 +1603,65 @@ window.GUIDES=[
       "test-your-bot",
       "bot-greetings",
       "bot-creation"
+    ]
+  },
+  {
+    "id": "story-continuity",
+    "title": "Keeping Character Development Consistent",
+    "kind": "human",
+    "section": "bots",
+    "subsection": "Systems & Long RPs",
+    "status": "wip",
+    "label": "Guide",
+    "desc": "keep relationship changes, outfits, moods and story milestones consistent without treating every opening detail as permanent.",
+    "pageUrl": "/bots/story-continuity/",
+    "sourceType": "official",
+    "originalLinksOnly": true,
+    "sources": [
+      {
+        "title": "Official Tokens & Context",
+        "url": "https://docs.spicychat.ai/advanced/tokens-and-context",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Memory — rebuilt system",
+        "url": "https://docs.spicychat.ai/product-guides/premium-features/memory",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Memory Manager",
+        "url": "https://docs.spicychat.ai/product-guides/premium-features/memory-manager",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Chatbot Advanced Settings",
+        "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official User Personas",
+        "url": "https://docs.spicychat.ai/product-guides/premium-features/user-personas",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Rulebook Meters",
+        "url": "https://docs.spicychat.ai/product-guides/rulebooks/meters",
+        "sourceType": "official"
+      },
+      {
+        "title": "Official Lorebook",
+        "url": "https://docs.spicychat.ai/product-guides/lorebook",
+        "sourceType": "official"
+      }
+    ],
+    "lastReviewed": "2026-11-14",
+    "officialChecked": "2026-11-14",
+    "relatedIds": [
+      "memory-context",
+      "bot-fields",
+      "rulebook-integration",
+      "lorebook-context",
+      "bot-example-dialogue"
     ]
   }
 ];

@@ -180,3 +180,11 @@ Three new **WIP** guides are available:
 Existing guides now document the November 3 Memory Manager rework (staff-announced rollout), Public and Group Lorebooks, the **Journal** Rulebook meter, AI Rulebook Skill and JSON import workflow, and Group Rulebook limitations. The official Lorebook documentation has also been rechecked for editor limits, JSON import, visibility and search features. Historical beta discussions remain identified as historical observations.
 
 Sources: https://docs.spicychat.ai/llms.txt ; https://docs.spicychat.ai/product-guides/rulebooks/meters ; https://docs.spicychat.ai/product-guides/rulebooks/troubleshooting-faq-and-limits ; https://docs.spicychat.ai/product-guides/rulebooks/import-export-and-ai ; https://docs.spicychat.ai/product-guides/lorebook ; https://www.reddit.com/r/SpicyChatAI/comments/1xm18o2/comment/19s2iql1zkzxg/ .
+
+## November 14, 2026 — official documentation and continuity review
+
+Added WIP guide `/bots/story-continuity/` covering durable identity versus changing outfit/mood/relationship state, field responsibilities, Rulebook and Lorebook scope, and reproducible long-RP regression tests. The triggering private Discord voice transcript informed what to investigate but is not published or treated as authoritative platform documentation.
+
+Updated `/bots/memory-context/` to reflect SpicyChat's **rewritten official Memory** system (automatic memory only after active context fills; roughly 15 back-and-forths between memory updates thereafter; per-person, one-fact entries; pinned/user-added retention; early unpinned memories not sent; chat-message Save to memories; current Memory Manager UI). Replaced outdated 8–10-message batch guidance and the older pending-rollout explanation. Related Bot Creation, field placement, Example Dialogue, Persona, Lorebook Context and Rulebook Integration pages now explain changeable story state without claiming an undocumented prompt order.
+
+Verified source pages (November 14, 2026): https://docs.spicychat.ai/product-guides/premium-features/memory ; https://docs.spicychat.ai/product-guides/premium-features/memory-manager ; https://docs.spicychat.ai/advanced/tokens-and-context ; https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings ; https://docs.spicychat.ai/product-guides/creating-chatbots/personality .
