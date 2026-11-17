@@ -37,7 +37,7 @@ if(srcs.some(x=>String(x.url||"").startsWith("/llm/originals/")))sourceCategorie
 if(srcs.some(x=>discordSource(x)))sourceCategories.push("community discussion");
 const related=(meta.relatedIds||[]).map(guideId=>(window.GUIDES||[]).find(g=>g.id===guideId&&g.pageUrl)).filter(Boolean).slice(0,5);
 const relatedHtml=related.length?'<section class="guide-next"><h2>Continue reading</h2><div class="guide-next-list">'+related.map(x=>'<a href="'+e(x.pageUrl)+'">'+e(x.title)+' →</a>').join("")+'</div></section>':"";
-const provenanceHtml='<div class="guide-provenance"><strong>Review and sources</strong><span>Last content review: '+(lastReview?e(lastReview):'Not recorded')+'</span>'+(officialReview?'<span>Official docs cross-checked: '+e(officialReview)+'</span>':"")+'<span>Source material: '+e(sourceCategories.join(", ")||"source links below")+'</span><span>Live behavior can vary by model and product version. Check the source links for current platform rules.</span></div>';
+const provenanceHtml='<div class="guide-provenance"><strong>Where this info comes from</strong><span>Last content review: '+(lastReview?e(lastReview):'Not recorded')+'</span>'+(officialReview?'<span>Official docs cross-checked: '+e(officialReview)+'</span>':"")+'<span>Source material: '+e(sourceCategories.join(", ")||"source links below")+'</span><span>things can change between releases, so check the source links if something looks different.</span></div>';
 const checklistHtml=id==="test-your-bot"?'<section class="test-checklist" data-bot-test-checklist aria-label="Interactive bot testing checklist"><h2>Your testing checklist</h2><p>Enable scripts to use the browser-local checklist. The full testing guide follows below.</p></section>':"";
 const wayfindingHtml='<div class="guide-wayfinding"><a href="/start/">Start Here →</a><a href="/troubleshooting/">Find a solution →</a></div>';
 const sourceCards=srcs.map(s=>{
@@ -55,9 +55,9 @@ root.innerHTML=
 '<div class="article-wrap article-layout"><aside class="article-toc"><strong>on this page</strong><div data-toc></div></aside><article class="article-body">'+
 '<div class="wip-banner"><strong>WIP — not complete.</strong> '+(official?
 'this follows official SpicyChat documentation and dated community feedback; feature access and editor behavior may vary by account and app version.':
-qolGuide?'this guide summarizes DragonScript QoL source documentation and is not official SpicyChat support. Features and availability may vary by installed release and platform.':'this guide is still being reviewed. it condenses community threads and other credited source material; the original sources are under the Original tab.')+'</div>'+
+qolGuide?'still working on this one. it follows the QoL source, but some features may be different depending on your version or device.':'this guide is still being reviewed. it condenses community threads and other credited source material; the original sources are under the Original tab.')+'</div>'+
 provenanceHtml+checklistHtml+content.body+relatedHtml+
-'<div class="source-box"><strong>Sources used for this draft</strong><p>you can check the original posts or files under the Original tab.</p><div class="source-list">'+sourceLinks+'</div></div>'+
+'<div class="source-box"><strong>Sources and links</strong><p>you can check the original posts or docs under the Original tab.</p><div class="source-list">'+sourceLinks+'</div></div>'+
 '</article></div></section>'+
 '<section id="guide-panel-original" role="tabpanel" aria-labelledby="guide-tab-original" hidden>'+
 '<div class="article-wrap original-view"><h2>original sources</h2><p>this view is for the source material behind the cleaned-up guide. Discord posts are shown with their original wording, author and date when that data has been imported. Hunter’s files are linked in their original form, not rewritten.</p>'+
@@ -76,7 +76,7 @@ async function loadOriginal(){
  loaded=true;
  const target=root.querySelector("[data-original-transcript]");
  if(meta.originalLinksOnly){
-  target.innerHTML='<div class="original-note">The original sources are hosted externally. Use the links above to read the project documentation or source material; it is not republished in full here.</div>';
+  target.innerHTML='<div class="original-note">the original files and docs are linked above. i'm not copying everything onto this page.</div>';
   return;
  }
  const archive=meta.originalArchive||(!official?"/assets/originals/"+encodeURIComponent(id)+".json":null);
