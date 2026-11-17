@@ -16,6 +16,7 @@ Community-maintained guides and reference material for SpicyChat.
 - /guides/ — everything in one searchable list
 - /llm/ — separate guides written for an assisting LLM
 - /reference/ — original Discord source threads and public JSON references
+- /qol/ — independent DragonScript SpicyChat QoL guide covering installation, features, safe setup, privacy, platform support and troubleshooting
 
 ## Current status
 
@@ -199,3 +200,10 @@ Verified source pages (November 14, 2026): https://docs.spicychat.ai/product-gui
 Native Chat Appearance/extension compatibility recommendations are guidance, not a claim of successful app-wide testing. No user HTML/export was published.
 
 Sources: https://docs.spicychat.ai/product-guides/character-chats/chat-appearance ; https://www.reddit.com/r/SpicyChatAI/comments/1xvhn4u/your_chat_your_way_chat_appearance_is_here/ ; https://www.reddit.com/r/SpicyChatAI/comments/1xssb1q/rulebooks_are_now_available_to_everyone/ .
+
+
+## November 16, 2026 — DragonScript QoL companion guide
+
+Added `/qol/` as a full WIP user guide. It is intentionally separate from SpicyChat's own creator manuals: QoL is an independently maintained optional extension and Android companion. The guide covers installation, feature groups, first-run settings, private/local data, optional cloud sync, native-vs-local Memory and Lorebooks, experimental creator tools, Rulebook diagnostics, backups, platform differences, and support workflow.
+
+Source reviewed: `drachescript/spicychat-qol-extension` main at v0.2.84, `spicychat-qol-android` and `spicychat-qol-website`. Custom Lite and several Memory/Lorebook workflows remain experimental per upstream documentation. Nothing was changed in those QoL repositories; this commit modifies only `spicychat-guides`.

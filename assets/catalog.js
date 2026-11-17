@@ -1700,5 +1700,60 @@ window.GUIDES=[
       "ooc-cmd",
       "group-chats"
     ]
+  },
+  {
+    "id": "dragonscript-qol",
+    "title": "DragonScript SpicyChat QoL — Complete User Guide",
+    "kind": "human",
+    "section": "qol",
+    "subsection": "Extension & APK",
+    "status": "wip",
+    "label": "Independent QoL guide",
+    "desc": "install and use DragonScript QoL safely: discovery, lists, chats, Memory, Lorebooks, creator helpers, backups, Android, and troubleshooting.",
+    "pageUrl": "/qol/",
+    "sourceType": "community",
+    "originalLinksOnly": true,
+    "lastReviewed": "2026-11-16",
+    "relatedIds": [
+      "story-continuity",
+      "memory-context",
+      "lorebook-basics",
+      "rulebook-integration",
+      "chat-appearance"
+    ],
+    "sources": [
+      {
+        "title": "DragonScript QoL extension README",
+        "url": "https://github.com/drachescript/spicychat-qol-extension/blob/main/README.md"
+      },
+      {
+        "title": "DragonScript QoL feature catalog",
+        "url": "https://github.com/drachescript/spicychat-qol-extension/blob/main/features.md"
+      },
+      {
+        "title": "DragonScript QoL changelog",
+        "url": "https://github.com/drachescript/spicychat-qol-extension/blob/main/CHANGELOG.md"
+      },
+      {
+        "title": "DragonScript QoL privacy policy",
+        "url": "https://github.com/drachescript/spicychat-qol-extension/blob/main/PRIVACY.md"
+      },
+      {
+        "title": "DragonScript QoL permissions",
+        "url": "https://github.com/drachescript/spicychat-qol-extension/blob/main/PERMISSIONS.md"
+      },
+      {
+        "title": "DragonScript Lite isolation notes",
+        "url": "https://github.com/drachescript/spicychat-qol-extension/blob/main/LITE-ISOLATION.md"
+      },
+      {
+        "title": "DragonScript Android README",
+        "url": "https://github.com/drachescript/spicychat-qol-android/blob/main/README.md"
+      },
+      {
+        "title": "DragonScript QoL website",
+        "url": "https://spicychatqol.drache.uk/"
+      }
+    ]
   }
 ];

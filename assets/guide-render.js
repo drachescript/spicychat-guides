@@ -20,12 +20,18 @@ if(nav){
 }
 
 const official=meta.sourceType==="official";
+const qolGuide=meta.section==="qol";
 const srcs=meta.sources||[];
+if(nav&&!nav.querySelector('a[href="/qol/"]')){
+ const a=document.createElement("a");a.href="/qol/";a.textContent="QoL";
+ const before=nav.querySelector('a[href="/group/"]');nav.insertBefore(a,before||null);
+}
 const sourceLinks=srcs.map(s=>'<a href="'+e(s.url)+'" target="_blank" rel="noopener">'+e(s.title)+' ↗</a>').join("");
 const displayDate=value=>{if(!/^\d{4}-\d{2}-\d{2}$/.test(value||""))return null;const [y,m,d]=value.split("-");return new Date(Date.UTC(Number(y),Number(m)-1,Number(d),12)).toLocaleDateString("en-US",{timeZone:"UTC",month:"short",day:"numeric",year:"numeric"});};
 const lastReview=displayDate(meta.lastReviewed);
 const officialReview=displayDate(meta.officialChecked);
 const sourceCategories=[];
+if(qolGuide)sourceCategories.push("DragonScript project documentation and source");
 if(srcs.some(x=>x.sourceType==="official"||String(x.url||"").startsWith("https://docs.spicychat.ai/")))sourceCategories.push("official documentation");
 if(srcs.some(x=>String(x.url||"").startsWith("/llm/originals/")))sourceCategories.push("original reference files");
 if(srcs.some(x=>discordSource(x)))sourceCategories.push("community discussion");
@@ -49,7 +55,7 @@ root.innerHTML=
 '<div class="article-wrap article-layout"><aside class="article-toc"><strong>on this page</strong><div data-toc></div></aside><article class="article-body">'+
 '<div class="wip-banner"><strong>WIP — not complete.</strong> '+(official?
 'this follows official SpicyChat documentation and dated community feedback; feature access and editor behavior may vary by account and app version.':
-'this guide is still being reviewed. it condenses community threads and other credited source material; the original sources are under the Original tab.')+'</div>'+
+qolGuide?'this guide summarizes DragonScript QoL source documentation and is not official SpicyChat support. Features and availability may vary by installed release and platform.':'this guide is still being reviewed. it condenses community threads and other credited source material; the original sources are under the Original tab.')+'</div>'+
 provenanceHtml+checklistHtml+content.body+relatedHtml+
 '<div class="source-box"><strong>Sources used for this draft</strong><p>you can check the original posts or files under the Original tab.</p><div class="source-list">'+sourceLinks+'</div></div>'+
 '</article></div></section>'+
@@ -70,7 +76,7 @@ async function loadOriginal(){
  loaded=true;
  const target=root.querySelector("[data-original-transcript]");
  if(meta.originalLinksOnly){
-  target.innerHTML='<div class="original-note">The original discussion is hosted on Discord. Use the source links above to read it there; the full discussion export is not reproduced on this website.</div>';
+  target.innerHTML='<div class="original-note">The original sources are hosted externally. Use the links above to read the project documentation or source material; it is not republished in full here.</div>';
   return;
  }
  const archive=meta.originalArchive||(!official?"/assets/originals/"+encodeURIComponent(id)+".json":null);

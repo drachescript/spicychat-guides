@@ -7,8 +7,12 @@ if(nav){
  }
 }
 
+if(nav&&!nav.querySelector('a[href="/qol/"]')){
+ const a=document.createElement("a");a.href="/qol/";a.textContent="QoL";
+ const before=nav.querySelector('a[href="/group/"]');nav.insertBefore(a,before||null);
+}
 const e=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
-const sectionName=s=>({bots:"Bots",persona:"Personas",lorebook:"Lorebooks",group:"Group / Multi-Character",rulebook:"Rulebooks",llm:"LLM Guides"}[s]||s);
+const sectionName=s=>({bots:"Bots",persona:"Personas",lorebook:"Lorebooks",group:"Group / Multi-Character",rulebook:"Rulebooks",qol:"DragonScript QoL",llm:"LLM Guides"}[s]||s);
 const card=x=>{
  const href=x.pageUrl||"#";
  const review=x.lastReviewed?'<div class="meta">Content reviewed '+e(x.lastReviewed)+'</div>':"";
