@@ -631,6 +631,11 @@ window.GUIDES=[
         "title": "The SpicyChat Creator's Guide: Visual Markdown & Hidden HUDs",
         "url": "https://discord.com/channels/1108377954389594236/1545293272178499594/1545293272178499594"
       }
+    ],
+    "lastReviewed": "2026-11-16",
+    "officialChecked": "2026-11-16",
+    "relatedIds": [
+      "chat-appearance"
     ]
   },
   {
@@ -1093,8 +1098,8 @@ window.GUIDES=[
       }
     ],
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-04",
-    "officialChecked": "2026-11-04",
+    "lastReviewed": "2026-11-16",
+    "officialChecked": "2026-11-16",
     "relatedIds": [
       "rulebook-templates",
       "lorebook-rpg-systems",
@@ -1662,6 +1667,38 @@ window.GUIDES=[
       "rulebook-integration",
       "lorebook-context",
       "bot-example-dialogue"
+    ]
+  },
+  {
+    "id": "chat-appearance",
+    "title": "Chat Appearance: Themes, Fonts & Shared Styles",
+    "kind": "human",
+    "section": "bots",
+    "subsection": "Chat Experience",
+    "status": "wip",
+    "label": "Guide",
+    "desc": "native chat colors, themes, layouts, font accessibility, speaker colors, composer options and shared appearance styles.",
+    "pageUrl": "/bots/chat-appearance/",
+    "sourceType": "official",
+    "sources": [
+      {
+        "title": "Official Chat Appearance guide",
+        "url": "https://docs.spicychat.ai/product-guides/character-chats/chat-appearance",
+        "sourceType": "official"
+      },
+      {
+        "title": "SpicyChat November 13 release announcement",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1xvhn4u/your_chat_your_way_chat_appearance_is_here/"
+      }
+    ],
+    "originalLinksOnly": true,
+    "lastReviewed": "2026-11-16",
+    "officialChecked": "2026-11-16",
+    "relatedIds": [
+      "markdown-huds",
+      "writing-style",
+      "ooc-cmd",
+      "group-chats"
     ]
   }
 ];

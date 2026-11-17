@@ -188,3 +188,14 @@ Added WIP guide `/bots/story-continuity/` covering durable identity versus chang
 Updated `/bots/memory-context/` to reflect SpicyChat's **rewritten official Memory** system (automatic memory only after active context fills; roughly 15 back-and-forths between memory updates thereafter; per-person, one-fact entries; pinned/user-added retention; early unpinned memories not sent; chat-message Save to memories; current Memory Manager UI). Replaced outdated 8–10-message batch guidance and the older pending-rollout explanation. Related Bot Creation, field placement, Example Dialogue, Persona, Lorebook Context and Rulebook Integration pages now explain changeable story state without claiming an undocumented prompt order.
 
 Verified source pages (November 14, 2026): https://docs.spicychat.ai/product-guides/premium-features/memory ; https://docs.spicychat.ai/product-guides/premium-features/memory-manager ; https://docs.spicychat.ai/advanced/tokens-and-context ; https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings ; https://docs.spicychat.ai/product-guides/creating-chatbots/personality .
+
+
+## November 16, 2026 — Chat Appearance and Rulebook rollout
+
+- `/bots/chat-appearance/`: new WIP guide based on SpicyChat's November 13 public release and the current official Chat Appearance documentation. Covers colors, six themes, 68 fonts, seven layouts, mobile/composer controls, speaker colors, saved/shared presets and visual-only hiding of OOC commands.
+- `/bots/markdown-huds/`: explains the difference between native presentation settings, text-only roleplay HUDs and Rulebooks, plus optional browser-extension conflicts.
+- `/rulebook/basics/`: records SpicyChat's November 10 official announcement that Rulebooks are available to everyone, including Free users; earlier paid/beta limits are historical.
+
+Native Chat Appearance/extension compatibility recommendations are guidance, not a claim of successful app-wide testing. No user HTML/export was published.
+
+Sources: https://docs.spicychat.ai/product-guides/character-chats/chat-appearance ; https://www.reddit.com/r/SpicyChatAI/comments/1xvhn4u/your_chat_your_way_chat_appearance_is_here/ ; https://www.reddit.com/r/SpicyChatAI/comments/1xssb1q/rulebooks_are_now_available_to_everyone/ .
