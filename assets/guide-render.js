@@ -19,6 +19,9 @@ if(nav){
  }
 }
 
+const statusKind=meta.status==="reviewed"?"reviewed":meta.status==="changes-often"?"changes-often":"needs-review";
+const statusText=({"reviewed":"Checked","needs-review":"Needs review","changes-often":"Changes often"})[statusKind];
+const statusTip=statusKind==="changes-often"?"this topic changes pretty often, so check the current editor and linked docs.":"still needs a review. if something looks different, check the source links.";
 const official=meta.sourceType==="official";
 const qolGuide=meta.section==="qol";
 const srcs=meta.sources||[];
@@ -46,16 +49,14 @@ const sourceCards=srcs.map(s=>{
 }).join("");
 root.innerHTML=
 '<section class="article-head"><div class="article-wrap"><span class="eyebrow">'+e(meta.subsection||meta.section)+'</span><h1>'+e(meta.title)+'</h1><p class="summary">'+e(meta.desc)+'</p>'+
-'<div class="article-meta"><span>WIP · not complete</span><span>'+e(meta.section)+'</span><span>community draft</span></div>'+wayfindingHtml+'</div></section>'+
+'<div class="article-meta"><span>'+e(statusText)+'</span><span>'+e(meta.section)+'</span><span>community draft</span></div>'+wayfindingHtml+'</div></section>'+
 '<div class="article-wrap"><div class="guide-tabbar" role="tablist" aria-label="Guide views">'+
 '<button class="guide-tab" role="tab" id="guide-tab-clean" aria-controls="guide-panel-clean" aria-selected="true" type="button" data-view="guide">Guide</button>'+
 '<button class="guide-tab" role="tab" id="guide-tab-original" aria-controls="guide-panel-original" aria-selected="false" type="button" data-view="original">Original</button>'+
 '</div></div>'+
 '<section id="guide-panel-clean" role="tabpanel" aria-labelledby="guide-tab-clean">'+
 '<div class="article-wrap article-layout"><aside class="article-toc"><strong>on this page</strong><div data-toc></div></aside><article class="article-body">'+
-'<div class="wip-banner"><strong>WIP — not complete.</strong> '+(official?
-'this follows official SpicyChat documentation and dated community feedback; feature access and editor behavior may vary by account and app version.':
-qolGuide?'still working on this one. it follows the QoL source, but some features may be different depending on your version or device.':'this guide is still being reviewed. it condenses community threads and other credited source material; the original sources are under the Original tab.')+'</div>'+
+(statusKind==="reviewed"?"":'<div class="wip-banner"><strong>'+e(statusText)+'.</strong> '+e(statusTip)+'</div>')+
 provenanceHtml+checklistHtml+content.body+relatedHtml+
 '<div class="source-box"><strong>Sources and links</strong><p>you can check the original posts or docs under the Original tab.</p><div class="source-list">'+sourceLinks+'</div></div>'+
 '</article></div></section>'+

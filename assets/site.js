@@ -16,7 +16,9 @@ const sectionName=s=>({bots:"Bots",persona:"Personas",lorebook:"Lorebooks",group
 const card=x=>{
  const href=x.pageUrl||"#";
  const review=x.lastReviewed?'<div class="meta">Content reviewed '+e(x.lastReviewed)+'</div>':"";
- const wip=x.status==="wip"?'<span class="badge wip">WIP · not complete</span>':"";
+ const label=({"reviewed":"Checked","needs-review":"Needs review","changes-often":"Changes often","wip":"Needs review"})[x.status]||"Needs review";
+ const cls=x.status==="reviewed"?"reviewed":x.status==="changes-often"?"frequent":"wip";
+ const wip='<span class="badge '+cls+'">'+label+'</span>';
  return '<article class="card guide-card"><a class="card-click" href="'+e(href)+'" aria-label="Open '+e(x.title)+'"></a><div class="badges"><span class="badge '+(x.kind==="llm"?"llm":"community")+'">'+e(x.label||"Guide")+'</span>'+wip+'</div><h3>'+e(x.title)+'</h3><p>'+e(x.desc||"")+'</p><div class="meta">'+e(sectionName(x.section))+(x.subsection?' · '+e(x.subsection):'')+'</div>'+review+'<span class="read-label">open guide →</span></article>';
 };
 const mount=(selector,items)=>{const n=document.querySelector(selector);if(n)n.innerHTML=items.map(card).join("")};
@@ -30,9 +32,9 @@ document.querySelectorAll("[data-guide-groups]").forEach(root=>{
 });
 document.querySelectorAll("[data-total]").forEach(n=>n.textContent=g.filter(x=>x.kind!=="llm").length);
 document.querySelectorAll("[data-section-count]").forEach(n=>n.textContent=g.filter(x=>x.section===n.dataset.sectionCount).length);
-const q=document.querySelector("[data-search]"),f=document.querySelector("[data-filter]"),a=document.querySelector("[data-all]"),note=document.querySelector("[data-note]");
-function refresh(){if(!a)return;const s=(q?.value||"").trim().toLowerCase(),v=f?.value||"all";const z=g.filter(x=>(v==="all"||x.section===v||x.subsection===v)&&(!s||[x.title,x.desc,x.section,x.subsection].join(" ").toLowerCase().includes(s)));a.innerHTML=z.map(card).join("")||'<div class="notice">nothing matched that search.</div>';if(note)note.textContent="showing "+z.length+" of "+g.length+" guides."}
-q?.addEventListener("input",refresh);f?.addEventListener("change",refresh);refresh();
+const q=document.querySelector("[data-search]"),f=document.querySelector("[data-filter]"),sf=document.querySelector("[data-status-filter]"),a=document.querySelector("[data-all]"),note=document.querySelector("[data-note]");
+function refresh(){if(!a)return;const s=(q?.value||"").trim().toLowerCase(),v=f?.value||"all";const status=sf?.value||"all";const z=g.filter(x=>(v==="all"||x.section===v||x.subsection===v)&&(status==="all"||(x.status||"needs-review")===status)&&(!s||[x.title,x.desc,x.section,x.subsection].join(" ").toLowerCase().includes(s)));a.innerHTML=z.map(card).join("")||'<div class="notice">nothing matched that search.</div>';if(note)note.textContent="showing "+z.length+" of "+g.length+" guides."}
+q?.addEventListener("input",refresh);f?.addEventListener("change",refresh);sf?.addEventListener("change",refresh);refresh();
 const ref=document.querySelector("[data-reference]");
 if(ref){
  const all=[]; const seen=new Set();

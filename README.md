@@ -20,7 +20,7 @@ Community-maintained guides and reference material for SpicyChat.
 
 ## Current status
 
-All human guides are currently marked **WIP / not complete** so they can be reviewed before being treated as finished. Rulebooks have rolled out on SpicyChat web. The Rulebook guides remain WIP while newer release behavior is checked against the live editor and official documentation.
+Guides now use **Checked**, **Needs review** and **Changes often**. Checked means a page was reviewed against its listed sources, not that SpicyChat cannot change. Needs review is for older/community drafts; Changes often is for quickly changing models, images and similar tools. The dates and original sources remain visible.
 
 The human pages are not Discord reposts. Discord-based guides condense/reorganize source discussions, while feature guides can also use official documentation. The original sources stay linked from each guide.
 
@@ -211,3 +211,14 @@ Source reviewed: `drachescript/spicychat-qol-extension` main at v0.2.84, `spicyc
 ## Writing tone (November 16, 2026)
 
 Use the tone of the site's own homepage and creator discussions, not polished corporate or generic AI-written guide copy. Plain, casual, readable English; short explanations with practical examples, natural contractions, and a little personality when appropriate. Lowercase conversational wording is fine. Avoid repetitive disclaimers, overly formal “best practices” framing, walls of perfectly parallel bullets and unexplained jargon. Keep exact feature names, limitations, links, and safety caveats accurate. Don't deliberately insert typos or turn the articles into Discord chat logs. The QoL guide was rewritten as the first full example; future edits should follow that style, and other guides can be reviewed individually rather than automatically rephrased en masse.
+
+## November 16, 2026 — main creator-guide batch
+
+Added `/bots/importing-characters/`, `/bots/avatar-images/` and `/bots/conversation-images/`. Rewrote the main Bot Creation, Character Fields, Greetings, Persona Basics, Lorebook Basics, Writing Style, Tagging/Implied Themes and Models & Generation Settings guides in a more casual, practical tone. The older V3/Qwen guide now explicitly distinguishes historical community experiments from current image tools.
+
+The Troubleshooting hub has quick checklists for user control, Lorebook keywords, imports, model repetition and images, plus searchable links for the new pages. Guide cards and article pages now show one of three statuses: Checked, Needs review and Changes often. The All Guides list can filter by status.
+
+The public character importer documentation only guarantees Name, Greeting and Personality prefill; advanced fields may need manual review. A PNG only carries card data if it is actually a character-card PNG. Third-party implied themes are not official SpicyChat tags. Older image documentation mentions model-specific behavior that may not represent newer generators.
+
+Source check (November 16): https://docs.spicychat.ai/advanced/importing-characters ; https://docs.spicychat.ai/faqs ; https://docs.spicychat.ai/product-guides/creating-chatbots ; https://docs.spicychat.ai/product-guides/creating-chatbots/greeting ; https://docs.spicychat.ai/product-guides/creating-chatbots/personality ; https://docs.spicychat.ai/product-guides/creating-chatbots/tags ; https://docs.spicychat.ai/product-guides/premium-features/user-personas ; https://docs.spicychat.ai/product-guides/lorebook ; https://docs.spicychat.ai/product-guides/creating-chatbots/avatar ; https://docs.spicychat.ai/product-guides/premium-features/conversation-images ; https://docs.spicychat.ai/advanced/generation-settings ; https://docs.spicychat.ai/advanced/generation-settings/generation-presets .
+
