@@ -233,3 +233,14 @@ The same announcement gives a **Story Mode first look**: the player becomes a wr
 **Get A Taste context: 6K; True Supporter: 12K** per the November 18 release post. The official Tokens & Context page still showed the old 4K/8K numbers on November 18 and must not override the newer release. Paid-plan model picker now elevates frequently used models; GLM 5.3 Flash is available to True Supporter. The docs may lag the live model list.
 
 Official docs checked: https://docs.spicychat.ai/llms.txt ; https://docs.spicychat.ai/product-guides/rulebooks/meters ; https://docs.spicychat.ai/product-guides/rulebooks/making-meters-move ; https://docs.spicychat.ai/product-guides/rulebooks/visibility-review-and-versions ; https://docs.spicychat.ai/advanced/tokens-and-context ; https://docs.spicychat.ai/product-guides/premium-features/ai-models .
+
+
+## November 18, 2026 — Josh Explaining Tokens thread update
+
+Expanded the Lorebook Basics and Lorebook Context/Tokens pages with Josh's sticky-note explanation and the practical difference between a fact being true and the character knowing it (John's death example). His updated text was pasted into the Docs & Guides conversation; no Discord deep link was provided, so we did not invent a new citation or publish the original thread text verbatim.
+
+The maintained official Lorebook documentation currently confirms: keywords are checked in the last **four chat messages**, whether sent by the user or character; matched entries remain active for about **two turns**; repeated mentions extend activation; entries do not recursively trigger each other; the Lorebook budget is around **20% of the context window**. Those specifics replace the former unverified "roughly four messages" duration note. Old tier-specific token totals in the Lorebook docs may lag the November 18 subscription context upgrades.
+
+Generation Settings now explains Top-P as *cumulative probability mass*, not a percentage of all possible words, and Top-K as a cap on the next-token candidate set, not a fixed character vocabulary. The guide now distinguishes Temperature from creativity/mood labels. Context, Story Continuity, Character Fields, Advanced Creation and "Stop speaking for user" now clarify that SpicyChat does not publicly guarantee Josh's approximate prompt ordering, the Greeting always being forgotten, a specific word being able to "enforce" behavior, or the "pink elephant" theory of negations.
+
+Community observations and authoring suggestions are retained as suggestions rather than verified platform implementation or universal prompt rules. Sources checked: https://docs.spicychat.ai/product-guides/lorebook ; https://docs.spicychat.ai/advanced/generation-settings ; https://docs.spicychat.ai/advanced/tokens-and-context ; https://docs.spicychat.ai/product-guides/premium-features/memory ; https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings .

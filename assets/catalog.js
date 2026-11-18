@@ -162,14 +162,14 @@ window.GUIDES=[
     "kind": "human",
     "label": "Guide",
     "status": "reviewed",
-    "lastReviewed": "2026-11-16",
+    "lastReviewed": "2026-11-18",
     "relatedIds": [
       "bot-creation",
       "bot-greetings",
       "bot-example-dialogue",
       "story-continuity"
     ],
-    "officialChecked": "2026-11-16"
+    "officialChecked": "2026-11-18"
   },
   {
     "id": "advanced-character-build",
@@ -197,7 +197,7 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-10-21",
+    "lastReviewed": "2026-11-18",
     "relatedIds": [
       "bot-plist-prose",
       "bot-fields",
@@ -313,7 +313,7 @@ window.GUIDES=[
     "subsection": "Writing & Behavior",
     "status": "needs-review",
     "label": "Guide",
-    "desc": "common causes of user-control problems and the fixes that show up repeatedly across creator discussions.",
+    "desc": "keep user actions and speech under player control without relying on magic commands or a single perfect prompt.",
     "pageUrl": "/bots/stop-speaking-for-user/",
     "sources": [
       {
@@ -338,7 +338,7 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-10-21",
+    "lastReviewed": "2026-11-18",
     "relatedIds": [
       "bot-greetings",
       "bot-anypov",
@@ -774,7 +774,7 @@ window.GUIDES=[
     "subsection": "Models & Settings",
     "status": "changes-often",
     "label": "Guide",
-    "desc": "model sampling settings, the November 18 context changes and GLM 5.3 Flash availability.",
+    "desc": "Temperature, Top-P probability filtering, Top-K candidate limits, reply length and practical model tests.",
     "pageUrl": "/bots/models-settings/",
     "sources": [
       {
@@ -802,7 +802,7 @@ window.GUIDES=[
     "subsection": "Basics",
     "status": "reviewed",
     "label": "Guide",
-    "desc": "keyword-triggered world facts, JSON imports, editor limits and public/shared Lorebooks.",
+    "desc": "Lorebook entries, keyword timing, useful reminders, character knowledge and testing.",
     "pageUrl": "/lorebook/basics/",
     "sources": [
       {
@@ -824,8 +824,8 @@ window.GUIDES=[
       }
     ],
     "originalArchive": "/assets/originals/lorebook-basics.json",
-    "lastReviewed": "2026-11-16",
-    "officialChecked": "2026-11-16",
+    "lastReviewed": "2026-11-18",
+    "officialChecked": "2026-11-18",
     "relatedIds": [
       "lorebook-advanced",
       "lorebook-troubleshoot",
@@ -874,7 +874,7 @@ window.GUIDES=[
     "subsection": "Memory & Context",
     "status": "needs-review",
     "label": "Guide",
-    "desc": "how Lorebook reminders interact with chat context, why large entries cost memory and how overlapping activations behave.",
+    "desc": "Lorebook trigger timing, the context budget, and the difference between a fact loading and a character knowing it.",
     "pageUrl": "/lorebook/context-tokens/",
     "sources": [
       {
@@ -899,14 +899,14 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-11-14",
+    "lastReviewed": "2026-11-18",
     "relatedIds": [
       "lorebook-troubleshoot",
       "memory-context",
       "lorebook-basics",
       "story-continuity"
     ],
-    "officialChecked": "2026-11-14"
+    "officialChecked": "2026-11-18"
   },
   {
     "id": "lorebook-rpg-systems",
@@ -1675,8 +1675,8 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-11-14",
-    "officialChecked": "2026-11-14",
+    "lastReviewed": "2026-11-18",
+    "officialChecked": "2026-11-18",
     "relatedIds": [
       "memory-context",
       "bot-fields",
