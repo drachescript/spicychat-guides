@@ -222,3 +222,14 @@ The public character importer documentation only guarantees Name, Greeting and P
 
 Source check (November 16): https://docs.spicychat.ai/advanced/importing-characters ; https://docs.spicychat.ai/faqs ; https://docs.spicychat.ai/product-guides/creating-chatbots ; https://docs.spicychat.ai/product-guides/creating-chatbots/greeting ; https://docs.spicychat.ai/product-guides/creating-chatbots/personality ; https://docs.spicychat.ai/product-guides/creating-chatbots/tags ; https://docs.spicychat.ai/product-guides/premium-features/user-personas ; https://docs.spicychat.ai/product-guides/lorebook ; https://docs.spicychat.ai/product-guides/creating-chatbots/avatar ; https://docs.spicychat.ai/product-guides/premium-features/conversation-images ; https://docs.spicychat.ai/advanced/generation-settings ; https://docs.spicychat.ai/advanced/generation-settings/generation-presets .
 
+
+
+## November 18, 2026 — official release notes review
+
+The official SpicyChat Discord announcement from November 18 (screenshot supplied in the Docs & Guides conversation) reports **Text Meters**, **hidden individual Rulebook triggers**, and fixes for the Rulebook HUD, Story Clock and Editor. These are now noted in Rulebook Basics, Advanced and Templates. The Meters and movement documentation checked that day still describes the older meter types; do not invent Text Meter JSON fields, supported drivers or hidden-trigger visibility semantics until the editor/docs confirm them. These are current release announcements, not verified exported test files.
+
+The same announcement gives a **Story Mode first look**: the player becomes a writer instead of acting as their Persona, and writer's notes steer the plot without appearing in story text. It is initially rolling out to some subscribers; no dedicated Story Mode document appeared in the official `llms.txt` index at review time. The OOC/Director Mode and Rulebook Integration guides explain the distinction without claiming those tools are interchangeable.
+
+**Get A Taste context: 6K; True Supporter: 12K** per the November 18 release post. The official Tokens & Context page still showed the old 4K/8K numbers on November 18 and must not override the newer release. Paid-plan model picker now elevates frequently used models; GLM 5.3 Flash is available to True Supporter. The docs may lag the live model list.
+
+Official docs checked: https://docs.spicychat.ai/llms.txt ; https://docs.spicychat.ai/product-guides/rulebooks/meters ; https://docs.spicychat.ai/product-guides/rulebooks/making-meters-move ; https://docs.spicychat.ai/product-guides/rulebooks/visibility-review-and-versions ; https://docs.spicychat.ai/advanced/tokens-and-context ; https://docs.spicychat.ai/product-guides/premium-features/ai-models .

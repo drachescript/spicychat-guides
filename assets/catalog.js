@@ -353,7 +353,7 @@ window.GUIDES=[
     "subsection": "Writing & Behavior",
     "status": "needs-review",
     "label": "Guide",
-    "desc": "using temporary in-chat instructions for corrections, pacing, formatting and scene control without permanently bloating a card.",
+    "desc": "temporary directions, /cmd, /search and how early Story Mode writer's notes differ.",
     "pageUrl": "/bots/ooc-cmd/",
     "sources": [
       {
@@ -383,8 +383,8 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-10-19",
-    "officialChecked": "2026-10-19"
+    "lastReviewed": "2026-11-18",
+    "officialChecked": "2026-11-18"
   },
   {
     "id": "slow-burn",
@@ -609,8 +609,8 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-11-14",
-    "officialChecked": "2026-11-14",
+    "lastReviewed": "2026-11-18",
+    "officialChecked": "2026-11-18",
     "relatedIds": [
       "lorebook-context",
       "test-your-bot",
@@ -774,7 +774,7 @@ window.GUIDES=[
     "subsection": "Models & Settings",
     "status": "changes-often",
     "label": "Guide",
-    "desc": "Temperature, Top-P, Top-K, reply length and how to test model changes without guessing.",
+    "desc": "model sampling settings, the November 18 context changes and GLM 5.3 Flash availability.",
     "pageUrl": "/bots/models-settings/",
     "sources": [
       {
@@ -786,8 +786,8 @@ window.GUIDES=[
         "url": "https://discord.com/channels/1108377954389594236/1257593693360357396/1257593693360357396"
       }
     ],
-    "lastReviewed": "2026-11-16",
-    "officialChecked": "2026-11-16",
+    "lastReviewed": "2026-11-18",
+    "officialChecked": "2026-11-18",
     "relatedIds": [
       "bot-repetition",
       "writing-style",
@@ -1043,9 +1043,9 @@ window.GUIDES=[
     "kind": "human",
     "section": "rulebook",
     "subsection": "Getting Started",
-    "status": "reviewed",
+    "status": "changes-often",
     "label": "Guide",
-    "desc": "meters including Journal, evaluation, influence rules, group compatibility, publishing and playtesting.",
+    "desc": "Rulebooks including new Text Meters, hidden triggers, Journal, Story Clock, publishing and Playtest.",
     "pageUrl": "/rulebook/basics/",
     "sourceType": "official",
     "sources": [
@@ -1114,8 +1114,8 @@ window.GUIDES=[
       }
     ],
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-16",
-    "officialChecked": "2026-11-16",
+    "lastReviewed": "2026-11-18",
+    "officialChecked": "2026-11-18",
     "relatedIds": [
       "rulebook-templates",
       "lorebook-rpg-systems",
@@ -1223,7 +1223,7 @@ window.GUIDES=[
     "title": "Rulebook Examples and Templates",
     "section": "rulebook",
     "subsection": "Examples",
-    "desc": "editor recipes for Trust, HP, money, dice, Story clock, Journal and AI/JSON import.",
+    "desc": "editor recipes for trust, coins, dice, Journal, and November 18 Text Meter and secret trigger experiments.",
     "pageUrl": "/rulebook/templates/",
     "sourceType": "official",
     "sources": [
@@ -1295,8 +1295,8 @@ window.GUIDES=[
     "label": "Guide",
     "status": "needs-review",
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-04",
-    "officialChecked": "2026-11-04",
+    "lastReviewed": "2026-11-18",
+    "officialChecked": "2026-11-18",
     "relatedIds": [
       "rulebook-basics",
       "rpg-bots"
@@ -1466,7 +1466,7 @@ window.GUIDES=[
     "subsection": "Advanced",
     "status": "needs-review",
     "label": "Guide",
-    "desc": "build meaningful multi-meter systems, resolve conflicting rules, and test survival or faction mechanics without removing player choice.",
+    "desc": "multi-meter design, hidden surprises, Text Meter test ideas, conflicts and useful checks.",
     "pageUrl": "/rulebook/advanced/",
     "sourceType": "official",
     "sources": [
@@ -1491,8 +1491,8 @@ window.GUIDES=[
       }
     ],
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-04",
-    "officialChecked": "2026-11-04",
+    "lastReviewed": "2026-11-18",
+    "officialChecked": "2026-11-18",
     "relatedIds": [
       "rulebook-basics",
       "rulebook-integration",
@@ -1537,8 +1537,8 @@ window.GUIDES=[
       }
     ],
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-14",
-    "officialChecked": "2026-11-14",
+    "lastReviewed": "2026-11-18",
+    "officialChecked": "2026-11-18",
     "relatedIds": [
       "rulebook-advanced",
       "lorebook-sharing",
