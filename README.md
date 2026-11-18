@@ -244,3 +244,14 @@ The maintained official Lorebook documentation currently confirms: keywords are 
 Generation Settings now explains Top-P as *cumulative probability mass*, not a percentage of all possible words, and Top-K as a cap on the next-token candidate set, not a fixed character vocabulary. The guide now distinguishes Temperature from creativity/mood labels. Context, Story Continuity, Character Fields, Advanced Creation and "Stop speaking for user" now clarify that SpicyChat does not publicly guarantee Josh's approximate prompt ordering, the Greeting always being forgotten, a specific word being able to "enforce" behavior, or the "pink elephant" theory of negations.
 
 Community observations and authoring suggestions are retained as suggestions rather than verified platform implementation or universal prompt rules. Sources checked: https://docs.spicychat.ai/product-guides/lorebook ; https://docs.spicychat.ai/advanced/generation-settings ; https://docs.spicychat.ai/advanced/tokens-and-context ; https://docs.spicychat.ai/product-guides/premium-features/memory ; https://docs.spicychat.ai/product-guides/creating-chatbots/advanced-settings .
+
+
+## November 18, 2026 — user-provided chat-image guide exports
+
+Reviewed two bulk exports: “General Guide for the Conversation Image Generator / Chat Image Generator” (40 messages, primarily Oct 30–Nov 1, 2026, Qwen) and “Chat Image Generator V2 Guide and Discussion — a guide from personal experience” (roughly 1,400 messages, 2025–May 2026). These are community discussions, not verified platform documentation; attached media are not copied to the site.
+
+Updated `/bots/image-generation/` (Qwen/V3), `/bots/conversation-images/`, and `/bots/avatar-images/` for reference-image quality, a Private test-bot workflow, scene/clothing reminders, Persona-image option, multi-character limitations, composite masked-reference tests and experimental camera-angle advice. Added `/bots/legacy-v2-images/` to keep V2 LoRA/weighted-prompt observations from being confused with Qwen workflows.
+
+Current official documents checked: https://docs.spicychat.ai/product-guides/premium-features/conversation-images ; https://docs.spicychat.ai/advanced/image-prompts ; https://docs.spicychat.ai/product-guides/creating-chatbots/avatar . The former still documents DreamShaper-8 and may lag the community's 2026 Qwen reports. Community hypotheses about training, input analysis and prompt internals are marked as unverified, with exact behavior to be tested in the live editor.
+
+Community originals: https://discord.com/channels/1108377954389594236/1565620726843838485/1565620726843838485 ; https://discord.com/channels/1108377954389594236/1343317636888399884/1343317636888399884 .

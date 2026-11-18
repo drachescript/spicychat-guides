@@ -756,14 +756,19 @@ window.GUIDES=[
       {
         "title": "How do bot creators generate/find pictures for their bots?",
         "url": "https://discord.com/channels/1108377954389594236/1544917092137181184/1544917092137181184"
+      },
+      {
+        "title": "General Qwen Conversation Image guide (Oct–Nov 2026)",
+        "url": "https://discord.com/channels/1108377954389594236/1565620726843838485/1565620726843838485"
       }
     ],
-    "lastReviewed": "2026-11-16",
-    "officialChecked": "2026-11-16",
+    "lastReviewed": "2026-11-18",
+    "officialChecked": "2026-11-18",
     "relatedIds": [
       "avatar-images",
       "conversation-images",
-      "models-settings"
+      "models-settings",
+      "legacy-v2-images"
     ]
   },
   {
@@ -1822,8 +1827,8 @@ window.GUIDES=[
     "pageUrl": "/bots/avatar-images/",
     "sourceType": "official",
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-16",
-    "officialChecked": "2026-11-16",
+    "lastReviewed": "2026-11-18",
+    "officialChecked": "2026-11-18",
     "sources": [
       {
         "title": "SpicyChat — Avatar",
@@ -1834,12 +1839,17 @@ window.GUIDES=[
         "title": "SpicyChat — Image Prompts",
         "url": "https://docs.spicychat.ai/advanced/image-prompts",
         "sourceType": "official"
+      },
+      {
+        "title": "General Qwen Conversation Image guide (Oct–Nov 2026)",
+        "url": "https://discord.com/channels/1108377954389594236/1565620726843838485/1565620726843838485"
       }
     ],
     "relatedIds": [
       "image-generation",
       "conversation-images",
-      "bot-creation"
+      "bot-creation",
+      "legacy-v2-images"
     ]
   },
   {
@@ -1854,19 +1864,54 @@ window.GUIDES=[
     "pageUrl": "/bots/conversation-images/",
     "sourceType": "official",
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-16",
-    "officialChecked": "2026-11-16",
+    "lastReviewed": "2026-11-18",
+    "officialChecked": "2026-11-18",
     "sources": [
       {
         "title": "SpicyChat — Conversation Images",
         "url": "https://docs.spicychat.ai/product-guides/premium-features/conversation-images",
         "sourceType": "official"
+      },
+      {
+        "title": "General Qwen Conversation Image guide (Oct–Nov 2026)",
+        "url": "https://discord.com/channels/1108377954389594236/1565620726843838485/1565620726843838485"
       }
     ],
     "relatedIds": [
       "avatar-images",
       "image-generation",
-      "models-settings"
+      "models-settings",
+      "legacy-v2-images"
+    ]
+  },
+  {
+    "id": "legacy-v2-images",
+    "title": "Chat Image Generator V2 — Older Tips & Tests",
+    "kind": "human",
+    "section": "bots",
+    "subsection": "Images",
+    "status": "needs-review",
+    "label": "Historical guide",
+    "desc": "older V2 semi-realistic/anime prompt tips, LoRA, avatar references and multi-character tests, kept separate from Qwen.",
+    "pageUrl": "/bots/legacy-v2-images/",
+    "sourceType": "community",
+    "originalLinksOnly": true,
+    "lastReviewed": "2026-11-18",
+    "relatedIds": [
+      "conversation-images",
+      "image-generation",
+      "avatar-images"
+    ],
+    "sources": [
+      {
+        "title": "V2 Image Generator guide & discussion (2025–26)",
+        "url": "https://discord.com/channels/1108377954389594236/1343317636888399884/1343317636888399884"
+      },
+      {
+        "title": "Official Conversation Images documentation (older generator)",
+        "url": "https://docs.spicychat.ai/product-guides/premium-features/conversation-images",
+        "sourceType": "official"
+      }
     ]
   }
 ];
