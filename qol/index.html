@@ -1,1 +1,155 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DragonScript SpicyChat QoL — Complete Guide · SpicyChat Guides</title><link rel="stylesheet" href="/assets/style.css"></head><body><header class="topbar"><div class="wrap nav"><a class="brand" href="/"><span class="mark">SG</span><span><strong>SpicyChat Guides</strong><small>community-maintained guides & reference</small></span></a><nav class="links"><a href="/">Home</a><a href="/bots/">Bots</a><a href="/persona/">Personas</a><a href="/lorebook/">Lorebooks</a><a href="/rulebook/">Rulebooks</a><a href="/group/">Group</a><a href="/guides/">All Guides</a><a href="/llm/">LLM</a><a href="/reference/">Sources</a></nav></div></header><main data-guide-page></main><script>window.GUIDE_ID="dragonscript-qol"</script><script src="/assets/catalog.js"></script><script src="/assets/content-qol.js"></script><script src="/assets/guide-render.js"></script></body></html>
+<!doctype html><html lang="en"><head><link rel="icon" type="image/jpeg" href="https://spicychatqol.drache.uk/assets/icons/full_icon.jpg"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DragonScript SpicyChat QoL — Complete Guide · SpicyChat Guides</title><link rel="stylesheet" href="/assets/style.css"></head><body><header class="topbar"><div class="wrap nav"><a class="brand" href="/"><span class="mark">SG</span><span><strong>SpicyChat Guides</strong><small>community-maintained guides & reference</small></span></a><nav class="links"><a href="/qol/">QoL</a><a href="/archive/">Archive</a><a href="/">Home</a><a href="/bots/">Bots</a><a href="/persona/">Personas</a><a href="/lorebook/">Lorebooks</a><a href="/rulebook/">Rulebooks</a><a href="/group/">Group</a><a href="/guides/">All Guides</a><a href="/llm/">LLM</a><a href="/reference/">Sources</a></nav></div></header><main data-guide-page><section class="article-head"><div class="article-wrap"><span class="eyebrow">Community guide</span><h1>DragonScript SpicyChat QoL — Full Guide</h1><p class="summary">setup, filters, creator tools, backups, sync, Android and troubleshooting.</p></div></section><div class="article-wrap"><article class="article-body">
+<h2 id="start">what is DragonScript QoL?</h2>
+<p>it's basically a lot of small (and some not-so-small) optional improvements for SpicyChat. filters, folders, shortcuts, backups, creator tools, memory helpers, performance options and loads of other stuff. you don't have to use all of it. i'd actually recommend you <strong>don't</strong> enable everything right away xD.</p>
+<p>QoL is made by DragonScript, not SpicyChat. it can't unlock premium features, show hidden character definitions or guarantee that a bot follows instructions. it works with the site and the data you can actually access.</p>
+<p>this guide follows the <a href="https://github.com/drachescript/spicychat-qol-extension/blob/main/features.md">extension feature list</a>, <a href="https://github.com/drachescript/spicychat-qol-extension/blob/main/README.md">README</a> and <a href="https://github.com/drachescript/spicychat-qol-extension/blob/main/CHANGELOG.md">changelog</a>. the GitHub main manifest was at <strong>v0.2.87</strong> when checked on November 19, 2026; store and Android releases can differ, and experimental work in other branches or patches isn't automatically released.</p>
+
+<h2 id="install">1. installing the version you actually need</h2>
+<ul>
+<li><strong>Chrome, Brave and other Chromium browsers:</strong> try the <a href="https://chromewebstore.google.com/detail/dragonscript-spicychat-qo/jdbhnaohfjnmkfpfddnjilmpaemkmabh">Chrome Web Store listing</a> or the project release instructions.</li>
+<li><strong>Firefox:</strong> use the <a href="https://addons.mozilla.org/en-US/firefox/addon/dragonscript-spicychat-qol-dev/">Firefox listing</a>. the browser-specific package can differ from Chrome.</li>
+<li><strong>Android:</strong> use the separate <a href="https://spicychatqol.drache.uk/android/">Android app</a>. it's a native WebView wrapper with shared QoL code, not a desktop extension installed inside Chrome Android.</li>
+<li><strong>Lite / Custom:</strong> check the <a href="https://spicychatqol.drache.uk/lite/">Lite builder</a> if you only want a selected set of tools. Custom combinations still need testing.</li>
+<li><strong>Safari / iOS:</strong> check the <a href="https://spicychatqol.drache.uk/safari/">Safari Lite</a> and <a href="https://spicychatqol.drache.uk/ios/">iOS information</a> pages for the current limits rather than assuming the full desktop build works there.</li>
+</ul>
+<p>if you install manually, don't combine old and new extension folders. check the installed version in your browser's extension manager, not just the latest number you saw in a Discord changelog.</p>
+
+<h2 id="first-setup">2. first setup without turning your browser into a toaster</h2>
+<ol>
+<li>open SpicyChat and open <strong>QoL Settings</strong>. the main switch is normally enabled after installation.</li>
+<li>start from <strong>Minimal</strong>, <strong>Recommended</strong> or <strong>Creator</strong>, or skip presets entirely and choose features yourself.</li>
+<li>open the <strong>Features</strong> tab to browse the grouped options, and use <strong>Find a setting</strong> if you know what you want but can't find where it moved.</li>
+<li>enable a couple of tools that match what you actually do, then test them on the right SpicyChat page.</li>
+<li>before experimenting with imports or automatic changes, make a selective backup under <strong>Data & Backup</strong>.</li>
+</ol>
+<p>most individual features start off. setup presets are convenient, but they can enable several at once. check what the preset selected, especially anything that modifies lists or outgoing messages.</p>
+
+<h2 id="settings">3. finding your way around Settings</h2>
+<p>the main Settings areas include General, Features, Discovery & Filters, Saved Bots & Lists, Chat List, Chat, Writing & Generation, Personas & Memory, Creator Tools, Appearance & Interface, Browser & Tabs, Data & Backup, Advanced, Changelog and Help. some mobile controls only appear when applicable.</p>
+<p>the <strong>Command Palette</strong> can find actions without opening a dozen panels, and the <strong>Control Center</strong> brings together data-health checks, backups, useful shortcuts, performance tools and support information. not every setting needs to stay enabled for those screens to open.</p>
+<p>if a search result takes you to the wrong panel, note the setting's exact name and the version. feature names can change while the saved setting keys stay the same.</p>
+
+<h2 id="discovery">4. browsing bots with filters and presets</h2>
+<p>bot filters can hide or dim cards using official tags, words, creator details, language guesses, saved state or an exact bot ID. dimming is handy if you want to know something was filtered without losing it completely.</p>
+<p><strong>Smart Filter Presets</strong> save combinations you use a lot. you can pin favorites and apply them from listing shortcuts. <strong>Listing Refill</strong> can then request more listing results to fill gaps created by your filters, but it doesn't magically search every bot on the site.</p>
+<p>remember that a local QoL block is about QoL presentation. it doesn't automatically change SpicyChat's native recommendation system. language guesses and token estimates can be imperfect, and hidden character fields stay hidden.</p>
+<p>the <a href="/bots/tagging/">tagging guide</a> explains why a bot's selected tags aren't always the same thing as everything implied by its story.</p>
+
+<h2 id="community-themes">5. Archive Community Themes and blocking presets</h2>
+<p>two newer integrations use <em>public Archive data</em>, but they do different things.</p>
+<p><strong>Archive Community Themes</strong> can warn about suggested themes that a public bot doesn't necessarily have as an official SpicyChat tag. there's a distinction between reviewed evidence and less-certain candidates. a community label isn't guaranteed to describe every possible RP with that bot.</p>
+<p><strong>Archive Blocking Presets</strong> let you optionally filter recognized franchises, characters or title patterns with your own exceptions. they're preference filters, not a declaration that a bot is dangerous. the matching is deliberately conservative when a title describes a group, an original character or an unclear identity.</p>
+<p>both integrations are optional and separate from SpicyChat's own Block button. Archive data being unknown means <em>unknown</em>, not that the bot is confirmed safe or confirmed to match. for what those records mean, see the <a href="/archive/">SpicyChat Archive guide</a>.</p>
+
+<h2 id="saved">6. Favorites, Later, folders and saved bots</h2>
+<p>the <strong>Saved Bots Hub</strong> brings together what QoL remembers from Favorites, Later, opened history and other local lists. the <strong>Bot Organizer</strong> adds your own folders, notes and private tags, without editing anyone's public character.</p>
+<p><strong>Favorite history</strong> can remember bots you've removed from Favorites, and <strong>Recently Seen</strong> can help when you forgot which bot you opened earlier. <strong>Follow Creators</strong> is its own QoL list, not a replacement for any native SpicyChat following feature.</p>
+<p>the <strong>Bot Status Center</strong> helps distinguish accessible, private/unknown and confirmed unavailable bots. missing from search is not the same as deleted. don't purge your local records just because one network request failed.</p>
+
+<h2 id="chat-list">7. organizing conversations</h2>
+<p>QoL can add chat-list search, filtering, folders, sorting and some bulk actions. you can separate long-running stories from chats you're just testing, or bookmark a conversation you keep returning to.</p>
+<p><strong>Chat Nudges</strong> are optional reminders for inactive chats; they don't secretly generate a roleplay reply. saved-chat quick actions can help rename, clone or remove supported chats, so double-check the selected conversation before removing anything.</p>
+
+<h2 id="chat-tools">8. tools inside an actual chat</h2>
+<p>there are message bookmarks, search inside the current chat, top/bottom navigation, history loading, extra message actions and optional timestamps or generation details. <strong>Resend</strong> fills the message composer so you can review the text. it isn't supposed to send it immediately or silently overwrite your draft.</p>
+<p>some tools add actions around SpicyChat's own buttons. if Edit, Copy or another native action disappears after a website update, test the specific QoL helper with its switch off before assuming the original chat data is damaged.</p>
+
+<h2 id="instructions">9. OOC, Reply Instructions and writing shortcuts</h2>
+<p><strong>OOC presets</strong> save instructions you send regularly. <strong>Reply Instructions</strong> can add global or bot-specific guidance manually, once per session or with each outgoing message. these are visible OOC/chat text, <em>not</em> secret higher-priority system instructions.</p>
+<p>the formatting toolbar gives shortcuts for asterisk actions, quotes, bold text, backticks and custom pairs. SpicyChat has native composer formatting too now, so try one set at a time if buttons or auto-closing punctuation seem duplicated.</p>
+<div class="example-box"><pre>Helpful style reminder:
+{{char}} writes only their own speech and voluntary actions.
+{{user}} decides their own dialogue, thoughts and actions.
+Keep replies short-to-medium unless the scene needs more detail.</pre></div>
+<p>this can help, but no instruction guarantees the bot will never control {{user}}. check the <a href="/bots/stop-speaking-for-user/">user-control guide</a> if your Greeting or examples teach the wrong pattern.</p>
+
+<h2 id="native-memory">10. SpicyChat native Memory versus QoL Memory tools</h2>
+<p>this gets confusing because several things have similar names. <strong>native Memory</strong> belongs to SpicyChat itself. its newer automatic memory system starts saving after the active chat exceeds context, then roughly every 15 back-and-forths maintains relevant facts.</p>
+<p>QoL's native Memory Manager helpers work around the actual SpicyChat controls when available. the experimental <strong>Native Memory checks</strong> are read-only observations; a successful check isn't proof a new memory was generated, and the feature doesn't rewrite memories by itself.</p>
+<p>pinned memory, saved user-added memory and automatic memories don't all work identically. see <a href="/bots/memory-context/">Memory & Context</a> for the native behavior before enabling another helper to do similar things.</p>
+
+<h2 id="context-keeper">11. Context Keeper — local story facts</h2>
+<p><strong>Context Keeper</strong> is QoL's separate local fact store for each conversation. it can keep notes about lasting events, character changes or agreements, with Strict/Balanced/Broad sensitivity, review tools and recap limits.</p>
+<p>saving a fact locally does <strong>not</strong> automatically send it to the chatbot. you have to insert a recap or enable the optional auto-recall behavior. auto-capture and recall are experimental, and stale facts are supposed to be reviewed instead of silently becoming new canon.</p>
+<div class="example-box"><pre>Good continuity fact:
+Mira admitted she lost the warehouse key and apologized
+to {{user}} during the second night.
+
+Less helpful:
+Mira was angry and they talked for a while.</pre></div>
+<p>if an event gets retconned, review both your local facts and any native memories. QoL's Context Keeper and SpicyChat's Memory Manager are not the same database.</p>
+
+<h2 id="lorebooks">12. Local Chat Lorebooks and the Private Lorebook Bridge</h2>
+<p><strong>Local Chat Lorebooks</strong> are keyword-based entries tied to a conversation. optional recall can put relevant content into outgoing <strong>visible OOC text</strong>. that isn't native, invisible Lorebook injection.</p>
+<p><strong>Private Lorebook Bridge</strong> is more advanced. it can work with private bots and private Lorebooks you own, with ownership checks and reviewed handoff steps. automatic changes or deletions of existing native entries are not something to assume is supported. keep a backup and verify the result on the site.</p>
+<p>there's also <strong>Global Memory / Baseline Notes</strong> for reusable local notes across chats. once again, those reach the model as chat text when inserted, not as hidden platform instructions.</p>
+<p>for the basic keyword mechanic, read <a href="/lorebook/basics/">Lorebooks</a>. for how they differ from Rulebooks and Memories, read <a href="/rulebook/integration/">the systems guide</a>.</p>
+
+<h2 id="rulebooks">13. Rulebook diagnostics</h2>
+<p>QoL's optional <strong>Rulebook Diagnostics</strong> records visible meter changes to help investigate a Rulebook that seems to move at the wrong moment. it's not an editor, doesn't read hidden Rulebook definitions and doesn't guarantee that a complete private trigger history is available.</p>
+<p>SpicyChat added Text Meters and hidden individual triggers in November 2026. the official docs have been slower to explain their exact internals, so don't treat a diagnostic log's absence as proof nothing happened. use SpicyChat's own Playtest/trace tools where available.</p>
+
+<h2 id="creator">14. tools for making and editing bots</h2>
+<p>creator tools include text snippets for <code>{{char}}</code> and <code>{{user}}</code>, Save & Stay, Save & Chat, draft history, backup/history strips, version comparisons, a Creator Workspace and optional creation checks.</p>
+<p><strong>Creation Audit</strong> flags possible issues, such as missing or short fields, odd tags, large text or Lorebook problems. if QoL couldn't read a field, that's <em>unverified</em>, not proof the field was empty. use the live editor to decide whether a warning is real.</p>
+<p>the optional <strong>Character Token Optimizer</strong> suggests ways to cut repeated wording and shows field estimates. review suggested changes before applying them; shorter doesn't automatically mean better.</p>
+<p><strong>Creator Writing Assistant</strong> can help with spelling and phrasing. browser AI options depend on browser support; it should not silently rewrite and publish a bot for you.</p>
+<p>if you're just getting started, the <a href="/bots/creation/">creation</a>, <a href="/bots/fields/">fields</a> and <a href="/bots/greetings/">Greeting</a> guides explain the SpicyChat side of the editor.</p>
+
+<h2 id="lorebook-creator">15. creator Lorebook tools and importing references</h2>
+<p>the optional <strong>Wiki/Web Lorebook Importer</strong> helps turn pasted text or user-chosen pages into draft entries. you'll still want to check keywords, duplicates, and whether the source text is accurate and allowed to be reused.</p>
+<p>QoL's native Lorebook backup tools can collect details and entries, including long lists that SpicyChat loads in batches. if an export reports incomplete entries or retries, don't assume it's a complete backup until it's verified.</p>
+<p>the native <a href="/bots/importing-characters/">character-card importer</a>, SpicyChat's Lorebook importer, and QoL's own backup restore are different things. using the wrong importer is an easy way to get a confusing error.</p>
+
+<h2 id="research">16. chat and research exports</h2>
+<p>the smaller <strong>Chat Export</strong> tools save selected conversations as TXT, Markdown, HTML or JSON. <strong>Bulk Chat & Memory Research Export</strong> collects larger sets, can resume through checkpoints, and can include accessible bot metadata, linked Lorebook information and native Memory records where available.</p>
+<p>newer versions added a <strong>Quick scan</strong>, better checkpoints, partial download warnings, and exports that can include Story Moments and Rulebook state. choose the scope you actually need. the resulting ZIPs can be very large and contain private roleplay material.</p>
+<p>before sharing a report or export, check what is inside. a normal support report and a full research export have very different privacy implications.</p>
+
+<h2 id="backups">17. local backup, Merge, Replace and recovery</h2>
+<p>in <strong>Settings → Data & Backup</strong>, choose the categories you want to export. settings, saved lists, folders, Context Keeper, bookmarks, draft histories and other local datasets can be selected separately. large media and service credentials are handled differently from ordinary portable settings.</p>
+<p>when importing, <strong>Merge</strong> combines supported records while <strong>Replace</strong> can overwrite the selected local category. i'd always make an export first, especially for folders, blocked lists or story facts you care about.</p>
+<p>check the downloaded file exists, isn't empty and contains the categories you intended. don't assume that a success toast automatically proves every record was included.</p>
+
+<h2 id="sync">18. account sync, providers and different devices</h2>
+<p><strong>QoL Cloud</strong> synchronization and downloading a local file aren't the same operation. when syncing, pay attention to device, direction, selected categories and local-versus-cloud counts, especially for Blocked and Later lists.</p>
+<p>an experimental GitHub backup provider has also been worked on in the QoL project. its availability depends on the actual build you installed; the v0.2.87 main manifest used for this guide does not by itself prove a universal GitHub provider rollout. if your Settings offers GitHub or Both, follow the on-screen connection and token instructions rather than assuming it is active by default.</p>
+<p>the safest sync test is two devices with a small, recognizable list: back up both first, add one test item on one device, sync the intended direction and check that the other device sees exactly that item without removing something else.</p>
+
+<h2 id="appearance">19. appearance, accessibility and compatibility</h2>
+<p>QoL has optional bubble styles, fonts, colors, spacing, chat backgrounds, the Mini Panel, text normalization and interface cleanup. SpicyChat now has its own <a href="/bots/chat-appearance/">Chat Appearance</a> with layouts, speaker colors, fonts and composer shortcuts.</p>
+<p>if a message suddenly looks wrong, test native appearance, QoL appearance and other browser extensions separately. a missing Send button or duplicated format shortcut is probably a layout/compatibility issue, not a sign your conversation was deleted.</p>
+
+<h2 id="performance">20. performance options and Custom Lite</h2>
+<p>giant Favorites lists, long conversations and lots of browser tabs can still cause freezes. the newer QoL versions defer more optional modules until they're needed and batch card and message work so disabled features don't keep scanning the page.</p>
+<p><strong>Performance modes</strong> help reduce some extra work in large chats and inactive tabs. <strong>Custom Lite</strong> can build a smaller extension with selected features, but not every possible combination has been tested across Chrome, Firefox and Android. keep a known-working build when trying custom packages.</p>
+<p>if something gets slower after updating, note which route you're on, how many cards or messages are loaded, and which features you enabled. diagnostics are much more helpful with that context.</p>
+
+<h2 id="android">21. what's different on Android?</h2>
+<p>the Android APK has two moving parts: the app's native Flutter/WebView code and the shared QoL web bundle. fixing one doesn't automatically update the other. when reporting a bug, include the <strong>APK version</strong> and the <strong>QoL bundle version</strong>.</p>
+<p>downloads, file pickers, clipboard, tab switching, keyboard behavior and reload-after-resume issues can come from the native wrapper rather than the browser-extension code. some desktop features also depend on extension APIs that aren't present in the APK.</p>
+<p>if you see a 0-byte export, keep the original data, try a small manual export and report the filename and file size. don't erase Settings or app data as your first troubleshooting step.</p>
+
+<h2 id="support">22. if something breaks</h2>
+<ol>
+<li>check the installed version and platform. is it Chrome/Brave, Firefox, Custom Lite or the Android APK?</li>
+<li>note which page you were using and exactly what you clicked.</li>
+<li>turn off the related QoL feature temporarily. test the same action again.</li>
+<li>if possible, reproduce it in a spare bot or chat rather than risking your only long-running RP.</li>
+<li>use <strong>Copy all support info</strong> or the diagnostics download. review the file before sending it—don't post tokens, private exports or webhook secrets.</li>
+<li>send a clear report through <a href="https://spicychatqol.drache.uk/support/">QoL Support</a> or <a href="https://github.com/drachescript/spicychat-qol-extension/issues">GitHub Issues</a>.</li>
+</ol>
+<p>example of a useful report: <em>"Chrome, QoL 0.2.87, on a Lorebook editor with 200 entries. importing JSON shows an error after selecting Merge. here's the exact notice and my redacted support report."</em> that's a lot easier to investigate than "import broken" xD.</p>
+
+<h2 id="where-to-start">23. what i'd actually enable first</h2>
+<ul>
+<li><strong>mostly browsing:</strong> bot filters, Recently Seen, Later and maybe one Smart Filter Preset.</li>
+<li><strong>loads of Favorites:</strong> Saved Bots Hub, Bot Organizer and Bot Status Center.</li>
+<li><strong>long RPs:</strong> bookmarks, native Memory tools and carefully tested Context Keeper.</li>
+<li><strong>creating bots:</strong> snippets, draft backups, Creation Audit and the Token Optimizer if you need it.</li>
+<li><strong>making Lorebooks:</strong> entry helpers and backups first, experimental native-writing tools later.</li>
+<li><strong>keeping data safe:</strong> selective local backups before enabling sync or bulk cleanup.</li>
+</ul>
+<p>you can always add more later. there's no need to enable 100 settings just because they're there.</p>
+<p><small>source review: November 19, 2026. this is a community-written guide to an independent project, not official SpicyChat support. current source: <a href="https://github.com/drachescript/spicychat-qol-extension/blob/main/features.md">features.md</a>, <a href="https://github.com/drachescript/spicychat-qol-extension/blob/main/CHANGELOG.md">CHANGELOG.md</a> and <a href="https://github.com/drachescript/spicychat-qol-android/blob/main/README.md">Android README</a>. some experimental behavior and platform support may change between releases.</small></p>
+</article></div></main><script>window.GUIDE_ID="dragonscript-qol"</script><script src="/assets/catalog.js"></script><script src="/assets/content-qol.js"></script><script src="/assets/guide-render.js"></script></body></html>

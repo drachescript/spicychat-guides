@@ -1,0 +1,91 @@
+<!doctype html><html lang="en"><head><link rel="icon" type="image/jpeg" href="https://spicychatqol.drache.uk/assets/icons/full_icon.jpg"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SpicyChat Archive — Full Guide · SpicyChat Guides</title><link rel="stylesheet" href="/assets/style.css"></head><body><header class="topbar"><div class="wrap nav"><a class="brand" href="/"><span class="mark">SG</span><span><strong>SpicyChat Guides</strong><small>community-maintained guides & reference</small></span></a><nav class="links"><a href="/qol/">QoL</a><a href="/archive/">Archive</a><a href="/">Home</a><a href="/bots/">Bots</a><a href="/persona/">Personas</a><a href="/lorebook/">Lorebooks</a><a href="/rulebook/">Rulebooks</a><a href="/group/">Group</a><a href="/guides/">All Guides</a><a href="/llm/">LLM</a><a href="/reference/">Sources</a></nav></div></header><main data-guide-page><section class="article-head"><div class="article-wrap"><span class="eyebrow">Community guide</span><h1>SpicyChat Archive — Full Guide</h1><p class="summary">old records, versions, deleted listings, recovery and Archive search.</p></div></section><div class="article-wrap"><article class="article-body">
+<h2 id="intro">what is the SpicyChat Archive?</h2>
+<p>it's a separate, independent site that saves information from <strong>publicly available</strong> SpicyChat bots, Lorebooks and Rulebook listings over time. the point is to have something to look back at when a creator changes a bot, a listing disappears or you can't remember what an older version said.</p>
+<p>the site is <a href="https://spicychatarchive.drache.uk/">spicychatarchive.drache.uk</a>. it's not an official SpicyChat product, and it isn't a collection of everybody's private conversations. what it can show depends on what was public and what the Archive actually managed to collect.</p>
+<p>this guide is based on the <a href="https://github.com/drachescript/spicychat-archive">Archive repository</a>, its public pages and the <a href="https://github.com/drachescript/spicychat-archive/blob/main/README.md">README</a> checked on November 19, 2026.</p>
+
+<h2 id="start">1. where do i start?</h2>
+<p>the homepage has links to <a href="https://spicychatarchive.drache.uk/deleted/">Deleted bots</a>, <a href="https://spicychatarchive.drache.uk/deleted-lorebooks/">Deleted Lorebooks</a>, <a href="https://spicychatarchive.drache.uk/deleted-rulebooks/">Deleted Rulebooks</a> and <a href="https://spicychatarchive.drache.uk/recovery/">Recovery Lab</a>.</p>
+<p>if you already know the name or ID of a bot, i'd start with the <a href="https://spicychatarchive.drache.uk/explorer/">Explorer</a> or <a href="https://spicychatarchive.drache.uk/search/">Archive Search</a> instead of scrolling through the deleted list.</p>
+
+<h2 id="counts">2. seen, saved, public and confirmed gone aren't the same</h2>
+<p>this part is pretty important, because the homepage has several different counts and they're not supposed to add up to one magic total.</p>
+<table><thead><tr><th>Status</th><th>What it means</th></tr></thead><tbody>
+<tr><td>Seen</td><td>the Archive recorded a bot ID at some point, but might not have a complete saved file</td></tr>
+<tr><td>Saved</td><td>there's a bot record, although some fields might still be missing</td></tr>
+<tr><td>Public</td><td>SpicyChat currently reports the bot as publicly listed</td></tr>
+<tr><td>Confirmed gone</td><td>the Archive saw repeated explicit unavailability evidence, not just one failed search</td></tr>
+<tr><td>Unknown / inconclusive</td><td>there wasn't enough reliable evidence to decide</td></tr>
+</tbody></table>
+<p>so if the Archive says it has seen far more bot IDs than it has full saved files, that isn't automatically a problem. and a bot disappearing from SpicyChat search isn't proof it was deleted. the <a href="https://spicychatarchive.drache.uk/faq/">FAQ</a> explains the distinction in more detail.</p>
+
+<h2 id="finding">3. finding a bot by name or ID</h2>
+<p>try the <a href="https://spicychatarchive.drache.uk/explorer/">Explorer</a> when you want to browse records, and <a href="https://spicychatarchive.drache.uk/search/">Archive Search</a> when you want to look through saved historical text.</p>
+<p>an <strong>exact bot ID</strong> is the safest way to avoid mixing up characters with similar names. if you still have a SpicyChat bot URL, keep it—those IDs are often much more useful for recovery than a title you only half remember.</p>
+<p>not finding something doesn't prove it never existed. maybe the Archive hadn't discovered that public bot yet, the file wasn't completely saved, or it was removed before the next scan.</p>
+
+<h2 id="versions">4. older versions and changes</h2>
+<p>if the Archive saved a bot before and after a creator edit, you can inspect the recorded versions and changes. this is useful when a Greeting, title, scenario, tags or other public metadata changed and you want to see what was there before.</p>
+<p>the Archive tries to distinguish actual content edits from noisy activity updates. a higher message count, recommendation score or automatically changed timestamp isn't automatically a new creator revision.</p>
+<p>for recent changes, there's a <a href="https://spicychatarchive.drache.uk/changes/">Changes</a> page and <a href="https://spicychatarchive.drache.uk/activity/">Activity</a> page. not every recorded bot will have a complete previous definition, so treat a missing older field as missing evidence rather than a confirmed empty field.</p>
+
+<h2 id="deleted">5. what's on the Deleted pages?</h2>
+<p><a href="https://spicychatarchive.drache.uk/deleted/">Deleted bots</a> focuses on characters the Archive has directly checked and confirmed unavailable. <a href="https://spicychatarchive.drache.uk/deleted-lorebooks/">Deleted Lorebooks</a> and <a href="https://spicychatarchive.drache.uk/deleted-rulebooks/">Deleted Rulebooks</a> track their own types of disappearance.</p>
+<p>Rulebook archival is particularly easy to misunderstand: preserving an old <em>public listing</em> doesn't necessarily mean the Archive has every meter, trigger or private rule that existed behind it. don't assume a missing public Rulebook listing proves the creator deleted the underlying definition.</p>
+
+<h2 id="status">6. how does it decide a bot is gone?</h2>
+<p>the Archive doesn't label something deleted just because it vanishes from search or one request times out. its FAQ describes repeated direct checks against SpicyChat's public character endpoint, including some cases where an empty response is treated as unavailable by the website.</p>
+<p>temporary errors, authorization failures and incomplete responses aren't supposed to count as deletion evidence. that's why there are <em>suspect</em>, <em>inconclusive</em> and recheck states instead of simply marking every missing result as gone.</p>
+<p>if an old bot becomes public again, a later verification can identify that change. the Archive is a historical record, not a permanent verdict on what SpicyChat will show tomorrow.</p>
+
+<h2 id="lorebooks">7. Lorebooks and their history</h2>
+<p>there are dedicated <a href="https://spicychatarchive.drache.uk/lorebooks/">Lorebooks</a> and <a href="https://spicychatarchive.drache.uk/lorebook/">Lorebook detail</a> pages. saved public details and older entries can be useful for seeing how a world or character changed.</p>
+<p>a public Lorebook and one attached privately to a bot are not the same thing. if a creator never published certain entries, the Archive can't promise to recover them.</p>
+<p>for actually building your own, see our <a href="/lorebook/basics/">Lorebook guide</a>. the Archive is for looking up saved history, not a replacement for the live SpicyChat editor.</p>
+
+<h2 id="rulebooks">8. Rulebooks in the Archive</h2>
+<p>the Archive now has <a href="https://spicychatarchive.drache.uk/rulebooks/">Rulebook listings</a>, <a href="https://spicychatarchive.drache.uk/rulebook/">detail pages</a> and a <a href="https://spicychatarchive.drache.uk/deleted-rulebooks/">no-longer-public listing</a>.</p>
+<p>some creators publish their rules and others keep them hidden. the Archive can only preserve public information it was actually able to observe. a list of meter names doesn't mean the complete rules were saved.</p>
+<p>for creating a Rulebook rather than looking at its history, use <a href="/rulebook/basics/">Rulebook Basics</a> or <a href="/rulebook/advanced/">Advanced Rulebook Design</a>.</p>
+
+<h2 id="recovery">9. Recovery Lab — when a bot is missing</h2>
+<p><a href="https://spicychatarchive.drache.uk/recovery/">Recovery Lab</a> helps collect whatever evidence still exists for a missing character. it can work with archived records and information you provide, such as a saved conversation export.</p>
+<p>the goal is a <strong>reviewable reconstruction</strong>, not to pretend a guessed Personality was the exact original. some details can be recovered from real saved evidence; others may need to be written again and should be labeled accordingly.</p>
+<ol><li>start with the bot's exact URL or ID, if you still have it.</li><li>check whether the Archive has a record or older version.</li><li>gather your own export or screenshots if the original information is incomplete.</li><li>review the evidence and any reconstructed draft field by field.</li><li>keep a copy before moving any text into a new private character.</li></ol>
+<p>if you have a full creator-owned backup, using that is usually better than reconstructing from incomplete evidence.</p>
+
+<h2 id="merge">10. Merge Lab and combining evidence</h2>
+<p>the <a href="https://spicychatarchive.drache.uk/merge/">Merge Lab</a> is another tool for working with partial archive/recovery records. it can help compare and bring together information from different evidence sources.</p>
+<p>don't interpret a merged field as authenticated original content unless you know where it came from. if sources contradict each other, keep the older/newer dates and which record supplied the text.</p>
+
+<h2 id="stats">11. stats, trends and the less obvious tools</h2>
+<p>the Archive also has <a href="https://spicychatarchive.drache.uk/stats/">Stats</a>, <a href="https://spicychatarchive.drache.uk/name-trends/">Names & Trends</a> and <a href="https://spicychatarchive.drache.uk/tag-stats/">Tag Stats</a>. these are handy if you're curious about creators, popular names and older tags.</p>
+<p>historical tags can stay searchable after SpicyChat removes them from its current picker. that doesn't mean they're valid options for new creations today.</p>
+<p>there are also specialized pages for <a href="https://spicychatarchive.drache.uk/inconclusive/">Inconclusive records</a> and <a href="https://spicychatarchive.drache.uk/flagged/">flagged material</a>. those are about reviewing particular records, not a replacement for the normal search experience.</p>
+
+<h2 id="themes">12. Community Themes and Blocking Presets</h2>
+<p>the Archive provides optional public data that DragonScript QoL can use for <strong>Community Themes</strong> and <strong>Archive Blocking Presets</strong>. you can preview the latter at <a href="https://spicychatarchive.drache.uk/presets/">Blocking Presets</a>.</p>
+<p>those presets are for personal filtering preferences. they're all off by default, and they don't automatically block or dislike bots on SpicyChat. matching a character or franchise from a short title can be uncertain, especially with original characters or group titles.</p>
+<p>Community Themes are separate from official SpicyChat tags. some labels are reviewed while others are only candidates. <strong>unknown</strong> means there isn't matching evidence, not that a bot has been proven free of the theme.</p>
+<p>the <a href="https://github.com/drachescript/spicychat-archive/blob/main/docs/QOL-INTEGRATION.md">Archive↔QoL integration notes</a> explain the read-only public data feeds and why neither project needs simultaneous releases.</p>
+
+<h2 id="privacy">13. what the Archive doesn't save</h2>
+<p>the Archive is based on publicly observable data, not your account's private chat history, personal Personas, hidden Rulebook definitions or authenticated drafts. an archive of <em>public</em> information isn't a way around a creator's private visibility settings.</p>
+<p>Recovery Lab can use evidence you choose to provide. think about what you're sharing before uploading private conversation exports or personal information anywhere, and don't republish another person's private character as if you had permission.</p>
+
+<h2 id="issues">14. when a result looks wrong</h2>
+<p>check the bot ID, the date of the archived version and whether the status says saved, unknown, public or confirmed gone. many confusing results come from comparing a historical record with a current listing.</p>
+<p>if a record is incomplete, don't assume the missing field was blank. if a disappearance seems wrong, remember that a temporary SpicyChat failure can look like deletion until another check confirms it.</p>
+<p>the <a href="https://spicychatarchive.drache.uk/faq/">Archive FAQ</a> has more about the scanning and verification process. for implementation details or a reproducible problem, there's the <a href="https://github.com/drachescript/spicychat-archive/issues">Archive GitHub Issues</a> page.</p>
+
+<h2 id="shortcuts">15. quick links</h2>
+<ul>
+<li><a href="https://spicychatarchive.drache.uk/">Archive home</a> — newest overview and site navigation.</li>
+<li><a href="https://spicychatarchive.drache.uk/explorer/">Explorer</a> and <a href="https://spicychatarchive.drache.uk/search/">Archive Search</a> — find records.</li>
+<li><a href="https://spicychatarchive.drache.uk/deleted/">Deleted bots</a> — confirmed unavailable characters.</li>
+<li><a href="https://spicychatarchive.drache.uk/recovery/">Recovery Lab</a> — rebuilding from real evidence.</li>
+<li><a href="https://spicychatarchive.drache.uk/merge/">Merge Lab</a> — comparing and combining partial evidence.</li>
+<li><a href="https://spicychatarchive.drache.uk/presets/">Blocking Presets</a> — public preference filter catalog.</li>
+</ul>
+<p><small>checked November 19, 2026 against the <a href="https://github.com/drachescript/spicychat-archive">Archive main repository</a>, its <a href="https://github.com/drachescript/spicychat-archive/blob/main/README.md">README</a>, <a href="https://github.com/drachescript/spicychat-archive/blob/main/docs/QOL-INTEGRATION.md">QoL integration docs</a> and public page definitions. the Archive is independent and not affiliated with SpicyChat.</small></p>
+</article></div></main><script>window.GUIDE_ID="archive-guide"</script><script src="/assets/catalog.js"></script><script src="/assets/content-archive.js"></script><script src="/assets/guide-render.js"></script></body></html>

@@ -255,3 +255,14 @@ Updated `/bots/image-generation/` (Qwen/V3), `/bots/conversation-images/`, and `
 Current official documents checked: https://docs.spicychat.ai/product-guides/premium-features/conversation-images ; https://docs.spicychat.ai/advanced/image-prompts ; https://docs.spicychat.ai/product-guides/creating-chatbots/avatar . The former still documents DreamShaper-8 and may lag the community's 2026 Qwen reports. Community hypotheses about training, input analysis and prompt internals are marked as unverified, with exact behavior to be tested in the live editor.
 
 Community originals: https://discord.com/channels/1108377954389594236/1565620726843838485/1565620726843838485 ; https://discord.com/channels/1108377954389594236/1343317636888399884/1343317636888399884 .
+
+
+## November 19, 2026 — full QoL and Archive guides; rendering and favicon fixes
+
+Fixed the shared guide renderer's unescaped apostrophe that caused a JavaScript syntax error and blanked the QoL guide (and other dynamic guide pages). Validated the repaired source with JavaScript syntax compilation. Expanded the standalone /qol/ walkthrough to cover actual v0.2.87 main source features, including optional Archive Community Themes, Blocking Presets, the Memory/Context Keeper distinction, creator tools, verified exports, sync, Android and troubleshooting. GitHub experimental provider availability is deliberately not claimed for all users.
+
+Added /archive/ for browsing public historical records, versions, status meanings, deleted bots/Lorebooks/Rulebook listings, Recovery Lab, Merge Lab, stats and public QoL integrations. Archive functionality and evidence limits were checked against drachescript/spicychat-archive's README and page definitions. No Archive or QoL repository files were modified.
+
+Added the user-selected favicon https://spicychatqol.drache.uk/assets/icons/full_icon.jpg across all HTML pages. New pages should use the same icon. QoL and Archive guide pages contain their own readable fallback contents in HTML even if a future renderer script cannot load. A validation script checks static HTML icon coverage, JS syntax and guide catalog registration.
+
+The official SpicyChat Rulebook Meters and movement guides still lacked Text Meters and hidden-trigger editor specifics, and no official Story Mode page existed in llms.txt when checked November 19. The Tokens & Context page still listed older 4K/8K tier values; the November 18 official Discord announcement remains the newer source for 6K/12K.

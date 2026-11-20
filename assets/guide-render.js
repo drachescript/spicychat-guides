@@ -29,6 +29,10 @@ if(nav&&!nav.querySelector('a[href="/qol/"]')){
  const a=document.createElement("a");a.href="/qol/";a.textContent="QoL";
  const before=nav.querySelector('a[href="/group/"]');nav.insertBefore(a,before||null);
 }
+if(nav&&!nav.querySelector('a[href="/archive/"]')){
+ const a=document.createElement("a");a.href="/archive/";a.textContent="Archive";
+ const before=nav.querySelector('a[href="/guides/"]');nav.insertBefore(a,before||null);
+}
 const sourceLinks=srcs.map(s=>'<a href="'+e(s.url)+'" target="_blank" rel="noopener">'+e(s.title)+' ↗</a>').join("");
 const displayDate=value=>{if(!/^\d{4}-\d{2}-\d{2}$/.test(value||""))return null;const [y,m,d]=value.split("-");return new Date(Date.UTC(Number(y),Number(m)-1,Number(d),12)).toLocaleDateString("en-US",{timeZone:"UTC",month:"short",day:"numeric",year:"numeric"});};
 const lastReview=displayDate(meta.lastReviewed);
@@ -77,7 +81,7 @@ async function loadOriginal(){
  loaded=true;
  const target=root.querySelector("[data-original-transcript]");
  if(meta.originalLinksOnly){
-  target.innerHTML='<div class="original-note">the original files and docs are linked above. i'm not copying everything onto this page.</div>';
+  target.innerHTML='<div class="original-note">the original files and docs are linked above. i am not copying everything onto this page.</div>';
   return;
  }
  const archive=meta.originalArchive||(!official?"/assets/originals/"+encodeURIComponent(id)+".json":null);

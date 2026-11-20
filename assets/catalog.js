@@ -1724,23 +1724,24 @@ window.GUIDES=[
   },
   {
     "id": "dragonscript-qol",
-    "title": "SpicyChat QoL — Guide",
+    "title": "DragonScript SpicyChat QoL — Full Guide",
     "kind": "human",
     "section": "qol",
     "subsection": "Extension & APK",
     "status": "reviewed",
     "label": "Independent QoL guide",
-    "desc": "a look at what QoL does, how to set it up, which features are worth trying and what to do if something breaks.",
+    "desc": "the complete QoL walkthrough: setup, filters, lists, chat tools, Memory, Lorebooks, Rulebooks, creator tools, backups, sync, Android and troubleshooting.",
     "pageUrl": "/qol/",
     "sourceType": "community",
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-16",
+    "lastReviewed": "2026-11-19",
     "relatedIds": [
       "story-continuity",
       "memory-context",
       "lorebook-basics",
       "rulebook-integration",
-      "chat-appearance"
+      "chat-appearance",
+      "archive-guide"
     ],
     "sources": [
       {
@@ -1774,8 +1775,13 @@ window.GUIDES=[
       {
         "title": "DragonScript QoL website",
         "url": "https://spicychatqol.drache.uk/"
+      },
+      {
+        "title": "Archive ↔ QoL integration documentation",
+        "url": "https://github.com/drachescript/spicychat-archive/blob/main/docs/QOL-INTEGRATION.md"
       }
-    ]
+    ],
+    "officialChecked": "2026-11-19"
   },
   {
     "id": "importing-characters",
@@ -1911,6 +1917,49 @@ window.GUIDES=[
         "title": "Official Conversation Images documentation (older generator)",
         "url": "https://docs.spicychat.ai/product-guides/premium-features/conversation-images",
         "sourceType": "official"
+      }
+    ]
+  },
+  {
+    "id": "archive-guide",
+    "title": "SpicyChat Archive — Full Guide",
+    "kind": "human",
+    "section": "archive",
+    "subsection": "Browsing & Recovery",
+    "status": "reviewed",
+    "label": "Independent Archive guide",
+    "desc": "finding archived bots and old versions, understanding statuses, using Recovery Lab, Lorebook and Rulebook history, and connecting Archive to QoL.",
+    "pageUrl": "/archive/",
+    "sourceType": "community",
+    "originalLinksOnly": true,
+    "lastReviewed": "2026-11-19",
+    "relatedIds": [
+      "dragonscript-qol",
+      "importing-characters",
+      "lorebook-basics",
+      "rulebook-basics",
+      "story-continuity"
+    ],
+    "sources": [
+      {
+        "title": "SpicyChat Archive README",
+        "url": "https://github.com/drachescript/spicychat-archive/blob/main/README.md"
+      },
+      {
+        "title": "Archive FAQ",
+        "url": "https://spicychatarchive.drache.uk/faq/"
+      },
+      {
+        "title": "Archive public website",
+        "url": "https://spicychatarchive.drache.uk/"
+      },
+      {
+        "title": "Archive ↔ QoL interoperability",
+        "url": "https://github.com/drachescript/spicychat-archive/blob/main/docs/QOL-INTEGRATION.md"
+      },
+      {
+        "title": "Archive Blocking Presets documentation",
+        "url": "https://github.com/drachescript/spicychat-archive/blob/main/data/block-presets/README.md"
       }
     ]
   }
