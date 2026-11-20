@@ -9,6 +9,7 @@
     "LGBTQ+",
     "MalePOV",
     "FemalePOV",
+    "Specified POV",
     "AI Assistant",
     "Action",
     "Adventure",
@@ -92,10 +93,33 @@
     "Wholesome",
     "Yandere"
   ],
-  "count": 90,
+  "count": 91,
   "source": {
-    "type": "SpicyChat Chatbot create editor — expanded All tags picker",
-    "appVersion": "4.7.2",
-    "captured": "2026-10-21"
-  }
+    "type": "Combined creator-picker reference, not a complete November live capture",
+    "baseline": {
+      "appVersion": "4.7.2",
+      "captured": "2026-10-21",
+      "count": 90,
+      "type": "Expanded creator All tags picker"
+    },
+    "additional": {
+      "tags": [
+        "Specified POV"
+      ],
+      "type": "Creator-supplied SFW picker referenced in Tagging & Discovery LLM Guide v2",
+      "captured": "undated"
+    },
+    "reviewed": "2026-11-20",
+    "livePickerReverified": false
+  },
+  "historicalOnlyTags": [
+    "Step-Family"
+  ],
+  "requestedUnconfirmedTags": [
+    "DILF",
+    "Robot",
+    "Kemonomimi",
+    "DeadDove"
+  ],
+  "completenessNote": "90-label October 21 capture + one further observed SFW tag; newer full live picker remains unverified"
 }

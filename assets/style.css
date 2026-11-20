@@ -113,3 +113,17 @@
 .help-diagnosis a{color:#ff9bb0}
 .help-diagnosis ol{font-size:12px;color:#d9dee7;padding-left:20px}
 @media(max-width:650px){.toolbar.guide-toolbar{grid-template-columns:1fr}}
+
+/* Collapsible searchable tag glossary */
+.tag-guide-list{display:grid;gap:12px;margin:16px 0}
+.tag-guide-group{border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.tag-guide-group summary{cursor:pointer;font-weight:700}
+.tag-guide-group summary small{font-weight:400;opacity:.75;padding-left:8px}
+.tag-guide-scroller{overflow-x:auto;margin-top:12px}
+.tag-guide-scroller table{width:100%;border-collapse:collapse}
+.tag-guide-scroller th,.tag-guide-scroller td{padding:9px 10px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+.tag-guide-scroller tbody th{min-width:145px}
+.tag-guide-scroller td{min-width:220px}
+.tag-guide-scroller tr[hidden]{display:none}
+#tag-glossary-search{display:block;width:100%;padding:12px;margin:8px 0;border-radius:9px;border:1px solid var(--line);background:var(--surface,#151923);color:inherit}
+#tag-glossary-count{font-size:.9rem;opacity:.75;margin:6px 0 14px}

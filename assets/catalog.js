@@ -673,13 +673,13 @@ window.GUIDES=[
   },
   {
     "id": "tagging",
-    "title": "Tagging & Discovery",
+    "title": "Tagging & Discovery — Tags and Meanings",
     "kind": "human",
     "section": "bots",
     "subsection": "Publishing",
-    "status": "reviewed",
+    "status": "changes-often",
     "label": "Guide",
-    "desc": "how to tag a bot properly, explain implied themes and make sure the listing matches the actual story.",
+    "desc": "current and historical tag names, the complete reference glossary, POV and NTR differences and how to tag bots accurately.",
     "pageUrl": "/bots/tagging/",
     "sources": [
       {
@@ -699,15 +699,19 @@ window.GUIDES=[
         "title": "Official name/title rules",
         "url": "https://docs.spicychat.ai/product-guides/creating-chatbots/title",
         "sourceType": "official"
+      },
+      {
+        "title": "SFW tag-selector reference (date unrecorded)",
+        "url": "https://github.com/drachescript/spicychat-guides/blob/main/llm/originals/Tagging%20%26%20Discovery%20LLM%20Guide%20v2.txt"
       }
     ],
-    "lastReviewed": "2026-11-16",
+    "lastReviewed": "2026-11-20",
     "relatedIds": [
       "bot-creation",
       "importing-characters",
       "dragonscript-qol"
     ],
-    "officialChecked": "2026-11-16"
+    "officialChecked": "2026-11-20"
   },
   {
     "id": "moderation-josh",

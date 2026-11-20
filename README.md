@@ -266,3 +266,12 @@ Added /archive/ for browsing public historical records, versions, status meaning
 Added the user-selected favicon https://spicychatqol.drache.uk/assets/icons/full_icon.jpg across all HTML pages. New pages should use the same icon. QoL and Archive guide pages contain their own readable fallback contents in HTML even if a future renderer script cannot load. A validation script checks static HTML icon coverage, JS syntax and guide catalog registration.
 
 The official SpicyChat Rulebook Meters and movement guides still lacked Text Meters and hidden-trigger editor specifics, and no official Story Mode page existed in llms.txt when checked November 19. The Tokens & Context page still listed older 4K/8K tier values; the November 18 official Discord announcement remains the newer source for 6K/12K.
+
+
+## November 20, 2026 — current tag reference and glossary
+
+Rebuilt `/bots/tagging/` from Josh's full Tagging thread and the repository's creator-picker evidence. Eight collapsible categories contain short descriptions of all labels in the combined tag reference, with a page-local search control. This is paraphrased, not a verbatim reprint. The page distinguishes POV, NTR/cheating directions, official tag spellings, historical names and requested tags.
+
+`tags.json` now combines the **90** labels captured on Oct 21 2026 in the SpicyChat v4.7.2 creator picker with **Specified POV**, additionally observed in a creator-supplied SFW selector reference preserved in the original Tagging & Discovery LLM Guide v2 (capture date unknown). This **91-name reference is NOT a complete live November picker verification**; the official docs do not list all selector options. Historical Step-Family stays outside the selectable reference, while Archive intentionally preserves it for old bot search. DILF, Robot, Kemonomimi and DeadDove remain requested/unverified.
+
+Sources: https://docs.spicychat.ai/product-guides/creating-chatbots/tags ; https://support.spicychat.ai/support/solutions/articles/153000260676-my-character-has-a-low-quality-tag ; https://github.com/drachescript/spicychat-guides/blob/main/llm/originals/Tagging%20%26%20Discovery%20LLM%20Guide%20v2.txt ; https://discord.com/channels/1108377954389594236/1235507803217723444/1235507803217723444 .
