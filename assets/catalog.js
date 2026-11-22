@@ -5,9 +5,9 @@ window.GUIDES=[
     "kind": "human",
     "section": "persona",
     "subsection": "Basics",
-    "status": "reviewed",
+    "status": "changes-often",
     "label": "Guide",
-    "desc": "what to put in a Persona, how to structure it, and how to spend the limited space on details that actually matter.",
+    "desc": "how to write and use Personas, plus the November 19 Persona Lorebooks beta announcement.",
     "pageUrl": "/persona/basics/",
     "sources": [
       {
@@ -26,9 +26,13 @@ window.GUIDES=[
         "title": "Official User Personas guide",
         "url": "https://docs.spicychat.ai/product-guides/premium-features/user-personas",
         "sourceType": "official"
+      },
+      {
+        "title": "SpicyChat staff reply, November 19, 2026",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1xztj82/comment/19sv0h1qao5hf/"
       }
     ],
-    "lastReviewed": "2026-11-16",
+    "lastReviewed": "2026-11-22",
     "relatedIds": [
       "persona-commands",
       "bot-anypov",
@@ -351,9 +355,9 @@ window.GUIDES=[
     "kind": "human",
     "section": "bots",
     "subsection": "Writing & Behavior",
-    "status": "needs-review",
+    "status": "changes-often",
     "label": "Guide",
-    "desc": "temporary directions, /cmd, /search and how early Story Mode writer's notes differ.",
+    "desc": "OOC, /cmd, Director Mode and the newly clarified Story Mode rollout.",
     "pageUrl": "/bots/ooc-cmd/",
     "sources": [
       {
@@ -381,9 +385,13 @@ window.GUIDES=[
         "title": "Official Director Mode",
         "url": "https://docs.spicychat.ai/product-guides/director-mode",
         "sourceType": "official"
+      },
+      {
+        "title": "SpicyChat staff reply, November 19, 2026",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1xzuclo/comment/19sv2ubtl7heo/"
       }
     ],
-    "lastReviewed": "2026-11-18",
+    "lastReviewed": "2026-11-22",
     "officialChecked": "2026-11-18"
   },
   {
@@ -809,7 +817,7 @@ window.GUIDES=[
     "kind": "human",
     "section": "lorebook",
     "subsection": "Basics",
-    "status": "reviewed",
+    "status": "changes-often",
     "label": "Guide",
     "desc": "Lorebook entries, keyword timing, useful reminders, character knowledge and testing.",
     "pageUrl": "/lorebook/basics/",
@@ -830,10 +838,14 @@ window.GUIDES=[
       {
         "title": "SpicyChat — Public Lorebooks release",
         "url": "https://www.reddit.com/r/SpicyChatAI/comments/1wv996y/public_lorebooks_are_here/"
+      },
+      {
+        "title": "SpicyChat staff reply, November 19, 2026",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1xztj82/comment/19sv0h1qao5hf/"
       }
     ],
     "originalArchive": "/assets/originals/lorebook-basics.json",
-    "lastReviewed": "2026-11-18",
+    "lastReviewed": "2026-11-22",
     "officialChecked": "2026-11-18",
     "relatedIds": [
       "lorebook-advanced",
@@ -1543,10 +1555,14 @@ window.GUIDES=[
         "title": "Official Lorebook guide",
         "url": "https://docs.spicychat.ai/product-guides/lorebook",
         "sourceType": "official"
+      },
+      {
+        "title": "SpicyChat staff reply, November 19, 2026",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1xztj82/comment/19sv0h1qao5hf/"
       }
     ],
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-18",
+    "lastReviewed": "2026-11-22",
     "officialChecked": "2026-11-18",
     "relatedIds": [
       "rulebook-advanced",
@@ -1870,11 +1886,11 @@ window.GUIDES=[
     "subsection": "Images",
     "status": "changes-often",
     "label": "Guide",
-    "desc": "how chat images work, why characters sometimes look different and what to check first.",
+    "desc": "chat-image settings, Qwen references, and deleting a single generated image from the conversation.",
     "pageUrl": "/bots/conversation-images/",
     "sourceType": "official",
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-18",
+    "lastReviewed": "2026-11-22",
     "officialChecked": "2026-11-18",
     "sources": [
       {
@@ -1885,6 +1901,10 @@ window.GUIDES=[
       {
         "title": "General Qwen Conversation Image guide (Oct–Nov 2026)",
         "url": "https://discord.com/channels/1108377954389594236/1565620726843838485/1565620726843838485"
+      },
+      {
+        "title": "SpicyChat staff reply, November 19, 2026",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1y08njr/comment/19svf7wdbjxpe/"
       }
     ],
     "relatedIds": [
@@ -1964,6 +1984,36 @@ window.GUIDES=[
       {
         "title": "Archive Blocking Presets documentation",
         "url": "https://github.com/drachescript/spicychat-archive/blob/main/data/block-presets/README.md"
+      }
+    ]
+  },
+  {
+    "id": "story-mode-first-look",
+    "title": "Story Mode — First Look",
+    "kind": "human",
+    "section": "bots",
+    "subsection": "Chat Features",
+    "status": "changes-often",
+    "label": "Early rollout",
+    "desc": "what Story Mode changes, how writer directions and Suggest work, and why you might not have access yet.",
+    "pageUrl": "/bots/story-mode/",
+    "sourceType": "community",
+    "originalLinksOnly": true,
+    "lastReviewed": "2026-11-22",
+    "relatedIds": [
+      "ooc-cmd",
+      "persona-basics",
+      "rulebook-integration",
+      "story-continuity"
+    ],
+    "sources": [
+      {
+        "title": "SpicyChat staff explanation of Story Mode rollout (Nov 19)",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1xzuclo/comment/19sv2ubtl7heo/"
+      },
+      {
+        "title": "Official SpicyChat documentation index (no Story Mode guide yet)",
+        "url": "https://docs.spicychat.ai/llms.txt"
       }
     ]
   }

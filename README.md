@@ -275,3 +275,15 @@ Rebuilt `/bots/tagging/` from Josh's full Tagging thread and the repository's cr
 `tags.json` now combines the **90** labels captured on Oct 21 2026 in the SpicyChat v4.7.2 creator picker with **Specified POV**, additionally observed in a creator-supplied SFW selector reference preserved in the original Tagging & Discovery LLM Guide v2 (capture date unknown). This **91-name reference is NOT a complete live November picker verification**; the official docs do not list all selector options. Historical Step-Family stays outside the selectable reference, while Archive intentionally preserves it for old bot search. DILF, Robot, Kemonomimi and DeadDove remain requested/unverified.
 
 Sources: https://docs.spicychat.ai/product-guides/creating-chatbots/tags ; https://support.spicychat.ai/support/solutions/articles/153000260676-my-character-has-a-low-quality-tag ; https://github.com/drachescript/spicychat-guides/blob/main/llm/originals/Tagging%20%26%20Discovery%20LLM%20Guide%20v2.txt ; https://discord.com/channels/1108377954389594236/1235507803217723444/1235507803217723444 .
+
+
+## November 22, 2026 — official staff clarification review
+
+Checked SpicyChat's official documentation index, Rulebook Meters, Making meters move, Tokens & Context, Personas and Lorebooks. Text Meters / per-trigger hiding remain absent from detailed Rulebook docs, and the Tokens & Context page still lists older 4K/8K paid-tier figures, whereas the official November 18 Discord release announced 6K/12K. Do not replace the newer release numbers with the stale docs or fabricate undocumented meter inputs.
+
+SpicyChat staff replied on November 19:
+- Story Mode is rolling out randomly to subscribers; directions are hidden by default and its Suggest button presents three LLM-generated story directions. Added an explicitly early-release `/bots/story-mode/` guide and clarified its relationship to OOC/Director Mode.
+- Persona Lorebooks entered beta. The staff reply said there are no current plans to increase the Persona limit requested in the thread, but did not publish a Persona Lorebook editor, limits or complete priority/trigger rules. The Persona, Lorebook and integration guides call this beta only.
+- Individual messages, generated conversation images included, can be deleted from the latest website's message menu or through long press on the official Android app. Added the steps to Conversation Images, separate from QoL.
+
+Official staff sources: https://www.reddit.com/r/SpicyChatAI/comments/1xzuclo/comment/19sv2ubtl7heo/ ; https://www.reddit.com/r/SpicyChatAI/comments/1xztj82/comment/19sv0h1qao5hf/ ; https://www.reddit.com/r/SpicyChatAI/comments/1y08njr/comment/19svf7wdbjxpe/ . Documentation: https://docs.spicychat.ai/llms.txt ; https://docs.spicychat.ai/product-guides/rulebooks/meters ; https://docs.spicychat.ai/product-guides/rulebooks/making-meters-move ; https://docs.spicychat.ai/advanced/tokens-and-context ; https://docs.spicychat.ai/product-guides/premium-features/user-personas ; https://docs.spicychat.ai/product-guides/lorebook .
