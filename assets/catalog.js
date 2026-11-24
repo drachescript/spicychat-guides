@@ -2020,13 +2020,13 @@ window.GUIDES=[
   },
   {
     "id": "archive-for-dummies",
-    "title": "Archive for Dummies — Find & Rebuild a Missing Bot",
+    "title": "Archive for Dummies — Complete Recovery Walkthrough",
     "kind": "human",
     "section": "archive",
     "subsection": "Finding & Recovery",
     "status": "reviewed",
     "label": "Beginner walkthrough",
-    "desc": "a practical walkthrough for finding a missing bot, saving chat evidence, using Recovery Lab and creating a new character.",
+    "desc": "detailed help for finding missing SpicyChat bots, understanding archived versions, importing chat evidence, using every Recovery Lab tool and exporting a new character.",
     "pageUrl": "/archive/for-dummies/",
     "sourceType": "community",
     "originalLinksOnly": true,
@@ -2054,6 +2054,14 @@ window.GUIDES=[
       {
         "title": "Archive FAQ",
         "url": "https://spicychatarchive.drache.uk/faq/"
+      },
+      {
+        "title": "Recovery Lab source and export behavior",
+        "url": "https://github.com/drachescript/spicychat-archive/blob/main/assets/recovery.js"
+      },
+      {
+        "title": "Offline and Browser AI behavior",
+        "url": "https://github.com/drachescript/spicychat-archive/blob/main/assets/recovery-assistant.js"
       }
     ]
   }
