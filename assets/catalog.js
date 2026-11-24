@@ -1750,18 +1750,19 @@ window.GUIDES=[
     "subsection": "Extension & APK",
     "status": "reviewed",
     "label": "Independent QoL guide",
-    "desc": "the complete QoL walkthrough: setup, filters, lists, chat tools, Memory, Lorebooks, Rulebooks, creator tools, backups, sync, Android and troubleshooting.",
+    "desc": "the complete QoL walkthrough: installation, exact recovery settings, single-chat and bulk exports, filters, lists, Memory, creator tools, GitHub Backup, Android and troubleshooting.",
     "pageUrl": "/qol/",
     "sourceType": "community",
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-19",
+    "lastReviewed": "2026-11-24",
     "relatedIds": [
       "story-continuity",
       "memory-context",
       "lorebook-basics",
       "rulebook-integration",
       "chat-appearance",
-      "archive-guide"
+      "archive-guide",
+      "archive-for-dummies"
     ],
     "sources": [
       {
