@@ -1,0 +1,94 @@
+<!doctype html><html lang="en"><head><link rel="icon" type="image/jpeg" href="https://spicychatqol.drache.uk/assets/icons/full_icon.jpg"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Archive for Dummies — Missing Bot Recovery · SpicyChat Guides</title><link rel="stylesheet" href="/assets/style.css"></head><body><header class="topbar"><div class="wrap nav"><a class="brand" href="/"><span class="mark">SG</span><span><strong>SpicyChat Guides</strong><small>community-maintained guides & reference</small></span></a><nav class="links"><a href="/qol/">QoL</a><a href="/archive/">Archive</a><a href="/">Home</a><a href="/bots/">Bots</a><a href="/persona/">Personas</a><a href="/lorebook/">Lorebooks</a><a href="/rulebook/">Rulebooks</a><a href="/group/">Group</a><a href="/guides/">All Guides</a><a href="/llm/">LLM</a><a href="/reference/">Sources</a></nav></div></header><main data-guide-page><section class="article-head"><div class="article-wrap"><span class="eyebrow">Community guide</span><h1>Archive for Dummies — Find & Rebuild a Missing Bot</h1><p class="summary">lost a bot? find what was saved, keep your conversation and make a new character from real evidence.</p></div></section><div class="article-wrap"><article class="article-body">
+<h2 id="start">so your favorite bot disappeared. now what?</h2>
+<p>first, don't delete your old chat or assume everything's gone just because the bot stopped showing up in search. the Archive might still have its public definition, an older version, or at least its name and creator. your own conversation might help fill the gaps too.</p>
+<p>this is the beginner walkthrough, based on the Archive's <a href="https://spicychatarchive.drache.uk/guide/">Archive for Dummies</a> page. if you're looking for the other features, stats and integrations, use our <a href="/archive/">full Archive guide</a>.</p>
+<nav class="recovery-paths" aria-label="Choose your starting point">
+<a href="#bot-id"><strong>i still have the chat or link</strong><span>find its exact bot ID</span></a>
+<a href="#without-id"><strong>i only remember the name or picture</strong><span>search older public records</span></a>
+<a href="#recovery-lab"><strong>i found the Archive record</strong><span>start rebuilding in Recovery Lab</span></a>
+<a href="#save-chat"><strong>my conversation still opens</strong><span>save it before doing anything else</span></a>
+</nav>
+<h2 id="limits">the important part: what can actually be restored?</h2>
+<div class="guide-callout"><strong>the Archive cannot undelete the original bot.</strong> it can't restore the original bot ID, connect the old chat to a new bot, retrieve private definitions, contact creators for you or get around platform restrictions. only the creator or SpicyChat can decide whether an original bot can return.</div>
+<p>Recovery Lab helps you create a <strong>separate new copy</strong> using public information that was actually saved, plus evidence you already have permission to use. and a bot that's unavailable might be private, unlisted or temporarily missing rather than permanently deleted.</p>
+<h2 id="bot-id">1. find the exact bot ID</h2>
+<p>if you've still got a link, this is the easiest part. the bot ID is a UUID: letters, numbers and dashes. it isn't the character's name or the ID of your individual conversation.</p>
+<ol><li>open the character's profile or your existing conversation.</li><li>copy the browser URL, or use Share / Copy link if that works.</li><li>in a profile URL, find the UUID after <code>/chatbot/</code>. in a chat URL, use the <strong>first UUID after /chat/</strong>—the next one is the conversation ID.</li><li>paste the bot ID or its public profile link into <a href="https://spicychatarchive.drache.uk/recovery/">Recovery Lab</a> or the Archive's search pages.</li></ol>
+<div class="example-box"><pre>Profile: spicychat.ai/chatbot/11111111-2222-4333-8444-555555555555
+Chat:    spicychat.ai/chat/11111111-2222-4333-8444-555555555555/aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee
+
+BOT ID:          11111111-2222-4333-8444-555555555555
+CONVERSATION ID: aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee</pre></div>
+<p>these are fake IDs for the example. language-prefixed links such as <code>/ru/chatbot/</code> work similarly. even when a chat header is blank, its URL might still contain the bot ID.</p>
+<h3>on a phone</h3>
+<p>try the official app's Share option. if that fails, open SpicyChat in your mobile browser, check your old conversation URL or look through bookmarks and browser history.</p>
+<p>when asking someone for help, send the <strong>public bot ID or profile URL</strong>, not the full private conversation URL. and never share cookies, session tokens or passwords.</p>
+<h2 id="without-id">2. no ID? search what you still remember</h2>
+<p>start with the bot's name, title or creator's username. a screenshot with readable text can help, but the Archive doesn't promise reverse-image search.</p>
+<ol><li>try <a href="https://spicychatarchive.drache.uk/search/">Archive Search</a> with the title or a distinctive phrase.</li><li>check <a href="https://spicychatarchive.drache.uk/deleted/">Deleted bots</a> and <a href="https://spicychatarchive.drache.uk/bots/">Public bots</a>—it might still be available.</li><li>search the creator's name and shorter or alternative spellings.</li><li>clear any tag filters or locally hidden-bot filters, then compare the result's creator and picture.</li></ol>
+<p>the Archive might only have an old search reference, or might never have collected the bot at all. <strong>no result doesn't prove the bot never existed.</strong></p>
+<h2 id="record">3. check what the Archive actually saved</h2>
+<p>open the matching record. compare its name, creator, date and any historical versions before copying text. a newer version might be very different from the character you remember.</p>
+<table><thead><tr><th>Archive result</th><th>what it means</th></tr></thead><tbody>
+<tr><td>Saved record</td><td>some real public fields were captured, but it might still be incomplete</td></tr>
+<tr><td>Search entry only</td><td>there might be a name or creator without a full character definition</td></tr>
+<tr><td>ID only</td><td>the ID was seen but no usable definition might be saved</td></tr>
+<tr><td>Deleted / unavailable</td><td>public checks found unavailability; this doesn't restore the original bot</td></tr>
+<tr><td>Unknown / inconclusive</td><td>there isn't enough reliable evidence for a firm conclusion</td></tr>
+</tbody></table>
+<p>if the Personality or Scenario is missing, that doesn't mean the original creator left it empty. it might just never have been collected.</p>
+<h2 id="save-chat">4. save your old chat while you can</h2>
+<p>if the old conversation still opens, keep a personal backup before you change or delete anything. that chat may be the best evidence you have for how the character actually spoke.</p>
+<ol><li>use an available export tool such as <a href="/qol/">DragonScript QoL</a> or S.AI Toolkit, or copy accessible chat text manually.</li><li>check that the downloaded file contains real messages; don't trust a filename alone.</li><li>keep the original file unchanged. Recovery Lab accepts supported JSON/HTML transcripts, Markdown, plain text, and pasted conversations.</li><li>if an export won't load, try a smaller supported transcript or paste some text using the recovery page's text box.</li></ol>
+<p><strong>your private chat doesn't need to be publicly uploaded to the Archive.</strong> the guide says conversation parsing is handled locally in your browser. optional External AI is different: only use it if you're comfortable sending selected evidence to that provider. nothing can export a chat your account can no longer access.</p>
+<h2 id="recovery-lab">5. rebuild the character in Recovery Lab</h2>
+<p>open <a href="https://spicychatarchive.drache.uk/recovery/">Recovery Lab</a>. the controls have actual names, so here's the order i'd use them in:</p>
+<ol>
+<li><strong>Choose a bot.</strong> paste its bot ID or public profile URL and click <strong>Load archive evidence</strong>.</li>
+<li><strong>Choose the right version.</strong> if the Archive saved older versions, use <strong>Base recovery on</strong> to choose the one you want.</li>
+<li><strong>Check readiness.</strong> the panel shows which of the eight supported character fields have data. a present field isn't always complete.</li>
+<li><strong>Add conversation evidence.</strong> drop a supported export into the page or paste text and select <strong>Use pasted conversation</strong>.</li>
+<li><strong>Review message selection.</strong> choose whether user messages, OOC messages or regenerated messages should contribute. they aren't all equally reliable evidence of the character's original definition.</li>
+<li><strong>Fill gaps.</strong> write missing fields yourself, try <strong>Quick Draft (offline)</strong>, or review optional Browser AI / External AI suggestions. <strong>Expand</strong> proposes additions to existing fields.</li>
+</ol>
+<p>AI suggestions are suggestions, not recovered original text. if the Archive never saved a field, don't label a newly written version as the creator's exact original.</p>
+<h2 id="original-vs-adapted">6. reconstruct the original or make your own version?</h2>
+<p>Recovery Lab gives you two approaches. <strong>Reconstruct Original</strong> sticks close to available archived evidence; <strong>Make It Mine</strong> is for an intentionally adapted copy. neither can restore hidden content.</p>
+<p>pay attention to the evidence labels:</p>
+<table><thead><tr><th>Label</th><th>meaning</th></tr></thead><tbody>
+<tr><td>Archived Original</td><td>text actually captured by the Archive</td></tr>
+<tr><td>Reconstructed</td><td>new or inferred text, not proven original</td></tr>
+<tr><td>User Modified</td><td>something you deliberately changed</td></tr>
+<tr><td>Missing</td><td>nothing was captured for that field</td></tr>
+</tbody></table>
+<p>say the chat shows that a character is sarcastic. that's good evidence for writing a sarcastic Personality in your reconstruction. it doesn't prove the original creator used the exact sentence you just wrote.</p>
+<h2 id="new-bot">7. export the draft and make a new bot</h2>
+<ol>
+<li>review the eight fields: <strong>name, title, Greeting, Personality, Scenario, Example Dialogue, tags and picture</strong>.</li>
+<li>download a <strong>recovery package</strong> so you have a local backup. use <strong>Copy fields</strong> for manual creation.</li>
+<li>open SpicyChat's <strong>Create → Chatbot</strong> editor and place the reviewed information into its matching fields.</li>
+<li>if you use a JSON or PNG import, check that it is a supported <em>native character-card</em> format. Archive recovery packages aren't automatically native SpicyChat imports. our <a href="/bots/importing-characters/">import guide</a> covers that difference.</li>
+<li>only use images and content you have permission to reuse; keep private recreations private when appropriate. don't use recovery to evade moderation.</li>
+<li>save the new character and test it in a new chat.</li>
+</ol>
+<div class="guide-callout"><strong>it will be a new bot.</strong> it gets a new ID. your original conversation history, ratings, native memories and private Rulebook values aren't automatically moved over.</div>
+<p>and check the download before sharing it. recovery packages exclude raw chat-message text, but the reconstructed <em>fields</em> may include private things taken from your conversation.</p>
+<h2 id="books">8. what about missing Lorebooks and Rulebooks?</h2>
+<p>try <a href="https://spicychatarchive.drache.uk/deleted-lorebooks/">Deleted Lorebooks</a> or <a href="https://spicychatarchive.drache.uk/deleted-rulebooks/">Deleted Rulebooks</a>, along with the public Lorebook/Rulebook directories. old listings, covers and attachment links can exist without a full saved book.</p>
+<p>the Archive can't recover a private entry or hidden Rulebook definition just because a public bot referred to it. for building your own new content, use the <a href="/lorebook/basics/">Lorebook</a> or <a href="/rulebook/basics/">Rulebook</a> guides.</p>
+<h2 id="troubleshooting">9. still stuck?</h2>
+<details class="recovery-question"><summary>nothing comes up in search</summary><p>try the exact ID, title variants, creator, Public bots and historical search. remove filters. the Archive may only have a partial record or none at all.</p></details>
+<details class="recovery-question"><summary>the mobile app won't share the link</summary><p>try the browser version, old bookmarks or an existing chat URL. send just the public bot ID when asking for help.</p></details>
+<details class="recovery-question"><summary>the Archive only has a Greeting or picture</summary><p>that's all that was captured. supplement it with your own conversation or notes and mark new material as reconstructed.</p></details>
+<details class="recovery-question"><summary>my conversation export doesn't work</summary><p>open the file and confirm it contains actual messages. try a supported format or paste a small section into Recovery Lab.</p></details>
+<details class="recovery-question"><summary>will my old bot and chat come back?</summary><p>not through the Archive. you can make a separate new character, but its ID and conversation are new.</p></details>
+<details class="recovery-question"><summary>where can i ask for help?</summary><p>use the <a href="https://discord.gg/XTMdWvuVSU">QoL Discord</a> or <a href="https://github.com/drachescript/spicychat-archive/issues">Archive GitHub Issues</a>. include the public bot ID and a short explanation, not credentials or private exports.</p></details>
+<h2 id="useful-links">quick links</h2>
+<ul>
+<li><a href="https://spicychatarchive.drache.uk/guide/">Original Archive for Dummies</a> — source walkthrough.</li>
+<li><a href="https://spicychatarchive.drache.uk/search/">Archive Search</a> — names and historical text.</li>
+<li><a href="https://spicychatarchive.drache.uk/deleted/">Deleted bots</a> — unavailable records.</li>
+<li><a href="https://spicychatarchive.drache.uk/recovery/">Recovery Lab</a> — use evidence and build a new character.</li>
+<li><a href="/archive/">Full Archive guide</a> — all the other features.</li>
+</ul>
+<p><small>checked November 24, 2026 against the uploaded Archive for Dummies HTML and <a href="https://github.com/drachescript/spicychat-archive/blob/main/guide/index.html">Archive's current source page</a>. the Archive is an independent historical resource, not an official SpicyChat restoration service.</small></p></article></div></main><script>window.GUIDE_ID="archive-for-dummies"</script><script src="/assets/catalog.js"></script><script src="/assets/content-archive-for-dummies.js"></script><script src="/assets/guide-render.js"></script></body></html>

@@ -127,3 +127,14 @@
 .tag-guide-scroller tr[hidden]{display:none}
 #tag-glossary-search{display:block;width:100%;padding:12px;margin:8px 0;border-radius:9px;border:1px solid var(--line);background:var(--surface,#151923);color:inherit}
 #tag-glossary-count{font-size:.9rem;opacity:.75;margin:6px 0 14px}
+
+/* Archive for Dummies navigation and FAQs */
+.recovery-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0 28px}
+.recovery-paths a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:13px;padding:14px 16px;background:rgba(255,255,255,.02)}
+.recovery-paths a:hover{border-color:#657083;background:rgba(255,255,255,.045)}
+.recovery-paths strong{display:block;color:#f3f4f7;font-size:13px}
+.recovery-paths span{display:block;color:var(--muted);font-size:12px;margin-top:5px}
+.recovery-question{border:1px solid var(--line);border-radius:12px;padding:13px 16px;margin:11px 0}
+.recovery-question summary{cursor:pointer;font-weight:650}
+.recovery-question p{margin:11px 0 0}
+@media(max-width:650px){.recovery-paths{grid-template-columns:1fr}}

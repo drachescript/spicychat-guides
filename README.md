@@ -287,3 +287,9 @@ SpicyChat staff replied on November 19:
 - Individual messages, generated conversation images included, can be deleted from the latest website's message menu or through long press on the official Android app. Added the steps to Conversation Images, separate from QoL.
 
 Official staff sources: https://www.reddit.com/r/SpicyChatAI/comments/1xzuclo/comment/19sv2ubtl7heo/ ; https://www.reddit.com/r/SpicyChatAI/comments/1xztj82/comment/19sv0h1qao5hf/ ; https://www.reddit.com/r/SpicyChatAI/comments/1y08njr/comment/19svf7wdbjxpe/ . Documentation: https://docs.spicychat.ai/llms.txt ; https://docs.spicychat.ai/product-guides/rulebooks/meters ; https://docs.spicychat.ai/product-guides/rulebooks/making-meters-move ; https://docs.spicychat.ai/advanced/tokens-and-context ; https://docs.spicychat.ai/product-guides/premium-features/user-personas ; https://docs.spicychat.ai/product-guides/lorebook .
+
+## November 24, 2026 — Archive for Dummies recovery walkthrough
+
+Added `/archive/for-dummies/` based on the uploaded Archive for Dummies page and the current Archive repository's `guide/index.html`. This new practical tutorial complements the general `/archive/` guide. It covers finding bot IDs, searching with only a name/picture, checking Archive evidence and old versions, saving private chat exports, exact Recovery Lab workflow, draft provenance, making a new character, Lorebook/Rulebook limits and common problems.
+
+The guide clearly distinguishes reconstruction from undeleting: Archive cannot restore the original bot ID, chat, private definition or platform moderation status. Chat parsing is local according to the Archive source; optional external AI sharing is separately identified. Added a static full-content fallback, links from the existing Archive guide and Troubleshooting, and the established site-wide favicon. Only `spicychat-guides` is changed.

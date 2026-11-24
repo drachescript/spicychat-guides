@@ -1958,6 +1958,7 @@ window.GUIDES=[
     "originalLinksOnly": true,
     "lastReviewed": "2026-11-19",
     "relatedIds": [
+      "archive-for-dummies",
       "dragonscript-qol",
       "importing-characters",
       "lorebook-basics",
@@ -2014,6 +2015,45 @@ window.GUIDES=[
       {
         "title": "Official SpicyChat documentation index (no Story Mode guide yet)",
         "url": "https://docs.spicychat.ai/llms.txt"
+      }
+    ]
+  },
+  {
+    "id": "archive-for-dummies",
+    "title": "Archive for Dummies — Find & Rebuild a Missing Bot",
+    "kind": "human",
+    "section": "archive",
+    "subsection": "Finding & Recovery",
+    "status": "reviewed",
+    "label": "Beginner walkthrough",
+    "desc": "a practical walkthrough for finding a missing bot, saving chat evidence, using Recovery Lab and creating a new character.",
+    "pageUrl": "/archive/for-dummies/",
+    "sourceType": "community",
+    "originalLinksOnly": true,
+    "lastReviewed": "2026-11-24",
+    "relatedIds": [
+      "archive-guide",
+      "importing-characters",
+      "dragonscript-qol",
+      "lorebook-basics",
+      "rulebook-basics"
+    ],
+    "sources": [
+      {
+        "title": "Archive for Dummies — original beginner page",
+        "url": "https://spicychatarchive.drache.uk/guide/"
+      },
+      {
+        "title": "Archive's original guide source",
+        "url": "https://github.com/drachescript/spicychat-archive/blob/main/guide/index.html"
+      },
+      {
+        "title": "Archive Recovery Lab",
+        "url": "https://spicychatarchive.drache.uk/recovery/"
+      },
+      {
+        "title": "Archive FAQ",
+        "url": "https://spicychatarchive.drache.uk/faq/"
       }
     ]
   }
