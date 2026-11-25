@@ -127,7 +127,7 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-11-16",
+    "lastReviewed": "2026-11-25",
     "relatedIds": [
       "importing-characters",
       "bot-fields",
@@ -201,7 +201,7 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-11-18",
+    "lastReviewed": "2026-11-25",
     "relatedIds": [
       "bot-plist-prose",
       "bot-fields",
@@ -301,7 +301,7 @@ window.GUIDES=[
     "kind": "human",
     "label": "Guide",
     "status": "reviewed",
-    "lastReviewed": "2026-11-16",
+    "lastReviewed": "2026-11-25",
     "relatedIds": [
       "bot-fields",
       "stop-speaking-for-user",
@@ -342,7 +342,7 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-11-18",
+    "lastReviewed": "2026-11-25",
     "relatedIds": [
       "bot-greetings",
       "bot-anypov",
@@ -536,7 +536,7 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-10-29",
+    "lastReviewed": "2026-11-25",
     "relatedIds": [
       "testing-feedback",
       "bot-repetition",
@@ -845,7 +845,7 @@ window.GUIDES=[
       }
     ],
     "originalArchive": "/assets/originals/lorebook-basics.json",
-    "lastReviewed": "2026-11-22",
+    "lastReviewed": "2026-11-25",
     "officialChecked": "2026-11-18",
     "relatedIds": [
       "lorebook-advanced",
@@ -880,7 +880,7 @@ window.GUIDES=[
       }
     ],
     "originalArchive": "/assets/originals/lorebook-advanced.json",
-    "lastReviewed": "2026-10-21",
+    "lastReviewed": "2026-11-25",
     "relatedIds": [
       "lorebook-basics",
       "lorebook-troubleshoot",
@@ -1010,7 +1010,7 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-10-21",
+    "lastReviewed": "2026-11-25",
     "relatedIds": [
       "group-chats",
       "bot-example-dialogue",
@@ -1135,8 +1135,8 @@ window.GUIDES=[
       }
     ],
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-18",
-    "officialChecked": "2026-11-18",
+    "lastReviewed": "2026-11-25",
+    "officialChecked": "2026-11-25",
     "relatedIds": [
       "rulebook-templates",
       "lorebook-rpg-systems",
@@ -1173,7 +1173,7 @@ window.GUIDES=[
     "kind": "human",
     "label": "Guide",
     "status": "needs-review",
-    "lastReviewed": "2026-10-21",
+    "lastReviewed": "2026-11-25",
     "relatedIds": [
       "persona-basics",
       "bot-greetings",
@@ -1205,7 +1205,7 @@ window.GUIDES=[
     "kind": "human",
     "label": "Guide",
     "status": "needs-review",
-    "lastReviewed": "2026-10-21",
+    "lastReviewed": "2026-11-25",
     "relatedIds": [
       "advanced-character-build",
       "bot-fields"
@@ -1316,8 +1316,8 @@ window.GUIDES=[
     "label": "Guide",
     "status": "needs-review",
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-18",
-    "officialChecked": "2026-11-18",
+    "lastReviewed": "2026-11-25",
+    "officialChecked": "2026-11-25",
     "relatedIds": [
       "rulebook-basics",
       "rpg-bots"
@@ -1351,7 +1351,8 @@ window.GUIDES=[
       "lorebook-basics",
       "lorebook-advanced",
       "lorebook-context"
-    ]
+    ],
+    "lastReviewed": "2026-11-25"
   },
   {
     "id": "hunter-multi-character-llm-guide-v3",
@@ -1512,8 +1513,8 @@ window.GUIDES=[
       }
     ],
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-18",
-    "officialChecked": "2026-11-18",
+    "lastReviewed": "2026-11-25",
+    "officialChecked": "2026-11-25",
     "relatedIds": [
       "rulebook-basics",
       "rulebook-integration",
@@ -1562,8 +1563,8 @@ window.GUIDES=[
       }
     ],
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-22",
-    "officialChecked": "2026-11-18",
+    "lastReviewed": "2026-11-25",
+    "officialChecked": "2026-11-25",
     "relatedIds": [
       "rulebook-advanced",
       "lorebook-sharing",
@@ -1700,7 +1701,7 @@ window.GUIDES=[
         "sourceType": "official"
       }
     ],
-    "lastReviewed": "2026-11-18",
+    "lastReviewed": "2026-11-25",
     "officialChecked": "2026-11-18",
     "relatedIds": [
       "memory-context",
