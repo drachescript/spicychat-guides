@@ -30,9 +30,13 @@ window.GUIDES=[
       {
         "title": "SpicyChat staff reply, November 19, 2026",
         "url": "https://www.reddit.com/r/SpicyChatAI/comments/1xztj82/comment/19sv0h1qao5hf/"
+      },
+      {
+        "title": "SpicyChat November 24 weekly update — Story Mode and editing",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1y4lxi2/weekly_update_5_new_languages_easier_message/"
       }
     ],
-    "lastReviewed": "2026-11-22",
+    "lastReviewed": "2026-11-26",
     "relatedIds": [
       "persona-commands",
       "bot-anypov",
@@ -681,13 +685,13 @@ window.GUIDES=[
   },
   {
     "id": "tagging",
-    "title": "Tagging & Discovery — Tags and Meanings",
+    "title": "Tagging Your Bots",
     "kind": "human",
     "section": "bots",
     "subsection": "Publishing",
     "status": "changes-often",
     "label": "Guide",
-    "desc": "current and historical tag names, the complete reference glossary, POV and NTR differences and how to tag bots accurately.",
+    "desc": "Choose accurate current character tags, identify implied themes and match the listing to the actual bot.",
     "pageUrl": "/bots/tagging/",
     "sources": [
       {
@@ -842,10 +846,14 @@ window.GUIDES=[
       {
         "title": "SpicyChat staff reply, November 19, 2026",
         "url": "https://www.reddit.com/r/SpicyChatAI/comments/1xztj82/comment/19sv0h1qao5hf/"
+      },
+      {
+        "title": "SpicyChat QoL v0.3.0 release",
+        "url": "https://github.com/drachescript/spicychat-qol-extension/releases/tag/v0.3.0"
       }
     ],
     "originalArchive": "/assets/originals/lorebook-basics.json",
-    "lastReviewed": "2026-11-25",
+    "lastReviewed": "2026-11-26",
     "officialChecked": "2026-11-18",
     "relatedIds": [
       "lorebook-advanced",
@@ -877,10 +885,14 @@ window.GUIDES=[
         "title": "Official Lorebook retrieval and attachment",
         "url": "https://docs.spicychat.ai/product-guides/lorebook",
         "sourceType": "official"
+      },
+      {
+        "title": "SpicyChat QoL v0.3.0 release",
+        "url": "https://github.com/drachescript/spicychat-qol-extension/releases/tag/v0.3.0"
       }
     ],
     "originalArchive": "/assets/originals/lorebook-advanced.json",
-    "lastReviewed": "2026-11-25",
+    "lastReviewed": "2026-11-26",
     "relatedIds": [
       "lorebook-basics",
       "lorebook-troubleshoot",
@@ -1048,9 +1060,13 @@ window.GUIDES=[
       {
         "title": "SpicyChat — Shared Group Lorebooks release",
         "url": "https://www.reddit.com/r/SpicyChatAI/comments/1x64yiz/weekly_update_group_lorebooks_better_filters_more/"
+      },
+      {
+        "title": "SpicyChat November 24 weekly update — Story Mode and editing",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1y4lxi2/weekly_update_5_new_languages_easier_message/"
       }
     ],
-    "lastReviewed": "2026-11-04",
+    "lastReviewed": "2026-11-26",
     "officialChecked": "2026-11-04",
     "relatedIds": [
       "multi-character-bots",
@@ -1342,6 +1358,10 @@ window.GUIDES=[
       {
         "title": "Hunter — Unified Lorebook LLM Production System v6",
         "url": "/llm/originals/Unified_Lorebook_LLM_Production_System_v6.txt"
+      },
+      {
+        "title": "SpicyChat QoL v0.3.0 release",
+        "url": "https://github.com/drachescript/spicychat-qol-extension/releases/tag/v0.3.0"
       }
     ],
     "kind": "human",
@@ -1352,7 +1372,7 @@ window.GUIDES=[
       "lorebook-advanced",
       "lorebook-context"
     ],
-    "lastReviewed": "2026-11-25"
+    "lastReviewed": "2026-11-26"
   },
   {
     "id": "hunter-multi-character-llm-guide-v3",
@@ -1751,11 +1771,11 @@ window.GUIDES=[
     "subsection": "Extension & APK",
     "status": "reviewed",
     "label": "Independent QoL guide",
-    "desc": "the complete QoL walkthrough: installation, exact recovery settings, single-chat and bulk exports, filters, lists, Memory, creator tools, GitHub Backup, Android and troubleshooting.",
+    "desc": "Complete QoL v0.3 walkthrough: installation, quick setup, creator tools, resumable exports, recovery, Lorebooks, backups, sync and performance.",
     "pageUrl": "/qol/",
     "sourceType": "community",
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-24",
+    "lastReviewed": "2026-11-26",
     "relatedIds": [
       "story-continuity",
       "memory-context",
@@ -1801,6 +1821,10 @@ window.GUIDES=[
       {
         "title": "Archive ↔ QoL integration documentation",
         "url": "https://github.com/drachescript/spicychat-archive/blob/main/docs/QOL-INTEGRATION.md"
+      },
+      {
+        "title": "SpicyChat QoL v0.3.0 release",
+        "url": "https://github.com/drachescript/spicychat-qol-extension/releases/tag/v0.3.0"
       }
     ],
     "officialChecked": "2026-11-19"
@@ -2002,7 +2026,7 @@ window.GUIDES=[
     "pageUrl": "/bots/story-mode/",
     "sourceType": "community",
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-22",
+    "lastReviewed": "2026-11-26",
     "relatedIds": [
       "ooc-cmd",
       "persona-basics",
@@ -2017,6 +2041,10 @@ window.GUIDES=[
       {
         "title": "Official SpicyChat documentation index (no Story Mode guide yet)",
         "url": "https://docs.spicychat.ai/llms.txt"
+      },
+      {
+        "title": "SpicyChat November 24 weekly update — Story Mode and editing",
+        "url": "https://www.reddit.com/r/SpicyChatAI/comments/1y4lxi2/weekly_update_5_new_languages_easier_message/"
       }
     ]
   },
@@ -2028,11 +2056,11 @@ window.GUIDES=[
     "subsection": "Finding & Recovery",
     "status": "reviewed",
     "label": "Beginner walkthrough",
-    "desc": "detailed help for finding missing SpicyChat bots, understanding archived versions, importing chat evidence, using every Recovery Lab tool and exporting a new character.",
+    "desc": "Find and rebuild a missing bot, with QoL v0.3 recovery presets, saved chat exports and Recovery Lab evidence.",
     "pageUrl": "/archive/for-dummies/",
     "sourceType": "community",
     "originalLinksOnly": true,
-    "lastReviewed": "2026-11-24",
+    "lastReviewed": "2026-11-26",
     "relatedIds": [
       "archive-guide",
       "importing-characters",
@@ -2064,6 +2092,10 @@ window.GUIDES=[
       {
         "title": "Offline and Browser AI behavior",
         "url": "https://github.com/drachescript/spicychat-archive/blob/main/assets/recovery-assistant.js"
+      },
+      {
+        "title": "SpicyChat QoL v0.3.0 release",
+        "url": "https://github.com/drachescript/spicychat-qol-extension/releases/tag/v0.3.0"
       }
     ]
   }
